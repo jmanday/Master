@@ -1,0 +1,620 @@
+\documentclass[10pt]{article}  
+
+%%%%%%%% PREÁMBULO %%%%%%%%%%%%
+\title{Plantilla para prácticas de UGR}
+\usepackage[spanish]{babel} %Indica que escribiermos en español
+\usepackage[utf8]{inputenc} %Indica qué codificación se está usando ISO-8859-1(latin1)  o utf8  
+\usepackage{amsmath} % Comandos extras para matemáticas (cajas para ecuaciones,
+% etc)
+\usepackage{amssymb} % Simbolos matematicos (por lo tanto)
+\usepackage{graphicx} % Incluir imágenes en LaTeX
+\usepackage{color} % Para colorear texto
+\usepackage{subfigure} % subfiguras
+\usepackage[dvipsnames]{xcolor}
+\usepackage{float} %Podemos usar el especificador [H] en las figuras para que se
+% queden donde queramos
+\usepackage{capt-of} % Permite usar etiquetas fuera de elementos flotantes
+% (etiquetas de figuras)
+\usepackage{sidecap} % Para poner el texto de las imágenes al lado
+	\sidecaptionvpos{figure}{c} % Para que el texto se alinie al centro vertical
+\usepackage{caption} % Para poder quitar numeracion de figuras
+\usepackage{commath} % funcionalidades extras para diferenciales, integrales,
+% etc (\od, \dif, etc)
+\usepackage{cancel} % para cancelar expresiones (\cancelto{0}{x})
+
+\graphicspath{{/Users/jesusgarciamanday/Desktop/Master/SIGE/Practicas/Practica1/p1/Imagenes/}}
+
+\usepackage{anysize} 					% Para personalizar el ancho de  los márgenes
+\marginsize{2cm}{2cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
+
+\usepackage{appendix}
+\renewcommand{\appendixname}{Apéndices}
+\renewcommand{\appendixtocname}{Apéndices}
+\renewcommand{\appendixpagename}{Apéndices} 
+
+% Para que las referencias sean hipervínculos a las figuras o ecuaciones y
+% aparezcan en color
+\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
+%\usepackage{hyperref} 
+% Para agregar encabezado y pie de página
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize UGR} %encabezado izquierda
+\fancyhead[R]{\footnotesize CCIA}   % dereecha
+\fancyfoot[R]{\footnotesize Sistemas Inteligentes para la Gestión en la Empresa }  % Pie derecha
+\fancyfoot[C]{\thepage}  % centro
+\fancyfoot[L]{\footnotesize Master en Ingenier\'ia Inform\'atica }  %izquierda
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+\usepackage{listings} % Para usar código fuente
+\definecolor{dkgreen}{rgb}{0,0.6,0} % Definimos colores para usar en el código
+\definecolor{gray}{rgb}{0.5,0.5,0.5} 
+% configuración para el lenguaje que queramos utilizar
+\lstset{language=Matlab,
+   keywords={break,case,catch,continue,else,elseif,end,for,function,
+      global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily,
+   keywordstyle=\color{blue},
+   commentstyle=\color{red},
+   stringstyle=\color{dkgreen},
+   numbers=left,
+   numberstyle=\tiny\color{gray},
+   stepnumber=1,
+   numbersep=10pt,
+   backgroundcolor=\color{white},
+   tabsize=4,
+   showspaces=false,
+   showstringspaces=false}
+
+\newcommand{\sen}{\operatorname{\sen}}	% Definimos el comando \sen para el seno
+%en español
+
+\title{Sistemas Inteligentes para la Gestión en la Empresa}
+
+%%%%%%%% TERMINA PREÁMBULO %%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+																					%%%
+\begin{center}																		%%%
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}									%%%\left
+ 																					%%%
+\begin{minipage}{0.48\textwidth} \begin{flushleft}
+%\includegraphics[scale = 0.63]{Imagenes/logo_upiita}
+\end{flushleft}\end{minipage}
+\begin{minipage}{0.48\textwidth} \begin{flushright}
+%\includegraphics[scale = 0.35]{Imagenes/IPN}
+\end{flushright}\end{minipage}
+
+													 								%%%
+\vspace*{-1.5cm}								%%%
+																					%%%	
+\textsc{\huge Universidad de\\ \vspace{5px} Granada}\\[1.5cm]	
+
+\textsc{\LARGE Master Profesional en Ingenier\'ia Inform\'atica }\\[1.5cm]													%%%
+
+\begin{minipage}{0.9\textwidth} 
+\begin{center}																					%%%
+\textsc{\LARGE Pr\'actica 1}
+\end{center}
+\end{minipage}\\[0.5cm]
+%%%
+    																				%%%
+ 			\vspace*{1cm}																		%%%
+																					%%%
+\HRule \\[0.4cm]																	%%%
+{ \huge \bfseries Competición en Kaggle sobre Clasificación Binaria}\\[0.4cm]	%%%
+ 																					%%%
+\HRule \\[1.5cm]																	%%%
+ 																				%%%
+																					%%%
+\begin{minipage}{0.46\textwidth}													%%%
+\begin{flushleft} \large															%%%
+\emph{Autor:}\\	
+Manuel Jes\'us Garc\'ia Manday (nickter@correo.ugr.es)\\
+%%%
+			%\vspace*{2cm}	
+            													%%%
+										 						%%%
+\end{flushleft}																		%%%
+\end{minipage}		
+																%%%
+\begin{minipage}{0.52\textwidth}		
+\vspace{-0.6cm}											%%%
+\begin{flushright} \large															%%%
+													%%%
+\end{flushright}																	%%%
+\end{minipage}	
+\vspace*{1cm}
+%\begin{flushleft}
+ 	
+%\end{flushleft}
+%%%
+ 		\flushleft{\textbf{\Large Master en Ingenier\'ia Inform\'atica}	}\\																		%%%
+\vspace{2cm} 																				
+\begin{center}																					
+{\large 20 de abril de 2017}																	%%%
+ 			\end{center}												  						
+\end{center}							 											
+																					
+\newpage																		
+%%%%%%%%%%%%%%%%%%%% TERMINA PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents 
+
+\newpage
+
+
+
+\section{Exploración de datos.} 
+Para esta práctica disponemos de dos conjuntos de datos, uno para entrenamiento (\textbf{train}) y otro para pruebas (\textbf{test}). Ambos comparten la misma estructura en cuanto al número y tipos de variables, a excepción de la variable objetivo \textbf{Survived} que no se encuentra en el dataset de prueba y con una notable diferencia en el número de observaciones. Para conocer con un nivel mayor de detalle estos dataset vamos a pasar a cargar el dataset de entrenamiento para analizar la estructura y naturaleza de sus datos.\\
+
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img1}
+ 		\captionof{figure}{\label{fig:IPN}Estructura de los datos.} 
+	\end{center} 
+\end{figure}
+
+
+Como se puede apreciar en la imagen, principalmente son tres los tipos de datos que aparecen en este dataset, \textbf{int}, \textbf{num} y \textbf{chr}, aunque este último puede ser cambiado a \textbf{factor} para que se traten como categorías en lugar de cadenas de texto. El dataset de entrenamiento consta de 891 observaciones y 12 variables, siendo la variable \textbf{Survived} el campo objetivo como se ha mencionado antes.\\
+
+Haciendo una primera previsualización de los datos en base a la variable objetivo (\textbf{Survived}) obtenemos la siguiente información:\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img2}
+ 		\captionof{figure}{\label{fig:IPN}Info. datos variable objetivo (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img3}
+ 		\captionof{figure}{\label{fig:IPN}Info. datos variable objetivo (II).} 
+	\end{center} 
+\end{figure}
+
+Según los datos obtenidos que se muestran en las imágenes podemos ver como el \textbf{61,61 \%} de las  personas que viajaban en el Titanic murieron. Esta información arroja poca claridad sobre los datos, pero tomando la famosa frase de "las mujeres y los niños primero" podemos afinar un poco mas el resultado.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img4}
+ 		\captionof{figure}{\label{fig:IPN}Info. datos variable \textbf{Sex} (I).} 
+	\end{center} 
+\end{figure}
+
+Se puede ver en la anterior imagen como la mayoría de los pasajeros eran de sexo masculino, por lo que podemos usar esta variable para conocer que género tiene mayor índice de supervivencia frente al otro. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img5}
+ 		\captionof{figure}{\label{fig:IPN}Info. datos variable \textbf{Sex} (II).} 
+	\end{center} 
+\end{figure}
+
+En esta última figura se muestra como el porcentaje de personas que no sobrevivieron es mucho mayor en el género masculino que en el femenino, superando el primero el \textbf{80 \%} y obteniendo el segundo un \textbf{25 \%}.\\
+
+Es conveniente hacer un resumen sobre cada uno de los campos del dataset de entrenamiento para así poder ver que propiedades y valores nos arroja cada uno de ellos. De esta forma podemos identificar circunstancias en las variables como la cantidad de valores perdidos, el número de categorías, así como la ausencia de asignación a una categoría. Para ver esto ejecutamos el comando \textbf{summary(train)} junto con el nombre del dataset para que nos muestre la siguiente salida:
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img11}
+ 		\captionof{figure}{\label{fig:IPN}Resumen de las variables del dataset de entrenamiento (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img12}
+ 		\captionof{figure}{\label{fig:IPN}Resumen de las variables del dataset de entrenamiento (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img13}
+ 		\captionof{figure}{\label{fig:IPN}Resumen de las variables del dataset de entrenamiento (III).} 
+	\end{center} 
+\end{figure}
+
+
+Podemos ver como las imágenes nos arroja mucha información acerca de las variables del dataset. Vemos como el campo \textbf{Age} tiene 177 valores perdidos, lo que resulta una cantidad considerable. También nos podemos dar cuenta de como hay dos pasajeros que no tienen valor asignado en el atributo \textbf{Embarked} y de como existen muchas categorías en atributos como \textbf{Cabin} y \textbf{Ticket}. Para las variables que son contínuas nos muestra valores como la media, el valor máximo, el valor mínimo, la mediana, etc.\\
+
+Esta información nos muestra una mayor claridad sobre las variables, lo que se convierte en un punto de comienzo para empezar a preprocesarlas como se verá en el siguiente apartado.
+
+
+\section{Procesamiento de datos.} 
+Una vez que se ha realizado la exploración de los datos del dataset de entrenamiento en el apartado anterior, se ha podido comprobar que existen valores perdidos en algunas de sus variables como el campo \textbf{Age} y casos en los que no tienen valor asignado como las variables \textbf{Embarked} . Este tipo de circunstacia es muy común que se presente en un dataset debido a la complejidad y cantidad de observaciones que contiene, aunque existen diversos mecanismos que se suelen emplear para paliar estos tipos de problemas. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img6}
+ 		\captionof{figure}{\label{fig:IPN}Valores perdidos en la variable \textbf{Age} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img7}
+ 		\captionof{figure}{\label{fig:IPN}Valores perdidos en la variable \textbf{Age} (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img14}
+ 		\captionof{figure}{\label{fig:IPN}Valores sin asignación en la variable \textbf{Embarked}.} 
+	\end{center} 
+\end{figure}
+
+Realizando un análisis mas detallado sobre dichas variables, podemos ver como son 177 observaciones las que tienen valor perdido en la variable \textbf{Age} como muestra la \textbf{Figura 7}, una cantidad elevada que podría acarrear problemas de precisión a la hora de realizar la predicción. Existen diferentes técnicas que se pueden aplicar para completar esos valores perdidos de la variable, para este caso vamos a utilizar la predicción empleando para ello un árbol de decisión. \\
+
+Con lo datasets de entrenamiento y prueba cargados, lo primero que vamos a hacer es añadirle al dataset de prueba el campo \textbf{Survived} para que de esta forma tenga el mismo número de variables que el dataset de entrenamiento y podamos unir ambos. Esta unión nos falicitará el trabajo a la hora de querer interaccionar con un dataset o con otro, ya que en este nuevo tenemos la fusión de los dos. Señalar que la variable \textbf{Survived} añadida al dataset de prueba será completada con valores perdidos como se muestra en los siguientes comandos de la imagen. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img15}
+ 		\captionof{figure}{\label{fig:IPN}Unión de los dataset.} 
+	\end{center} 
+\end{figure}
+
+
+Antes de ponernos a completar los valores perdidos que hemos encontrado en algunas variables, necesitamos realizar una serie de ajustes previos que nos permitan luego predecir esos valores con una mayor exactitud. El primer ajuste que vamos a realizar viene relacionado con el atributo \textbf{Name}, del que vemos que podemos extraer una información adicional referida al título que la persona tenía adoptado (si era soltero, casado, con una buena situación económica, títulos nobiliarios, etc). Esta generación adicional de característica va a crear un nuevo atributo que nos puede aportar información relevante, ya que el título de una persona viene reflejado por su estatus económico, por el cual podemos obtener una primera intuición en la que a mayor nivel económico mas cerca de los botes salvavidas podían encontrarse debido a que esas zonas eran mas caras de adquirir. \\
+
+Lo primero es convertir dicho atributo a cadena de texto para poder tratarlo y substraer del nombre la parte del título solamente. Una vez obtenido el título, agrupamos los que son de la misma índole para posteriormente convertirlo a \textbf{factor}. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img16}
+ 		\captionof{figure}{\label{fig:IPN}Generación de característica adicional \textbf{Title} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img17}
+ 		\captionof{figure}{\label{fig:IPN}Generación de característica adicional \textbf{Title} (II).} 
+	\end{center} 
+\end{figure}
+
+
+Siguiendo en el mismo hilo para la generación de una nueva característica adicional, podemos observar que hay dos atributos que nos dan información sobre el número de miembros de la familia que viajaban con el pasajero. Generar un atributo que nos diga el tamaño total de la familia de cada pasajero puede ser útil ya que dentro del pánico creado en el momento del accidente una familia grande lo tendría mas complicado para reunirse todos los miembros frente a una más pequeña. Es por eso por lo que creamos este atributo adicional en base a los atributos \textbf{SibSp} y \textbf{Parch}.
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img18}
+ 		\captionof{figure}{\label{fig:IPN}Generación de característica adicional \textbf{FamilySize} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img19}
+ 		\captionof{figure}{\label{fig:IPN}Generación de característica adicional \textbf{FamilySize} (II).} 
+	\end{center} 
+\end{figure}  
+
+
+Continuando con el atributo \textbf{Name} vemos que podemos sacarle aún mas partido. Vamos a generar un nuevo atributo que nos muestre el apellido de familia al que pertenece cada pasajero al que denominaremos \textbf{Surname}, siendo el comando muy similiar al utilizado para la generación de la anterior variable. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img20}
+ 		\captionof{figure}{\label{fig:IPN}Generación de característica adicional \textbf{Surname} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img21}
+ 		\captionof{figure}{\label{fig:IPN}Generación de característica adicional \textbf{Surname} (II).} 
+	\end{center} 
+\end{figure} 
+
+Dándole una vuelta, este nuevo atributo no terminaría de clasificar bien a cada pasajero ya que es muy probable que entre tantas personas hubiese algún apellido común que se repitiese, por lo que no se puede averiguar a que familia pertenece compartiendo el mismo apellido. Para solucionar esta circunstancia vamos a definir un nuevo atributo llamado \textbf{FamilyID} en el que identificaremos a cada familia por la combinación de los atributos \textbf{Surname} y \textbf{FamilySize}. De esta forma es menos probable que dos pasajeros que compartan el mismo valor para la variable \textbf{Surname} tengan también el mismo número de miembros en la familia. Además de eso, las familias que tengan 2 o menos miembros serán identificadas como pequeñas (\textbf{Small}).\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img22}
+ 		\captionof{figure}{\label{fig:IPN}Generación de característica adicional \textbf{FamilyID} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img23}
+ 		\captionof{figure}{\label{fig:IPN}Generación de característica adicional \textbf{FamilyID} (II).} 
+	\end{center} 
+\end{figure} 
+
+
+Analizando esta nueva variable podemos ver como se muestran familias de 1 o 2 miembros, algo que vamos a descartar ya que como hemos comentado antes, para considersa una familia debe tener al menos tres miembros. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img24}
+ 		\captionof{figure}{\label{fig:IPN}Analizando atributo \textbf{FamilyID} (I).} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.40\textwidth]{p1-img25}
+ 		\captionof{figure}{\label{fig:IPN}Analizando atributo \textbf{FamilyID} (II).} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img26}
+ 		\captionof{figure}{\label{fig:IPN}Identificando familias pequeñas por \textbf{FamilyID} (I).} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img27}
+ 		\captionof{figure}{\label{fig:IPN}Identificando familias pequeñas por \textbf{FamilyID} (II).} 
+	\end{center} 
+\end{figure} 
+
+
+Una vez realizados los ajustes necesarios en el dataset, vamos ahora a crear el árbol de decisión que nos ayudará a predecir los valores perdidos del atributo \textbf{Age} en el mismo. Para ello cargamos previamente la libreria \textbf{rpart} y posteriormente seleccionamos el conjunto de las variables que crearán dicho árbol, \textbf{Pclass}, \textbf{Sex}, \textbf{Parch}, \textbf{Fare}, \textbf{Embarked}, \textbf{Title} y \textbf{FamilySize}. Con el árbol de decisión creado predecimos los valores perdidos de la variable \textbf{Age} que haya en el dataset. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img28}
+ 		\captionof{figure}{\label{fig:IPN}Analizando dataset.} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img29}
+ 		\captionof{figure}{\label{fig:IPN}Creando árbol de decisión y predicción de valores (I).} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img30}
+ 		\captionof{figure}{\label{fig:IPN}Creando árbol de decisión y predicción de valores (II).} 
+	\end{center} 
+\end{figure} 
+
+
+Como se muestran en las anteriores imágenes, hemos conseguido predecir el valor de la edad de todos los pasajeros que carecían de ella. Con esto llimpiamos un poco mas el dataset a la vez que gana en calidad. \\
+
+Continuando con dicha limpieza, se hizo mención antes de los espacios en blanco que había del atributo \textbf{Embarked} en algunas observaciones. Esta variable nos dice cual fue el puerto en el que embarcó cada pasajero del barco, siendo tres las posibles localizaciones como se muestra en la imagen. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img31}
+ 		\captionof{figure}{\label{fig:IPN}Analizando variable \textbf{Embarked}.} 
+	\end{center} 
+\end{figure} 
+
+Hemos visto que son dos los registros que están sin valor, y que la mayoría de ellos embarcaron desde Southampton (\textbf{S}), por lo que vamos a rellenar esas dos observaciones en blanco con esa misma localización, tomando como medida desde donde partieron la mayoría.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img32}
+ 		\captionof{figure}{\label{fig:IPN}Completando espacios en blanco en la variable \textbf{Embarked}.} 
+	\end{center} 
+\end{figure} 
+
+Otra de las variables que necesitamos limpiar de los valores predidos que presenta es la que nos dice que tarifa tenía cada pasajero (\textbf{Fare}). Al tratarse de una variable contínua y de existir un único registro con valor perdido, he decido tomar la mediana de los restantes valores para obtener el mismo.  \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img33}
+ 		\captionof{figure}{\label{fig:IPN}Analizando variable \textbf{Fare}.} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img34}
+ 		\captionof{figure}{\label{fig:IPN}Completando valores perdidos en la variable \textbf{Embarked}.} 
+	\end{center} 
+\end{figure} 
+
+ 
+Analizando la nueva variable de categoría creada \textbf{FamilyID} con la que se identifica a cada pasajero dentro de una familia en función del apellido y número de miembros de la misma, he comprobado que el número total de categorías que obtenemos supera el número máximo de las que permite el algoritmo \textbf{Random Forest}, por lo que es necesario reducir el número de categorías para poder usar esta técnica si se ve oportuno, tomando ahora como familia pequeña aquella que tenga tres o menos miembros.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img35}
+ 		\captionof{figure}{\label{fig:IPN}Analizando variable \textbf{FamilyID} (I).} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img36}
+ 		\captionof{figure}{\label{fig:IPN}Analizando variable \textbf{FamilyID} (II).} 
+	\end{center} 
+\end{figure}   
+ 
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img37}
+ 		\captionof{figure}{\label{fig:IPN}Creando nueva variable \textbf{FamilyID2}.} 
+	\end{center} 
+\end{figure}  
+ 
+ 
+Lo último que vamos a realizar es dividir el dataset \textbf{combi} en los dos que lo conforma, es decir, el de entrenamiento y el de prueba pero en este caso ambos con el mismo número de variables y con el mismo preprocesamiento realizado.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img38}
+ 		\captionof{figure}{\label{fig:IPN}Cargando datasets de prueba y entrenamiento actualizados.} 
+	\end{center} 
+\end{figure}  
+ 
+Todo lo desarrollado en este apartado es dedicado a la limpieza de los datos para conseguir de este modo un dataset de mayor calidad que noa permita obtener una mejor precisión en la clasificación. Se ha detallado todas las técnicas empleadas para el preprocesamiento así como los resultados obtenidos en cada una de ellas y que será de gran utilidad en los apartados posteriores.
+
+
+\section{Técnicas de clasificación.} 
+
+Con lo datos de dataset limpios del apartado anterior, es momento de emplear las técnicas correspondientes para realizar la clasificación. Principalmente son dos las técnicas que se han utilizado para elaborar las posibles soluciones de esta competición, \textbf{árboles de decisión} y \textbf{Random Forest}. \\
+
+Analizando la naturaleza del problema y observando la competición en la plataforma \textbf{Kaggle}, he optado por utilizar estas dos técnicas ya que son las que pueden dar un mejor resultado de clasificación viendo los datos que forman el dataset y el conjunto de clases del mismo, que básicamente es un problema de clasificación binaria.\\ 
+
+El optar por otro tipo de técnica en un problema como este pienso que sería como "matar a una mosca a cañonazos", ya que la mayoría de las veces se emplea este tipo de técnicas para resolver lo problemas de clasificación de esta índole.\\
+
+
+\section{Presentación y discusión de resultados.} 
+
+Una vez decididas las técnicas que se van a emplear para este problema en el anterior apartado, vamos a pasar a mostrar el proceso y resultado de cada una de ellas para poder compararlos y debatirlos. \\ 
+
+Los \textbf{árboles de decisión} ha sido la primera técnica que he empleado, creandome para ello un modelo basado en las variables \textbf{Pclass}, \textbf{Sex}, \textbf{Age}, \textbf{SibSp}, \textbf{Parch}, \textbf{Fare} y \textbf{Embarked} para la construcción del mismo. Antes de crear la predicción en base al árbol construido vamos a visualizarlo. Para ello es necesario instalar y cargar una serie de paquetes que facilitan esa labor. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img49}
+ 		\captionof{figure}{\label{fig:IPN}Cargando librerías.} 
+	\end{center} 
+\end{figure}  
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img39}
+ 		\captionof{figure}{\label{fig:IPN}Creando árbol de decisión.} 
+	\end{center} 
+\end{figure}  
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img40}
+ 		\captionof{figure}{\label{fig:IPN}Visualizando árbol de decisión.} 
+	\end{center} 
+\end{figure} 
+ 
+Vemos en la anterior figura como se han encontrado decisiones para variables como \textbf{SipSp} e incluso el puerto de embarcación.  Observamos también como del lado masculino los niños menores de 6 años tienen mas oportunidad de sobrevivir, cumpliendose de este modo la famosa regla de "los niños y las mujeres primero". \\
+
+Habiendo evaluado el resultado del árbol vamos a calcular el porcetaje de predicción presentándo dicho resultado en la plataforma Kaggle. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img41}
+ 		\captionof{figure}{\label{fig:IPN}Creando predicción y fichero csv.} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img42}
+ 		\captionof{figure}{\label{fig:IPN}Resultado predicción en Kaggle.} 
+	\end{center} 
+\end{figure} 
+
+Con esta primera técnica hemos obtenido una predicción del \textbf{78,469 \%} sobre el conjunto de prueba. Para la segunda técnica se ha empleado \textbf{Random Forest}, que no es mas que un conjunto de árboles de decisión creados en base a un subconjutno del modelo inicial de variables para cada árbol que votan sobre un subconjunto de las observaciones para decidir su clase en función a la mayoría de votos de la misma. El proceso de aletoriedad tanto en la selección de las observaciones como en las variables para cada árbol, permite obtener un mayor grado de dinamismo frente al complemento estático que presenta el clásico árbol de decisión. \\
+
+Vamos a construir el primer conjunto de árboles en base al modelo formado por las variables \textbf{Pclass}, \textbf{Sex}, \textbf{Age}, \textbf{SibSp}, \textbf{Parch}, \textbf{Fare}, \textbf{Emarked}, \textbf{Title}, \textbf{FamilySize} y \textbf{FamilyID2}. Para este tipo de árboles no le indicamos el parámetro \textbf{method="class"} para la clasificación binaria, sino que obligamos a predecir cambiando temporalmente la variable objetivo a \textbf{factor}. Otro aspecto a comentar es el número de árboles que le especificamos a crear, en este caso 2000.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img43}
+ 		\captionof{figure}{\label{fig:IPN}Creando \textbf{Random Forest}.} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img44}
+ 		\captionof{figure}{\label{fig:IPN}Analizando \textbf{RandomForest}.} 
+	\end{center} 
+\end{figure} 
+
+Una vez que hemos creado el conjunto de árboles mediante dicho algoritmo, pasamos a ver la importancia que tienen las variables dentro del mismo. En la figura anterior se muestra con claridad como coinciden en el campo \textbf{Title} como el más importante y el atributo \textbf{Parch} como el menos relevante en ambos, variando un poco el resto de variables. \\
+
+Para comprobar la fiabilidad de esta nueva clasificación vamos a crear una predicción en base a la misma para comprobar que porcentaje de acierto nos arroja \textbf{Kaggle}. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img45}
+ 		\captionof{figure}{\label{fig:IPN}Creando predicción y fichero csv.} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img46}
+ 		\captionof{figure}{\label{fig:IPN}Resultado predicción en Kaggle.} 
+	\end{center} 
+\end{figure} 
+
+El resultado de \textbf{79,426 \%} de acierto en la clasificación obtenido con esta segunda técnica vemos que mejora al anterior, lo que nos dice que utilizando un conjunto de árboles podemos aumentar el porcentaje de acierto con respecto a un único árbol de decisión. Esto parece evidente ya que con la primera técnica nos basamos en el resultado de un único árbol creado en base a un único modelo, mientras que con \textbf{Random Forest} son muchos árboles que diferentes modelos de variables los que clasifican las diferentes observaciones, lo que nos da una mejora de conocimiento. \\
+
+Vamos a probar a ajustar un poco mas el resultado utilizando la técnica de inferencia condicional dentro de los árbole de decisión. De este modo cada árbol toma su decisión en base a pruebas estadísticas en vez de utilizar una medida como en el realizado antes. Para usar esta alternativa hay que instalar y cargar el paquete \textbf{party}. Se especificarán el mismo número de árboles.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img47}
+ 		\captionof{figure}{\label{fig:IPN}Creando predicción y fichero csv.} 
+	\end{center} 
+\end{figure} 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img48}
+ 		\captionof{figure}{\label{fig:IPN}Resultado predicción en Kaggle.} 
+	\end{center} 
+\end{figure} 
+
+Se ha podido mejorar la clasificación obtenida antes con esa única modificación obteniendo un \textbf{81,340 \%} de acierto, lo que hace que haya conseguido el mejor de mis resultados hasta el momento y que sea el que se usará como puntuación final en la plataforma \textbf{Kaggle}.
+
+Analizando todos los resultados obtenidos empleando ambas técnicas de clasificación,  se ha podido comprobar como el algoritmo \textbf{Random Forest} obtiene mejores resultados que el clásico \textbf{árbol de decisión} como he mencionado antes. El que se utilice un conjunto de árboles diferentes aporta un grado de dinamismo y aprendizaje que se reflejan en la mejora obtenida de la clasificación, y como en esta última técnica, el variar el parámetro de configuración para que los árboles utilicen pruebas estadísticas en vez de las medidas tradicionales hace que mejoren mas. Por todo eso pienso que el emplear la ténica de \textbf{Random Forest} dará la mayoría de la veces mejor resultado. 
+
+
+\section{Conclusiones y trabajo futuro.}
+
+Después de todas las técnicas de preprocesamiento utilizadas así como las diferentes técnicas de clasificación empleadas en todas las pruebas, se puede decir que el resultado obtenido es aceptable ya que supera el \textbf{80\%} de acierto, lo que lo coloca en una buena posición en la competición. No obstante, esto no quita que puedan realizarse posibles ajustes que puedan dar lugar a una mejora en la predicción. \\
+
+Como posibles propuestas estaría la de explorar algunas variables más como \textbf{Cabin} o \textbf{Ticket}  que en esta ocasión no se han analizado y que podrían aportar algo más de información sobre los pasajeros del viaje que ayuden a ajustar más el modelo. El probar diferentes configuraciones de los árboles de decisión sería otra de las propuestas a realizar, ya que aunque en la última predicción se modificó los parámetros del algoritmo \textbf{Random Forest} con respecto al anterior, quedan aún más parámetros como el número de árboles a crear, el número del subconjunto de variables, etc.  que se pueden ir configurando para observar el comportamiento que va teniendo en los resultados. \\
+
+
+\section{Listado de soluciones.}  
+
+En la siguiente tabla se muestran las diferentes soluciones obtenidas:
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Solución & Preproc. & Alg. y soft. & \% aciertos & Pos. Kaggle\\
+\hline \hline
+1 & Femenino sobrevive y masculino muere & Ninguno & 76,555 & 4845 \\ \hline
+2 & \textbf{Child} menor 18 y agrupar en \textbf{Fare} & Ninguno &77,990 & 3724 \\ \hline
+3 & Los del apartado de la memoria & árbol de decisión/rpart & 78,469 & 2742 \\ \hline
+4 & Los del apartado de la memoria & random forest/cforest & 79,426 & 1714 \\ \hline
+5 & Los del apartado de la memoria & random forest + parámetros/cforest & 81,340 & 458 \\ \hline
+\end{tabular}
+\caption{Lista de soluciones.}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img50}
+ 		\captionof{figure}{\label{fig:IPN}Mejor solución obtenida.} 
+	\end{center} 
+\end{figure}  
+
+
+\section{Bibliografía.}  
+
+\url{http://trevorstephens.com/kaggle-titanic-tutorial/getting-started-with-r/}
+
+\end{document}
+
+

@@ -1,0 +1,8 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Exploraci\IeC {\'o}n de datos.}{3}{section.1}
+\contentsline {section}{\numberline {2}Procesamiento de datos.}{5}{section.2}
+\contentsline {section}{\numberline {3}T\IeC {\'e}cnicas de clasificaci\IeC {\'o}n.}{15}{section.3}
+\contentsline {section}{\numberline {4}Presentaci\IeC {\'o}n y discusi\IeC {\'o}n de resultados.}{15}{section.4}
+\contentsline {section}{\numberline {5}Conclusiones y trabajo futuro.}{20}{section.5}
+\contentsline {section}{\numberline {6}Listado de soluciones.}{20}{section.6}
+\contentsline {section}{\numberline {7}Bibliograf\IeC {\'\i }a.}{21}{section.7}
