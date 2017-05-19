@@ -1,0 +1,650 @@
+\documentclass[10pt]{article}  
+
+%%%%%%%% PREÁMBULO %%%%%%%%%%%%
+\title{Plantilla para prácticas de UGR}
+\usepackage[spanish]{babel} %Indica que escribiermos en español
+\usepackage[utf8]{inputenc} %Indica qué codificación se está usando ISO-8859-1(latin1)  o utf8  
+\usepackage{amsmath} % Comandos extras para matemáticas (cajas para ecuaciones,
+% etc)
+\usepackage{amssymb} % Simbolos matematicos (por lo tanto)
+\usepackage{graphicx} % Incluir imágenes en LaTeX
+\usepackage{color} % Para colorear texto
+\usepackage{subfigure} % subfiguras
+\usepackage{float} %Podemos usar el especificador [H] en las figuras para que se
+% queden donde queramos
+\usepackage{capt-of} % Permite usar etiquetas fuera de elementos flotantes
+% (etiquetas de figuras)
+\usepackage{sidecap} % Para poner el texto de las imágenes al lado
+	\sidecaptionvpos{figure}{c} % Para que el texto se alinie al centro vertical
+\usepackage{caption} % Para poder quitar numeracion de figuras
+\usepackage{commath} % funcionalidades extras para diferenciales, integrales,
+% etc (\od, \dif, etc)
+\usepackage{cancel} % para cancelar expresiones (\cancelto{0}{x})
+
+\graphicspath{{/Users/jesusgarciamanday/Desktop/Master/IM/Practicas/Practica1/IPMovil/p1/Imagenes/}}
+
+\usepackage{anysize} 					% Para personalizar el ancho de  los márgenes
+\marginsize{2cm}{2cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
+
+\usepackage{appendix}
+\renewcommand{\appendixname}{Apéndices}
+\renewcommand{\appendixtocname}{Apéndices}
+\renewcommand{\appendixpagename}{Apéndices} 
+
+% Para que las referencias sean hipervínculos a las figuras o ecuaciones y
+% aparezcan en color
+\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
+%\usepackage{hyperref} 
+% Para agregar encabezado y pie de página
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize UGR} %encabezado izquierda
+\fancyhead[R]{\footnotesize TSTC}   % dereecha
+\fancyfoot[R]{\footnotesize Pr\'actica 1 - IP Móvil }  % Pie derecha
+\fancyfoot[C]{\thepage}  % centro
+\fancyfoot[L]{\footnotesize Master en Ingenier\'ia Inform\'atica }  %izquierda
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+\usepackage{listings} % Para usar código fuente
+\definecolor{dkgreen}{rgb}{0,0.6,0} % Definimos colores para usar en el código
+\definecolor{gray}{rgb}{0.5,0.5,0.5} 
+% configuración para el lenguaje que queramos utilizar
+\lstset{language=Matlab,
+   keywords={break,case,catch,continue,else,elseif,end,for,function,
+      global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily,
+   keywordstyle=\color{blue},
+   commentstyle=\color{red},
+   stringstyle=\color{dkgreen},
+   numbers=left,
+   numberstyle=\tiny\color{gray},
+   stepnumber=1,
+   numbersep=10pt,
+   backgroundcolor=\color{white},
+   tabsize=4,
+   showspaces=false,
+   showstringspaces=false}
+
+\newcommand{\sen}{\operatorname{\sen}}	% Definimos el comando \sen para el seno
+%en español
+
+\title{Práctica 1 - IP Móvil}
+
+%%%%%%%% TERMINA PREÁMBULO %%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+																					%%%
+\begin{center}																		%%%
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}									%%%\left
+ 																					%%%
+\begin{minipage}{0.48\textwidth} \begin{flushleft}
+%\includegraphics[scale = 0.63]{Imagenes/logo_upiita}
+\end{flushleft}\end{minipage}
+\begin{minipage}{0.48\textwidth} \begin{flushright}
+%\includegraphics[scale = 0.35]{Imagenes/IPN}
+\end{flushright}\end{minipage}
+
+													 								%%%
+\vspace*{-1.5cm}								%%%
+																					%%%	
+\textsc{\huge Universidad de\\ \vspace{5px} Granada}\\[1.5cm]	
+
+\textsc{\LARGE Master Profesional en Ingenier\'ia Inform\'atica }\\[1.5cm]													%%%
+
+\begin{minipage}{0.9\textwidth} 
+\begin{center}																					%%%
+\textsc{\LARGE Pr\'actica 1}
+\end{center}
+\end{minipage}\\[0.5cm]
+%%%
+    																				%%%
+ 			\vspace*{1cm}																		%%%
+																					%%%
+\HRule \\[0.4cm]																	%%%
+{ \huge \bfseries IP Móvil}\\[0.4cm]	%%%
+ 																					%%%
+\HRule \\[1.5cm]																	%%%
+ 																				%%%
+																					%%%
+\begin{minipage}{0.46\textwidth}													%%%
+\begin{flushleft} \large															%%%
+\emph{Autor:}\\	
+Manuel Jes\'us Garc\'ia Manday (nickter@correo.ugr.es)\\
+%%%
+			%\vspace*{2cm}	
+            													%%%
+										 						%%%
+\end{flushleft}																		%%%
+\end{minipage}		
+																%%%
+\begin{minipage}{0.52\textwidth}		
+\vspace{-0.6cm}											%%%
+\begin{flushright} \large															%%%
+													%%%
+\end{flushright}																	%%%
+\end{minipage}	
+\vspace*{1cm}
+%\begin{flushleft}
+ 	
+%\end{flushleft}
+%%%
+ 		\flushleft{\textbf{\Large Master en Ingenier\'ia Inform\'atica}	}\\																		%%%
+\vspace{2cm} 																				
+\begin{center}																					
+{\large 20 de abril de 2017}																	%%%
+ 			\end{center}												  						
+\end{center}							 											
+																					
+\newpage																		
+%%%%%%%%%%%%%%%%%%%% TERMINA PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents 
+
+\newpage
+
+\section{Objetivo.}
+
+El objetivo de esta práctica es conocer y trabajar con el protocolo \textbf{IP Móvil}, mediante el cual es posible implementar la movilidad (que no es lo mismo que nomacidad) de un dispositivo móvil sobre diferentes redes.\\
+
+
+
+\section{Configuración inicial del entorno.} 
+
+Vamos a montar un entono compuesto por tres redes (LAN1, LAN2 y LAN3) y seis hosts (FA, HA, Host, R1, R2, MN) distribuidos entre las diferentes redes, cada uno de ellos con un claro objetivo como se muestra en la imagen de a continuación.\\ 
+
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img1}
+ 		\captionof{figure}{\label{fig:IPN}Entorno de redes.} 
+	\end{center} 
+\end{figure}
+
+La red \textbf{LAN1} es la red base del dispositivo móvil y va a contar con el siguiente rnago de red \textbf{10.10.10.0/24}. La red \textbf{LAN2} es la red intermedia y va a contar con el rango de red \textbf{20.20.20.0/24}. La red \textbf{LAN3} es la red visitada por el dispositivo móvil y va contar con un rango de red \textbf{30.30.30.0/24}. \\
+
+Una vez definidas las redes que se van a montar pasamos a describir los diferentes hosts:
+	\begin{itemize}
+		\item \textbf{FA}: es el host que hace de agente local y pertenece a la red \textbf{LAN1} con la dirección ip \textbf{10.10.10.1}. Su función es la de anunciar contínuamente su presencia en dicha red. También es capaz de redirigir información a otra red haciendo \textbf{tunneling} si es necesario.
+		\item \textbf{HA}: es el host que hace de agente externo y pertenece a la red \textbf{LAN3} con la dirección ip \textbf{30.30.30.1}. Al igual que el \textbf{FA} posee también la funcionalidad de anunciar contínuamente su presencia en la red a la que pertenece. También es capaz de redirigir información a otra red haciendo \textbf{tunneling} si es necesario.
+		\item \textbf{HostIntermedio}: es el host que se encuentra en la red intermedia \textbf{LAN2}
+		\item \textbf{R1}: es el host que hará de router que se encuentra conectado a la red \textbf{LAN1} a través de una interfaz de red con ip \textbf{10.10.10.22} y a la red \textbf{LAN2} mediante la interfaz de red con ip \textbf{20.20.20.21}.
+		\item \textbf{R2}: es el host que hará de royter que se encuentra conectado a la red \textbf{LAN2} a través de una interfaz de red con ip \textbf{20.20.20.22} y a la red \textbf{LAN3} mediante la interfaz de red con ip \textbf{30.30.30.21}.
+		\item \textbf{MN}: es el host que hace dispositivo móvil que inicialmente se encuentra situado en la red base \textbf{LAN1} con la dirección ip \textbf{10.10.10.2} y que se desplazará hacia la red visitada \textbf{LAN3} con la dirección ip \textbf{30.30.30.2}. 
+	\end{itemize}
+
+Para la creación y configuración de los hosts vamos a utilizar el hipervisor \textbf{VirtualBox}, mediante el cual se van a definir las seis instancias necesarias con las mismas prestaciones hardware y con una distribución \textbf{Ubuntu 14.04} por cada cada una de ellas. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img2}
+ 		\captionof{figure}{\label{fig:IPN}Definición de los hosts.} 
+	\end{center} 
+\end{figure}
+
+Con los hosts ya creados y corriendo como muestra la imagen anterior, lo siguiente es pasar a configurarlos de acorde al esquema de la
+\textbf{Figura 1}, asignándoles la red a la que pertenece el adaptador de red correspondiente y la dirección ip que tomará cada interfaz de red. \\
+
+El host \textbf{HA} como se puede ver en la \textbf{Figura 1} tiene una interfaz de red \textbf{eth0} a la cual se le asignará la dirección ip \textbf{10.10.10.1} y que se encontrará situada en la red base \textbf{LAN1} . Se le añade como router el host \textbf{R1} mediante el cual podrá comunicarse con la red intermedia \textbf{LAN2}, el cual será el que tomará por defecto. La dirección ip de la interfaz de red será asignada a través de un script como se puede ver a continuación. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img3}
+ 		\captionof{figure}{\label{fig:IPN}Interfaz de red \textbf{eth0} de \textbf{HA}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img4}
+ 		\captionof{figure}{\label{fig:IPN}Script para asignar la dirección ip a \textbf{eth0} en \textbf{HA}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img5}
+ 		\captionof{figure}{\label{fig:IPN}Asignación de la dirección ip a \textbf{eth0} dentro de la red base \textbf{LAN1}.} 
+	\end{center} 
+\end{figure}
+
+El host \textbf{R1} se compone de dos interfaces de redes como se aprecia en la figura del esquema debido a que hace de router entre la red base (\textbf{LAN1}) y la red intermedia (\textbf{LAN2}). Se añade el host \textbf{R2} como router por defecto mediante el cual podrá comunicarse con la red visitada \textbf{LAN3}. Al igual que con el host anterior, a través de un script se asignarán las diferentes direcciones ip para cada interfaz de red, siendo la dirección \textbf{10.10.10.22} para la interfaz de red \textbf{eth0} que se encuentra en la red base (\textbf{LAN1}) y la dirección \textbf{20.20.20.21} para la interfaz de red \textbf{eth1} que está en la red intermedia (\textbf{LAN2}) como se puede apreciar en las imágenes. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img6}
+ 		\captionof{figure}{\label{fig:IPN}Interfaz de red \textbf{eth0} de R1.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img7}
+ 		\captionof{figure}{\label{fig:IPN}Interfaz de red \textbf{eth1} de R1.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img8}
+ 		\captionof{figure}{\label{fig:IPN}Script para asignar las direcciones ip a \textbf{eth0} y \textbf{eth1} en \textbf{R1}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img9}
+ 		\captionof{figure}{\label{fig:IPN}Asignación de las direcciones ip a \textbf{eth0} y \textbf{eth1} dentro de la red base \textbf{LAN1} y de la red intermedia \textbf{LAN2} respectivamente.} 
+	\end{center} 
+\end{figure}
+
+
+Para el host \textbf{R2} sucede lo mismo que para el host anterior (\textbf{R1}), con la diferencia de que este host hace de router entre la red intermedia (\textbf{LAN2}) y la red visitada (\textbf{LAN3}). Se añade el host \textbf{R1} como router por defecto mediante el cual podrá comunicarse con la red base \textbf{LAN1}. A través de un nuevo script se asignarán las diferentes direcciones ip para cada una de las dos interfaces de red de las que dispone este host, siendo la dirección \textbf{20.20.20.22} para la interfaz de red \textbf{eth1} que se encuentra en la red intermedia (\textbf{LAN2}) y la dirección \textbf{30.30.30.22} para la interfaz de red \textbf{eth0} que se encuentra en la red visitada (\textbf{LAN3}). \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img10}
+ 		\captionof{figure}{\label{fig:IPN}Interfaz de red \textbf{eth0} de R2.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img11}
+ 		\captionof{figure}{\label{fig:IPN}Interfaz de red \textbf{eth1} de R2.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img12}
+ 		\captionof{figure}{\label{fig:IPN}Script para asignar las direcciones ip a \textbf{eth0} y \textbf{eth1} en \textbf{R2}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img13}
+ 		\captionof{figure}{\label{fig:IPN}Asignación de las direcciones ip a \textbf{eth0} y \textbf{eth1} dentro de la red visitada \textbf{LAN3} y de la red intermedia \textbf{LAN2} respectivamente.} 
+	\end{center} 
+\end{figure}
+
+El host \textbf{FA} tiene una configuración muy parecida a la del host \textbf{HA} ya que ambos disponen de una sola interfaz de red, salvo que para este host ésta pertenece a la red visitada (\textbf{LAN3}) y según el esquema de la \textbf{Figura1} se le asigna la dirección ip \textbf{30.30.30.1} a la interfaz de red \textbf{eth0}. El host \textbf{R2} se le asigna como router por defecto mediante el cual podrá comunicarse con la red intermedia \textbf{LAN2}.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img14}
+ 		\captionof{figure}{\label{fig:IPN}Interfaz de red \textbf{eth0} de \textbf{FA}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img15}
+ 		\captionof{figure}{\label{fig:IPN}Script para asignar la dirección ip a \textbf{eth0} de \textbf{FA}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img16}
+ 		\captionof{figure}{\label{fig:IPN}Asignación de la dirección ip a \textbf{eth0} dentro de la red visitada \textbf{LAN3}.} 
+	\end{center} 
+\end{figure}
+
+
+Para la máquina \textbf{HostIntermedio} se realiza un proceso similar al que se ha echo con los hosts \textbf{HA} y \textbf{FA}. Este host pertenece a la red intermedia \textbf{LAN2} y dispone de una interfaz de red \textbf{eth0} a la que se le asigna la dirección ip \textbf{20.20.20.2} mediante su correrspondiente script. En este caso son dos routers los que se le añaden, uno para acceder a la red base \textbf{LAN1} y otro para acceder a la red visitada \textbf{LAN3}\\
+
+ \begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img17}
+ 		\captionof{figure}{\label{fig:IPN}Interfaz de red de \textbf{eth0} de \textbf{HostIntermedio}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img18}
+ 		\captionof{figure}{\label{fig:IPN}Script para asignar la dirección ip a \textbf{eth0} de \textbf{HostIntermedio}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img19}
+ 		\captionof{figure}{\label{fig:IPN}Asignación de la dirección ip a \textbf{eth0} dentro de la red intermedia \textbf{LAN2}.} 
+	\end{center} 
+\end{figure}
+
+El host \textbf{MN} será el que hará las veces de dispositivo móvil. En un primer lugar como se muestra en la \textbf{Figura 1}, dispone de una interfaz de red \textbf{eth0} que se encuentra conectada a la red base \textbf{LAN1} con la dirección ip \textbf{10.10.10.2}. El host \textbf{R1} se le añade como router por defecto para poder comunicarse con la red intermedia \textbf{LAN2}. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img20}
+ 		\captionof{figure}{\label{fig:IPN}Interfaz de red \textbf{eth0} de \textbf{MN}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img21}
+ 		\captionof{figure}{\label{fig:IPN}Script para asignar la dirección ip a \textbf{eth0} de \textbf{MN}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img22}
+ 		\captionof{figure}{\label{fig:IPN}Asignación de la dirección ip a \textbf{eth0} dentro de la red base \textbf{LAN1} y del router por defecto \textbf{R1}.} 
+	\end{center} 
+\end{figure}
+
+Para comprobar que las configuraciones de los diferentes hosts se han realizado correctamente, vamos a ejecutar un \textbf{ping} desde el agente local \textbf{HA} situado en la red base \textbf{LAN1} al agente externo \textbf{FA} situado en la red visitada \textbf{LAN3}. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img23}
+ 		\captionof{figure}{\label{fig:IPN}Ping de \textbf{HA} a \textbf{FA}.} 
+	\end{center} 
+\end{figure}
+
+Como se ha podido apreciar, la configuración se ha realizado correctamente conforme al esquema de la \textbf{Figura 1}, ya que en la anterior imagen ambas máquinas responden al \textbf{ping} desde diferentes redes.\\
+
+Hemos podido ver que la mayoría de los scripts ejecutados en los hosts para asignarles una dirección ip a sus interfaces de red y un router tenían prácticamente la misma composición y estructura, sin embargo, había además otras órdenes para solamente algunos hosts. Para \textbf{R1}, \textbf{R2}, \textbf{FA} y \textbf{HA} se les añadían la orden \textbf{echo 1 $>$  /proc/sys/net/ipv4/ip\_forward} a través de la cual puedan ser capaces de redirigir información. Otra orden que en este caso se incluía en los scripts de \textbf{HA} y de \textbf{FA} les va a permitir hacer el tunneling necesario para el protocolo \textbf{IP Movil}, el comando \textbf{modprobe ipip} es el que se debe ejecutar en cada uno de los dos agentes. \\
+
+
+\section{IP Móvil.} 
+Para probar el funcionamiento del protocolo \textbf{IP Móvil} en la estructura de redes montada se van a realizar las siguientes tareas:\\
+
+\begin{itemize}
+	\item Comprobar que los agentes \textbf{HA} y \textbf{FA} se están anunciando.
+	\item Comprobar que el host \textbf{MN} se encuentra en la red base.
+	\item Mostrar un ping desde el host \textbf{MN} al \textbf{HostIntermedio}.
+	\item Comprobar que el host \textbf{MN} se encuentra en la red visitada (a través del CA de ésta).
+	\item Comprobar que se produce el registro.
+	\item Mostrar el tunneling.
+	\item Comprobar que el host {MN} ha vuelto de nuevo a la red base.
+\end{itemize}	
+
+Podemos decir que la demostración del protocolo \textbf{IP Móvil} se basa en tres funcionalidades: \textbf{descubrimiento} de la dirección \textbf{CA}, \textbf{registro} de la dirección \textbf{CA} y \textbf{tunneling} de la dirección \textbf{CA}.
+
+\subsection{Instalación de IP Móvil}
+El primer paso a realizar es instalar el paquete de dicho protocolo en los hosts \textbf{HA, FA} y \textbf{MN}. La forma para instalarlo es la misma en los tres casos, y es que una vez que tengamos el paquete descomprimido y nos encontremos dentro del directorio hay que ejecutar los siguientes comandos:
+
+\begin{itemize}
+		\item \textbf{./configure}
+		\item \textbf{make}
+		\item \textbf{make install}
+\end{itemize}	
+ 
+ 
+Es probable que se presenten algunos problemas de incompatibilidades debido a la distribución de linux que se está usando en los hosts y para la que fue desarrollada la herramienta, por lo que si en el momento de compilar nos arrojase algún tipo de error relacionado con la librería \textbf{gmp}, este se solucionaría instalando un paquete de la misma con el siguiente comando \textbf{sudo apt-get install libgmp3-dev}. \\
+
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img24}
+ 		\captionof{figure}{\label{fig:IPN}Instalación IP Móvil en \textbf{MN} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img25}
+ 		\captionof{figure}{\label{fig:IPN}Instalación IP Móvil en \textbf{MN} (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img26}
+ 		\captionof{figure}{\label{fig:IPN}Instalación IP Móvil en \textbf{HA} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img27}
+ 		\captionof{figure}{\label{fig:IPN}Instalación IP Móvil en \textbf{HA} (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img28}
+ 		\captionof{figure}{\label{fig:IPN}Instalación IP Móvil en \textbf{FA} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img29}
+ 		\captionof{figure}{\label{fig:IPN}Instalación IP Móvil en \textbf{FA} (II).} 
+	\end{center} 
+\end{figure}
+
+Con el paquete del protocolo \textbf{IP Móvil} instalado en los tres hosts, toca configurar algunos parámetros, para ello hay que dirigirse a la ruta \textbf{/usr/local/etc/} dentro de cada host y editar los ficheros \textbf{dynmnd.conf} para el host \textbf{MN}, \textbf{dynhad.conf} para el host \textbf{HA} y \textbf{dynfad.conf} para el host \textbf{FA} realizando las siguientes modificaciones. \\
+
+En el fichero \textbf{dynmnd.conf} se editarán los siguientes parámetros:
+
+\begin{itemize}
+		\item MNHomeIPAddress: 10.10.10.2
+		\item HAIPAddress: 10.10.10.1
+		\item HomeNetPrefix: 10.10.10.0/24
+\end{itemize}
+
+Para el fichero \textbf{dynhad.conf} se editarán los siguientes parámetros:
+
+\begin{itemize}
+		\item AUTHORIZEDLIST\_BEGIN (habilita a cualquier dispositivo de la red a solicitar los sevicios del agente local)
+			\begin{itemize}
+				\item 1000		10.10.10.0/24
+			\end{itemize}
+		\item AUTHORIZEDLIST\_END
+		\item INTERFACES\_BEGIN (interfaz de red a través de la cual se accede a la red)
+			\begin{itemize}			
+				\item eth0 1 1 10
+			\end{itemize}				
+		\item INTERFACES\_END
+\end{itemize}
+
+Por último, en el fichero \textbf{dynfad.conf} se modificarán los siguientes parámetros: 
+
+\begin{itemize}
+		\item INTERFACES\_BEGIN (interfaz de red a través de la cual se accede a la red)
+			\begin{itemize}			
+				\item eth0 1 1 30
+			\end{itemize}	
+		\item INTERFACES\_END
+		\item HighestFAIPAddress/UpperFAIPAddress: 30.30.30.1
+\end{itemize}
+
+Es necesario crear el fichero \textbf{/etc/dynfad.key} en el agente externo \textbf{FA}, para ello ejecutamos el comando \textbf{rsakeygen /etc/dynfad.key 768} en dicho host.
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img30}
+ 		\captionof{figure}{\label{fig:IPN}Semilla para la generación del fichero en \textbf{FA}.} 
+	\end{center} 
+\end{figure}
+
+\subsection{Simulación de IP Móvil}
+Una vez que se ha configurado todo lo referente al protocolo \textbf{IP Móvil} en los correspondientes hosts, vamos a comenzar a probar el funcionamiento de este. Lo primero que se va a realizar es comprobar que los agentes \textbf{HA} y \textbf{FA} se están anunciando, para ello es necesario ejecutar el comando \textbf{dynhad --fg --debug} en el agente \textbf{HA} y el comando \textbf{dynfad --fg --debug} en el agente \textbf{FA}. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img31}
+ 		\captionof{figure}{\label{fig:IPN}Descubrimiento de \textbf{HA}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img32}
+ 		\captionof{figure}{\label{fig:IPN}Descubrimiento de \textbf{FA}.} 
+	\end{center} 
+\end{figure}
+
+Con los dos agentes anunciándose en sus respectivas redes, vamos a comprobar que el host \textbf{MN} se encuentra en la red base. Esto se puede ver en la siguiente imagen, donde el host \textbf{MN} esta recibiendo paquetes ICMP desde el agente local \textbf{HA} por lo que podemos determinar que el host \textbf{MN} se encuentra 'at home'.\\ 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img33}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando que \textbf{MN} está en la red base.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img34}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando que \textbf{MN} recibe los paquetes del agente \textbf{HA}.} 
+	\end{center} 
+\end{figure}
+
+Si desde el host \textbf{MN} hacemos un \textbf{traceroute} para conocer la ruta que hay que seguir para llegar al host \textbf{FA} nos mostrará la siguiente secuencia de saltos entre redes.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img35}
+ 		\captionof{figure}{\label{fig:IPN}Traceroute para llegar a \textbf{FA} desde la red base \textbf{LAN1}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img36}
+ 		\captionof{figure}{\label{fig:IPN}Traceroute para llegar a \textbf{MN} desde la red base \textbf{LAN1}.} 
+	\end{center} 
+\end{figure}
+
+Se puede ver en la última imagen como para llegar al host \textbf{MN} desde la red base \textbf{LAN1} solo es necesario su dirección ip, es decir, no hay que dar ningún salto entre redes.  Ahora que hemos comprobado tanto los descubrimientos de los agentes \textbf{HA} y \textbf{FA} como que el host \textbf{MN} se encuentra en la red base \textbf{LAN1}, vamos a cambiar a dicho host a la red visitada \textbf{LAN3} para ver en un primer lugar el registro del \textbf{CA} en la red base y el \textbf{tunneling} creado entre los dos agentes para comunicar con el host \textbf{MN} desde otro host situado en la red intermedia \textbf{LAN2}.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img37}
+ 		\captionof{figure}{\label{fig:IPN}Cambiando al host \textbf{MN} a la red visitada \textbf{LAN3}.} 
+	\end{center} 
+\end{figure}
+
+Cuando se ha producido el cambio de red del host \textbf{MN} de la red base \textbf{LAN1} en la que se encontraba a la red visitada \textbf{LAN3}, podemos ver en las siguientes imagenes el procedimiento de registro de la dirección \textbf{CA} que se lleva a cabo. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img38}
+ 		\captionof{figure}{\label{fig:IPN}\textbf{MN} envía un mensaje de RRq al \textbf{FA}.} 
+	\end{center} 
+\end{figure}
+
+En esta primera imagen se ve como el host \textbf{MN} envía un mensaje de petición de registro (RRq) al host \textbf{FA}. En dicho mensaje le indica la dirección del agente \textbf{HA} al que el agente \textbf{FA} debe retransmitirle el mensaje una vez que lo procese. El agente \textbf{HA} responderá con un mensaje RRp al agente \textbf{FA} en el que concederá o denegará la petición, a su vez éste le retransmitirá la respuesta al host \textbf{MN} una vez que la haya procesado.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img39}
+ 		\captionof{figure}{\label{fig:IPN}Envío del mensaje RRq del agente \textbf{FA}  al agente \textbf{HA}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img40}
+ 		\captionof{figure}{\label{fig:IPN}Envío del mensaje RRp del agente \textbf{HA} al agente \textbf{FA}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img41}
+ 		\captionof{figure}{\label{fig:IPN}Envío del mensaje RRp del agente \textbf{FA} al host \textbf{MN}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img42}
+ 		\captionof{figure}{\label{fig:IPN}Registro aceptado y túnel iniciado.} 
+	\end{center} 
+\end{figure}
+
+Como se ha podido ver en la imagenes anteriores, la respuesta que el agente \textbf{HA} envía es positiva, por lo que el registro del \textbf{CA} se ha llevado con éxito y se ha iniciado el túnel. Estos mensajes se repiten periódicamente ya que el registro del \textbf{CA} tiene un tiempo de vida que al caducar hace que se vuelva a solicitar. Para una mayor comprobación, se puede ver como el host \textbf{MN} recibe paquetes de anuncio del agente externo \textbf{FA} como muestran las siguientes imágenes. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img43}
+ 		\captionof{figure}{\label{fig:IPN}Descubrimiento del agente \textbf{FA} capturado por el host \textbf{MN} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img44}
+ 		\captionof{figure}{\label{fig:IPN}Descubrimiento del agente \textbf{FA} capturado por el host \textbf{MN} (II).} 
+	\end{center} 
+\end{figure}
+
+
+Siguiendo con la comprobación del protocolo \textbf{IP Móvil}, ahora nos queda por comprobar que se realiza el \textbf{tunneling} entre los agentes \textbf{HA} y \textbf{FA}. Para ello vamos a realizar un \textbf{ping} y un \textbf{traceroute} desde el host \textbf{HostIntermedio} al host \textbf{MN} para comprobar los saltos que son necesarios dar para comunicar con ese nodo. Cabe recordar que cualquier paquete que vaya destinado a \textbf{MN} será interceptado por \textbf{HA} y enviado por éste a \textbf{FA} sobre el túnel, sin embargo, los paquetes generados por \textbf{MN} no tienen por qué pasar por \textbf{HA}. \\ 
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img45}
+ 		\captionof{figure}{\label{fig:IPN}Traceroute desde \textbf{HostIntermedio} a \textbf{MN}.} 
+	\end{center} 
+\end{figure}
+
+Con los saltos que se debe dar para llegar desde \textbf{HostIntermedio} a \textbf{MN} mostrados mediante \textbf{traceroute}, vamos a ejecutar pin para ver que efectivamente el paquete a \textbf{MN} le llega de \textbf{FA} que a su vez le llega desde \textbf{HA} y no directamente desde \textbf{HostIntermedio} y viceversa para la respuesta de \textbf{MN} a \textbf{HostIntermedio}.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img46}
+ 		\captionof{figure}{\label{fig:IPN}Pin de \textbf{HostIntermedio} a \textbf{MN} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img47}
+ 		\captionof{figure}{\label{fig:IPN}Pin de \textbf{HostIntermedio} a \textbf{MN} (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img48}
+ 		\captionof{figure}{\label{fig:IPN}Respuesta del pin de \textbf{MN} a \textbf{HostIntermedio}.} 
+	\end{center} 
+\end{figure}
+
+
+Una vez que se ha comprobado el correcto funcionamiento del \textbf{tunneling}, se va a volver a conectar el host \textbf{MN} a la red base \textbf{LAN1}. Veremos entonces como el agente de dicho host cambiará al agente local \textbf{HA} y los paquetes de anuncio que verá serán de éste, y como ahora el traceroute para llegar desde \textbf{HostIntermedio} a \textbf{MN} es diferente ya que el \textbf{tunneling} ha desaparecido, por lo que no serán necesarios tantos saltos. Recordar también que al encontrarse \textbf{MN} en su red, no será necesario ningún tipo de registro de \textbf{CA}.
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img49}
+ 		\captionof{figure}{\label{fig:IPN}\textbf{MN} recibe paquetes de aviso de \textbf{HA} al cambiar a la red base \textbf{LAN1} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img50}
+ 		\captionof{figure}{\label{fig:IPN}\textbf{MN} recibe paquetes de aviso de \textbf{HA} al cambiar a la red base \textbf{LAN1} (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p1-img51}
+ 		\captionof{figure}{\label{fig:IPN}Traceroute de \textbf{HostIntermedio} a \textbf{MN}.} 
+	\end{center} 
+\end{figure}
+
+Como se ha podido ver en la anterior imagen, la ruta para ir de \textbf{HostIntermedio} a \textbf{MN} ha cambiado debido al cambio de red de este úlitmo, que como se ha mencionado antes no se necesita realizar \textbf{tunneling} al encontrase en su red base \textbf{LAN1}. \\
+
+Se ha probado correctamente por tanto el funcionamiento del protocolo de movilidad \textbf{IP Móvil (IPv4)}.
+
+\end{document}
+
+

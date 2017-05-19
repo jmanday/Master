@@ -1,0 +1,448 @@
+Dynamics - HUT Mobile IP-HOWTO
+Dynamics Group, dynamics@cs.hut.fi
+
+$Id: Dynamics-HUT-Mobile-IP-HOWTO,v 1.19 2001/07/01 13:14:10 jm Exp $
+
+Moving while your computer is connected to Internet is becoming
+increasingly important to today's mobile people. Mobile IP is a
+solution for maintaining connections and providing a transparent
+access to mobile user's home network when the user is roaming in other
+networks.
+
+Dynamics - HUT Mobile IP is a hierarchical and dynamical solution for
+Mobile IP. The aim of the hierarchical solution is, among others, to
+provide faster location updates. This document gives instructions and
+pointers for information for installing, configuring and
+troubleshooting the Dynamics - HUT Mobile IP software.
+
+_______________________________________________________________________________
+
+Table of Contents
+
+1. Introduction
+
+	1.1 What is Mobile IP anyway?
+	1.2 What is Dynamics - HUT Mobile IP?
+	1.3 What is this document about?
+
+
+2. Preparing your Linux kernel for Mobile IP
+
+	2.1 Required kernel configuration	
+
+
+3. Installing the software
+
+	3.1 How to enable wireless extensions support in Dynamics MN?
+
+
+4. Configuring the Dynamics - HUT Mobile IP
+
+
+5. Performance tips
+
+
+6. FAQ and troubleshooting hints
+
+
+7. Sources of information
+
+
+8. Acknowledgements and disclaimer
+
+	
+______________________________________________________________________________
+
+
+
+1. Introduction
+
+1.1 What is Mobile IP anyway?
+
+The IETF Mobile IP Working Group Charter says:
+
+"The Mobile IP Working Group has developed routing support to permit IP
+nodes (hosts and routers) using either IPv4 or IPv6 to seamlessly
+"roam" among IP subnetworks and media types. The Mobile IP method
+supports transparency above the IP layer, including the maintenance of
+active TCP connections and UDP port bindings. Where this level of
+transparency is not required, solutions such as DHCP and dynamic DNS
+updates may be adequate and techniques such as Mobile IP not needed."
+
+A concrete example: 
+
+In a Wireless LAN (IEEE 802.11) environment that supports Mobile IP,
+you can turn on your a mobile host with Mobile IP software and connect
+to your home network on the other side of the globe. You can also move
+around in the WLAN and maintain the sessions. Additionally, hosts in
+the Internet would think that your host is located in your home network.
+
+The basic Mobile IP is defined in RFC 2002. For more information about
+Mobile IP, see chapter 7.
+
+
+1.2 What is Dynamics - HUT Mobile IP?
+
+The Dynamics - HUT Mobile IP system, developed at Helsinki University
+of Technology (HUT), is a dynamical and hierarchical Mobile
+IPv4 software for Linux operating system.
+
+The software consists of three independent daemon executables: Home
+Agent, Foreign Agent and Mobile Node (ha, fa and mn respectively).
+
+
+1.3 What is this document about?
+
+In this document we give basic instructions for installing the
+Dynamics HUT Mobile IP system. Some information about configuration of
+the Linux kernel and each of the system elements (the daemons) is also
+available in this document.
+
+This document also gives pointers to other important Dynamics system
+and general Mobile IP documentation.
+
+If you have problems with Dynamics system and you cannot solve them
+with this document or with the other software documentation, feel free
+to contact the authors at dynamics@cs.hut.fi.
+
+
+
+2. Preparing your Linux kernel for Mobile IP
+
+2.1 Required kernel configuration	
+
+There are several kernel options listed in the README document's
+REQUIREMENTS chapter that should be configured to make the system
+work. These options are mainly IP routing and tunneling related
+settings.
+
+
+
+3. Installing the software
+
+The README document and the INSTALL document delivered with the
+software distribution provide installation instructions for the source
+code distribution. Help for installing the RPM or DEB package can be
+found from the respective HOWTO documents, for example RPM-HOWTO.
+
+
+3.1 How to enable wireless extensions support in Dynamics MN?
+
+If you have a WaveLAN card with Linux driver that supports IWSPY
+ioctls, Dynamics can take an advantage of the wireless extensions
+(monitor part). This is handy when you have a laptop-MN and FA(s) with
+WaveLAN cards. With wireless extensions roaming between FAs is more
+robust and provides glitchless handoff (if link quality is good
+enough). Monitor monitors the heard FA's agent advertisements and
+prioritizes them according to the quality of the link to the FA.
+
+- Card & Driver
+
+    First you need the card and driver combination that supports IWSPY
+    ioctls. At the moment IWSPY-ioctls are supported in the Lucent's
+    IEEE WaveLAN card with Andreas Neuhaus' driver 
+
+	URL: http://www.fasta.fh-dortmund.de/users/andy/wvlan/ 
+    
+    You need the pcmcia subsystem sources 
+
+	URL: http://hyper.stanford.edu/HyperNews/get/pcmcia/home.html
+
+    to compile the driver. Read the wvlan.README for help. Notice that
+    you need to add support for Lucent's WaveLAN card into pcmcia
+    configuration files (if not already there):
+    
+    /etc/pcmcia/config:
+
+	card "Lucent Technologies WaveLAN/IEEE Adapter"
+	  version "Lucent Technologies", "WaveLAN/IEEE"
+	  bind "wvlan_cs"
+
+    /etc/pcmcia/config.opts:
+    
+    	module "wvlan_cs" opts "eth=0x1 channel=3 port_type=3 \
+        network_name=test mtu=1500"
+
+    If you want to verify that the driver has been successfully
+    installed and the IWSPY is supported try to use iwspy(8). It is
+    included in the wireless_tools package (see the homepage for the
+    Andreas Neuhaus' driver above). Alternatively you can use MN and
+    dynmn_tool (look below).
+
+- Kernel configuration
+
+    An additional option for the wireless extensions: Wireless LAN
+    (non-hamradio) (CONFIG_NET_RADIO)
+
+- MN 
+
+    With dynmn_tool you can see if wireless extensions are working. With
+    list command quality parameter should appear to each FA heard at
+    the wireless side. You may also try the command "wireless
+    channel".
+
+
+
+4. Configuring the Dynamics - HUT Mobile IP
+
+The software distribution includes configuration files for all the
+system elements. These configuration files are intended to provide a
+working test configuration for a simple private address test network.
+
+The configuration parameters and their default values are explained in
+the example configuration files and in the configuration manual pages
+(dynhad.conf.5, dynfad.conf.5, and dynmnd.conf.5).
+(See 'man dynhad.conf' ; 'man dynfad.conf', and 'man dynmnd.conf')
+
+The dynamics_config_checklist document available with the software
+distribution tries to address the most typical problematic
+configuration issues. We strongly recommend that you read the
+checklist carefully through and check your configuration files against
+the instructions in the checklist!
+
+
+
+5. Performance tips
+
+A basic Mobile IP does handoffs based on timeouts. This results in a
+glitch or pause in sessions when moving from FA to FA, especially in
+wireless environments. One of the key objectives with this version of
+the Mobile IP is to obtain fast handoffs for glitchless multimedia
+streaming.
+
+Basically, there are two areas where this version exceeds what the basic
+Mobile IP offers. One is that we can configure hierarchies of Foreign
+Agents. This localizes location updates and provides a significant
+reduction in the latency usually experienced with Mobile IP location
+updates.
+
+The other is the support for signal-based wireless FA selection. When
+using the IEEE 802.11 WLAN as the link level technology in the visited
+network, we can set wireless policies for the Mobile Node so that with
+the IWSPY-ioctl-enabled drivers (currently with Andreas Neuhaus's GPL
+driver for the Lucent's IEEE WLAN-adapters) the MN selects the FA with
+the strongest signal and does a handoff to that. Configuring both of
+the above, we can obtain a significant improvement in the Mobile IP
+performance so that glitchless multimedia streaming becomes possible.
+
+IWSPY and signal-based wireless FA selection helps especially in
+environments using IEEE 802.11 IBSS ("ad-hoc mode"). In these
+networks, Dynamics MN may hear multiple FAs simultaneously and select
+the best FA using a configured policy. In IEEE 802.11 BSS ("managed
+mode") where each AP has exactly one FA reachable, Dynamics MN's
+handoff policy "Newest-ADV" can result in better handoffs. This policy
+can be set with dynmn_tool's command "policy Newest-ADV on". In
+addition, you need to have a wireless LAN driver supporting wireless
+extensions and to configure AP handoff polling ("APPollingInterval" in
+dynmnd.conf).
+
+Linux kernel has a configurable minimum time before the routing table
+cache is flushed and the routing entry changes are taken into use. The
+boot time default value is two seconds, which means that it takes two
+seconds before the routing entry change really happens. This value
+limits the data throughput noticeably when an MN is moving quickly
+(e.g. changing its FA about once per second). The minimal flushing
+time can be changed by writing the new value to
+/proc/sys/net/ipv4/route/min_delay.
+(e.g., "echo 0 > /proc/sys/net/ipv4/route/min_delay").
+
+
+
+6. FAQ and troubleshooting hints
+
+What are those strange modes anyway?
+
+- In Mobile IP, the Home Agent (HA) routes packets to the Mobile Node (MN)
+  via a care-of-address (COA). This is a public address in the visited
+  network. We have a mode where the MN carries the COA, that is,
+  the co-located COA mode, or such where the FA contains the COA.
+  In the former case, the tunnel towards the MN stops at the
+  MN, in the latter it stops at the FA. Therefore, these modes are referred
+  to as MN decapsulation, or FA decapsulation, respectively. In the MN
+  decapsulation, there usually is no interaction with FAs at all, and the
+  tunnel goes from the HA directly to the MN. However, it should noted that
+  our implementation tries (if not told otherwise) to register through FAs
+  even with the MN decapsulation in order to make use of the FA hierarchy and
+  localized location updates.
+
+- In the RFC 2002 only mode, packets from the MN to the other end (to the
+  Corresponding node, or CN), go untunneled, and we have the "triangle" mode.
+  This name comes from the fact that packets from the CN to the MN go via
+  HA, but return directly forming the three edges of a triangle. However,
+  because firewalls do not usually accept packets from strange addresses, and
+  packets in FA decapsulation mode from the MN home address to the CN come
+  from the visited network, they might be dropped. Therefore, an extension
+  mode was introduced in the RFC 2344, that is, the Reverse Tunneling. In it,
+  the packets from the MN to the CN also go tunneled via the HA.
+
+What is a good mode to start with?
+
+- Try FA decapsulation and reverse tunneling. After having succeeded with
+  one mode, it will be easier to get the other modes working. Use the
+  following option in the dynmnd.conf:
+
+  EnableFADecapsulation TRUE
+
+  If you use the signal-based handoff, you can set the lifetime relatively
+  long at HA to preserve bandwidth. However, for the MN to hear the FAs,
+  put the beacon times short (once in 2-5 seconds).
+
+How do I use the Windows NT Mobile IP with this?
+
+- With the RoamIn (see http://www.ikv.de), you can use Windows NT with
+  the system by using the FA decapsulation mode. Use the following at the FA:
+
+  EnableFADecapsulation TRUE
+  EnableTriangleTunneling TRUE
+  ForceReverseTunneling TRUE
+  EnableReverseTunneling TRUE
+
+  In the HA, put the lifetime short, since you can use the timeout-based
+  handoff only with the Windows NT.
+
+What are good debugging tools when problems arise?
+
+- First, try the debugging tools in the package, i.e. the dynha_tool, the
+  dynfa_tool, and the dynmn_tool. From their command line, type st 1 to get
+  continuous display of status. Try the help command or see manual pages
+  for more details.
+- To check the tunnels, routes, or rules, the packet 'iproute2' is needed.
+  You can get it for example from ftp://ftp.sunet.se/pub/Linux/ip-routing/.
+- To see network traffic, you can use the tcpdump tool.
+  You can get it from ftp://ftp.ee.lbl.gov/tcpdump-3.4.tar.Z
+- To debug the operation of the daemons more thoroughly, use the debugging
+  options. Those are explained in the debug_flags document in the doc
+  directory of the source code distribution.
+- Try to observe the syslogs of the daemon computers to find out error
+  messages form the daemons.
+
+Do we need to manually connect MN to HA on startup?
+
+- Not anymore, at least in the FA decapsulation mode. With MN decapsulation
+  the used address must be changed by some external entity (see below).
+
+What kind of Care of Addresses are supported automatically?
+
+- The FA COA is supported, since this is obtained from the agent advertisement.
+
+- The MN COA, aka. co-located COA is not, since that is usually obtained
+  from an external entity, e.g. a DHCP client. After updating such a COA,
+  the external entity should trigger the MN to use that new address
+  by issuing a dynmn_tool update.
+- Note that when you are at the foreign network and using the co-located
+  COA, you must configure the outer interface using the COA. Once this
+  has been done e.g. by the DHCP client, you can notify the MN by issuing
+  dynmn_tool update.
+
+Why does the Foreign Agent need a RSA key? Can't it run without it?
+
+- Yes it could, but only by configuring security associations between
+  the FA and its signaling partners (other FAs, or HA). Version 0.6, however,
+  still requires, that the RSA public key file is generated even if it would
+  not be needed.
+- If no security association exists with another FA in the
+  hierarchy OR with a HA corresponding to a visiting MN, RSA
+  encryption is used.
+- If a security association does exist, the keyed MD5 algorithm
+  is used.
+- All this does not, however, prevent the FA to be used with any "dumb"
+  RFC 2002 conforming HA.
+
+Do we need the LocalAddressMN, or LocalAddressFAHA FA configuration
+parameters?
+
+- No, they are obsolete since v0.5.
+
+What COA is shown in dynfa_tool's show command?
+
+- The address is the IP address of the lower agent (another FA or the MN). This
+  may differ from the COA shown by dynha_tool or dynmn_tool (the IP address 
+  of the highest FA).
+
+Do we need to start the mobility agents at the directories containing
+their configuration files?
+
+- Not anymore. The agents read the configuration files by default from /etc
+  if taken from binary packages or from /usr/local/etc when compiled from
+  sources. See the source INSTALL instructions if you want to change the
+  default path for the configuration files. You can also set the configuration
+  file path with command line argument --config <file name>.
+
+What could cause errors in deregistration when the MN returns home?
+
+- Linux kernel has a possibility to filter packets that seem to come from
+  wrong interface. If there is a tunnel to the MN and a non-encapsulated packet
+  arrives at the HA (when the MN returns home, it sends deregistration message
+  to the HA), the kernel would then drop the packet. This filter is not actived
+  automatically when the kernel boots, but e.g. Debian 2.1's network setup
+  scripts activate the filter. It must not be activated in the HA for the
+  interface that is attached to the network that the MN would use at home.
+  The filter can be deactivated with command like
+  'echo 0 > /proc/sys/net/ipv4/conf/eth0/rp_filter'
+
+When I compile the agents from the sources, why don't my configuration
+files at /etc work?
+
+- In the source package the default configuration file directory is
+  /usr/local/etc, while in the binary packages it is /etc.
+  The make install always replaces those at /usr/local/etc with
+  the default configuration files. Even if you have symbolic links
+  there pointing to files at /etc, you get the symlinks replaced by the
+  default configuration files.
+
+
+7.  Sources of information
+
+ Where to get further information about Dynamics - HUT Mobile IP:
+
+  �  Dynamics group web site: http://www.cs.hut.fi/Research/Dynamics/
+
+  �  Dynamics group at Helsinki University of Technology: dynamics@cs.hut.fi
+
+
+ Where to get further information about Mobile IP in general:
+
+  �  IETF Mobile IP Working Group
+     http://www.ietf.org/html.charters/mobileip-charter.html
+
+
+  Where to get further information about Linux:
+
+  �  Linux: http://www.linux.org/
+
+  �  Linux Documentation Project: http://sunsite.unc.edu/mdw/linux.html
+     (check out the Linux Network Administrator Guide)
+
+  �  Freshmeat: The latest releases of Linux Software.
+     http://www.freshmeat.net
+
+  �  Linux links: http://www.linuxlinks.com/Networking/
+
+
+
+8. Acknowledgements and disclaimer
+
+This document is based on the work of Dynamics group and the
+enthusiastic Mobile IP pioneers around the world that have installed
+the software and reported their problems. This document is to be
+further developed. Lots of work has to be done to make it simple but
+accurate and complete but not excessively long. Nevertheless, no
+liability will be assumed by the author under any circumstance. Use
+the information contained here at your own risk. Please feel free to
+e-mail your suggestions, corrections or general comments about the
+document to Dynamics group so we can improve it. Topics that will
+probably be included in future revisions of this document may include
+performance tuning tips, detailed configuration examples, improved FAQ
+list, simple overview of the Mobile IP concept, detailed instructions
+for configuring your kernel, help in using the software in wireless
+environments and many other that may be suggested and suitable.
+
+Finally, we would like to thank Michael Matthes, Kristian Lappalainen,
+and Marko Myllynen for their constructive comments about the software
+and lists of troublesome situations during the installation and
+configuration.
+
+
+---------------------------------------------------------------------------
+$Date: 2001/07/01 13:14:10 $
+Copyright Dynamics group 1999, email:	dynamics@cs.hut.fi
