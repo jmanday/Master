@@ -1,0 +1,8 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n}{3}{section.1}
+\contentsline {section}{\numberline {2}Dataset}{3}{section.2}
+\contentsline {section}{\numberline {3}An\IeC {\'a}lisis exploratorio}{5}{section.3}
+\contentsline {section}{\numberline {4}Clustering}{6}{section.4}
+\contentsline {section}{\numberline {5}\IeC {\'A}rboles de decisi\IeC {\'o}n}{9}{section.5}
+\contentsline {section}{\numberline {6}Regresi\IeC {\'o}n}{11}{section.6}
+\contentsline {section}{\numberline {7}Conclusiones}{13}{section.7}
