@@ -1,26 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Objetivo.}{}% 1
-\BOOKMARK [1][-]{section.2}{Consulta de Documentos.}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Visualiza la colecci\363n pedidos y familiar\355zate con ella. Observa los distintos tipos de datos y sus estructuras dispares.}{section.2}% 3
-\BOOKMARK [2][-]{subsection.2.2}{Visualiza s\363lo el primer documento de la colecci\363n. Utiliza los m\351todos .limit\(\) y .findOne\(\) .}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.3}{Visualiza el cliente con el id\137cliente = 2222 .}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.4}{Visualiza los clientes que hayan pedido alg\372n producto de m\341s de 94 euros.}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.5}{Visualiza los clientes de Ja\351n o Salamanca \(excluye los datos de los pedidos\). Utiliza los operadores \044or e \044in .}{section.2}% 7
-\BOOKMARK [2][-]{subsection.2.6}{Visualiza los clientes que no tienen campo pedido.}{section.2}% 8
-\BOOKMARK [2][-]{subsection.2.7}{Visualiza los clientes que hayan nacido en 1963.}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.8}{Visualiza los clientes que hayan pedido alg\372n producto fabricado por Canon y alg\372n producto cuyo precio sea inferior a 15 euros.}{section.2}% 10
-\BOOKMARK [2][-]{subsection.2.9}{Datos personales \(id\137cliente, Nombre, Direcci\363n, Localidad y Fnacimiento\) de los clientes cuyo nombre empieza por la cadena \347"\(No distinguir entre may\372sculas y min\372sculas\).}{section.2}% 11
-\BOOKMARK [2][-]{subsection.2.10}{Visualiza los datos personales de los clientes \(excluyendo \137id\). Limita los documentos a 4.}{section.2}% 12
-\BOOKMARK [2][-]{subsection.2.11}{\315dem anterior pero ordenando los documentos por Localidad \(ascendente\) e id\137cliente \(descendente\).}{section.2}% 13
-\BOOKMARK [1][-]{section.3}{Agregaci\363n.}{}% 14
-\BOOKMARK [2][-]{subsection.3.1}{N\272 total de clientes.}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.2}{N\272 total de clientes de Ja\351n}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.3}{Facturaci\363n total clientes por localidad.}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.4}{Facturaci\363n media de clientes por localidad para las localidades distintas a Ja\351n con facturaci\363n media mayor de 5000. Ordenaci\363n por Localidad descendente. Eliminar el \137id y poner el nombre en may\372sculas.}{section.3}% 18
-\BOOKMARK [2][-]{subsection.3.5}{Calcula la cantidad total facturada por cada cliente \(uso de ''unwind''\).}{section.3}% 19
-\BOOKMARK [1][-]{section.4}{MapReduce.}{}% 20
-\BOOKMARK [2][-]{subsection.4.1}{Encontrar las ciudades m\341s cercanas sobre la colecci\363n reci\351n creada mediante un enfoque MapReduce conforme a los pasos que se ilustran en el tutoriak pr\341ctico.}{section.4}% 21
-\BOOKMARK [2][-]{subsection.4.2}{\277C\363mo podr\355amos obtener las ciudades m\341s distantes en cada pa\355s?.}{section.4}% 22
-\BOOKMARK [2][-]{subsection.4.3}{\277Qu\351 ocurre si en un pa\355s hay dos parejas de ciudades que est\341n a la misma distancia m\355nima?\277C\363mo har\355as para que aparecieran todas?.}{section.4}% 23
-\BOOKMARK [2][-]{subsection.4.4}{\277C\363mo podr\355amos obtener adicionalmente la cantidad de parejas de ciudades evaluadas para cada pa\355s consultado?.}{section.4}% 24
-\BOOKMARK [2][-]{subsection.4.5}{\277C\363mo podr\355amos calcular la distancia media entre las ciudades de cada pa\355s?.}{section.4}% 25
-\BOOKMARK [2][-]{subsection.4.6}{\277Mejorar\355a el rendimiento si creamos un \355ndice?\277Sobre qu\351 campo? Comprobadlo.}{section.4}% 26
+\BOOKMARK [1][-]{section.2}{Introducc\355on.}{}% 2
+\BOOKMARK [1][-]{section.3}{Calcula el valor m\355nimo de la variable \(columna\) 5.}{}% 3
+\BOOKMARK [1][-]{section.4}{Calcula el valor m\341ximo de la variable \(columna\) 5.}{}% 4
+\BOOKMARK [1][-]{section.5}{Calcula al mismo tiempo los valores m\341ximo y m\355nimo de la variable 5.}{}% 5
+\BOOKMARK [1][-]{section.6}{Calcula los valores m\341ximo y m\355nimo de todas las variables \(salvo la \372ltima, que es la etiqueta de la clase\).}{}% 6
+\BOOKMARK [1][-]{section.7}{Realizar la media de la variable 5.}{}% 7
+\BOOKMARK [1][-]{section.8}{Obtener la media de todas las variables \(salvo la clase\).}{}% 8
+\BOOKMARK [1][-]{section.9}{Comprobar si el conjunto de datos ECBDL es balanceado o no balanceado, es decir, que el ratio entre clases sea menor o mayor que 1.5 respectivamente.}{}% 9
+\BOOKMARK [1][-]{section.10}{C\341lculo del coeficiente de correlaci\363n entre todas las parejas de variables.}{}% 10
