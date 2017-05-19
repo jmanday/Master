@@ -1,0 +1,11 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Objetivo.}{3}{section.1}
+\contentsline {section}{\numberline {2}Pr\IeC {\'a}ctica 1. Regulaci\IeC {\'o}n de luz.}{3}{section.2}
+\contentsline {section}{\numberline {3}Desarrollo de la soluci\IeC {\'o}n.}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Generaci\IeC {\'o}n del concepto.}{3}{subsection.3.1}
+\contentsline {section}{\numberline {4}Conclusiones.}{3}{section.4}
+\contentsline {section}{\numberline {5}Cronograma de trabajo terminal II.}{3}{section.5}
+\contentsline {section}{Referencias}{3}{section.5}
+\contentsline {section}{Ap\IeC {\'e}ndices}{4}{section*.3}
+\contentsline {section}{\numberline {A}Anexos 1.}{4}{appendix.Alph1}
+\contentsline {section}{\numberline {B}Anexos 2.}{4}{appendix.Alph2}
