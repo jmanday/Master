@@ -1,0 +1,27 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Objetivo.}{3}{section.1}
+\contentsline {section}{\numberline {2}Consulta de Documentos.}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Visualiza la colecci\IeC {\'o}n pedidos y familiar\IeC {\'\i }zate con ella. Observa los distintos tipos de datos y sus estructuras dispares.}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Visualiza s\IeC {\'o}lo el primer documento de la colecci\IeC {\'o}n. Utiliza los m\IeC {\'e}todos \textbf {.limit()} y \textbf {.findOne()} .}{9}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Visualiza el cliente con el \textbf {id\_cliente = 2222} .}{11}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Visualiza los clientes que hayan pedido alg\IeC {\'u}n producto de m\IeC {\'a}s de 94 euros.}{13}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Visualiza los clientes de Ja\IeC {\'e}n o Salamanca (excluye los datos de los pedidos). Utiliza los operadores \$or e \$in .}{13}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Visualiza los clientes que no tienen campo pedido.}{14}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Visualiza los clientes que hayan nacido en 1963.}{14}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Visualiza los clientes que hayan pedido alg\IeC {\'u}n producto fabricado por Canon y alg\IeC {\'u}n producto cuyo precio sea inferior a 15 euros.}{15}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}Datos personales (id\_cliente, Nombre, Direcci\IeC {\'o}n, Localidad y Fnacimiento) de los clientes cuyo nombre empieza por la cadena "c" (No distinguir entre may\IeC {\'u}sculas y min\IeC {\'u}sculas).}{19}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Visualiza los datos personales de los clientes (excluyendo \_id). Limita los documentos a 4.}{20}{subsection.2.10}
+\contentsline {subsection}{\numberline {2.11}\IeC {\'I}dem anterior pero ordenando los documentos por Localidad (ascendente) e \textbf {id\_cliente} (descendente).}{21}{subsection.2.11}
+\contentsline {section}{\numberline {3}Agregaci\IeC {\'o}n.}{22}{section.3}
+\contentsline {subsection}{\numberline {3.1}N\IeC {\textordmasculine } total de clientes.}{22}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}N\IeC {\textordmasculine } total de clientes de Ja\IeC {\'e}n}{22}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Facturaci\IeC {\'o}n total clientes por localidad.}{23}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Facturaci\IeC {\'o}n media de clientes por localidad para las localidades distintas a Ja\IeC {\'e}n con facturaci\IeC {\'o}n media mayor de 5000. Ordenaci\IeC {\'o}n por Localidad descendente. Eliminar el \_id y poner el nombre en may\IeC {\'u}sculas.}{23}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Calcula la cantidad total facturada por cada cliente (uso de ''unwind'').}{23}{subsection.3.5}
+\contentsline {section}{\numberline {4}MapReduce.}{23}{section.4}
+\contentsline {subsection}{\numberline {4.1}Encontrar las ciudades m\IeC {\'a}s cercanas sobre la colecci\IeC {\'o}n reci\IeC {\'e}n creada mediante un enfoque MapReduce conforme a los pasos que se ilustran en el tutoriak pr\IeC {\'a}ctico.}{24}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}\IeC {\textquestiondown }C\IeC {\'o}mo podr\IeC {\'\i }amos obtener las ciudades m\IeC {\'a}s distantes en cada pa\IeC {\'\i }s?.}{27}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}\IeC {\textquestiondown }Qu\IeC {\'e} ocurre si en un pa\IeC {\'\i }s hay dos parejas de ciudades que est\IeC {\'a}n a la misma distancia m\IeC {\'\i }nima?\IeC {\textquestiondown }C\IeC {\'o}mo har\IeC {\'\i }as para que aparecieran todas?.}{31}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}\IeC {\textquestiondown }C\IeC {\'o}mo podr\IeC {\'\i }amos obtener adicionalmente la cantidad de parejas de ciudades evaluadas para cada pa\IeC {\'\i }s consultado?.}{37}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}\IeC {\textquestiondown }C\IeC {\'o}mo podr\IeC {\'\i }amos calcular la distancia media entre las ciudades de cada pa\IeC {\'\i }s?.}{40}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}\IeC {\textquestiondown }Mejorar\IeC {\'\i }a el rendimiento si creamos un \IeC {\'\i }ndice?\IeC {\textquestiondown }Sobre qu\IeC {\'e} campo? Comprobadlo.}{44}{subsection.4.6}

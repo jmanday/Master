@@ -1,0 +1,8 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Objetivo.}{3}{section.1}
+\contentsline {section}{\numberline {2}Descripci\IeC {\'o}n general del despliegue de un contenedor en docker.}{3}{section.2}
+\contentsline {section}{\numberline {3}Configuraci\IeC {\'o}n del servicio Web en docker.}{6}{section.3}
+\contentsline {section}{\numberline {4}Configuraci\IeC {\'o}n del servicio de SGBD en docker.}{6}{section.4}
+\contentsline {section}{\numberline {5}Descripci\IeC {\'o}n de la aplicaci\IeC {\'o}n web. Objetivo, funcionalidad, arquitectura software, base de datos, tablas. Puedes utilizar la misma que en la Pr\IeC {\'a}ctica 1 (IaaS). }{7}{section.5}
+\contentsline {section}{\numberline {6}An\IeC {\'a}lisis de la funcionalidad de los contenedores replicados.}{12}{section.6}
+\contentsline {section}{\numberline {7}Configuraci\IeC {\'o}n de OwnCloud en docker.}{12}{section.7}

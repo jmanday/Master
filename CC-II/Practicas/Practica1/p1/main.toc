@@ -1,0 +1,10 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Objetivo.}{3}{section.1}
+\contentsline {section}{\numberline {2}Configuraci\IeC {\'o}n de la MV1 (con servidor Web).}{3}{section.2}
+\contentsline {section}{\numberline {3}Configuraci\IeC {\'o}n de la MV2 (con SGBD).}{5}{section.3}
+\contentsline {section}{\numberline {4}Descripci\IeC {\'o}n de la aplicaci\IeC {\'o}n web. Objetivo, funcionalidad, arquitectura software, base de datos, tablas.}{8}{section.4}
+\contentsline {section}{\numberline {5}Breve manual de despliegue de las MVs.}{16}{section.5}
+\contentsline {section}{\numberline {6}Breve manual de uso de la aplicaci\IeC {\'o}n web.}{19}{section.6}
+\contentsline {section}{\numberline {7}Descripci\IeC {\'o}n del proceso de instalaci\IeC {\'o}n del S.O. (desde una ISO) en la MV.}{22}{section.7}
+\contentsline {section}{\numberline {8}Descripci\IeC {\'o}n del proceso de instalaci\IeC {\'o}n, configuraci\IeC {\'o}n y despliegue de Owncloud.}{35}{section.8}
+\contentsline {section}{\numberline {9}Referencias.}{42}{section.9}

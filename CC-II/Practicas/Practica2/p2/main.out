@@ -1,0 +1,7 @@
+\BOOKMARK [1][-]{section.1}{Objetivo.}{}% 1
+\BOOKMARK [1][-]{section.2}{Descripci\363n general del despliegue de un contenedor en docker.}{}% 2
+\BOOKMARK [1][-]{section.3}{Configuraci\363n del servicio Web en docker.}{}% 3
+\BOOKMARK [1][-]{section.4}{Configuraci\363n del servicio de SGBD en docker.}{}% 4
+\BOOKMARK [1][-]{section.5}{Descripci\363n de la aplicaci\363n web. Objetivo, funcionalidad, arquitectura software, base de datos, tablas. Puedes utilizar la misma que en la Pr\341ctica 1 \(IaaS\). }{}% 5
+\BOOKMARK [1][-]{section.6}{An\341lisis de la funcionalidad de los contenedores replicados.}{}% 6
+\BOOKMARK [1][-]{section.7}{Configuraci\363n de OwnCloud en docker.}{}% 7
