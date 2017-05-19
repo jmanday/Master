@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SSBW - jQuery</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/tomorrow-night.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+
+		section {
+			 margin-top:-6%  !important;
+			 width: 104% !important;
+		}
+
+	 	  html.img-center div.slide-background.present {
+			 background-position: center;
+			 background-size: 100% 100%;
+			 opacity: 0.1;
+			 z-index: -1;
+		  }
+
+		  strong {
+  			color: turquoise;
+  		  }
+
+		  strong.n {
+  			color:orange;
+  		}
+
+  	    th {
+  			color:white;
+  			background-color: palevioletred;
+  		 }
+
+		 p {
+			 font-size: 90% !important;
+			 text-align: left;
+		 }
+
+		 ul {
+			 font-size: 68% !important;
+		 }
+		 li {
+            padding:0 0 16px 0 !important;
+        }
+
+		  footer {
+  		   position: absolute !important;
+             bottom: -2em !important;
+             right: 2em !important;
+             font-size: 0.8em !important;
+  		}
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background="images/webapps.jpg" data-state="img-center">
+					<h2 style="color:tomato">jQuery</h2>
+					<h6>Sistemas Software Basados en Web</h6>
+
+						<small><a href="http://www.ugr.es/~jmguirao">José Ma. Guirao</a> / <a href="mailto://jmguirao@ugr.es">jmguirao@ugr.es</a></small>
+					<footer>
+					en el <a href="https://swad.ugr.es/?CrsCod=8934">swad</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>jQuery</h3>
+					<br  />
+					<p>
+						Librería de javascript para:
+					</p>
+					<br/>
+
+					<ul>
+						<li>Seleccionar y manipular <strong>&nbsp;HTML&nbsp;</strong> y <strong>&nbsp;CSS</strong><br><br></li>
+						<li>Modificar el <strong>&nbsp;DOM</strong><br><br></li>
+						<li>Animaciones<br><br></li>
+						<li>AJAX<br><br></li>
+					</ul>
+					<br />
+
+					<footer>
+						<a href="https://jquery.com/">jQuery</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>Como funciona jQuery</h3>
+					<br/>
+					<p>
+						<a href="https://learn.jquery.com/about-jquery/how-jquery-works/">
+				   	How jQuery Works</a>
+					</p>
+					<br/>
+					<p>
+						<a href="https://learn.jquery.com/using-jquery-core/selecting-elements/">
+				   	Selectores</a> &nbsp;(los mismos que para <strong>CSS</strong>)
+					</p>
+					<br/>
+					<p>
+						<a href="http://api.jquery.com/category/events/">
+				   	Eventos</a>
+					</p>
+					<br />
+
+					<footer>
+						<a href="https://learn.jquery.com/about-jquery/">
+							About jQuery
+						</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>Qué hace jQuery</h3>
+					<br/>
+					<p>
+						<a href="https://learn.jquery.com/using-jquery-core/css-styling-dimensions/">
+				   		Manipular  CSS</a>
+					</p>
+					<p>
+						<a href="https://learn.jquery.com/using-jquery-core/manipulating-elements/">
+				   		Manipular elementos</a>
+					</p>
+					<p>
+						<a href="https://learn.jquery.com/effects/intro-to-effects/">
+				   		Efectos y animaciones</a>
+					</p>
+					<p>
+						<a href="https://learn.jquery.com/ajax/">
+				   	AJAX</a>
+					</p>
+					<br />
+					<footer>
+						<a href="https://learn.jquery.com/about-jquery/">
+							About jQuery
+						</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>Ajax con jQuery</h3>
+					<br />
+					<pre><code data-trim class="javascript" style="font-size:80%">
+
+						&lt;script&gt;
+						$(function(){                          // jQuery functions
+
+				   		$('#boton').click(function() {
+
+								$.ajax({
+
+								   url: '/respuesta_ajax',
+
+								   type: 'POST',
+
+								   data: { dato1: 'vale', dato2: var3 },
+
+								   error: function() {
+										alert('algo va mal');
+								   },
+
+								   dataType: 'json',   // espera json en la respuesta
+
+								   success: function(data) {
+										console.log(data)
+								   },
+								});  // ajax
+
+				      	}); // click
+						}); // $
+						&lt;/script&gt;
+					</code></pre>
+					<footer>
+						<a href="https://api.jquery.com/jquery.get/">
+							jQuery .get
+						</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>AJAX es <a href="http://elmanantialdebits.blogspot.com.es/2013/08/que-es-eso-de-la-programacion-asincrona.html">
+				   	asíncrono</a> </h3>
+						<br />
+						Esto no funcionaría
+						<pre><code data-trim class="javascript" style="font-size:80%">
+
+				&lt;script&gt;
+
+				   $(function(){
+				      var response;
+				      $.get( "/get_dni", function( r ) {
+				          response = r;
+				      });
+
+				      console.log( response ); // undefined
+				   });
+
+				&lt;/script&gt;
+					</code></pre>
+					<footer>
+						<a href="https://learn.jquery.com/ajax/key-concepts/">
+							Ajax, Key Concepts
+						</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>Flask </h3>
+					<br/>
+					<pre><code data-trim class="javascript" style="font-size:80%">
+				from flask import jsonify, request
+
+				@app.route('/get_dni')
+				def responde():
+				    nombre = request.args.get('nombre', '')
+				    dni = Consulta_dni_de(nombre)
+				    return jsonify({'dni':dni})    # podría ser string o HTML
+
+					</code></pre>
+
+					<footer>
+						<a href="http://flask.pocoo.org/docs/0.11/patterns/jquery/">
+							Ajax con Flask
+						</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>Django</h3>
+					<br/>
+					<pre><code data-trim class="javascript" style="font-size:80%">
+				from django.http import JsonResponse
+
+				def responde(request):
+				    nombre = request.GET.get('nombre', '')
+				    dni = Consulta_dni_de(nombre)
+				    return JsonResponse({'dni':dni})    # podría ser string o HTML
+
+					</code></pre>
+
+					<footer>
+						<a href="https://simpleisbetterthancomplex.com/tutorial/2016/08/29/how-to-work-with-ajax-request-with-django.html">
+							Ajax con Django
+						</a>
+					</footer>
+				</section>
+
+
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>SSBW Protocolos_e_interfaces</title>
+
+		<meta name="description" content="Master en Ingeniría Informática. SSBW">
+		<meta name="author" content="jmguirao@ugr.es">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+		footer {
+		   position: absolute !important;
+           bottom: -40px !important;
+           right: 1em !important;
+           font-size: 0.8em !important;
+		}
+		
+		html.img-center div.slide-background.present {
+			background-position: center;
+			background-size: 100% 100%;
+			 opacity: 0.2;
+			 z-index: -1;  
+		}
+		
+		img {
+			width:100%;
+			border:none !important;
+		}
+		
+		strong {
+			color:lightcoral;
+			padding: 0 10px 0 10px !important;
+			
+		}
+
+		th {
+			color:white;
+			background-color: palevioletred;
+		}
+		.left {
+			text-align: left;
+		}
+		
+		li {
+			margin-top: 20px !important;
+		}
+		
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section data-background="images/webapps.jpg" data-state="img-center">					
+					<h2>S S B W</h2>
+					<h3 style="color:tomato">
+						 Protocolos, &nbsp; Interfaces:</h3>
+					<h3 style="color:tomato">
+						 Navegador &lt;&#8212;&gt; servidor web &lt;&#8212;&gt; aplicación web</h3>
+					<p>
+						<small><a href="http://www.ugr.es/~jmguirao">José Ma. Guirao</a> / <a href="mailto://jmguirao@ugr.es">jmguirao@ugr.es</a></small>
+					</p>
+				</section>
+
+				<section>
+					<h3><strong>H</strong>iper<strong>T</strong>ext <strong>T</strong>ransfer <strong>P</strong>rotocol</h3>
+
+<p>Es un protocolo ASCII, para comunicar clientes y servidores</p>
+
+<img src="images/http_diagram.png" style="width:680px;height:380px;">
+
+<div class="left"><small><strong>F12 &gt; Red</strong>  para ver las cabeceras</small>
+</p>
+<footer >
+<a href="http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-1/" >
+HTTP: The Protocol Every Web Developer Must Know</a>
+</footer> 
+					
+				</section>
+
+<section>
+<h3>Tipos de peticiones &nbsp; HTTP</h3>
+<p class="left">en la 'request line', a veces se llaman "verbos"
+</p>
+<br>
+<ul>
+<li><strong>GET</strong>&nbsp;&nbsp;solicitar un recurso del servidor</li>
+<li><strong>POST</strong>&nbsp;&nbsp;crear un nuevo recurso</li>
+<li><strong>PUT</strong>&nbsp;&nbsp;modificar un recurso existente</li>
+<li><strong>DELETE</strong>&nbsp;&nbsp;borrar un recurso</li>
+</ul>
+<br><br>
+<footer >
+<a href="http://net.tutsplus.com/tutorials/tools-and-tips/http-the-protocol-every-web-developer-must-know-part-1/" >
+HTTP: The Protocol Every Web Developer Must Know</a>
+</footer> 
+
+</section>
+
+
+				<section  data-background="">
+					<h3>Petición <strong>GET</strong></h3>
+<p class="left"> 
+Usualmente en la misma <strong style="color:pink;">&nbsp;URL&nbsp;</strong>
+se incluyen los parámetros de la  query</p>
+<pre><code data-trim contenteditable>	
+GET resource_path+query en el URL
+</pre>
+</code>
+<p class="left">
+<!--
+<small>o con otros <a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">
+Request Methods</a></small>
+-->
+</p>
+<img src="images/url.png">
+
+<footer>
+<a href="http://en.wikipedia.org/wiki/Uniform_resource_locator"> 
+Uniform Resource Locator</a>
+</footer> 
+					
+				</section>
+
+
+				<section>
+					<h3>Petición <strong>POST</strong></h3>
+<p class="left">					
+
+</p>
+<pre><code data-trim contenteditable>
+POST resource_path url
+</code></pre>
+<br>
+<p class="left">
+Entonces la query va como contenido
+en el requerimiento después de todas las cabeceras
+</p>
+<br>
+<pre><code data-trim contenteditable>
+POST /recepcion_formulario  HTTP/1.1
+Host: ...
+resto cabeceras http
+variable_1 = valor_variable_1
+variable_2 = valor_variable_2
+...
+</code></pre>
+				</section>
+
+<section>
+				
+				<h3>Cabeceras HTTP</h3>
+<p class="left">
+Algunas cabeceras interesantes, en el requerimiento
+</p>
+<pre><code data-trim contenteditable>
+Date: Thu Feb  18 08:49:37 2016
+Accept: */*
+Accept-Encoding: compress, gzi
+Accept-Language: en-US; es-ES
+Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==
+Cookie: $Version=1; Skin=new;
+Host: en.wikipedia.org
+Referer: http://en.wikipedia.org/wiki/Main_Page
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:12.0) Gecko/20100101 Firefox/21.0
+If-Modified-Since : HTTP-date
+</code></pre>
+
+
+<footer>
+<a href="http://www.tutorialspoint.com/http/http_header_fields.htm" >
+HTTP headers fields</a>
+</footer> 
+										
+</section>
+
+<section>
+				
+				<h3>Respuesta HTTP</h3>
+
+<pre><code data-trim contenteditable>
+Status: 200 OK
+</code></pre>
+<br> Cabeceras:	
+
+
+<pre><code data-trim contenteditable>
+Content-Encoding: gzip
+Content-Length: 348
+Content-Type: text/html; charset=utf-8
+Set-Cookie: UserID=JohnDoe; Max-Age=3600; Version=1
+  (salto de linea antes del contenido)
+</code></pre>
+
+
+<footer>
+<a href="http://www.tutorialspoint.com/http/http_header_fields.htm" >
+HTTP headers fields</a>
+</footer> 
+										
+</section>
+
+
+				<section>
+					<h3>Cookies</h3>
+<p class="left">					
+					<a href="http://en.wikipedia.org/wiki/HTTP_Cookie">Cookies</a>: información que el servidor guarda en el navegador
+</p>
+<img src="images/cookie_exchange.png" style="height:400px">
+					
+Cuando el navegador se vuelve a conectar con el servidor, le reenvia todas las cookies previamente enviadas por este					
+				</section>
+
+<section>
+   <h3>Sesiones</h3>
+   
+   
+<strong>HTTP</strong> es un protocolo que no guarda el estado de la conexión. La manera
+usual de (re)tener la información de conexión es con <strong>sesiones</strong>, una combinación
+de cookie y almacenamiento en el servidor
+<img src="images/the_truth_about_sessions_1.png"  height="380px">
+</section>
+
+<section>
+<h3>Interface con el servidor web</h3>
+
+<p class="left">
+Hay varias posibilidades para conectar la aplicación web con el servidor web:
+</p>
+
+<table> <tr>
+	<td width="40%">
+<table>
+<tr>
+<td>
+      <a href="http://en.wikipedia.org/wiki/Common_Gateway_Interface">CGI</a>,</li>
+</td>
+ </tr>
+  
+  <tr>
+<td>
+<a href="http://www.fastcgi.com/drupal/">FastCGI</a>, &nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://php.net/manual/es/security.apache.php">mod_php</a>, &nbsp;
+<a href="http://en.wikipedia.org/wiki/Mod_python">mod_python,</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="http://en.wikipedia.org/wiki/Web_Server_Gateway_Interface">WSGI</a>, ...</li>
+  </td>
+  
+ </tr>
+</table>
+</td>
+
+<td width="60%" style="background-image:url('images/grlvXUA.png');background-repeat: no-repeat;">
+
+</td>
+
+</tr></table>
+
+<br>
+<footer>
+<a href="http://docs.python.org/2/howto/webservers.html" >
+HOWTO Use Python in the web</a>
+</footer> 
+</section>
+
+<section>
+<h3><strong>C</strong>ommon &nbsp; <strong>G</strong>ateway &nbsp; <strong>I</strong>nterface</h3>
+
+La manera más simple (y más lenta) de ejecutar programas desde el servidor web
+<table><tr>
+<td  width="60%" style="background-image:url('images/cgi2.png');background-repeat: no-repeat;">	
+
+</td>
+<td width="40%" style="font-size:0.9em">
+Comunicación entre CGI y el servidor por la salida estándar
+<br>
+<br>Entre el servidor
+y el programa: entrada estandar y 
+<a href="http://www.perlfect.com/articles/cgi_env.shtml">variables CGI</a> (para los headers)
+</td>
+</tr>
+</table>
+
+<footer>
+<a href="http://docs.python.org/3.3/library/cgi.html" >
+Common Gateway Interface support</a>
+</footer> 
+</section>
+
+<section>
+<h3><strong>C</strong>ommon &nbsp; <strong>G</strong>ateway &nbsp; <strong>I</strong>nterface</h3>
+
+<p class="left">Salida estandar <strong>print</strong></p>
+<pre><code data-trim contenteditable>
+#--------------------------
+#  Hello world CGI
+#---------------------------
+
+# DOS saltos de línea (última cabecera del protocolo HTTP)
+print ("""Content-Type: text/html
+
+&lt;html&gt;
+&lt;body&gt;
+&lt;h2&gt;Hello World!&lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+""")
+
+</code></pre>
+<footer>
+<a href="http://webpython.codepoint.net/cgi_tutorial" >
+CGI Tutorial</a>
+</footer> 
+</section>
+
+<section>
+<h3><strong>C</strong>ommon &nbsp; <strong>G</strong>ateway &nbsp; <strong>I</strong>nterface</h3>
+
+<p class="left">
+Con módulo <strong>cgitb</strong>
+</p>
+<pre><code data-trim contenteditable>
+#--------------------------
+#  Debugging
+#---------------------------
+
+import cgitb
+# DOS saltos de línea
+print ("Content-Type: text/html\n")
+
+try:
+   f = open('non-existent-file.txt', 'r')
+except:
+   cgitb.handler() # Errores por el servidor de web
+
+</code></pre>
+
+<footer class="der">
+<a href="http://webpython.codepoint.net/cgi_debugging" >
+CGI Tutorial</a>
+</footer> 
+</section>
+
+<section>
+<h3><strong>C</strong>ommon &nbsp; <strong>G</strong>ateway &nbsp; <strong>I</strong>nterface</h3>
+<p class="left">Entrada de datos</p>
+<pre><code data-trim contenteditable>
+#--------------------------
+#  Forms
+#---------------------------
+
+
+print ("""Content-Type: text/html
+
+&lt;html>&lt;body&gt;
+&lt;form method="get" &gt;
+Name: &lt;input type="text" name="name"&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+""")
+
+import os
+
+querystring = os.getenv('QUERY_STRING ', default_value)
+datos = querystring.split('&')
+...
+
+if name:
+   print ("""
+   &lt;p&gt;The submitted name was "%s"&lt;/p&gt;
+   """ % name)
+
+print ("&lt;/body&gt;&lt;/html&gt;")
+
+</code></pre>
+
+<footer class="der">
+<a href="http://webpython.codepoint.net/cgi_form" >
+CGI Tutorial</a>
+</footer> 
+</section>
+
+
+
+<section>
+<h3><strong>C</strong>ommon &nbsp; <strong>G</strong>ateway &nbsp; <strong>I</strong>nterface</h3>
+<p class="left">
+Entrada de datos con módulo <strong>cgi</strong>
+</p>
+<pre><code data-trim contenteditable>
+#--------------------------
+#  Forms
+#---------------------------
+
+import cgi
+
+print ("""Content-Type: text/html
+
+&lt;html>&lt;body&gt;
+&lt;form method="post" &gt;
+Name: &lt;input type="text" name="name"&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+
+""")
+
+form = cgi.FieldStorage() # instantiate only once!
+name = form.getfirst('name')
+
+if name:
+   print ("""
+   &lt;p&gt;The submitted name was "%s"&lt;/p&gt;
+   """ % name)
+
+print ("&lt;/body&gt;&lt;/html&gt;")
+
+</code></pre>
+
+<footer class="der">
+<a href="http://webpython.codepoint.net/cgi_form" >
+CGI Tutorial</a>
+</footer> 
+</section>
+
+<section>
+<h3><strong>C</strong>ommon &nbsp; <strong>G</strong>ateway &nbsp; <strong>I</strong>nterface</h3>
+
+<p class="left"><strong>Ventajas CGI:</strong></p>
+<ul>
+  <li>Simple y neutral (salida/salida estándar, variables de entorno).</li>
+
+  <li>Funciona en cualquier servidor de web.</li>
+</ul>
+<br><br>
+<p class="left">
+<strong>Inconvenientes CGI:</strong>
+</p>
+<ul>
+<li>Se crea un nuevo proceso en cada llamada (con el intérprete incrustado).</li>
+<li>No hereda el estado de llamadas anteriores (reconectar la BD...).</li>
+</ul>
+</section>
+
+<section>
+<h3><strong>W</strong>eb &nbsp; <strong>S</strong>erver &nbsp;
+<strong>G</strong>ateway &nbsp;<strong>I</strong>nterface</h3>
+
+<br>
+<p>Es un estándar python <a href="http://www.python.org/dev/peps/pep-0333/">pep-333</a>, inspirado
+en CGI, soportado por todos los frameworks y servidores web.
+</p>
+<br>
+<p>
+En apache, se puede usar directamente con <a href="http://code.google.com/p/modwsgi/">mod_wsgi</a>, 
+o a través de pasarelas con <a href="http://www.fastcgi.com/drupal/">mod_fcgi</a>, 
+<a href="http://wiki.dreamhost.com/Python_FastCGI"> (using python with fastcgi)</a>.
+</p>
+<br>
+<p>El mejor modo de usar python en programas web.</p>
+
+<footer>
+<a href="http://www.wsgi.org/en/latest/index.html" >
+WSGI</a>
+</footer> 
+
+</section>
+
+
+<section>
+<h3><strong>W</strong>eb &nbsp; <strong>S</strong>erver &nbsp;
+<strong>G</strong>ateway &nbsp;<strong>I</strong>nterface</h3>
+
+<br>
+<img src="images/wsgi.png">
+
+<footer>
+<a href="http://webpython.codepoint.net/wsgi_tutorial" >
+WSGI Tutorial</a>
+</footer> 
+</section>
+
+<section>
+<h3><strong>W</strong>eb &nbsp; <strong>S</strong>erver &nbsp;
+<strong>G</strong>ateway &nbsp;<strong>I</strong>nterface</h3>
+<br>
+
+<p>
+Puede funcionar de dos maneras:
+<br><br>
+<ul style="margin-left:20%">
+<li><strong>Embebido</strong> &nbsp; en el servidor web</li>
+<li style="margin-top:20px;">Como &nbsp; <strong>demonio</strong> &nbsp; en un proceso aparte.</li>
+</ul>
+</p>
+</section>
+
+<section>
+<h3><strong>W</strong>eb &nbsp; <strong>S</strong>erver &nbsp;
+<strong>G</strong>ateway &nbsp;<strong>I</strong>nterface</h3>
+
+<img style="height:460px;" src="images/gateway.png">
+
+<footer>
+<a href="http://www.docstoc.com/docs/69863691/WSGI-from-Start-to-Finish" >
+WSGI from Start to Finish</a>
+</footer> 
+</section>
+
+<section>
+<h3><strong>W</strong>eb &nbsp; <strong>S</strong>erver &nbsp;
+<strong>G</strong>ateway &nbsp;<strong>I</strong>nterface</h3>
+<div style="font-size:0.85em;">
+La principal ventaja, es que está previsto las aplicaciones wsgi sean apilables, comunicadas con wsgi, pudiendose
+usar como <a href="http://en.wikipedia.org/wiki/Middleware"><strong>middleware</strong></a>
+</div>
+<img  style="height:420px; width:200 !important;" src="images/wsgi-middleware.png">
+
+<footer class="der">
+<a href="http://webpython.codepoint.net/wsgi_tutorial" >
+WSGI Tutorial</a>
+</footer> 
+
+</section>
+
+<section>
+<h3>WSGI Middleware</h3>
+<img src="images/middleware.png" style="width:680px;">
+
+</section>
+
+<section>
+<h3>Variables WSGI</h3>
+<br>
+<p class="left">
+Están en un solo diccionario &nbsp;<strong><tt>context</tt></strong> (el objeto <strong>request</strong> en los frameworks)
+. <br><br>Vienen de:
+<ul style="margin-left:-10%;" class="left">
+<li>Cabeceras HTTP (decodificadas).</li>
+<li>Variables CGI.</li>
+<li>De otros 'servidores' WSGI.</li>
+</ul>
+</p>
+</section>
+
+<section>
+
+<img src="images/http-wsgi.png">
+
+</section>
+
+<section>
+<h3>Respuesta WSGI</h3>
+<br>
+<p class="left">
+Sólamente:
+</p>
+<ul style="margin-left:-10%;">
+<li>Un string de código de error.</li>
+<li>Una lista de cabeceras HTTP.</li>
+<li>El body, como lista o iterable.</li>
+</ul>
+
+</section>
+
+<section>
+
+<img src="images/wsgi-response.png">
+
+</section>
+<section>
+<h3><strong>W</strong>eb &nbsp; <strong>S</strong>erver &nbsp;
+<strong>G</strong>ateway &nbsp;<strong>I</strong>nterface</h3>
+<br>
+<pre><code data-trim contenteditable>
+	
+# wsgiref está incluido en la libreria estandar
+from wsgiref.util import setup_testing_defaults
+from wsgiref.simple_server import make_server
+
+# Una aplicación wsgi simple,
+# devuelve el contenido del dicccionario enviroment
+# después de haber sido actualiazado por setup_testing_defaults
+
+def simple_app(environ, start_response):
+	setup_testing_defaults(environ)
+
+	status = '200 OK'
+	headers = [('Content-type', 'text/plain; charset=utf-8')]
+
+	# Manda una cadena, y las cabeceras de HTTP
+	start_response(status, headers)
+
+	# y el body como un lista o como un iterable
+	ret = [("%s: %s\n" % (key, value)).encode("utf-8")	
+			for key, value in environ.items()]
+			
+	return ret
+
+httpd = make_server("", 8000, simple_app)
+print("Serving on port 8000...")
+httpd.serve_forever()
+</code></pre>
+<footer>
+<a href="http://docs.python.org/3.3/library/wsgiref.html#module-wsgiref" >
+wsgiref</a>
+</footer> 
+</section>
+
+
+<section>
+<h3><strong>W</strong>eb &nbsp; <strong>S</strong>erver &nbsp;
+<strong>G</strong>ateway &nbsp;<strong>I</strong>nterface</h3>
+<br>
+<pre><code data-trim contenteditable>
+from wsgiref.simple_server import make_server
+from cgi import parse_qs
+
+html = """
+&lt;html&gt;
+&lt;body&gt;
+   &lt;form method="get" action="parsing_get.wsgi"&gt;
+      &lt;p&gt;
+         Age: &lt;input type="text" name="age"&gt;
+         &lt;/p&gt;
+      &lt;p&gt;
+         Hobbies:
+         &lt;input name="hobbies" type="checkbox" value="software"&gt; Software
+         &lt;input name="hobbies" type="checkbox" value="tunning"&gt; Auto Tunning
+         &lt;/p&gt;
+      &lt;p&gt;
+         &lt;input type="submit" value="Submit"&gt;
+         &lt;/p&gt;
+      &lt;/form&gt;
+   &lt;p&gt;
+      Age: %s&lt;br&gt;
+      Hobbies: %s
+      &lt;/p&gt;
+   &lt;/body&gt;
+&lt;/html&gt;"""
+
+def application(environ, start_response):
+
+	# Returns a dictionary containing lists as values.
+	d = parse_qs (environ['QUERY_STRING'])
+	
+	age = d.get ('age')                
+	hobbies = d.get ('hobbies')        # Returns a list of hobbies.
+
+	response_body = html % (age or 'Empty',
+				', '.join(hobbies or ['No Hobbies']))
+
+	status = '200 OK'
+
+	# Now content type is text/html
+	response_headers = [('Content-Type', 'text/html'),
+			('Content-Length', str(len(response_body)))]
+
+	start_response(status, response_headers)
+
+	return [response_body]
+
+httpd = make_server('localhost', 8051, application)
+httpd.serve_forever()
+</code></pre>
+<footer>
+<a href="http://webpython.codepoint.net/wsgi_request_parsing_get" >
+Parsing the Request - Get</a>
+</footer> 
+</section>
+
+<section>
+<h3>Ventajas WSGI</h3>
+<br>
+<ul>
+<li>Sin variables globales.</li>
+<li>Sin usar <b>stdin</b>, <b>stdout</b>, <b>stderr</b>.</li>
+<li>El request es un solo diccionario.</li>
+<li>La respuesta es una cadena, una lista de headers y otra lista para el body.</li>
+</ul>
+
+</section>
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

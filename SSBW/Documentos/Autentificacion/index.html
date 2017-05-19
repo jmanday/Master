@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SSBW - Autentificación</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/tomorrow-night.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+
+		section {
+			 margin-top:-4%  !important;
+			 width: 110% !important;
+		}
+
+	 	  html.img-center div.slide-background.present {
+			 background-position: center;
+			 background-size: 100% 100%;
+			 opacity: 0.1;
+			 z-index: -1;
+		  }
+
+		  strong {
+  			color: turquoise;
+  		  }
+
+		  strong.n {
+  			color:orange;
+  		}
+
+  	    th {
+  			color:white;
+  			background-color: palevioletred;
+  		 }
+
+		 p {
+			 font-size: 90% !important;
+			 text-align: left;
+		 }
+
+		 ul {
+			 font-size: 68% !important;
+		 }
+		 li {
+            padding:0 0 16px 0 !important;
+        }
+
+		  footer {
+  		   position: absolute !important;
+             bottom: -40px !important;
+             right: 1em !important;
+             font-size: 0.8em !important;
+  		}
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background="images/webapps.jpg" data-state="img-center">
+					<h2 style="color:tomato">Autentificación</h2>
+					<h6>Sistemas Software Basados en Web</h6>
+
+						<small><a href="http://www.ugr.es/~jmguirao">José Ma. Guirao</a> / <a href="mailto://jmguirao@ugr.es">jmguirao@ugr.es</a></small>
+					<footer>
+					en el <a href="https://swad.ugr.es/?CrsCod=8934">swad</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>Autentificación</h3>
+					<p>
+						Django incopora casi todo lo necesario parala autentificación y registro de
+						usuarios con:
+					</p>
+					<br/>
+					<p>
+						<ul style="margin-left:-20%; font-size:90%;list-style-type:none;">
+				  			<li> <a href="https://docs.djangoproject.com/en/1.10/topics/auth/default/#user-objects"> Modelo para usuarios</a></li>
+				  			<li><a href="https://docs.djangoproject.com/en/1.10/topics/auth/passwords/#password-management-in-django">Contraseñas</a></li>
+				  			<li><a href="https://docs.djangoproject.com/en/1.10/ref/contrib/auth/#group-model">Grupos de usuarios</a></li>
+				  			<li><a href="https://docs.djangoproject.com/en/1.10/topics/auth/default/#permissions-and-authorization">Permisos sobre las vistas y el modelo</a></li>
+						</ul>
+					</p>
+
+
+				<footer>
+				<a href="https://docs.djangoproject.com/en/1.10/topics/auth/#user-authentication-in-django">
+				User authentication in Django</a>
+				</footer>
+				</section>
+
+				<section>
+					<h3>Middleware</h3>
+					<br />
+					<table style="width:140%;margin-left:-6%;">
+						<tr>
+							<td valign="top"  style="width:40%">
+								<span style="position:relative; top:-300px">
+									Está implantado como <strong>middleware</strong>, unas
+									funciones añaden información al <b>request</b> interceptandolo antes
+									y después la aplicación
+								</span>
+							</td>
+							<td style="width:60%">
+								<img src="images/middleware_arrow.png" style="width:50%">
+							</td>
+						</tr>
+					</table>
+				</section>
+
+
+				<section>
+					<h3>Autentificación en el request</h3>
+					<br/>
+					<p>Django utiliza sesiones y midleware para gestionar automáticamente la
+						autentificación de usuarios, con funciones para el login y el registro
+					</p>
+					<p>
+						E incluso tiene un
+						<a href="https://docs.djangoproject.com/en/1.10/topics/auth/default/#the-login-required-decorator">decorador</a>
+						para ponerlo en las vistas que requieran usuarios autenficados, que redirije automáticamente al formulario
+						de login
+					</p>
+
+					<footer class="der">
+						<a href="https://docs.djangoproject.com/en/1.10/topics/auth/default/#authentication-in-web-requests" >
+							Authentication in Web requests</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>Autentificación</h3>
+					<br />
+					<pre><code data-trim class="python" style="font-size:60%">
+						from django.shortcuts import render
+						from django.contrib.auth import authenticate, login
+
+						def login_view(request):	# no se puede llamar 'login'  !¡ !¡
+
+							context = {}
+							usuario   = request.POST.get ('username')
+							contraseña = request.POST.get ('password')
+
+							# Autenfificar, devuelve objeto usuario
+							user = authenticate (username=usuario, password=contraseña)
+
+							if user is not None and user.is_active:
+								login (request, user)
+								context['mensaje'] =  'Logeado como  <b>%s</b>' % (usuario)
+							else:
+								context['mensaje'] =  'No usuario  o contraseña incorrecta'
+
+							return render (request, 'login.html', context)
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>En las plantillas</h3>
+
+					<p>
+						Una vez autentificado, el objeto usuario está disponible en las plantillas:
+					</p>
+					<br />
+					<pre><code data-trim class="makr" style="font-size:60%">
+						&lt;ul&gt;
+							{% if user.is_authenticated %}
+
+								&lt;li&gt;Logeado como {{user.username}}&lt;/li&gt;
+								&lt;li&gt;&lt;a href="{% url 'auth_logout' %}"&gt;Logout&lt;/a&gt;&lt;/li&gt;
+							{% else %}
+
+								&lt;li&gt;&lt;a href="{% url 'auth_login' %}"&gt;Login&lt;/a&gt;&lt;/li&gt;
+							{% endif %}
+						&lt;/ul&gt;
+				</code></pre>
+				</section>
+
+				<section>
+					<h3>Registro</h3>
+					<p>Con formulario:</p>
+					<br />
+					<pre><code data-trim class="python" style="font-size:60%">
+				from django import forms
+				from django.contrib.auth.models import User
+
+				class register_form (forms.ModelForm):
+
+					username = forms.SlugField (max_length=8, label='Usuario:')
+					email    = forms.EmailField (label='Email:')
+					password = forms.SlugField (max_length=8,
+					                   help_text="(números y letras hasta 8)",
+					                   widget=forms.PasswordInput(),
+					                   label='Contraseña:')
+					class Meta:
+						model  = User
+						fields = ('username', 'email', 'password')
+
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Registro</h3>
+					<p>En la plantilla:</p>
+					<br />
+					<pre><code data-trim class="makr" style="font-size:60%">
+				{% extends 'base.html' %}
+				{% block contenido %}
+				&lt;br&gt;
+				{{ mensaje }}
+
+				&lt;form method="post" action="{% url 'registro' %}"&gt;
+					  {% csrf_token %}
+					  {{ form.as_p }}
+				      &lt;input type="submit" name="Registro" value="Enviar" /&gt;
+				&lt;/form&gt;
+
+				{% endblock %}
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Registro</h3>
+					<br />
+					<p>En el controlador</p>
+					<pre><code data-trim class="python" style="font-size:60%">
+				from django.shortcuts import render
+
+				def registro (request):
+					form = register_form()
+					context = { 'mensaje': 'Estamos en  Registro', 'form': form,}
+
+					if request.method == 'POST':
+						form = register_form(request.POST)
+						if form.is_valid():
+
+							# Save the user's form data to the database.
+							user = form.save()
+
+							# Now we hash the password with the set_password method
+							user.set_password(user.password)
+
+							# Once hashed, we can update the user object
+							user.save()
+							context['mensaje'] =  u'Registrado como  <b>%s</b>' % (user.username)
+
+						else:                                # Do not vaidate
+							context['form'] = form
+
+					return render (request, 'registro.html', context)
+
+				</code></pre>
+				</section>
+
+				<section>
+					<h2>Autentificación y registro</h2>
+					<br/>
+					<p>
+						En el paquete <a href="https://django-registration-redux.readthedocs.org/en/latest/">django-registration-redux</a>,
+						están todos los formularios y plantillas necesarias, incluso para el registro en dos fases
+					</p>
+					<p>
+						En este <a href="http://www.tangowithdjango.com/book17/chapters/login_redux.html">tutorial</a>,
+						hay indicaciones para su puesta en marcha
+					</p>
+					<p>
+						También hay paquetes para autentificación en redes sociales <a href="http://django-allauth.readthedocs.org/en/latest/">
+						django-allauth</a>
+					</p>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

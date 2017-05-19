@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>DAI, Codificación de Caracteres: Unicode</title>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+<section>
+    <h1>D<span style="font-size: 0.6em;">esarrollo de</span> A<span style="font-size: 0.6em;">plicaciones para </span> I<span style="font-size: 0.6em;">nternet</span></h1>
+
+    <h2>Codificación de Caracteres: Unicode</h2>
+
+    <p><center><img src="./imagenes/web-app-dev.jpg" width="70%" /></center><p>
+
+    <footer><a href="https://swad.ugr.es/?CrsCod=7257">
+    Desarrollo de Aplicaciones para Internet</a></footer>
+</section>
+
+
+<section>
+<h2>Codificaciones para signos</h2>
+<p>
+En Europa Occidental usamos ahora (2016),
+4 codificaciones distintas para los signos del alfabeto latino:
+<br>
+<ul style="margin-left:20%;">
+<li><b style="color:olive">ASCII</b></li>
+<li><b style="color:olive">ISO-8859-1</b>, &nbsp;ISO-8859-15, &nbsp; "Latin1"
+<span style="color:darkgrey;font-size:90%;">&nbsp;(ANSI en Windows)</span></li>
+<li><b style="color:olive">UTF-8</b></li>
+<li><b style="color:olive">UTF-16 </b>
+   &nbsp;<span style="color:darkgrey;font-size:90%;">(UNICODE en Windows)</span></li>
+</ul>
+</p>
+</section>
+
+
+<section>
+<h2>ASCII</h2>
+
+<p>
+<strong>A</strong> merican &nbsp;<strong>S</strong> tandard &nbsp;
+<strong>C</strong> ode for &nbsp;<strong>I</strong> nformation &nbsp;
+<strong>I</strong> nterchange</p>
+
+<p>Es un c&oacute;digo de <b>7 bits</b> creado en 1963, solo para los <br>signos que se usan
+en ingl&eacute;s</p>
+
+<p>
+<span style="color:darkgrey;font-size:90%;">
+Nota sobre <a href="http://es.wikipedia.org/wiki/Salto_de_l%C3%ADnea">el fin de l&iacute;nea</a>,
+se pone como:
+</span>
+</p>
+<ul style="margin-left:50%;">
+  <li><code>\n </code><span style="color:black">(unix)</span></li>
+  <li><code>\r\n </code><span style="color:black">(windows)</span></li>
+  <li><code>\r </code><span style="color:black">(mac)</span></li>
+</ul>
+
+
+<footer class="der">
+<a href="http://en.wikipedia.org/wiki/ASCII" >ASCII</a>
+</footer>
+</section>
+
+<section>
+<h2>C&oacute;digos ISO-8859</h2>
+<br><br>
+<p>Son 16 c&oacute;digos distintos
+   de <b>8 bits</b>, ampliaciones del ASCII,
+   que permiten usar signos alfab&eacute;ticos usados en otras lenguas distintas del ingl&eacute;s</p>
+<footer class="der">
+<a href="http://es.wikipedia.org/wiki/ISO/IEC_8859" >ISO-8859</a>
+</footer>
+</section>
+
+<section>
+<h2>Latin - 1</h2>
+<p>
+En Europa Occidental usamos el conjunto de carácterers <br><strong>Latin-1 </strong> &nbsp; en alguna
+de sus variantes</p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/ISO_8859-1">ISO-8859-1</a></li>
+<li><a href="http://en.wikipedia.org/wiki/ISO_8859-15">ISO-8859-15</a>
+&nbsp; (revisión del anterior para añadir el signo del euro &euro;)</li>
+<li><a href="http://en.wikipedia.org/wiki/Windows-1252">Windows-1252</a> &nbsp; (ANSI)</li>
+</ul>
+</section>
+
+
+
+<section>
+<h2>UNICODE</h2>
+
+Es una codificaci&oacute;n universal con un repertorio de más de 120000 signos
+de cualquier alfabeto, cada uno tiene asignado un <code>code point</code>
+
+<p><center><img src="imagenes/unicode1.png"></center></p>
+
+<footer class="der">
+<a href="http://unicode-table.com/en/" >Unicode character table</a>
+</footer>
+</section>
+
+<section>
+<h2>Direccionalidad y composici&oacute;n</h2>
+<p>Los interpretes de Unicode manejan autom&aacute;ticamente
+la direcci&oacute;n de la escritura y la composici&oacute;n de signos</p>
+
+<p><center><img src="imagenes/unicode2.png" style="width:275px;"></center><center><img src="imagenes/unicode3.png" style="width:525px;"></center></p>
+
+</section>
+
+
+<section>
+<h2>Formatos de Unicode</h2>
+<br>
+<p>
+Unicode se puede codificar de 3 maneras:
+</p>
+
+<ul style="margin-left:10%">
+<li><b style="color:olive">UTF-8</b> &nbsp;(en unix, internet, ...)</li>
+<li><b style="color:olive">UTF-16</b> &nbsp;(en windows)</li>
+<li><b style="color:olive">UTF-32</b></li>
+</ul>
+
+
+<footer class="der">
+<a href="http://www.unicode.org/faq/utf_bom.html" >UFT-8, UTF-16, UTF-32 &amp; BOM</a>
+</footer>
+</section>
+
+
+<section>
+<h2>UTF-8</h2>
+<p>
+Es una <b>codificaci&oacute;n variable de 8 bits </b>compatible con ASCII.
+<ul>
+<li><strong style="color:olive">1 byte:&nbsp;</strong> US-ASCII (128 caracteres)</li>
+
+<li><strong style="color:olive">2 bytes:&nbsp;</strong> caracteres romances más signos diacríticos, alfabetos griego, cirílico, copto, armenio, hebreo, árabe... (1920 caracteres)</li>
+
+<li><strong style="color:olive">3 bytes:&nbsp;</strong> Caracteres del plano básico multilingüe de Unicode: caracteres de uso común, incluyendo chino, japonés y coreano.</li>
+<li><strong style="color:olive">4 bytes:&nbsp;</strong> Caracteres del plano suplementario multilingüe. Símbolos matemáticos y alfabetos clásicos para uso académico.</li>
+</ul>
+
+</p>
+<footer class="der">
+<a href="http://en.wikipedia.org/wiki/UTF-8" >UTF-8</a>
+</footer>
+</section>
+
+
+<section>
+<h2>Uso</h2>
+<p><strong style="color:olive">UTF-8</strong> es el m&aacute;s generalizado, sobretodo en Internet y en UNIX</p>
+<table style="border: 1px solid #000; float: right;">
+  <tr><td>&amp;#33865; &rarr; &#33865;</td></tr>
+  <tr><td>&amp;#9822; &rarr; &#9822;</td></tr>
+  <tr><td>&amp;#233; &rarr; &#233;</td></tr>
+  <tr><td>&amp;eacute; &rarr; &eacute;</td></tr>
+   <tr><td>&amp;copy; &rarr; &copy;</td></tr>
+</table>
+<p><strong  style="color:olive">UTF-16</strong> se usa en Windows</p>
+<p>En <code>html</code> o <code>xml</code> se puede escribir cualquier signo: <strong>&amp;#decimal;</strong></p>
+<p>o algunos signos se pueden escribir con <a href="http://www.escapecodes.info/">character encodings</a>
+</p>
+</section>
+
+
+<section>
+<h2>Codificaci&oacute;n en protocolos de Internet</h2>
+
+En internet se presupone <code>UTF-8</code> a menos que se indique otra cosa
+<br><br>
+<pre class="prettyprint" style="font-size:75%;border-style:none;">
+# En HTML5, después de la declaración
+&lt;meta charset="UTF-8"&gt;
+
+# En HTML4, y HTML5 en el &lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;
+
+# En XML, utf-8 por defecto, si no:
+&lt;?xml version="1.0" encoding="ISO-8859-1"&gt;
+</pre>
+
+<footer class="der">
+<a href="http://code.google.com/p/doctype-mirror/wiki/MetaCharsetAttribute" >
+MetaCharsetAttribute </a>
+</footer>
+
+</section>
+
+<section>
+<h2>Conversi&oacute;n entre formatos</h2>
+<br>
+<p>
+Se puede cambiar con cualquier editor de texto, o con las utilidades de unix:
+</p>
+<p style="margin-left:20%">
+<a href="http://www.rootr.net/man/info/iconv">iconv</a>
+<br>
+<a href="http://www.rootr.net/man/info/recode">recode</a>
+</p>
+</section>
+
+<section>
+<h2>Soporte en C++</h2>
+<br>
+<p>
+En Unicode no todos los car&aacute;cteres tienen 1 byte
+<br>
+<br>
+
+Para estos est&aacute; el tipo <code>wchar_t</code>
+en lugar de <code>char</code> y	las funciones <code>wcs</code>
+</p>
+<footer class="der">
+<a href="http://en.wikipedia.org/wiki/Wide_character#C.2FC.2B.2B" >Wide Character</a>
+</footer>
+
+</section>
+
+
+<section>
+<h2>Unicode en python</h2>
+<br>
+<p>
+Desde &nbsp; Python 3 &nbsp; el tipo &nbsp;<code>str</code>&nbsp; contiene caracteres Unicode
+<br><br><br>
+
+En &nbsp; Python 2 &nbsp; existe el tipo &nbsp;<code>unicode</code>&nbsp; distinto del &nbsp;<code>str</code>&nbsp;
+</p>
+<footer class="der">
+<a href="http://docs.python.org/3.2/howto/unicode.html" >Unicode HOWTO</a>
+</footer>
+
+</section>
+
+<section>
+<h2>Codificaci&oacute;n - Descodificaci&oacute;n en Python3</h2>
+<p>En python3 existen los tipos <code>str</code> (unicode) y <code>binary</code></p>
+<p>
+Para convertir pasar desde / hasta las distintas
+codificaciones est&aacute;n las funciones &nbsp; <strong>byte.decode()</strong> &nbsp;
+y &nbsp; <strong>str.encode()</strong></p>
+
+<br>
+
+<pre class="prettyprint" style="border-style:none;font-size:80%;">
+a = 'ca&ntilde;&oacute;n'
+print (a.encode('utf8'))
+
+b'ca\xc3\xb1\xc3\xb3n'
+</pre>
+</section>
+
+<section>
+<h2>Entrada / Salida en Python3</h2>
+
+<p>Se trabaja en unicode internamente, y solam&eacute;nte se
+debe convertir a o desde una codificaci&oacute;n concreta en
+la entrada / salida</p>
+
+<p><code> write y open</code>, &nbsp; codifican y
+descodifican autom&aacute;ticamente (utf-8 por defecto)</p>
+<pre class="prettyprint" style="font-size:70%;border-style:none;">
+
+a = 'ca&ntilde;&oacute;n'
+f = open ('texto.txt', 'w', encoding='utf-8')
+f.write(a)
+f.close()
+
+with open('texto.txt', encoding='utf-8') as f:
+   print (f.readline())
+</pre>
+</section>
+
+<section>
+<h2>Unicode en Python 2.7</h2>
+<p>En python 2.x hay un tipo <code>unicode</code>, distinto del
+<code>str</code>.</p><p>El <code>unicode</code> equivale al tipo
+<code>str</code> del python3, y el <code>str</code> al <code>binary</code></p>
+<br>
+<table border="0px solid #000" style="width: 50%;font-size:85%; margin-left: 25%; margin-right: 25%;">
+<colgroup>
+<col width="50%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr>
+<th><strong>Python 3 </strong></th>
+<th><strong>Python 2.7</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr>
+<td><tt>str</tt></td>
+<td><tt>unicode</tt></td>
+</tr>
+<tr>
+<td><tt>binary</tt></td>
+<td><tt>str</tt></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Además hay que poner en el código fuente:
+</p>
+<pre class="prettyprint" style="border-style:none;">
+
+# -*- coding: utf-8 -*-
+</pre>
+</p>
+</section>
+
+<section>
+<h2>Unicode en Python 2.7</h2>
+<p>Existe el tipo <code>unicode</code></p>
+<pre class="prettyprint" style="font-size:70%;width: 80%;border-style:none;">
+# Constructor
+a = unicode('ca&ntilde;&oacute;n', encoding='utf8')
+
+# Como literal
+a = u'ca&ntilde;&oacute;n'
+a = u'ca\xf1\xf3n'
+
+# se pueden usar los métodos de str con el tipo unicode
+a.replace('a', 'aaa')
+</pre>
+Se pasa de str a unicode y viceversa con las funciones
+&nbsp; <strong>str.decode()</strong> &nbsp;
+y &nbsp; <strong>unicode.encode()</strong><br>
+</p>
+
+<footer class="der">
+<a href="http://docs.python.org/2.7/howto/unicode.html" >Unicode HOWTO</a>
+</footer>
+</section>
+
+<section>
+<h2>Entrada / Salida en Python 2.7</h2>
+<br>
+Se trabaja en <code>unicode</code> internamente, y solam&eacute;nte se
+debe convertir a o desde una codificaci&oacute;n concreta en
+la entrada / salida
+
+<br><br>
+
+<pre class="prettyprint" style="border-style:none;">
+import codecs
+f = codecs.open('unicode.rst', encoding='utf-8')
+for line in f:
+	print line
+
+f = codecs.open('test', encoding='utf-8', mode='w')
+f.write(u'ca&ntilde;&oacute;n')
+f.close()
+</pre>
+</section>
+
+
+<section>
+<h2>Más Unicode</h2>
+<br>
+<p style="margin-left:20%">
+<a href="https://docs.djangoproject.com/en/1.8/ref/unicode/#unicode-data">Unicode en Django</a>
+<br> <br>
+<a href="https://docs.djangoproject.com/en/1.8/ref/unicode/#uri-and-iri-handling">URI and IRI handling</a>
+</p>
+
+<footer class="der">
+<a href="http://farmdev.com/talks/unicode/" >y todavía más Unicode y Python</a>
+</footer>
+
+</section>
+
+
+
+
+
+
+
+<!-- Style -->
+
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<style>
+  html { background-color: aliceblue; }
+  a { color: blue4; font-size:80%; text-decoration:none;} a:hover {text-decoration: underline;}
+  footer { position: absolute; bottom: 10px; right: 50px; }
+  strong {color: #FF0066}
+  body {
+      font-family: 'Oswald', arial, serif;
+      background-color: aliceblue;
+      color: black;
+      font-size: 2em;
+      background: aliceblue;
+  }
+
+  table {
+	  margin: auto 20px auto auto;
+	  float: left;
+  }
+
+  td {
+	  padding:5px 10px 5px 10px;
+  }
+
+  th {
+	background:rgb(248,231,248);
+  }
+
+
+  pre {font-size:80%;
+       width: 630px;
+       line-height:1.6em;
+       margin: auto auto auto 100px;
+	  }
+
+  /* Transition effect */
+  section {
+      -moz-transition: left 400ms linear 0s;
+      -webkit-transition: left 400ms linear 0s;
+      -ms-transition: left 400ms linear 0s;
+      transition: left 400ms linear 0s;
+      background: aliceblue;
+  }
+  section { left: -150%; }
+  section[aria-selected] { left: 0; }
+  section[aria-selected] ~ section { left: +150% }
+
+  .chapter { background-color: paleturquoise;}
+  .chapter h1 {line-height: 600px; vertical-align: middle; margin: 0; text-align: center; display: block}
+
+  h1 {
+      margin: 50px 100px 0 100px;
+      font-size: 60px;
+      text-shadow: 0px -1px 0px #000;
+      text-align: left;
+  }
+  h2 {
+      color: rgb(96,0,0);
+      margin: 30px 0 20px 0;
+      font-size: 40px;
+      text-align: center;
+  }
+  ul {
+      margin-top: 20px;
+      font-size: 35px;
+      text-align: left;
+      /*border-left: 4px solid white;*/
+      padding-right: 40px;
+      min-width: 310px;
+      margin-left: 50px;
+      display: inline-block;
+      font-size: 95%;
+  }
+  q, p {
+      margin: 30px auto 0 auto;
+      width: 95%;//630px;
+  }
+  q:after {content: ""}
+  q:before {content: ""}
+  q {
+      display: block;
+      margin-top: 140px;
+  }
+  video {
+      position: absolute;
+      top: 210px;
+      width: 260px;
+      left: 445px;
+      box-shadow: 0 0 10px black;
+  }
+
+  .cen {
+      position: absolute;
+      top: 120px;
+      width: 620px;
+      height: 440px;
+      left: 130px;
+      box-shadow: 0 0 4px black;
+  }
+
+  li {
+    //list-style-type: none;
+    padding: 9px;
+  }
+
+</style>
+
+<!-- {{{{ *****************  DZSlides CORE 2.0b1 *************************** -->
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+
+<!-- This block of code is not supposed to be edited, but if you want to change the behavior of the slides, feel free to hack it ;) -->
+
+<!-- Default Style -->
+
+<style>
+  * { margin: 0; padding: 0; }
+  details {display: none;}
+  body {
+    width: 900px; height: 600px;
+    margin-left: -400px; margin-top: -300px;
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+  }
+  html {
+    overflow: hidden;
+  }
+  section {
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  section[aria-selected] { pointer-events: auto;}
+  body {display: none}
+  body.loaded {display: block}
+</style>
+
+<script>
+  var friendWindows = [];
+  var idx = 1;
+  var slides;
+
+  /* main() */
+
+  window.onload = function() {
+    slides = document.querySelectorAll("body > section");
+    onhashchange();
+    setSlide();
+    document.body.className = "loaded";
+    setupTouchEvents();
+    onresize();
+  }
+
+  /* Handle keys */
+
+  window.onkeydown = function(e) {
+    // Don't intercept keyboard shortcuts
+    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) {
+      return;
+    }
+    if ( e.keyCode == 37 // left arrow
+      || e.keyCode == 38 // up arrow
+      || e.keyCode == 33 // page up
+    ) {
+      e.preventDefault();
+      back();
+    }
+    if ( e.keyCode == 39 // right arrow
+      || e.keyCode == 40 // down arrow
+      || e.keyCode == 34 // page down
+    ) {
+      e.preventDefault();
+      forward();
+    }
+
+    if ( e.keyCode == 32) { // space
+        e.preventDefault();
+        toggleContent();
+    }
+  }
+
+  /* Touch Events */
+
+  function setupTouchEvents() {
+    var orgX, newX;
+    var tracking = false;
+
+    var body = document.body;
+    body.addEventListener("touchstart", start, false);
+    body.addEventListener("touchmove", move, false);
+
+    function start(e) {
+      e.preventDefault();
+      tracking = true;
+      orgX = e.changedTouches[0].pageX;
+    }
+
+    function move(e) {
+      if (!tracking) return;
+      newX = e.changedTouches[0].pageX;
+      if (orgX - newX > 100) {
+        tracking = false;
+        forward();
+      } else {
+        if (orgX - newX < -100) {
+          tracking = false;
+          back();
+        }
+      }
+    }
+  }
+
+  /* Adapt the size of the slides to the window */
+
+  window.onresize = function() {
+    var sx = document.body.clientWidth / window.innerWidth;
+    var sy = document.body.clientHeight / window.innerHeight;
+    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+    document.body.style.MozTransform = transform;
+    document.body.style.WebkitTransform = transform;
+    document.body.style.OTransform = transform;
+    document.body.style.msTransform = transform;
+    document.body.style.transform = transform;
+  }
+  function getDetails(idx) {
+    var s = document.querySelector("section:nth-of-type("+ idx +")");
+    var d = s.querySelector("details");
+    return d?d.innerHTML:"";
+  }
+  window.onmessage = function(e) {
+    msg = e.data;
+    win = e.source;
+    if (msg === "register") {
+      friendWindows.push(win);
+      win.postMessage(JSON.stringify({method: "registered", title: document.title, count: slides.length}), "*");
+      win.postMessage(JSON.stringify({method: "newslide", details: getDetails(idx), idx: idx}), "*");
+      return;
+    }
+    if (msg === "back") back();
+    if (msg === "forward") forward();
+    if (msg === "toggleContent") toggleContent();
+    // setSlide(42)
+    var r = /setSlide\((\d+)\)/.exec(msg);
+    if (r) {
+        idx = r[1];
+        setSlide();
+    }
+  }
+
+  /* If a Video is present in this new slide, play it.
+     If a Video is present in the previous slide, stop it. */
+
+  function toggleContent() {
+    var s = document.querySelector("section[aria-selected]");
+    if (s) {
+        var video = s.querySelector("video");
+        if (video) {
+            if (video.ended || video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    }
+  }
+
+  /* If the user change the slide number in the URL bar, jump
+     to this slide. */
+
+  window.onhashchange = function(e) {
+    var newidx = ~~window.location.hash.split("#")[1];
+    if (!newidx) newidx = 1;
+    if (newidx == idx) return;
+    idx = newidx;
+    setSlide();
+  }
+
+  /* Slide controls */
+
+  function back() {
+    if (idx == 1) return;
+    idx--;
+    setSlide();
+  }
+  function forward() {
+    if (idx >= slides.length) return;
+    idx++;
+    setSlide();
+  }
+  function setSlide() {
+    var old = document.querySelector("section[aria-selected]");
+    var next = document.querySelector("section:nth-of-type("+ idx +")");
+    if (old) {
+      old.removeAttribute("aria-selected");
+      var video = old.querySelector("video");
+      if (video) { video.pause(); }
+    }
+    if (next) {
+      next.setAttribute("aria-selected", "true");
+      var video = next.querySelector("video");
+      if (video) { video.play(); }
+    } else {
+      console.warn("No such slide: " + idx);
+      idx = 0;
+      for (var i = 0; i < slides.length; i++) {
+          if (slides[i].hasAttribute("aria-selected")) {
+              idx = i + 1;
+          }
+      }
+    }
+    window.location.hash = idx;
+    for (var i = 0; i < friendWindows.length; i++) {
+        friendWindows[i].postMessage(JSON.stringify({method: "newslide", details: getDetails(idx), idx: idx}), "*");
+    }
+  }
+</script>

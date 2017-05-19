@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SSBW - Registro</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/tomorrow-night.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+
+		section {
+			 margin-top:-4%  !important;
+			 width: 110% !important;
+		}
+
+	 	  html.img-center div.slide-background.present {
+			 background-position: center;
+			 background-size: 100% 100%;
+			 opacity: 0.1;
+			 z-index: -1;
+		  }
+
+		  strong {
+  			color: turquoise;
+  		  }
+
+		  strong.n {
+  			color:orange;
+  		}
+
+  	    th {
+  			color:white;
+  			background-color: palevioletred;
+  		 }
+
+		 p {
+			 font-size: 90% !important;
+			 text-align: left;
+		 }
+
+		 ul {
+			 font-size: 68% !important;
+		 }
+		 li {
+            padding:0 0 16px 0 !important;
+        }
+
+		  footer {
+  		   position: absolute !important;
+             bottom: -40px !important;
+             right: 1em !important;
+             font-size: 0.8em !important;
+  		}
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background="images/webapps.jpg" data-state="img-center">
+					<h2 style="color:tomato">Registro</h2>
+					<h6>Sistemas Software Basados en Web</h6>
+
+						<small><a href="http://www.ugr.es/~jmguirao">José Ma. Guirao</a> / <a href="mailto://jmguirao@ugr.es">jmguirao@ugr.es</a></small>
+					<footer>
+					en el <a href="https://swad.ugr.es/?CrsCod=8934">swad</a>
+					</footer>
+				</section>
+
+
+				<section>
+					<h3>Registro</h3>
+					<br />
+					<p style="width:100%:margin-left:-20px">
+						Es conveniente en este tipo de aplicaciones ir <strong>registrando los eventos</strong>
+						que se van produciendo para:
+						<br /><br />
+						<ul class="left"  style="margin-left:-40%">
+							<li>depuración</li>
+							<li>registro de errores</li>
+							<li>uso de la aplicación</li>
+							<li>alertas</li>
+						</ul>
+					</p>
+					<footer>
+						<a href="https://www.slideshare.net/sivasubramaniam3/introduction-to-logging-in-django">
+							Introduction to logging in django </a>
+						</footer>
+				</section>
+
+				<section>
+					<h3>Django Logging</h3>
+					<br/>
+					<p>
+						Djanjo tiene un modulo para esto, basado en el que hay integrado en
+						&nbsp;
+						<a href="https://docs.python.org/3.6/library/logging.html">python</a>, &nbsp;
+						<a href="https://docs.djangoproject.com/en/1.10/topics/logging/">Django Logging</a>
+					</p>
+					<br />
+					<br />
+					<footer> Lo cuentan en: &nbsp;
+						<a href="https://www.webforefront.com/django/setupdjangologging.html">
+							Django Logging set up</a>
+						</footer>
+				</section>
+
+				<section>
+					<h3>Ejemplo</h3>
+					<p>
+						En settings.py
+					</p>
+					<pre><code data-trim class="python" style="font-size:60%">
+				LOG_FILE = 'mi_archivo_de.log'
+
+				LOGGING = {
+				    'version': 1,
+
+				    'disable_existing_loggers': False,
+
+				    'formatters': {
+
+				        'verbose': {
+				            'format' : "[%(asctime)s] %(levelname)s [%(name)s:%(lineno)s] %(message)s",
+				            'datefmt' : "%d/%b/%Y %H:%M:%S"
+				        },
+
+				        'simple': {
+				            'format': '%(levelname)s [%(name)s:%(lineno)s] %(message)s'
+				        },
+				    },
+
+				    'handlers': {
+
+				        'file': {
+				            'level': 'INFO',
+				            'class': 'logging.FileHandler',
+				            'filename': os.path.join(BASE_DIR, LOG_FILE),
+				            'formatter': 'verbose',
+				            'mode':'w'
+				        },
+
+				        'console': {
+				            'level': 'DEBUG',
+				            'class': 'logging.StreamHandler',
+				            'formatter': 'simple'
+				        }
+				    },
+
+				    'loggers': {
+				        'django': {
+				            'handlers':['file'],
+				            'propagate': True,
+				            'level':'ERROR',
+				        },
+
+				        'resta': {
+				            'handlers': ['file', 'console'],
+				            'level': 'DEBUG',
+				        },
+				    }
+				}
+					</code></pre>
+				</section>
+
+				<section>
+					<h3>Ejemplo</h3>
+					<p>
+						En el código
+					</p>
+					<pre><code data-trim class="python" style="font-size:60%">
+						import logging
+						logger = logging.getLogger('En esta parte del código')
+
+						...
+
+						logger.debug('esto y lo otro')
+
+						....
+
+						logger.info ('ha pasado esto')
+						...
+
+						try:
+						    ...
+						except ValueError as error:
+							logger.error(error)
+
+					</code></pre>
+				</section>
+
+			<section>
+				<section>
+					<h3>Agregadores</h3>
+					<br/>
+					<p>
+						Los mensajes de logging se pueden manadar a un servidor centralizado, con
+						interface web, y alertas por correo, para tener toda la aplicacion controlada
+					</p>
+					<br/>
+					<footer>
+						<a href="https://www.slideshare.net/rezasafiyat/logging-for-openstack-elasticsearch-fluentd-logstash-kibana">
+							Logging for OpenStack - Elasticsearch, Fluentd, Logstash, Kibana </a>
+						</footer>
+				</section>
+
+				<section>
+					<br />
+					<img src="images/kibana.png" />
+				</section>
+			</section>
+
+
+
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

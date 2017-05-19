@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SSBW - Preliminares</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+
+		section {
+		    width:110% !important;
+		    margin-left:-10% !important;
+			 margin-top:-4%  !important;
+		}
+
+	 	  html.img-center div.slide-background.present {
+			 background-position: center;
+			 background-size: 100% 100%;
+			 opacity: 0.1;
+			 z-index: -1;
+		  }
+
+		  strong {
+  			color: turquoise;
+  		  }
+
+		  strong.n {
+  			color:orange;
+  		}
+
+  	    th {
+  			color:white;
+  			background-color: palevioletred;
+  		 }
+
+		 p {
+			 font-size: 90% !important;
+			 text-align: left;
+		 }
+
+		 ul {
+			 font-size: 80% !important;
+		 }
+		 li {
+            padding:0 0 16px 0 !important;
+        }
+
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background="images/webapps.jpg" data-state="img-center">
+					<h1>S S B W</h1>
+					<h2>Sistemas Software Basados en Web</h2>
+					<p>
+						<small><a href="http://www.ugr.es/~jmguirao">José Ma. Guirao</a> / <a href="mailto://jmguirao@ugr.es">jmguirao@ugr.es</a></small>
+					</p>
+					<footer>
+					en el <a href="https://swad.ugr.es/?CrsCod=8934">swad</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>Cliente - Servidor</h3>
+					<img src="images/client-server.png" height="400px">
+					<br />
+					<small>Varios clientes atendidos por un solo servidor</small>
+				</section>
+
+				<section>
+					<h4>Cliente - Servidor</h4>
+					<img src="images/client-server-t.png"  height="400px"  width="70%">
+					<br />
+					<small>La comunicación puede ser
+						<a href="http://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-does-it-really-mean">
+							síncrona o asíncrona</a></small>
+				</section>
+
+				<section>
+					<h3>Cliente - Servidor</h3>
+					<img src="images/client-server-3.png"  height="400px"  width="70%">
+					<br />
+					<small>Con persistencia de datos</small>
+				</section>
+
+				<section>
+
+					<h3>Cliente - Servidor</h3>
+					<p>
+					La aplicación está dividida en dos partes,  que
+					se ejecutan en máquinas distintas:
+					</p>
+					<table border="0" style="font-size:70%">
+					   <colgroup>
+					   <col width="50%">
+					   <col width="50%">
+					   </colgroup>
+					   <thead valign="bottom">
+					     <tr>
+							<th>Cliente</th>
+					      <th>Servidor</th>
+					     </tr>
+					  </thead>
+					  <tbody valign="top">
+					<tr><td><tt><strong>Proactivo</strong>, inicia la comunicación</tt></td>
+					<td><tt><strong>Reactivo</strong>, esta esperando requerimientos para contestarlos</tt></td>
+					</tr>
+					<tr><td><tt>Hace requerimientos a <strong>un servidor</strong></tt></td>
+					<td><tt>Responde a <strong>varios clientes</strong></tt></td>
+					</tr>
+					<tr><td><tt>Se encarga de la <strong>interface de usuario</strong></tt></td>
+					<td><tt>Hace el resto de la lógica del programa y la comunicación con la
+					<strong>base de datos</strong></tt></td>
+					</tr>
+					</tbody>
+					</table>
+				</section>
+
+				<section>
+					<h3>Web &nbsp; Apps</h3>
+					<ul>
+					   <li><strong class="n">El cliente ejecuta en un navegador</strong>, o como apliación nativa
+					   mas raramente</li>
+					   <li>por lo tanto es <strong class="n">independiente de la plataforma</strong>,
+							se ejecuta en cualquier S.O. incluyendo móviles</li>
+					   <li>y <strong class="n">se adaptan fácilmente a cambios en los dispositivos</strong> de acceso a la red</li>
+					   <li>Se puede usar desde cualquier sitio, remotamente</li>
+					   <li>Mantenimiento centralizado</li>
+					   <li>Se puede poner como <a href="http://en.wikipedia.org/wiki/Software_as_a_service">
+						   <b>S</b>oftware <b>A</b>s a <b>S</b>ervice</a></li>
+					   <li><strong class="n">Se implantan en la nube</strong>, (escalabilidad, backup, ...)</li>
+					</ul>
+				</section>
+
+
+				<section  data-background="black">
+
+									  <h3>Desde los 90: &nbsp; La <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb</h3>
+									  <br>
+				   <ul style="list-style-type:none">
+
+				    <li><span class="fragment"> 1991 &nbsp;&nbsp;
+						<strong>HTTP</strong>
+						</span>
+					</li>
+
+				    <li><span class="fragment">1991 &nbsp;&nbsp;
+						<strong>HTML</strong>
+						</span>
+					</li>
+
+				    <li><span class="fragment">1995 &nbsp;&nbsp;
+						<strong>HTML 2.0</strong> &nbsp;&nbsp; forms, upload files, &nbsp;&nbsp;<strong class="n">CGIs</strong> (con
+						<strong class="n">Perl</strong>)
+						</span>
+					</li>
+
+				    <li><span class="fragment">1996 &nbsp;&nbsp;
+						<strong>Javascript</strong>  &nbsp;&nbsp; programaci&oacute;n en el navegador
+						</span>
+					</li>
+
+					<li><span class="fragment">1997 &nbsp;&nbsp;
+					 <strong>HTML 3.2</strong> &nbsp; &nbsp; más lenguajes de script &nbsp;&nbsp;<strong class="n">PHP, Python</strong>
+					 </span>
+				 </li>
+
+
+
+				  </ul>
+			  </section>
+
+			  <section  data-background="black">
+
+			  					  <h3>Desde los 00: &nbsp; La <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb</h3>
+			  					  <br>
+			     <ul style="list-style-type:none">
+
+
+ 				    <li><span class="fragment">1999 &nbsp;&nbsp;
+ 						<strong>HTML 4.1</strong> &nbsp; &nbsp; extensiones, ...&nbsp;<strong class="n">flash player</strong>
+ 						</span>
+ 					</li>
+
+ 				    <li><span class="fragment">1996 &nbsp;&nbsp;
+ 						<strong>AJAX</strong>  &nbsp;&nbsp; HTML "din&aacute;mico"
+ 						</span>
+ 					</li>
+
+ 				    <li><span class="fragment">2000 &nbsp;&nbsp;
+ 						<strong>XML, &nbsp; XHTML 4.1</strong>
+ 						</span>
+ 					</li>
+
+			      <li><span class="fragment"> 2005 &nbsp;&nbsp;
+			  		<strong>Frameworks MVC</strong> &nbsp; &nbsp; <strong class="n">Ruby on Rails, Django</strong>
+			  		</span>
+			  	</li>
+
+				<li><span class="fragment"> 2006 &nbsp;&nbsp;
+				<strong>Librerías JS</strong> &nbsp; &nbsp; <strong class="n">jQuery</strong>
+				</span>
+			</li>
+
+
+			    </ul>
+
+			  </section>
+
+			  <section  data-background="black">
+
+			  					  <h3>Desde los 00: &nbsp; La <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb</h3>
+			  					  <br>
+			     <ul style="list-style-type:none">
+
+
+					  			      <li><span class="fragment"> 2007 &nbsp;&nbsp;
+					  			  		<strong>Smartphones, Tables</strong> &nbsp; &nbsp; <strong class="n">apps</strong>
+					  			  		</span>
+					  			  	</li>
+
+					  			      <li><span class="fragment"> 2008 &nbsp;&nbsp;
+					  			  		<strong>Cloud servers</strong> &nbsp; &nbsp; <strong class="n">IaaS, &nbsp; PaaS, &nbsp; SaaS</strong>
+					  			  		</span>
+					  			  	</li>
+
+					  			      <li><span class="fragment">2013 &nbsp;&nbsp;
+					  			  		<strong>Single Page Applications</strong>&nbsp;&nbsp; frameworks en el lado del cliente
+					  			  		 &nbsp;&nbsp;<strong class="n">AngularJS, &nbsp; React</strong>, &nbsp; <strong class="n">REST</strong>services,
+					  			  		</span>
+					  			  	</li>
+
+					  				<li><span class="fragment">2013 &nbsp;&nbsp;
+					  				<strong>Contenedores</strong>&nbsp;&nbsp; frameworks en el lado del cliente
+					  				 &nbsp;&nbsp;<strong class="n">Docker</strong>, </span>
+					  			</li>
+
+					  			      <li><span class="fragment">2014 &nbsp;&nbsp;
+					  			  		<strong>JS ...</strong>&nbsp;&nbsp; Programacion as&iacute;ncrona en el servidor
+					  			  		 &nbsp;&nbsp;<strong class="n">NodeJS</strong>
+					  			  		</span>
+					  			  	</li>
+
+					  			      <li><span class="fragment">2014 &nbsp;&nbsp;
+					  			  		<strong>HTML 5</strong> &nbsp; canvas, &nbsp;web storage, &nbsp;multimedia,
+					  					&nbsp;geolocalizaci&oacute;n, &nbsp;CSS3, ...
+					  			  		</span>
+					  			  	</li>
+
+				  </ul>
+			  </section>
+
+<section  data-background="black">
+
+  <h3>Desde los 00: &nbsp; La <strong>W</strong>orld <strong>W</strong>ide <strong>W</strong>eb</h3>
+  <br />
+  <p>
+	Dónde estamos, de dónde venimos, a dónde vamos, ...
+  </p>
+  <br /><br />
+
+  <a href="http://www.slideshare.net/scothis/aoa-mwa">Architecture of a Modern Web App</a>
+
+</section>
+
+<section  data-background="black">
+   <h3>One &nbsp; page &nbsp; applications</h3>
+
+	<img src="images/web-application-models-over-time.png"  height="480px"  width="75%">
+
+
+</section>
+
+<section  data-background="black">
+   <h3>Arquitectura</h3>
+
+	<img src="images/web-development-architecture-and-deployment-diagram.jpg"  height="400px"  width="105%">
+
+
+</section>
+<section  data-background="black">
+   <h3>Componentes en el despliegue</h3>
+
+	<img src="images/the-state-of-websockets-in-django-4-1024.jpg"  height="520px"  width="90%">
+
+
+</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

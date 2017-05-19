@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SSBW - Persistencia</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+
+		section {
+		    width:110% !important;
+		    margin-left:-10% !important;
+			 margin-top:-4%  !important;
+		}
+
+	 	  html.img-center div.slide-background.present {
+			 background-position: center;
+			 background-size: 100% 100%;
+			 opacity: 0.1;
+			 z-index: -1;
+		  }
+
+		  strong {
+  			color: turquoise;
+  		  }
+
+		  strong.n {
+  			color:orange;
+  		}
+
+  	    th {
+  			color:white;
+  			background-color: palevioletred;
+  		 }
+
+		 p {
+			 font-size: 90% !important;
+			 text-align: left;
+		 }
+
+		 ul {
+			 font-size: 80% !important;
+		 }
+		 li {0
+			 0
+            padding:0 0 16px 0 !important;
+        }
+
+		  footer {
+  		   position: absolute !important;
+             bottom: -40px !important;
+             right: 1em !important;
+             font-size: 0.8em !important;
+  		}
+
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background="images/webapps.jpg" data-state="img-center">
+					<h1>S S B W</h1>
+					<h2>Sistemas Software Basados en Web</h2>
+
+						<small><a href="http://www.ugr.es/~jmguirao">José Ma. Guirao</a> / <a href="mailto://jmguirao@ugr.es">jmguirao@ugr.es</a></small>
+					<footer>
+					en el <a href="https://swad.ugr.es/?CrsCod=8934">swad</a>
+					</footer>
+				</section>
+
+				<section>
+					<h3>Persistencia</h3>
+					<img src="images/SQL.png" height="440px">
+				</section>
+
+			<section>
+				<h2>Bases de datos &nbsp;<a href="http://en.wikipedia.org/wiki/NoSQL">No-SQL</a></h2>
+
+				Son base de datos para permitir &nbsp; <code>'BIG DATA'</code>, &nbsp; tipos de datos
+				complejos, &nbsp; con otro tipo de  índices, &nbsp; distintas maneras de consulta, &nbsp; escalabilidad, &nbsp; replicación, &nbsp; etc:<br><br>
+
+				<table border="0" style="font-size:65%">
+				<colgroup>
+				<col width="50%">
+				<col width="50%">
+				</colgroup>
+				<thead valign="bottom">
+				<tr>
+				<th><strong style="color:white">SQL</strong></th>
+				<th><strong style="color:white">No-SQL</strong></th>
+				</tr>
+				</thead>
+				<tbody valign="top">
+				<tr>
+				<td><tt>Tablas</tt></td>
+				<td><tt>Hashes, &nbsp; listas</tt></td>
+				</tr>
+				<tr>
+				<td><tt>Datos estructurados, &nbsp; consistencia</tt></td>
+				<td><tt>Datos menos estructurados, &nbsp; dinamicidad</tt></td>
+				</tr>
+				<tr>
+				<td><tt>Escalabilidad vertical</tt></td>
+				<td><tt>Escalabilidad horizontal</tt></td>
+				</tr>
+				<tr>
+				<td><tt>Contabilidad, &nbsp; Facturación, &nbsp; Almacen, &nbsp; Personal, &nbsp; Tiendas on-line, &nbsp; etc</tt></td>
+				<td><tt>Documentos, &nbsp; Foros, &nbsp; Redes Sociales, &nbsp; Datos Distribuidos, &nbsp; etc</tt></td>
+				</tr>
+				<tr>
+				<td><tt></tt></td>
+				<td><tt></tt></td>
+				</tr>
+				</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h3>SQL vs no-SQL</h3>
+				<br /><br /><br />
+				<img src="images/nosqlfunny.png" width="100%">
+			</section>
+
+			<section>
+				<img src="images/mongodb-nosql-database-4-1024.jpg" height="640px">
+			</section>
+
+
+			<section>
+				<img src="images/nosolosql.jpg" height="540px">
+				<footer >
+				<a href="http://kkovacs.eu/cassandra-vs-mongodb-vs-couchdb-vs-redis" >
+				Cassandra vs MongoDB vs CouchDB vs Redis vs ...</a>
+				</footer>
+			</section>
+
+			<section>
+			   <h3>Base de datos &nbsp; <a href="http://www.mongodb.org/">mongoDB</a></h3>
+
+			   <p>
+      	     Es una base de datos, orientada a documentos estilo <a href="http://bsonspec.org/">JSON</a>,
+		      que incluye información del tipo de dato
+			</p>
+			<p>
+							    <br>
+			     Una <a href="http://docs.mongodb.org/manual/reference/glossary/#term-database">base de datos </a>está formada por
+			     <a href="http://docs.mongodb.org/manual/reference/glossary/#term-collection">colecciones</a>,
+		      	que son un conjunto de <a href="http://docs.mongodb.org/manual/core/document/">documentos</a>
+			   </p>
+<br />
+				<img src="images/MongoDB Collection.jpg" />
+
+			</section>
+
+			<section>
+				<img src="images/SQL-MongoDB Correspondence.PNG" height="540px">
+			</section>
+
+
+			<section>
+			   <h3>Base de datos &nbsp; <a href="http://www.mongodb.org/">mongoDB</a></h3>
+
+			    <br/><br /><br />
+
+			   <a href="https://docs.mongodb.com/manual/crud/" >MongoDB CRUD Introduction</a>
+
+             <br/><br /><br />
+
+			   <a href="https://www.tutorialspoint.com/mongodb/mongodb_overview.htm" >MongoDB Tutorial</a>
+
+				<br/><br /><br />
+
+				<a href="https://docs.mongodb.com/getting-started/python/" >
+				Getting Started With MongoDB</a>
+
+			</section>
+
+			<section data-background="black">
+				 <h3>&nbsp; <a href="http://docs.mongodb.org/ecosystem/drivers/python/">PyMongo</a></h3>
+
+				   <pre><code data-trim class="python" style="font-size:60%">
+						# -*- encoding: utf-8 -*-
+						import datetime
+						from pymongo import MongoClient
+						client = MongoClient('mongodb://localhost:27017/')
+
+						# base de datos
+						db = client.test_database
+
+						# documento
+						import datetime
+						post = {"author": "Mike",
+						        "text": "My first blog post!",  # en SQL serian 2 tablas
+						        "tags": ["mongodb", "python", "pymongo"],
+						        "date": datetime.datetime.utcnow()}
+
+						# colección
+						posts = db.posts
+						post_id = posts.insert(post)
+
+						# Query
+						query = posts.find_one({"_id": post_id})
+						query = posts.find_one({"author": "Mike"})
+
+						# Insertar otros datos (distintos)
+						new_posts = [{"author": "Mike",
+						              "text": "Another post!",
+						              "tags": ["bulk", "insert"],
+						              "date": datetime.datetime(2009, 11, 12, 11, 14)},
+						             {"author": "Eliot",
+						              "title": "MongoDB is fun",
+						              "text": "and pretty easy too!",
+						              "date": datetime.datetime(2009, 11, 10, 10, 45)}]
+						posts.insert(new_posts)
+
+						# Find devuelve un cursor iterable
+						for post in posts.find({"author": "Mike"}):
+						   print (post['text'])
+
+						# Otras querys
+						d = datetime.datetime(2009, 11, 12, 12)
+						posts.find({"date": {"$lt": d}}).sort("author")
+
+						# Creando índices para mayor rapidez (y tamaño de la BD)
+						from pymongo import ASCENDING, DESCENDING
+						posts.create_index([("date", DESCENDING), ("author", ASCENDING)])
+					</code></pre>
+					<br />
+					<footer>
+						<a href="http://api.mongodb.org/python/current/tutorial.html" >
+						Tutorial</a>, &nbsp;
+						<a href="http://api.mongodb.org/python/current/examples/index.html">Más Ejemplos</a>,
+
+						<br />
+						<a href="http://altons.github.io/python/2013/01/21/gentle-introduction-to-mongodb-using-pymongo/">
+						Gentle Introduction to MongoDB using Pymongo</a>
+					</footer>
+			</section>
+
+		   <section data-background="black">
+				<h3>&nbsp; <a href="http://mongoengine.org/">Mongoengine</a></h3>
+
+				<pre><code data-trim class="python" data-noescape style="font-size:60%">
+					# -*- encoding: utf-8 -*-
+
+					# Mongoengine
+					#
+					# <mark>Object Document Model</mark>
+
+					import datetime
+					from mongoengine import *
+
+					connect('mongoengine_test', host='localhost', port=27017)
+
+					class Post(Document):
+					    title = StringField(required=True, max_length=200)
+					    content = StringField(required=True)
+					    author = StringField(required=True, max_length=50)
+					    published = DateTimeField(default=datetime.datetime.now)
+
+					post_1 = Post(
+						            title='Sample Post',
+						            content='Some engaging content',
+						            author='Scott'
+						      )
+					post_1.save()
+
+					post_1.title = 'A Better Post Title'
+					post_1.save()
+
+					for post in Post.objects:
+					    print(post.title)
+
+					for post in Post.objects(tags='mongodb'):
+						 print(post.title)
+
+				   post_1.delete()
+
+				</code></pre>
+
+				<br />
+				<footer>
+					<a href="http://docs.mongoengine.org/tutorial.html#getting-started" >
+					Tutorial</a>, &nbsp;
+
+					<br />
+					<a href="https://realpython.com/blog/python/introduction-to-mongodb-and-python/">
+					Introduction to MongoDB and Python </a>
+				</footer>
+
+
+			</section>
+
+
+			<section>
+				<h3>Otras BD NO-SQL</h3>
+
+				<br><br>
+
+				<ul>
+				<li><a href="http://redis.io/">Redis</a>
+				   <span style="color:gray;font-size:70%">&nbsp;(más simple y rápida)</span><br><br>
+				</li>
+				<li><a href="https://www.elastic.co/">Elasticsearch</a>
+				   <span style="color:gray;font-size:70%">&nbsp;(para motores de búsqueda)</span><br><br>
+				</li>
+				<li><a href="http://hadoop.apache.org/">Hadoop</a>
+				   <span style="color:gray;font-size:70%">&nbsp;(big data)</span><br><br>
+				</li>
+				<li><a href="https://memcached.org/">Memcached</a>
+				   <span style="color:gray;font-size:70%">&nbsp;(para cache en memoria)</span><br><br>
+				</li>
+
+			</ul>
+			</section>
+
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

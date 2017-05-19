@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>DAI, Plantillas</title>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+
+
+<section>
+    <h1>D<span style="font-size: 0.6em;">esarrollo de</span> A<span style="font-size: 0.6em;">plicaciones para </span> I<span style="font-size: 0.6em;">nternet</span></h1>
+
+    <h2>Plantillas (Templates)</h2>
+
+    <p><center><img src="./imagenes/web-app-dev.jpg" width="70%" /></center><p>
+
+    <footer><a href="https://swad.ugr.es/?CrsCod=7257">
+    Desarrollo de Aplicaciones para Internet</a></footer>
+</section>
+
+<section>
+   <h2>Modelo - Vista - Controlador</h2>
+
+   <strong>MVC</strong>.
+
+   Patrón de arquitectura de software que separa los datos y la lógica de negocio de una aplicación de la interfaz de usuario y el módulo encargado de gestionar los eventos y las comunicaciones.
+
+   <center><img src="./imagenes/mvc.png" width="48%" /></center>
+
+   <footer class="der">
+   <a href="https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador"> &nbsp;
+   MVC</a>
+   </footer>
+</section>
+
+
+<section>
+<h2>Flask: Plantillas (templates)</h2>
+<p>Flask usa <strong>Jinja2</strong> como motor de plantillas:</p>
+
+<ul style="margin-left: 10%">
+
+<li>HTML escaping</li>
+<li>Filtros</li>
+<li>Herencia de plantillas</li>
+<li>Compilado a python nativo eficiente</li>
+<li>Sintaxis configurable (para acomodarse mejor a otros formatos de salida como LaTeX o JavaScript)</li>
+</ul>
+
+<footer class="der">
+<a href="http://jinja.pocoo.org/" >
+Jinja2</a>
+</footer>
+
+</section>
+
+
+<section>
+<h2>"Hola Mundo" con Plantillas</h2>
+
+<p><strong>holaMundo.py</strong>:</p>
+<pre class="prettyprint" style="font-size:80%;height:65%;border-style:none;">
+# -*- coding: utf-8 -*-
+from flask import Flask
+from flask import render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return render_template('hola.html')
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
+</pre>
+</section>
+
+
+<section>
+<h2>"Hola Mundo" con Plantillas</h2>
+
+<p><strong>hola.html</strong>:</p><br>
+<pre class="prettyprint" style="font-size:80%;height:65%;border-style:none;">
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;&iexcl;Hola Mundo! con Plantilla&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&iexcl;Hola Mundo! (con plantilla)&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</section>
+
+
+<section>
+<h2>Paso de parámetros</h2>
+
+<pre class="prettyprint" style="font-size:80%;height:35%;border-style:none;">
+@app.route('/user/')
+@app.route('/user/&lt;user&gt;')
+def hello_world(user=None):
+    return render_template('hola.html', usuario=user)
+</pre>
+
+
+<pre class="prettyprint" style="font-size:80%;height:35%;border-style:none;">
+{% if usuario %}
+  &lt;h1&gt;Bienvenido {{ usuario }}!&lt;/h1&gt;
+{% else %}
+  &lt;h1&gt;Bienvenido desconocido!&lt;/h1&gt;
+{% endif %}
+</pre>
+
+<footer class="der">
+<a href="http://jinja.pocoo.org/docs/dev/templates/#variables" >
+Variables</a>
+</footer>
+
+</section>
+
+<section>
+<h2>Bucles</h2>
+
+<pre class="prettyprint" style="font-size:80%;height:35%;border-style:none;">
+
+def hello_world():
+    tabla = ['primero', 'segundo', 'tercero']
+    return render_template('hola.html', rows=tabla)
+</pre>
+
+
+<pre class="prettyprint" style="font-size:80%;height:35%;border-style:none;">
+   &lt;ul&gt;
+   {% for row in rows %}
+       &lt;li&gt;{{ row }}&lt;/li&gt;
+   {% endfor %}
+   &lt;/ul&gt;
+</pre>
+
+<footer class="der">
+<a href="http://jinja.pocoo.org/docs/dev/templates/#list-of-control-structures" >
+Control structures</a>
+</footer>
+
+</section>
+
+
+
+<section>
+<h2>Sintaxis <strong><i>moustache</i></strong></h2>
+
+<p>Por defecto:</p>
+
+<ul>
+  <li><strong>{% ... %}</strong> &nbsp; <em>Sentencias</em>.</li>
+  <li><strong>{{ ... }}</strong> &nbsp; <em>Expresiones</em> que serán impresas en la salida de la plantilla.</li>
+  <li><strong>{# ... #}</strong> &nbsp; <em>Comentarios</em> (no aparecerán en la salida).</li>
+  <li><strong>#  ... ##</strong> &nbsp; <em>Sentencias de una línea</em>:</li>
+</ul>
+<pre class="prettyprint" style="font-size:80%;height:15%;border-style:none;">
+
+  app.jinja_env.line_statement_prefix = '#'
+</pre>
+
+<footer class="der">
+<a href="http://jinja.pocoo.org/docs/dev/templates/#synopsis" >
+Synonpsis</a>
+</footer>
+
+
+</section>
+
+
+<section>
+<h2>"Escaping" automático</h2>
+
+<p>Por defecto Jinja2 "escapea" el html que le enviamos, se
+puede desactivar:
+</p>
+<ul>
+  <li>Usando la clase <strong>Markup</strong> en el código Python (recomendado).</li>
+  <li>Usar el filtro "|safe" dentro de la plantilla: <code>{{ variable|safe }}</code>.</li>
+  <li>Desactivar el sistema de "escaping" temporalmente:</li>
+</ul>
+
+<pre class="prettyprint" style="font-size:80%;height:25%;border-style:none;">
+{% autoescape false %}
+    &lt;p&gt;autoescaping desactivado&lt;/p&gt;
+    &lt;p&gt;{{ variable_no_escapeada }}&lt;/p&gt;
+{% endautoescape %}
+</pre>
+
+<footer class="der">
+<a href="http://jinja.pocoo.org/docs/dev/templates/#escaping" >
+Escaping</a>
+</footer>
+
+</section>
+
+<section>
+<h2>Filtros</h2>
+
+<p>Efectuan modificaciones en el html
+</p><br>
+
+<pre class="prettyprint" style="font-size:80%;height:25%;border-style:none;">
+
+   {{ 42.55|round }}
+       -> 43.0
+   {{ 42.55|round(1, 'floor') }}
+       -> 42.5
+
+   {{ 42.55|round|int }}
+           -> 43
+</pre>
+
+<footer class="der">
+<a href="http://jinja.pocoo.org/docs/dev/templates/#list-of-builtin-filters" >
+Built in filters
+</a>
+</footer>
+
+</section>
+
+<section>
+<h2>Herencia de Plantillas</h2>
+
+
+Permite crear una base, que luego será personalizada en otras plantillas
+
+<center><img src="./imagenes/template-inheritance.png" height="40%" /></center>
+
+<footer class="der">
+<a href="http://jinja.pocoo.org/docs/dev/templates/#template-inheritance" >
+Template inheritance
+</a>
+</footer>
+
+</section>
+
+
+<section>
+<h2>Herencia de Plantillas</h2>
+
+
+<p><strong>base.html:</strong></p>
+<pre class="prettyprint" style="font-size:80%;height:65%;width: 80%;overflow:scroll;border-style:none;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    {% block head %}
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;
+    &lt;title&gt;{% block title %}{% endblock %} - My página&lt;/title&gt;
+    {% endblock %}
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&quot;content&quot;&gt;{% block content %}{% endblock %}&lt;/div&gt;
+    &lt;div id=&quot;footer&quot;&gt;
+        {% block footer %}
+        &amp;copy; Copyright 2008 by &lt;a href=&quot;http://domain.invalid/&quot;&gt;LALALA&lt;/a&gt;.
+        {% endblock %}
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</section>
+
+
+<section>
+<h2>Herencia de Plantillas</h2>
+
+
+
+<p><strong>hijo.html:</strong></p>
+<pre class="prettyprint" style="font-size:80%;height:65%; width: 80%;overflow:scroll;border-style:none;">
+{% extends &quot;base.html&quot; %}
+{% block title %}Página principal{% endblock %}
+{% block head %}
+    {{ super() }}
+    &lt;style type=&quot;text/css&quot;&gt;
+        .important { color: #336699; }
+    &lt;/style&gt;
+{% endblock %}
+{% block content %}
+    &lt;h1&gt;Título de la página&lt;/h1&gt;
+    &lt;p class=&quot;important&quot;&gt;
+      ¡Bienvenido piltrafilla!
+    &lt;/p&gt;
+{% endblock %}
+</pre>
+</section>
+
+
+
+
+
+<!-- Style -->
+
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<style>
+  html { background-color: aliceblue; }
+  a { color: blue4; font-size:80%; text-decoration:none;} a:hover {text-decoration: underline;}
+  footer { position: absolute; bottom: 10px; right: 50px; }
+  strong {color: #FF0066}
+  body {
+      font-family: 'Oswald', arial, serif;
+      background-color: aliceblue;
+      color: black;
+      font-size: 2em;
+      background: aliceblue;
+  }
+
+  table {
+	  margin: auto 20px auto auto;
+  }
+
+  td {
+	  padding:5px 10px 5px 10px;
+  }
+
+  th {
+	background:rgb(248,231,248);
+  }
+
+
+  pre {font-size:80%;
+       width: 630px;
+       line-height:1.6em;
+       margin: auto auto auto 100px;
+	  }
+
+  /* Transition effect */
+  section {
+      -moz-transition: left 400ms linear 0s;
+      -webkit-transition: left 400ms linear 0s;
+      -ms-transition: left 400ms linear 0s;
+      transition: left 400ms linear 0s;
+      background: aliceblue;
+  }
+  section { left: -150%; }
+  section[aria-selected] { left: 0; }
+  section[aria-selected] ~ section { left: +150% }
+
+  .chapter { background-color: paleturquoise;}
+  .chapter h1 {line-height: 600px; vertical-align: middle; margin: 0; text-align: center; display: block}
+
+  h1 {
+      margin: 50px 100px 0 100px;
+      font-size: 60px;
+      text-shadow: 0px -1px 0px #000;
+      text-align: left;
+  }
+  h2 {
+      color: rgb(96,0,0);
+      margin: 30px 0 20px 0;
+      font-size: 40px;
+      text-align: center;
+  }
+  ul {
+      margin-top: 20px;
+      font-size: 35px;
+      text-align: left;
+      /*border-left: 4px solid white;*/
+      padding-right: 40px;
+      min-width: 310px;
+      margin-left: 50px;
+      display: inline-block;
+      font-size: 95%;
+  }
+  q, p {
+      margin: 30px auto 0 auto;
+      width: 95%;//630px;
+  }
+  q:after {content: ""}
+  q:before {content: ""}
+  q {
+      display: block;
+      margin-top: 140px;
+  }
+  video {
+      position: absolute;
+      top: 210px;
+      width: 260px;
+      left: 445px;
+      box-shadow: 0 0 10px black;
+  }
+
+  .cen {
+      position: absolute;
+      top: 120px;
+      width: 620px;
+      height: 440px;
+      left: 130px;
+      box-shadow: 0 0 4px black;
+  }
+
+  li {
+    //list-style-type: none;
+    padding: 9px;
+  }
+
+</style>
+
+<!-- {{{{ *****************  DZSlides CORE 2.0b1 *************************** -->
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+<!-- *********************************************************************** -->
+
+<!-- This block of code is not supposed to be edited, but if you want to change the behavior of the slides, feel free to hack it ;) -->
+
+<!-- Default Style -->
+
+<style>
+  * { margin: 0; padding: 0; }
+  details {display: none;}
+  body {
+    width: 900px; height: 600px;
+    margin-left: -400px; margin-top: -300px;
+    position: absolute; top: 50%; left: 50%;
+    overflow: hidden;
+  }
+  html {
+    overflow: hidden;
+  }
+  section {
+    position: absolute;
+    pointer-events: none;
+    width: 100%; height: 100%;
+  }
+  section[aria-selected] { pointer-events: auto;}
+  body {display: none}
+  body.loaded {display: block}
+</style>
+
+<script>
+  var friendWindows = [];
+  var idx = 1;
+  var slides;
+
+  /* main() */
+
+  window.onload = function() {
+    slides = document.querySelectorAll("body > section");
+    onhashchange();
+    setSlide();
+    document.body.className = "loaded";
+    setupTouchEvents();
+    onresize();
+  }
+
+  /* Handle keys */
+
+  window.onkeydown = function(e) {
+    // Don't intercept keyboard shortcuts
+    if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) {
+      return;
+    }
+    if ( e.keyCode == 37 // left arrow
+      || e.keyCode == 38 // up arrow
+      || e.keyCode == 33 // page up
+    ) {
+      e.preventDefault();
+      back();
+    }
+    if ( e.keyCode == 39 // right arrow
+      || e.keyCode == 40 // down arrow
+      || e.keyCode == 34 // page down
+    ) {
+      e.preventDefault();
+      forward();
+    }
+
+    if ( e.keyCode == 32) { // space
+        e.preventDefault();
+        toggleContent();
+    }
+  }
+
+  /* Touch Events */
+
+  function setupTouchEvents() {
+    var orgX, newX;
+    var tracking = false;
+
+    var body = document.body;
+    body.addEventListener("touchstart", start, false);
+    body.addEventListener("touchmove", move, false);
+
+    function start(e) {
+      e.preventDefault();
+      tracking = true;
+      orgX = e.changedTouches[0].pageX;
+    }
+
+    function move(e) {
+      if (!tracking) return;
+      newX = e.changedTouches[0].pageX;
+      if (orgX - newX > 100) {
+        tracking = false;
+        forward();
+      } else {
+        if (orgX - newX < -100) {
+          tracking = false;
+          back();
+        }
+      }
+    }
+  }
+
+  /* Adapt the size of the slides to the window */
+
+  window.onresize = function() {
+    var sx = document.body.clientWidth / window.innerWidth;
+    var sy = document.body.clientHeight / window.innerHeight;
+    var transform = "scale(" + (1/Math.max(sx, sy)) + ")";
+    document.body.style.MozTransform = transform;
+    document.body.style.WebkitTransform = transform;
+    document.body.style.OTransform = transform;
+    document.body.style.msTransform = transform;
+    document.body.style.transform = transform;
+  }
+  function getDetails(idx) {
+    var s = document.querySelector("section:nth-of-type("+ idx +")");
+    var d = s.querySelector("details");
+    return d?d.innerHTML:"";
+  }
+  window.onmessage = function(e) {
+    msg = e.data;
+    win = e.source;
+    if (msg === "register") {
+      friendWindows.push(win);
+      win.postMessage(JSON.stringify({method: "registered", title: document.title, count: slides.length}), "*");
+      win.postMessage(JSON.stringify({method: "newslide", details: getDetails(idx), idx: idx}), "*");
+      return;
+    }
+    if (msg === "back") back();
+    if (msg === "forward") forward();
+    if (msg === "toggleContent") toggleContent();
+    // setSlide(42)
+    var r = /setSlide\((\d+)\)/.exec(msg);
+    if (r) {
+        idx = r[1];
+        setSlide();
+    }
+  }
+
+  /* If a Video is present in this new slide, play it.
+     If a Video is present in the previous slide, stop it. */
+
+  function toggleContent() {
+    var s = document.querySelector("section[aria-selected]");
+    if (s) {
+        var video = s.querySelector("video");
+        if (video) {
+            if (video.ended || video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+    }
+  }
+
+  /* If the user change the slide number in the URL bar, jump
+     to this slide. */
+
+  window.onhashchange = function(e) {
+    var newidx = ~~window.location.hash.split("#")[1];
+    if (!newidx) newidx = 1;
+    if (newidx == idx) return;
+    idx = newidx;
+    setSlide();
+  }
+
+  /* Slide controls */
+
+  function back() {
+    if (idx == 1) return;
+    idx--;
+    setSlide();
+  }
+  function forward() {
+    if (idx >= slides.length) return;
+    idx++;
+    setSlide();
+  }
+  function setSlide() {
+    var old = document.querySelector("section[aria-selected]");
+    var next = document.querySelector("section:nth-of-type("+ idx +")");
+    if (old) {
+      old.removeAttribute("aria-selected");
+      var video = old.querySelector("video");
+      if (video) { video.pause(); }
+    }
+    if (next) {
+      next.setAttribute("aria-selected", "true");
+      var video = next.querySelector("video");
+      if (video) { video.play(); }
+    } else {
+      console.warn("No such slide: " + idx);
+      idx = 0;
+      for (var i = 0; i < slides.length; i++) {
+          if (slides[i].hasAttribute("aria-selected")) {
+              idx = i + 1;
+          }
+      }
+    }
+    window.location.hash = idx;
+    for (var i = 0; i < friendWindows.length; i++) {
+        friendWindows[i].postMessage(JSON.stringify({method: "newslide", details: getDetails(idx), idx: idx}), "*");
+    }
+  }
+</script>
