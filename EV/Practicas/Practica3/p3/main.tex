@@ -1,0 +1,373 @@
+\documentclass[10pt]{article}  
+
+%%%%%%%% PREÁMBULO %%%%%%%%%%%%
+\title{Plantilla para prácticas de UPIITA}
+\usepackage[spanish]{babel} %Indica que escribiermos en español
+\usepackage[utf8]{inputenc} %Indica qué codificación se está usando ISO-8859-1(latin1)  o utf8  
+\usepackage{amsmath} % Comandos extras para matemáticas (cajas para ecuaciones,
+% etc)
+\usepackage{amssymb} % Simbolos matematicos (por lo tanto)
+\usepackage{graphicx} % Incluir imágenes en LaTeX
+\usepackage{color} % Para colorear texto
+\usepackage{subfigure} % subfiguras
+\usepackage{float} %Podemos usar el especificador [H] en las figuras para que se
+% queden donde queramos
+\usepackage{capt-of} % Permite usar etiquetas fuera de elementos flotantes
+% (etiquetas de figuras)
+\usepackage{sidecap} % Para poner el texto de las imágenes al lado
+	\sidecaptionvpos{figure}{c} % Para que el texto se alinie al centro vertical
+\usepackage{caption} % Para poder quitar numeracion de figuras
+\usepackage{commath} % funcionalidades extras para diferenciales, integrales,
+% etc (\od, \dif, etc)
+\usepackage{cancel} % para cancelar expresiones (\cancelto{0}{x})
+ 
+\usepackage{anysize} 					% Para personalizar el ancho de  los márgenes
+\marginsize{2cm}{2cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
+
+\usepackage{appendix}
+\renewcommand{\appendixname}{Apéndices}
+\renewcommand{\appendixtocname}{Apéndices}
+\renewcommand{\appendixpagename}{Apéndices} 
+
+% Para que las referencias sean hipervínculos a las figuras o ecuaciones y
+% aparezcan en color
+\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
+%\usepackage{hyperref} 
+% Para agregar encabezado y pie de página
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize UGR} %encabezado izquierda
+\fancyhead[R]{\footnotesize EV}   % dereecha
+\fancyfoot[R]{\footnotesize Práctica III}  % Pie derecha
+\fancyfoot[C]{\thepage}  % centro
+\fancyfoot[L]{\footnotesize Master en Ingeniería Informática}  %izquierda
+\renewcommand{\footrulewidth}{0.4pt}
+
+% Directorio para las imágenes
+\graphicspath{{/Users/jesusgarciamanday/Desktop/Master/EV/Practicas/Practica3/p3/Imagenes/}}
+
+
+\usepackage{listings} % Para usar código fuente
+\definecolor{dkgreen}{rgb}{0,0.6,0} % Definimos colores para usar en el código
+\definecolor{gray}{rgb}{0.5,0.5,0.5} 
+% configuración para el lenguaje que queramos utilizar
+\lstset{language=Matlab,
+   keywords={break,case,catch,continue,else,elseif,end,for,function,
+      global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily,
+   keywordstyle=\color{blue},
+   commentstyle=\color{red},
+   stringstyle=\color{dkgreen},
+   numbers=left,
+   numberstyle=\tiny\color{gray},
+   stepnumber=1,
+   numbersep=10pt,
+   backgroundcolor=\color{white},
+   tabsize=4,
+   showspaces=false,
+   showstringspaces=false}
+
+\newcommand{\sen}{\operatorname{\sen}}	% Definimos el comando \sen para el seno
+%en español
+
+%%%%%%%% TERMINA PREÁMBULO %%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+																					%%%
+\begin{center}																		%%%
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}									%%%\left
+ 																					%%%
+\begin{minipage}{0.48\textwidth} \begin{flushleft}
+%\includegraphics[scale = 0.63]{Imagenes/logo_upiita}
+\end{flushleft}\end{minipage}
+\begin{minipage}{0.48\textwidth} \begin{flushright}
+%\includegraphics[scale = 0.35]{Imagenes/IPN}
+\end{flushright}\end{minipage}
+
+													 								%%%
+\vspace*{0.25cm}								%%%
+																					%%%	
+\textsc{\huge Universidad de Granada}\\[1.5cm]	
+
+\textsc{\LARGE Master en Ingeniería Informática}\\[1.5cm]													%%%
+
+\textsc{\LARGE Entornos Virtuales}\\[1.5cm]													%%%
+
+\begin{minipage}{0.9\textwidth} 
+\begin{center}																					%%%
+\textsc{\LARGE Practica III}
+\end{center}
+\end{minipage}\\[0.5cm]
+%%%
+    																				%%%
+ 			\vspace*{1cm}																		%%%
+																					%%%
+\HRule \\[0.4cm]																	%%%
+{ \huge \bfseries Texturas}\\[0.4cm]	%%%
+ 																					%%%
+\HRule \\[1.5cm]																	%%%
+ 																				%%%
+																					%%%
+\begin{minipage}{0.46\textwidth}													%%%
+\begin{flushleft} \large															%%%
+\emph{Autor:}\\	
+ Manuel Jesús García Manday
+%%%
+			%\vspace*{2cm}	
+            													%%%
+										 						%%%
+\end{flushleft}																		%%%
+\end{minipage}		
+																%%%
+\begin{minipage}{0.52\textwidth}		
+\vspace{-0.6cm}											%%%
+\begin{flushright} \large															%%%													%%%
+\end{flushright}																	%%%
+\end{minipage}	
+\vspace*{1cm}
+%\begin{flushleft}
+ 	
+%\end{flushleft}
+%%%
+ 		\flushleft{\textbf{\Large Master en Ingeniería Informática}	}\\																		%%%
+\vspace{2cm} 																				
+\begin{center}																					
+
+%{\large \today}																	%%%
+ 			\end{center}												  						
+\end{center}							 											
+																					
+\newpage																		
+%%%%%%%%%%%%%%%%%%%% TERMINA PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents 
+
+\newpage
+
+\section{Objetivo.}
+
+El objetivo de esta práctica es estudiar la aplicación de texturas a los objetos.
+
+
+\section{Desarrollo de la práctica.}
+
+Para probar las diferentes técnicas existentes de aplicar texturas sobre los objetos se van a realizar tres tareas donde se pondrán en función del tipo de objeto y textura.  \\
+
+
+\subsection{Modelo de la tierra.}
+
+Para esta primera tarea se va a crear un modelo de la tierra al que se le aplicará la siguiente textura. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img1}
+ 		\captionof{figure}{\label{fig:IPN}Textura modelo tierra.} 
+	\end{center} 
+\end{figure}
+
+
+Añadiremos una esfera en la ventana 3D y en otra ventana abriremos la vista UV/Image Editor donde abriremos el archivo de la textura anterior. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img2}
+ 		\captionof{figure}{\label{fig:IPN}Ventana 3D / Image Editor.} 
+	\end{center} 
+\end{figure}
+
+En la ventana 3D cambiamos la vista a ortogonal frontal y seleccinamos el modo de edición, a continuación creamos las coordenadas de texturas aplicando la acción \textbf{Mesh -- UV Unwrap --  Cylinder Projection}. Mientras en la ventana de edición se encuentra la textura cargada. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img3}
+ 		\captionof{figure}{\label{fig:IPN}Creando coordenadas de textura (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img4}
+ 		\captionof{figure}{\label{fig:IPN}Creando coordenadas de textura (II).} 
+	\end{center} 
+\end{figure}
+
+Lo siguiente es ajustar las coordenadas de textura hasta que se cubra toda la imagen como se muestra en la siguiente figura. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img5}
+ 		\captionof{figure}{\label{fig:IPN}Ajustando las coordenadas de textura.} 
+	\end{center} 
+\end{figure}
+
+Hecho esto ahora toca pasar a modo objeto para añadirle material al mismo y activar el uso de texturas.
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img6}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo material y activando texturas.} 
+	\end{center} 
+\end{figure}
+
+En la ventana 3D cambiamos el modo de visualización a la vez que le aplicamos un suavizado y ajustamos las fuentes de luz obteniendo el siguiente resultado.
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img7}
+ 		\captionof{figure}{\label{fig:IPN}Renderizado.} 
+	\end{center} 
+\end{figure}
+
+
+\subsection{Modelo de un dado.}  
+
+Para esta tarea se va a poner en práctica otro tipo de aplicación de texturas como es una \textbf{textura desplegada}. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img8}
+ 		\captionof{figure}{\label{fig:IPN}Textura modelo dado.} 
+	\end{center} 
+\end{figure}
+
+Es necesario realizar las costuras (''Seam'') en la textura antes de calcular las coordenadas. Dichas costuras lo que representa es por donde se va a cortar el modelo para luego poder ajustar las coordenadas de textura (como si se pegara una piel encima). \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img9}
+ 		\captionof{figure}{\label{fig:IPN}Creando costuras.} 
+	\end{center} 
+\end{figure}
+
+Al igual que en la tarea anterior, abrimos otra ventana de edición al lado de la de visualización donde cargaremos la imagen de la textura. Con las costuras ya seleccionadas asignamos las coordenas de textura a través de la opción \textbf{Mesh  > UV  > Unwrap}. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img10}
+ 		\captionof{figure}{\label{fig:IPN}Asignando coordenadas de textura.} 
+	\end{center} 
+\end{figure}
+
+Es necesario ajustar dichas coordenadas para que la imagen quede totalmente cubierta por las coordenadas del objeto recortado, por lo que es necesario realizar una serie de ajustes para obtener el siguiente resultado final. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img11}
+ 		\captionof{figure}{\label{fig:IPN}Ajustando coordenadas de texturas.} 
+	\end{center} 
+\end{figure}
+
+Finalmente ajustamos las fuentes de luz y rendereizamos para ver el resultado. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img12}
+ 		\captionof{figure}{\label{fig:IPN}Renderizado.} 
+	\end{center} 
+\end{figure}
+
+
+\subsection{Diseño de textura.} 
+
+La finalidad de esta última tarea es la de aplicarle una textura al objeto que se diseño en la primera práctica y que se muestra en la imagen de abajo. \\  
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img13}
+ 		\captionof{figure}{\label{fig:IPN}Objeto coche.} 
+	\end{center} 
+\end{figure}
+
+Al igual que en la tarea anterior, al objeto del coche que ya tenemos cargado le aplicaremos una textura desplegada, por lo que seleccionaremos el modo de edición para recortar las costuras como se hizo antes. Comenzaremos por la carrocería y las lunas delantera y trasera del coche para lo que se utilizará la siguiente textura. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img14}
+ 		\captionof{figure}{\label{fig:IPN}Textura carrocería y lunas.} 
+	\end{center} 
+\end{figure}
+
+La parte amarilla será la que cubrirá la carrocería mientras que la parte oscura será para la luna trasera y delantera. Una vez que se ha cargado la textura en la ventana de edición, pasamos a la ventana 3D para recortar las costuras del objeto y ajustar las partes correspondientes de la textura como se puede ver en la siguiente figura. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img15}
+ 		\captionof{figure}{\label{fig:IPN}Aplicando textura en carrocería y lunas.} 
+	\end{center} 
+\end{figure}
+
+Renderizamos para ver si el resultado es el esperado al ajustar las coordenadas de texturas al objeto como vemos en la imagen de a continuación. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img16}
+ 		\captionof{figure}{\label{fig:IPN}Renderizado (I).} 
+	\end{center} 
+\end{figure}
+
+Continuando con las partes del objeto coche, la siguiente en aplicarle textura son los faros, para la cual utilizaremos la siguiente. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img17}
+ 		\captionof{figure}{\label{fig:IPN}Textura faros.} 
+	\end{center} 
+\end{figure}
+
+Recortamos la costura donde se aplicará la textura anterior y comprobamos el resultado. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img18}
+ 		\captionof{figure}{\label{fig:IPN}Aplicando textura en faros.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img19}
+ 		\captionof{figure}{\label{fig:IPN}Renderizado (II).} 
+	\end{center} 
+\end{figure}
+
+Las ruedas son la última parte del objeto coche que quedan por aplicarle textura. Al ser este un objeto independiente le aplicaremos una textura a la llanta y otra al neumático como las que se muestran en las siguiente figuras. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img20}
+ 		\captionof{figure}{\label{fig:IPN}Textura llantas y neumáticos.} 
+	\end{center} 
+\end{figure}
+
+Ajustamos las coordenadas de textura del objeto para que quede lo más ajustado posible como se ve en las imágenes. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img21}
+ 		\captionof{figure}{\label{fig:IPN}Aplicando textura a llantas y neumáticos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img22}
+ 		\captionof{figure}{\label{fig:IPN}Aplicando textura a llantas y neumáticos (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img23}
+ 		\captionof{figure}{\label{fig:IPN}Resultado final.} 
+	\end{center} 
+\end{figure}
+
+El resultado final del diseño de textura del objeto coche modelado en la primera práctica es el que se muestra en la figura 23. \\
+
+
+En el documento zip referente a la entrega de la práctica se encuentral fichero de blender correspondiente a la misma y la memoria donde se detallan los pasos realizados.
+
+\end{document}

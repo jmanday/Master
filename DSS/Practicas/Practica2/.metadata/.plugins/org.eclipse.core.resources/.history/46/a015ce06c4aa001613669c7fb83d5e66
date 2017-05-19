@@ -1,0 +1,39 @@
+package practica2.comunicacion;
+package practica2.modelo;
+
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.PrintWriter;
+import java.sql.Date;
+import java.util.Calendar;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+import practica2.modelo.BDUsuario;
+import practica2.modelo.Usuario;
+
+public class ListaCorreosServlet extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+			throws ServletException, IOException {
+		String user = req.getParameter("user");
+		String pass = req.getParameter("password");
+		if ("edu4java".equals(user) && "eli4java".equals(pass)) {
+			response(resp, "login ok");
+		} else {
+			response(resp, "invalid login");
+		}
+	}
+
+	private void response(HttpServletResponse resp, String msg)
+			throws IOException {
+		PrintWriter out = resp.getWriter();
+		out.println("<html>");
+		out.println("<body>");
+		out.println("<t1>" + msg + "</t1>");
+		out.println("</body>");
+		out.println("</html>");
+	}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario para crear un nuevo recurso</title>
+</head>
+<body>
+	<form action="../com.jersey/rest/cars" method="POST">
+    	<label for="registration_number">Registration Number</label>
+        <input name="registration_number" />
+        <br/>
+        <label for="mask">Mask</label>
+        <select name="mask">
+  			<option value="Volvo">Volvo</option>
+  			<option value="Saab">Saab</option>
+  			<option value="Opel">Opel</option>
+  			<option value="Audi">Audi</option>
+  			<option value="Renault">Renault</option>
+  			<option value="Ford">Ford</option>
+  			<option value="BMW">BMW</option>
+  			<option value="Seat">Seat</option>
+  			<option value="Mercedes">Mercedes</option>
+  			<option value="Peugeot">Peugeot</option>
+  			<option value="Jeep">Jeep</option>
+  			<option value="Citroen">Citroen</option>
+		</select> 
+        <br/>
+        <label for="colour">Colour</label>
+        <input name="colour" />
+        <br/>
+        <label for="kilometers">Kilometers</label>
+        <input name="kilometers" />
+        <br/>
+        <input type="submit" value="Submit" />
+	</form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+!SESSION 2016-11-15 00:07:43.234 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_101
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/jesusgarciamanday/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/jesusgarciamanday/.eclipse_keyring
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2016-11-15 00:13:25.609
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-11-15 00:14:11.168
+!MESSAGE Several ports (8080, 8009) required by Tomcat v8.5 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2016-11-15 00:14:46.692
+!MESSAGE Several ports (8080, 8009) required by Tomcat v8.5 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-15 00:29:05.690
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-15 00:29:05.691
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'

@@ -1,0 +1,31 @@
+package practica2.comunicacion;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Date;
+import java.util.Calendar;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class ListaCorreosServlet extends HttpServlet {
+
+	 public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+		 resp.setContentType("text/html");
+		 
+		 PrintWriter out = resp.getWriter();
+		 Calendar cal1 = Calendar.getInstance();	
+		 out.println("<html>");
+	     out.println("<body>");
+	     out.println("hoy es " + cal1.get(Calendar.DATE) + " " + cal1.get(Calendar.MONTH) + " " + cal1.get(Calendar.YEAR));
+	     out.println("</body>");
+	     out.println("</html>");
+	 }
+	 
+	 // Method to handle POST method request.
+	 public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	     
+		 doGet(request, response);
+	 }
+}

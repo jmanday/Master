@@ -1,0 +1,58 @@
+package practica2.comunicacion;
+package practica2.modelo;
+
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.io.PrintWriter;
+import java.sql.Date;
+import java.util.Calendar;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+import practica2.modelo.BDUsuario;
+import practica2.modelo.Usuario;
+
+public class ListaCorreosServlet extends HttpServlet {
+
+	@Override
+	protected void doGet(HttpServletRequest peticion, HttpServletResponse respuesta) throws ServletException, IOException {
+		doPost(peticion, respuesta);
+	}
+	
+	/**
+	 * Petición POST: Si no hay acción devuelve un HTML con la tabla de usuarios
+	 * que hay en la base de datos. Si hay acción:
+	 * - aniadirUsuario: Añade un usuario con los datos proporcionados. Si el 
+	 *   email existe, no lo añade e informa sobre ello.
+	 * - actualizarUsuario: Actualiza un usuario con los datos proporcionados. Si
+	 *   el email no existe informa sobre ello.
+	 * - eliminarUsuaio: Elimina un usuario con los datos proporcionados. Si el
+	 *   email no existe informa sobre ello.
+	 * @param peticion
+	 * @param respuesta
+	 */
+	@Override
+	protected void doPost(HttpServletRequest peticion, HttpServletResponse respuesta) throws ServletException, IOException {
+
+			respuesta.setContentType("text/html");		// repuesta tipo HTML
+			respuesta.setCharacterEncoding("UTF-8");	// codificada en UTF-8
+			
+			PrintWriter writer = respuesta.getWriter();	// obtiene PrintWriter donde escribir la respuesta
+			
+			writer.println("<h1>Usuarios</h1>");
+			writer.println("<table>");
+			writer.println("<thead>");
+			writer.println("<tr>");
+			writer.println("<th>Nombre</th>");
+			writer.println("<th>Apellido</th>");
+			writer.println("<th>Email</th>");
+			writer.println("</tr>");
+			writer.println("</thead>");
+			writer.println("<tbody>");
+			writer.println("</tbody>");
+			writer.println("</table>");
+		
+		}		
+}
+}
