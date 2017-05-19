@@ -1,0 +1,13 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Resumen.}{3}{section.1}
+\contentsline {section}{\numberline {2}Introducci\IeC {\'o}n.}{3}{section.2}
+\contentsline {section}{\numberline {3}Soluci\IeC {\'o}n prefabricada o in situ: cuando s\IeC {\'o}lo una alternativa es \IeC {\'o}ptima.}{4}{section.3}
+\contentsline {section}{\numberline {4}La herramienta de an\IeC {\'a}lisis: el sistema IDS.}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}El valor. Concepto y medici\IeC {\'o}n.}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}El riesgo. Concepto y tratamiento matem\IeC {\'a}tico.}{5}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}El proceso ACE de toma de decisi\IeC {\'o}n.}{6}{subsection.4.3}
+\contentsline {section}{\numberline {5}Caso de aplicaci\IeC {\'o}n.}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}Caracter\IeC {\'\i }sticas de las alternativas.}{7}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Fase de an\IeC {\'a}lisis.}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Fase de evaluaci\IeC {\'o}n.}{9}{subsection.5.3}
+\contentsline {section}{\numberline {6}Conclusiones.}{12}{section.6}
