@@ -189,8 +189,7 @@ Con la preconfiguración realizada pasamos a realizar las diferentes tareas que 
 
 
 \section{Calcula el valor mínimo de la variable (columna) 5.} 
-
-La primera de ellas es calcular el mínimo sobre el conjunto de valores del dataset, por lo que una vez que tenemos los ficheros java ahora toca compilarlos para crear el fichero \textbf{.jar} a continuación y ejecutarlo en \textbf{hadoop}.\\
+La primera de ellas es calcular el mínimo sobre el conjunto de valores del dataset, por lo que una vez que tenemos todos los ficheros java correspondientes, ahora toca compilarlos para crear el fichero \textbf{.jar} a continuación y ejecutarlo en \textbf{hadoop}.\\
 
 \begin{figure}[H]
 	\begin{center}
@@ -229,17 +228,297 @@ Por último comprobamos el resultado para ver si se ha realizado correctamente. 
 	\end{center} 
 \end{figure}
 
+
 \section{Calcula el valor máximo de la variable (columna) 5.} 
+Para calcular el valor máximo de la variable (columna) 5 vamos a crear clases de java correspondientes para hacer dicha operación. Comenzaremos por crear la clase \textbf{MaxMapper} con su fichero java correspondiente. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img10}
+ 		\captionof{figure}{\label{fig:IPN}Clase MaxMapper.} 
+	\end{center} 
+\end{figure}
+
+A continuación creamos la clase correspondientes para el Reducer (\textbf{MaxReducer}) y la clase principal \textbf{Max} donde estará el main. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img11}
+ 		\captionof{figure}{\label{fig:IPN}Clase MaxReducer.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img12}
+ 		\captionof{figure}{\label{fig:IPN}Clase Max.} 
+	\end{center} 
+\end{figure}
+
+Una vez que tenemos todos los ficheros procedemos a realizar los mismos pasos que con el ejercicio anterior compilando las clases, creando el fichero jar y ejecutandolo en \textbf{hadoop}. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img13}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img14}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (II).}  
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img15}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (III).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img16}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (IV).} 
+	\end{center} 
+\end{figure}
+
+Comprobamos que el resultado nos arroja el valor máximo. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img17}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando resultado.} 
+	\end{center} 
+\end{figure}
+
 
 \section{Calcula al mismo tiempo los valores máximo y mínimo de la variable 5.} 
+Al igual que para los anteriores cálculos creamos los ficheros correspondientes, aunque el fichero con la función \textbf{Mapper} y el principal con el main solo cambia el nombre, en la clase con la función \textbf{Reducer} es donde se realizan los cambios necesarios para obtener los resultados esperados. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img19}
+ 		\captionof{figure}{\label{fig:IPN}Clase MaxMinMapper.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img18}
+ 		\captionof{figure}{\label{fig:IPN}Clase MaxMin.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img21}
+ 		\captionof{figure}{\label{fig:IPN}Clase MaxMinReducer.} 
+	\end{center} 
+\end{figure}
+
+Ahora toca compilarlos para adjuntarlos en el fichero \textbf{jar} y realizar la ejecución en \textbf{hadoop}. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img20}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img22}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (II).}  
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img23}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (III).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img24}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (IV).} 
+	\end{center} 
+\end{figure}
+
+
+Por último comprobamos el resultado obtenido. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img25}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando resultado.} 
+	\end{center} 
+\end{figure}
+
 
 \section{Calcula los valores máximo y mínimo de todas las variables (salvo la última, que es la  etiqueta de la clase).} 
+Para este cálculo solo necesitaremos adaptar la clase con la función \textbf{Mapper} para cada columna ya que el \textbf{Reducer} es el mismo. Ahora la función \textbf{Mapper} asignará diferentes key, uno por cada columna. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img26}
+ 		\captionof{figure}{\label{fig:IPN}Clase MaxMinMapper.} 
+	\end{center} 
+\end{figure}
+
+Como en los anteriores ejercicios, compilamos y ejecutamos las clases. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img27}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img28}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img29}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (III).} 
+	\end{center} 
+\end{figure}
+
+Vemos el resultado que se ha obtenido. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img30}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando resultado.} 
+	\end{center} 
+\end{figure}
+
 
 \section{Realizar la media de la variable 5.} 
+Para realizar esta tarea será necesario crear dos funciones nuevas para \textbf{Mapper} y \textbf{Reducer} con sus respectivas clases ya que difieren de las tareas anteriores. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img31}
+ 		\captionof{figure}{\label{fig:IPN}Clase Average.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img32}
+ 		\captionof{figure}{\label{fig:IPN}Clase AverageMapper.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img33}
+ 		\captionof{figure}{\label{fig:IPN}Clase AverageReducer.} 
+	\end{center} 
+\end{figure}
+
+Con las funciones creadas en su correspondiente clase pasamos a compilar y a ejecutar. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img34}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img35}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos ()I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img36}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (III).} 
+	\end{center} 
+\end{figure}
+
+Y por último comprobamos el resultado. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img37}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando resultado.} 
+	\end{center} 
+\end{figure}
+
 
 \section{Obtener la media de todas las variables (salvo la clase).} 
+En esta tarea solo necesitamos modificar la función \textbf{Mapper} con respecto al ejercicio anterior donde la función \textbf{Reduce} será la misma, por lo que será necesario modificar únicamente un fichero. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img38}
+ 		\captionof{figure}{\label{fig:IPN}Clase AverageMapper.} 
+	\end{center} 
+\end{figure}
+
+Una vez modificado el método \textbf{Mapper} podemos compilar y ejecutar. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img39}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img40}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (II).} 
+	\end{center} 
+\end{figure}
+
+Sólo nos queda comprobar el resultado. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img41}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando resultado.} 
+	\end{center} 
+\end{figure}
+
 
 \section{Comprobar si el conjunto de datos ECBDL es balanceado o no balanceado, es decir, que el ratio entre clases sea menor o mayor que 1.5 respectivamente.} 
+Para calcular si el conjunto de datos es balanceado o no balanceado a partir del ratio entre las clases es necesario definirse dos nuevas funciones \textbf{Mapper} y \textbf{Reducer} como se muestra en las imágenes. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img42}
+ 		\captionof{figure}{\label{fig:IPN}Clase Balancer.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img43}
+ 		\captionof{figure}{\label{fig:IPN}Clase BalancerMapper.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img44}
+ 		\captionof{figure}{\label{fig:IPN}ClaseBalancerReducer.} 
+	\end{center} 
+\end{figure}
 
 \section{Cálculo del coeficiente de correlación entre todas las parejas de variables.} 
 
