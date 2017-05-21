@@ -7,5 +7,5 @@
 \contentsline {section}{\numberline {6}Calcula los valores m\IeC {\'a}ximo y m\IeC {\'\i }nimo de todas las variables (salvo la \IeC {\'u}ltima, que es la etiqueta de la clase).}{12}{section.6}
 \contentsline {section}{\numberline {7}Realizar la media de la variable 5.}{15}{section.7}
 \contentsline {section}{\numberline {8}Obtener la media de todas las variables (salvo la clase).}{18}{section.8}
-\contentsline {section}{\numberline {9}Comprobar si el conjunto de datos ECBDL es balanceado o no balanceado, es decir, que el ratio entre clases sea menor o mayor que 1.5 respectivamente.}{18}{section.9}
-\contentsline {section}{\numberline {10}C\IeC {\'a}lculo del coeficiente de correlaci\IeC {\'o}n entre todas las parejas de variables.}{18}{section.10}
+\contentsline {section}{\numberline {9}Comprobar si el conjunto de datos ECBDL es balanceado o no balanceado, es decir, que el ratio entre clases sea menor o mayor que 1.5 respectivamente.}{20}{section.9}
+\contentsline {section}{\numberline {10}C\IeC {\'a}lculo del coeficiente de correlaci\IeC {\'o}n entre todas las parejas de variables.}{23}{section.10}

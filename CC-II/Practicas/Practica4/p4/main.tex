@@ -97,7 +97,7 @@
 
 \begin{minipage}{0.9\textwidth} 
 \begin{center}																					%%%
-\textsc{\LARGE Pr\'actica 2}
+\textsc{\LARGE Pr\'actica 4}
 \end{center}
 \end{minipage}\\[0.5cm]
 %%%
@@ -520,8 +520,107 @@ Para calcular si el conjunto de datos es balanceado o no balanceado a partir del
 	\end{center} 
 \end{figure}
 
+De nuevo como en las tareas anteriores compilamos y ejecutamos. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img45}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img46}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img47}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (III).} 
+	\end{center} 
+\end{figure}
+
+Y comprobamos el resultado donde se puede ver que el ratio es mucho mayor que 1.5 por lo que las clases no están balanceadas. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img48}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando resultado.} 
+	\end{center} 
+\end{figure}
+
+
 \section{Cálculo del coeficiente de correlación entre todas las parejas de variables.} 
+Creamos los ficheros correspondientes donde se definen las funciones \textbf{Mapper} y \textbf{Reducer} para calcular la correlación entre cada par de variables del conjunto de datos. \\
 
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img49}
+ 		\captionof{figure}{\label{fig:IPN}Clase Correlacion.} 
+	\end{center} 
+\end{figure}
 
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img50}
+ 		\captionof{figure}{\label{fig:IPN}Clase CorrelacionMapper.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img51}
+ 		\captionof{figure}{\label{fig:IPN}Clase CorrelacionReducer.} 
+	\end{center} 
+\end{figure}
+
+Una vez que tenemos los ficheros con las funciones implementadas, pasamos a compilar las clases para empaquetarlas en el archivo \textbf{jar} correspondiente y ejecutarlo en \textbf{hadoop}.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img52}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img53}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img54}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (III).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img55}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (IV).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img56}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (V).} 
+	\end{center} 
+\end{figure}
+
+Con la ejecución terminada correctamente pasamos a ver los resultados obtenidos. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img57}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando resultado.} 
+	\end{center} 
+\end{figure}
 
 \end{document}

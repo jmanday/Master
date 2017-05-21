@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  20 MAY 2017 18:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  21 MAY 2017 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,6 +706,102 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (./main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
 
 
 LaTeX Warning: Label `fig:IPN' multiply defined.
@@ -1740,66 +1836,474 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 463.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 463.
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img38.png, id=246, 997.7275pt x 359.3425pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img38.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img38.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img38.png used on input line 468.
+(pdftex.def)             Requested size: 483.69687pt x 174.20961pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
+
+ []
+
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img39.png, id=247, 1196.47pt x 587.19376pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img39.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img39.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img39.png used on input line 477.
+(pdftex.def)             Requested size: 483.69687pt x 237.3821pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 465.
+(babel)             in language  on input line 481.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 465.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 467.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 467.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 467.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 467.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 467.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 467.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 471.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 471.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 471.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 471.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 471.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 471.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 471.
+(babel)             in language  on input line 481.
  [18 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
-enes/p4-img37.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 471.
+enes/p4-img37.png> </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Pra
+ctica4/p4/Imagenes/p4-img38.png>]
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img40.png, id=256, 1153.30875pt x 635.37375pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img40.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img40.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img40.png used on input line 484.
+(pdftex.def)             Requested size: 483.69687pt x 266.47705pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+
+ []
+
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img41.png, id=257, 889.3225pt x 178.6675pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img41.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img41.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img41.png used on input line 493.
+(pdftex.def)             Requested size: 483.69687pt x 97.17693pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 497.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 497.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 497.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 497.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 497.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 497.
+ [19 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img39.png> </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Pra
+ctica4/p4/Imagenes/p4-img40.png>]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 499.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 499.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 499.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 499.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 499.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 499.
+
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
+
+ []
+
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img42.png, id=267, 888.31876pt x 430.60875pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img42.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img42.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img42.png used on input line 504.
+(pdftex.def)             Requested size: 483.69687pt x 234.47014pt.
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img43.png, id=268, 981.6675pt x 318.18875pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img43.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img43.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img43.png used on input line 511.
+(pdftex.def)             Requested size: 483.69687pt x 156.77806pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 515.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 515.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 515.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 515.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 515.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 515.
+ [20 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img41.png> </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Pra
+ctica4/p4/Imagenes/p4-img42.png>]
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img44.png, id=277, 1099.10625pt x 444.66125pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img44.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img44.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img44.png used on input line 518.
+(pdftex.def)             Requested size: 483.69687pt x 195.68547pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--524
+
+ []
+
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img45.png, id=278, 887.315pt x 234.8775pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img45.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img45.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img45.png used on input line 527.
+(pdftex.def)             Requested size: 483.69687pt x 128.03616pt.
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img46.png, id=279, 1193.45876pt x 645.41125pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img46.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img46.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img46.png used on input line 534.
+(pdftex.def)             Requested size: 483.69687pt x 261.57724pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 538.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 538.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 538.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 538.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 538.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 538.
+ [21 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img43.png> </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Pra
+ctica4/p4/Imagenes/p4-img44.png> </Users/jesusgarciamanday/Desktop/Master/CC-II
+/Practicas/Practica4/p4/Imagenes/p4-img45.png>]
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img47.png, id=290, 1091.07625pt x 450.68375pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img47.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img47.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img47.png used on input line 541.
+(pdftex.def)             Requested size: 483.69687pt x 199.79373pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
+
+ []
+
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img48.png, id=291, 887.315pt x 53.19875pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img48.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img48.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img48.png used on input line 550.
+(pdftex.def)             Requested size: 483.69687pt x 28.99963pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 554.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 554.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 554.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 554.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 554.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 554.
+ [22 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img46.png> </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Pra
+ctica4/p4/Imagenes/p4-img47.png>]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 556.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 556.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 556.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 556.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 556.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 556.
+
+Underfull \hbox (badness 10000) in paragraph at lines 557--558
+
+ []
+
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img49.png, id=300, 904.37875pt x 430.60875pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img49.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img49.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img49.png used on input line 561.
+(pdftex.def)             Requested size: 483.69687pt x 230.3044pt.
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img50.png, id=301, 985.6825pt x 417.56pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img50.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img50.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img50.png used on input line 568.
+(pdftex.def)             Requested size: 483.69687pt x 204.90564pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 572.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 572.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 572.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 572.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 572.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 572.
+ [23 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img48.png> </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Pra
+ctica4/p4/Imagenes/p4-img49.png>]
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img51.png, id=310, 1097.09875pt x 798.985pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img51.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img51.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img51.png used on input line 575.
+(pdftex.def)             Requested size: 483.69687pt x 352.2616pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 580--581
+
+ []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 581.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 581.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 581.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 581.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 581.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 581.
+[24 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img50.png> </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Prac
+tica4/p4/Imagenes/p4-img51.png>]
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img52.png, id=319, 933.4875pt x 278.03876pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img52.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img52.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img52.png used on input line 584.
+(pdftex.def)             Requested size: 483.69687pt x 144.06763pt.
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img53.png, id=320, 1287.81125pt x 838.13126pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img53.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img53.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img53.png used on input line 591.
+(pdftex.def)             Requested size: 483.69687pt x 314.79721pt.
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img54.png, id=321, 1227.58624pt x 818.05624pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img54.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img54.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img54.png used on input line 598.
+(pdftex.def)             Requested size: 483.69687pt x 322.33603pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 602.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 602.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 602.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 602.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 602.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 602.
+ [25 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img52.png> </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Pra
+ctica4/p4/Imagenes/p4-img53.png>]
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img55.png, id=331, 1197.47375pt x 789.95125pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img55.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img55.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img55.png used on input line 605.
+(pdftex.def)             Requested size: 483.69687pt x 319.08475pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 609.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 609.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 609.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 609.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 609.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 609.
+ [26 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img54.png>]
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img56.png, id=338, 1065.9825pt x 58.2175pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img56.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img56.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img56.png used on input line 612.
+(pdftex.def)             Requested size: 483.69687pt x 26.41615pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 617--618
+
+ []
+
+
+</Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imagenes/
+p4-img57.png, id=339, 934.49126pt x 671.50874pt>
+File: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img57.png Graphic file (type png)
+
+<use /Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Image
+nes/p4-img57.png>
+Package pdftex.def Info: /Users/jesusgarciamanday/Desktop/Master/CC-II/Practica
+s/Practica4/p4/Imagenes/p4-img57.png used on input line 621.
+(pdftex.def)             Requested size: 483.69687pt x 347.57788pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 625.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 625.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 625.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 625.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 625.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 625.
+ [27 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img55.png> </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Pra
+ctica4/p4/Imagenes/p4-img56.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 626.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 626.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 626.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 626.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 626.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 626.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 626.
+ [28 </Users/jesusgarciamanday/Desktop/Master/CC-II/Practicas/Practica4/p4/Imag
+enes/p4-img57.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 626.
 
 (./main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 471.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 471.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 626.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 626.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5754828E839112332A136003C0058AAD;1009.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 471.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 626.
  ) 
 Here is how much of TeX's memory you used:
- 10412 strings out of 493014
- 162210 string characters out of 6133351
+ 10543 strings out of 493014
+ 170448 string characters out of 6133351
  278979 words of memory out of 5000000
- 13699 multiletter control sequences out of 15000+600000
+ 13780 multiletter control sequences out of 15000+600000
  8705 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,43p,368b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1810,10 +2314,10 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (18 pages, 2932916 bytes).
+Output written on main.pdf (28 pages, 4774323 bytes).
 PDF statistics:
- 293 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 67 named destinations out of 1000 (max. 500000)
- 266 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 402 PDF objects out of 1000 (max. 8388607)
+ 248 compressed objects within 3 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 366 words of extra memory for PDF output out of 10000 (max. 10000000)
 
