@@ -623,4 +623,357 @@ Con la ejecución terminada correctamente pasamos a ver los resultados obtenidos
 	\end{center} 
 \end{figure}
 
+
+\section{Tareas extras}
+\subsection{Parametrizar la columna sobre la que se quiere realizar el cálculo estadístico.}
+En esta tarea se parametrizará la columna sobre la que se va a realizar el cálculo del valor mínimo, permitiendo introducir desde consola el número de la consola. Las clase principal y la clase \textbf{Mapper} es donde se han reflejado los cambios, ya que se ha utilizado el objeto \textbf{Configuration} para pasar el valor de la columna como parámetro. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img67}
+ 		\captionof{figure}{\label{fig:IPN}Clase MinParam.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img68}
+ 		\captionof{figure}{\label{fig:IPN}Clase MinParamMapper.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img69}
+ 		\captionof{figure}{\label{fig:IPN}Clase MinParamReducer.} 
+	\end{center} 
+\end{figure}
+
+Compilamos las ficheros y ejecutamos pasando por consola la columna 5. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img70}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos con la columna 5 (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img71}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos con la columna 5 (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img72}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos con la columna 5 (III).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img73}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos con la columna 5 (IV).} 
+	\end{center} 
+\end{figure}
+
+Ahora lo ejecutamos con la columna 1. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img74}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos con la columna 1 (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img75}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos con la columna 1 (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img76}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos con la columna 1 (III).} 
+	\end{center} 
+\end{figure}
+
+\subsection{Combinar el cálculo de todos los estadístico en una función.}
+Para esta tarea se van a combinar todos los cálculos estadísticos sobre la función \textbf{Reducer} para una variable. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img88}
+ 		\captionof{figure}{\label{fig:IPN}Clase CombStat.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img89}
+ 		\captionof{figure}{\label{fig:IPN}Clase CombStatMapper.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img90}
+ 		\captionof{figure}{\label{fig:IPN}Clase CombStatReducer (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img91}
+ 		\captionof{figure}{\label{fig:IPN}Clase CombStatReducer (II).} 
+	\end{center} 
+\end{figure}
+
+
+
+
+
+\subsection{Calcular los datos estadísticos sobre todas las columnas.}
+En este ejercicio vamos a calcular la media, la covarianza, la desviación típica y el coeficiente de correlación sobre todas las variables.
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img77}
+ 		\captionof{figure}{\label{fig:IPN}Clase Stat.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img78}
+ 		\captionof{figure}{\label{fig:IPN}Clase StatMapper.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img79}
+ 		\captionof{figure}{\label{fig:IPN}Clase StatReducer (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img80}
+ 		\captionof{figure}{\label{fig:IPN}Clase StatReducer (II).} 
+	\end{center} 
+\end{figure}
+
+Compilamos y ejecutamos para ver el tiempo empleado en realizar los cálculos. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img81}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img93}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img83}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (III).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img84}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (IV).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img85}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (V).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img86}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (VI).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img92}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (VII).} 
+	\end{center} 
+\end{figure}
+
+En esta última imagen vemos el tiempo empleado con este conjunto de datos que lo compararemos en el ejercicio siguiente.\\
+
+
+\subsection{Calcular los datos estadísticos sobre todas las columnas sobre un conjunto de mayor volumen.}
+En este ejercicio realizaremos las mismas pruebas que en el anterior pero sobre un conjunto de datos mayor para comprobar la diferencia del tiempo empleado. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img77}
+ 		\captionof{figure}{\label{fig:IPN}Clase Stat.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img78}
+ 		\captionof{figure}{\label{fig:IPN}Clase StatMapper.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img79}
+ 		\captionof{figure}{\label{fig:IPN}Clase StatReducer (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img80}
+ 		\captionof{figure}{\label{fig:IPN}Clase StatReducer (II).} 
+	\end{center} 
+\end{figure}
+
+Compilamos y ejecutamos para ver el tiempo empleado en realizar los cálculos. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img81}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img82}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img83}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (III).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img84}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (IV).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img85}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (V).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img86}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (VI).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img87}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (VII).} 
+	\end{center} 
+\end{figure}
+
+Se puede ver como el tiempo ha aumentado hasta tres veces sobre el conjunto anterior como se comprueba con las imagenes.\\
+
+\subsection{Acelerar el proceso de cómputo descargando al Reducer de parte de la tarea.}
+En este ejercicio se calcula de nuevo el mínimo sobre la variable 5 pero utilizando el proceso \textbf{Cleanup} para descargar al \textbf{Reducer} de parte de la tarea. En la siguientes imágenes se muestran las clases con las funciones necesarias.\\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img58}
+ 		\captionof{figure}{\label{fig:IPN}Clase MinOpt.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img59}
+ 		\captionof{figure}{\label{fig:IPN}Clase MinOptMapper.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img60}
+ 		\captionof{figure}{\label{fig:IPN}Clase MinOptReducer.} 
+	\end{center} 
+\end{figure}
+
+Compilamos y ejecutamos una vez que tenemos definidas las funciones \textbf{Mapper}, \textbf{Cleanup} y \textbf{Reducer}. \\
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img61}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img62}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img63}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos y ejecutamos (III).} 
+	\end{center} 
+\end{figure}
+
+Y por último comprobamos el resultado donde podemos ver que se obtiene el mismo que en el ejercicio anterior pero de esta manera el proceso \textbf{MapReduce} ha sido más rápido debido a que mucha de la tarea que realizaba en el ejercicio anterior la función \textbf{Reducer} en este se ha trasladado al \textbf{Mapper}. La diferencia de tiempo empleado en la CPU es considerable como se puede ver en las imágenes anteriores. \\
+
+ \begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img64}
+ 		\captionof{figure}{\label{fig:IPN}Comprobando resultado.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img65}
+ 		\captionof{figure}{\label{fig:IPN}MapReduce sin proceso Cleanup.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1.00\textwidth]{p4-img66}
+ 		\captionof{figure}{\label{fig:IPN}Compilamos con proceso Cleanup.} 
+	\end{center} 
+\end{figure}
+
 \end{document}

@@ -8,3 +8,9 @@
 \BOOKMARK [1][-]{section.8}{Obtener la media de todas las variables \(salvo la clase\).}{}% 8
 \BOOKMARK [1][-]{section.9}{Comprobar si el conjunto de datos ECBDL es balanceado o no balanceado, es decir, que el ratio entre clases sea menor o mayor que 1.5 respectivamente.}{}% 9
 \BOOKMARK [1][-]{section.10}{C\341lculo del coeficiente de correlaci\363n entre todas las parejas de variables.}{}% 10
+\BOOKMARK [1][-]{section.11}{Tareas extras}{}% 11
+\BOOKMARK [2][-]{subsection.11.1}{Parametrizar la columna sobre la que se quiere realizar el c\341lculo estad\355stico.}{section.11}% 12
+\BOOKMARK [2][-]{subsection.11.2}{Combinar el c\341lculo de todos los estad\355stico en una funci\363n.}{section.11}% 13
+\BOOKMARK [2][-]{subsection.11.3}{Calcular los datos estad\355sticos sobre todas las columnas.}{section.11}% 14
+\BOOKMARK [2][-]{subsection.11.4}{Calcular los datos estad\355sticos sobre todas las columnas sobre un conjunto de mayor volumen.}{section.11}% 15
+\BOOKMARK [2][-]{subsection.11.5}{Acelerar el proceso de c\363mputo descargando al Reducer de parte de la tarea.}{section.11}% 16

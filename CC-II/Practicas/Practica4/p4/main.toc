@@ -9,3 +9,9 @@
 \contentsline {section}{\numberline {8}Obtener la media de todas las variables (salvo la clase).}{18}{section.8}
 \contentsline {section}{\numberline {9}Comprobar si el conjunto de datos ECBDL es balanceado o no balanceado, es decir, que el ratio entre clases sea menor o mayor que 1.5 respectivamente.}{20}{section.9}
 \contentsline {section}{\numberline {10}C\IeC {\'a}lculo del coeficiente de correlaci\IeC {\'o}n entre todas las parejas de variables.}{23}{section.10}
+\contentsline {section}{\numberline {11}Tareas extras}{28}{section.11}
+\contentsline {subsection}{\numberline {11.1}Parametrizar la columna sobre la que se quiere realizar el c\IeC {\'a}lculo estad\IeC {\'\i }stico.}{28}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Combinar el c\IeC {\'a}lculo de todos los estad\IeC {\'\i }stico en una funci\IeC {\'o}n.}{33}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Calcular los datos estad\IeC {\'\i }sticos sobre todas las columnas.}{36}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Calcular los datos estad\IeC {\'\i }sticos sobre todas las columnas sobre un conjunto de mayor volumen.}{43}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Acelerar el proceso de c\IeC {\'o}mputo descargando al Reducer de parte de la tarea.}{50}{subsection.11.5}
