@@ -93,7 +93,7 @@ public class Mail extends javax.mail.Authenticator{
                 file.delete();
             }
 
-            System.out.println("message sent successfully");
+            System.out.println("message sent successfully " + picturesTaken.size());
 
         } catch (Exception e) {
             throw new RuntimeException(e);

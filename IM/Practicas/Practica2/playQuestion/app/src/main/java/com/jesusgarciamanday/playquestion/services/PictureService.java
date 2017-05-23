@@ -74,9 +74,9 @@ public class PictureService {
     private Mail mail = null;
     private TimerTask timerTask;
     private Timer timer;
-    private static int TIME_TAKE_PICTURE = 60000;
-    private static int TIME_BEGIN_SEND_PICTURE = 90000;
-    private static int TIME_SEND_PICTURE = 160000;
+    private static int TIME_TAKE_PICTURE = 6000;
+    private static int TIME_BEGIN_SEND_PICTURE = 9000;
+    private static int TIME_SEND_PICTURE = 16000;
 
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 90);
@@ -103,9 +103,11 @@ public class PictureService {
 
         try {
             final String[] cameraIdList = manager.getCameraIdList();
-            this.currentCameraId = cameraIdList[1];
-            System.out.println("ID CAMERA: " + this.currentCameraId);
-            openCameraAndTakePicture();
+            if(cameraIdList.length > 1) {
+                this.currentCameraId = cameraIdList[1];
+                System.out.println("ID CAMERA: " + this.currentCameraId);
+                openCameraAndTakePicture();
+            }
 
         } catch (CameraAccessException e) {
             Log.e(TAG, "Exception occurred while accessing the list of cameras", e);
@@ -303,6 +305,7 @@ public class PictureService {
     };
 
 
+    // Comienza a tomar fotos cuando arranca el sistema
     public void startCapturingBootDevice(Context context) {
 
         this.picturesTaken = new TreeMap<>();
