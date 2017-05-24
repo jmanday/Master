@@ -148,22 +148,49 @@
 \newpage
 
 \section{Objetivo.}
-
 El objetivo de esta práctica es aprender a construir entornos interactivos con Blender.
 
 
 \section{Desarrollo de la práctica.}
-
-Para probar las diferentes técnicas existentes de aplicar texturas sobre los objetos se van a realizar tres tareas donde se pondrán en función del tipo de objeto y textura.  \\
-
+Se ha definido el siguiente escenario tomando como objeto a interaccionar el que se ha ido utilizando durante las anteriores prácticas. \\
 
 \begin{figure}[H]
 	\begin{center}
-	 		%\includegraphics[width = 1.00\textwidth]{Imagenes/p3-img1}
- 		\captionof{figure}{\label{fig:IPN}Textura modelo tierra.} 
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img1}
+ 		\captionof{figure}{\label{fig:IPN}Escenario.} 
 	\end{center} 
 \end{figure}
 
+En el mismo se puede ver el modelo ``Coche'' colocado sobre un plano como modelo de ``Carretera'' por donde dicho modelo se desplazará hacia delante y hacia atrás visualizando el movimiento común de un vehículo. La interacción del modelo ``Coche'' se realizará sobre el modelo ``Carretera'' utilizando para ello el motor Blender Game Engine (BGE).  Para ello tenemos que cambiar la opción del motor a utilizar escogiendo el mencionado anteriormente, y también cambiar el diseño de la pantalla que pasaría de estar por defecto a ``Game Logic'' como se muestra en la siguiente imagen. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img2}
+ 		\captionof{figure}{\label{fig:IPN}Estableciendo motor y diseño de pantalla.} 
+	\end{center} 
+\end{figure}
+
+Con el modelo del ``Coche'' en modo Objeto seleccionamos la parte de la ``Carrocería'' para configurarle los \textbf{sensores}, \textbf{controladores} y \textbf{actuadores} necesarios para la interacción que va a tener. Le añadiremos un primer sensor de tipo ``Keyboard'' al que le asignaremos la tecla ``W'' que realice la interacción de desplazarse horizontalmente sobre el objeto ``Carretera''. Este sensor se unirá a un controlador de tipo ``And'' para que cuando se pulse dicha tecla se realice la acción del controlador. El controlador definido será de tipo ``Motion'' lo que hará que el objeto se desplace en función de los parámetros que le indiquemos, en nuestro caso será de 0.50 en el eje Y como se muestra en la siguiente figura. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img3}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en carrocería (I).} 
+	\end{center} 
+\end{figure}
+
+Para el movimiento hacia atrás del coche en la carretera le añadimos otro sensor de tipo ``Keyboard'' y un actuador de tipo ``Motion'' como hicimos en la anterior interacción. La tecla asignada  para realizar el movimiento hacia atrás es la ``S'', mientras que en esta ocasión el parámetro de localización será negativo para que se produzca la interacción que deseamos. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img4}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en carrocería (II).} 
+	\end{center} 
+\end{figure}
+
+Los siguientes objetos a los que se le van a aplicar interacción son las cuatro ruedas de las que dispone el coche. Dichos objetos tendrán además de los mismos sensores, controladores y actuadores que el objeto anterior con los mismos parámetros (para que el movimiento de todos los objetos que componen el modelo ``Coche'' sea uniforme), se le añadirán otros para que realicen la rotación ligada a los movimientos hacia delante y hacia atrás.\\
+
+ 
 
 
 En el documento zip referente a la entrega de la práctica se encuentral fichero de blender correspondiente a la misma y la memoria donde se detallan los pasos realizados.
