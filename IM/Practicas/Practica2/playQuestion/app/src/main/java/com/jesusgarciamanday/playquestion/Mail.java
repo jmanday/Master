@@ -78,6 +78,7 @@ public class Mail extends javax.mail.Authenticator{
                 imagePart.setFileName(new File(attachFile).getName());
                 multipart.addBodyPart(imagePart);
             }
+            
             //picturesTaken.clear();
 
             // message to send via email
