@@ -161,6 +161,8 @@ Se ha definido el siguiente escenario tomando como objeto a interaccionar el que
 	\end{center} 
 \end{figure}
 
+
+\subsection{Movimiento del avatar.}
 En el mismo se puede ver el modelo ``Coche'' colocado sobre un plano como modelo de ``Carretera'' por donde dicho modelo se desplazará hacia delante y hacia atrás visualizando el movimiento común de un vehículo. La interacción del modelo ``Coche'' se realizará sobre el modelo ``Carretera'' utilizando para ello el motor Blender Game Engine (BGE).  Para ello tenemos que cambiar la opción del motor a utilizar escogiendo el mencionado anteriormente, y también cambiar el diseño de la pantalla que pasaría de estar por defecto a ``Game Logic'' como se muestra en la siguiente imagen. \\
 
 \begin{figure}[H]
@@ -170,7 +172,7 @@ En el mismo se puede ver el modelo ``Coche'' colocado sobre un plano como modelo
 	\end{center} 
 \end{figure}
 
-Con el modelo del ``Coche'' en modo Objeto seleccionamos la parte de la ``Carrocería'' para configurarle los \textbf{sensores}, \textbf{controladores} y \textbf{actuadores} necesarios para la interacción que va a tener. Le añadiremos un primer sensor de tipo ``Keyboard'' al que le asignaremos la tecla ``W'' que realice la interacción de desplazarse horizontalmente sobre el objeto ``Carretera''. Este sensor se unirá a un controlador de tipo ``And'' para que cuando se pulse dicha tecla se realice la acción del controlador. El controlador definido será de tipo ``Motion'' lo que hará que el objeto se desplace en función de los parámetros que le indiquemos, en nuestro caso será de 0.50 en el eje Y como se muestra en la siguiente figura. \\
+Una vez establecido el motor y el diseño de pantalla y con el modelo del ``Coche'' en modo Objeto, seleccionamos la parte de la ``Carrocería'' para configurarle los \textbf{sensores}, \textbf{controladores} y \textbf{actuadores} necesarios para la interacción que va a tener. Le añadiremos un primer sensor de tipo ``Keyboard'' al que le asignaremos la tecla ``W'' para que realice la interacción de desplazarse horizontalmente sobre el objeto ``Carretera''. Este sensor se unirá a un controlador de tipo ``And'' para que cuando se pulse dicha tecla se realice la acción del controlador. El controlador definido será de tipo ``Motion'' lo que hará que el objeto se desplace en función de los parámetros que le indiquemos, en nuestro caso será de 0.50 en el eje Y como se muestra en la siguiente figura. \\
 
 \begin{figure}[H]
 	\begin{center}
@@ -179,7 +181,7 @@ Con el modelo del ``Coche'' en modo Objeto seleccionamos la parte de la ``Carroc
 	\end{center} 
 \end{figure}
 
-Para el movimiento hacia atrás del coche en la carretera le añadimos otro sensor de tipo ``Keyboard'' y un actuador de tipo ``Motion'' como hicimos en la anterior interacción. La tecla asignada  para realizar el movimiento hacia atrás es la ``S'', mientras que en esta ocasión el parámetro de localización será negativo para que se produzca la interacción que deseamos. \\
+Para el movimiento hacia atrás del coche en la carretera le añadimos otro sensor de tipo ``Keyboard'' y un actuador de tipo ``Motion'' como hicimos en la anterior interacción. La tecla asignada  para realizar el movimiento hacia atrás es la ``S'', mientras que en esta ocasión el parámetro de localización será negativo para que se produzca la interacción que deseamos. Ambos se conectarán por medio de un nuevo controlador de tipo ``And''.\\
 
 \begin{figure}[H]
 	\begin{center}
@@ -188,10 +190,151 @@ Para el movimiento hacia atrás del coche en la carretera le añadimos otro sens
 	\end{center} 
 \end{figure}
 
-Los siguientes objetos a los que se le van a aplicar interacción son las cuatro ruedas de las que dispone el coche. Dichos objetos tendrán además de los mismos sensores, controladores y actuadores que el objeto anterior con los mismos parámetros (para que el movimiento de todos los objetos que componen el modelo ``Coche'' sea uniforme), se le añadirán otros para que realicen la rotación ligada a los movimientos hacia delante y hacia atrás.\\
+Los siguientes objetos a los que se le van a aplicar interacción son las cuatro ruedas de las que dispone el coche. Dichos objetos tendrán además de los mismos tipos de sensores, controladores y actuadores que el objeto anterior con los mismos parámetros (para que el movimiento de todos los objetos que componen el modelo ``Coche'' sea uniforme), se le añadirán otros para que realicen la rotación ligada a los movimientos hacia delante y hacia atrás.\\
 
+Para que los movimientos sean uniforme entre todos los objetos que componen el coche, los parámetros de configuración deben ser los mismos como se ha mencionado antes, por eso el objeto ``Rueda Del. Izq.'' tendrá dos sensores de tipo ``Keyboard'' uno para la tecla ``W'' y otro para la tecla ``S'' con las mismas medidas en el la localización como se muestran en las siguientes imágenes. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img5}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en rueda delantera izquierda (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img6}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en rueda delantera izquierda (II).} 
+	\end{center} 
+\end{figure}
  
+Hacemos lo mismo con el resto de ruedas que componen en avatar del ``Coche`''. \\
 
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img7}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en rueda trasera izquierda (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img8}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en rueda trasera izquierda (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img9}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en rueda delantera derecha (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img10}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en rueda delantera derecha (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img11}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en rueda trasera derecha (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img12}
+ 		\captionof{figure}{\label{fig:IPN}Sensor, controlador y actuador en rueda trasera derecha (II).} 
+	\end{center} 
+\end{figure}
+
+Con los sensores, controladores y actuadores añadidos y configurados para el movimiento ahora hacemos lo propio para la rotación de las ruedas. Para ello utilizamos los mismos, a los que le modificamos la medida del valor para la rotación como se ve en las siguientes figuras. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img13}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo rotación en rueda delantera izquieda.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img14}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo rotación en rueda trasera izquieda.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img15}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo rotación en rueda delantera derecha.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img16}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo rotación en rueda trasera derecha.} 
+	\end{center} 
+\end{figure}
+
+
+\subsection{Movimiento de cámara.}
+Para hacer que la cámara siga al coche lo primero que vamos a hacer es agregar un nuevo objeto que envuelva a los objetos ``Carrocería'' y a las cuatro ``Ruedas''. Para ellos añadimos un cilindro (el ``Avatar'') al que le modificamos sus dimensiones para que cubra a los componentes anteriores y un material con transparencia y un Alpha a 0.0 como se muestra en la siguiente figura para que no sea visible cuando se produzca el movimiento del mismo. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img17}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo avatar con material.} 
+	\end{center} 
+\end{figure}
+
+Lo siguiente es hacer al ``Avatar'' padre de los objetos del coche como se muestra en la imagen para que los movimientos sean uniformes. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img18}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo avatar como padre de los objetos.} 
+	\end{center} 
+\end{figure}
+
+Vamos a añadir una cámara para seguir al ``Avatar''. En la vista ``Right Ortho'' ponemos el puntero 3D dentrás del ``Avatar'' y añadimos la cámara en ese punto. A la cámara añadida le modificamos su orientación para que mire al ``Avatar'' desde atrás como se ve en la figura y hacemos que sea la activa. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img19}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo y configurando Camera3a.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img20}
+ 		\captionof{figure}{\label{fig:IPN}Haciendo activa Camera3a.} 
+	\end{center} 
+\end{figure}
+
+Con la cámara ``Camera3a'' puesta como activa la emparentamos al objeto ``Avatar''. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img21}
+ 		\captionof{figure}{\label{fig:IPN}Emparentando objetos Camera3a y Avatar.} 
+	\end{center} 
+\end{figure}
+
+El siguiente paso es agregar un actuador de tipo ``Camera'' al objeto ``Camera3a'' que apunte al objeto ``Avatar''. También añadimos un sensor a la cámara de tipo ``Always'' en modo,  ambos los unimos con un controlador. De este modo cuando ejecutemos veremos como la cámara sigue al objeto por el escenario. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/p4-img22}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo sensor, controlador y actuador al objeto ``Camera3a''  .} 
+	\end{center} 
+\end{figure}
 
 En el documento zip referente a la entrega de la práctica se encuentral fichero de blender correspondiente a la misma y la memoria donde se detallan los pasos realizados.
 
