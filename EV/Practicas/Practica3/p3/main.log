@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  17 MAY 2017 21:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  29 MAY 2017 12:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -773,6 +773,15 @@ LaTeX Warning: Label `fig:IPN' multiply defined.
 
 LaTeX Warning: Label `fig:IPN' multiply defined.
 
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
+
+LaTeX Warning: Label `fig:IPN' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
@@ -1297,100 +1306,141 @@ Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
-<Imagenes/p3-img20.jpg, id=139, 698.61pt x 428.35031pt>
-File: Imagenes/p3-img20.jpg Graphic file (type jpg)
+<Imagenes/p3-img24.png, id=139, 2407.99625pt x 824.07875pt>
+File: Imagenes/p3-img24.png Graphic file (type png)
 
-<use Imagenes/p3-img20.jpg>
-Package pdftex.def Info: Imagenes/p3-img20.jpg used on input line 340.
-(pdftex.def)             Requested size: 483.69687pt x 296.58165pt.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 344.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 344.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 344.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 344.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 344.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 344.
- [13 <./Imagenes/p3-img19.png>]
+<use Imagenes/p3-img24.png>
+Package pdftex.def Info: Imagenes/p3-img24.png used on input line 340.
+(pdftex.def)             Requested size: 483.69687pt x 165.52957pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-<Imagenes/p3-img21.png, id=147, 2565.585pt x 996.72375pt>
-File: Imagenes/p3-img21.png Graphic file (type png)
-
-<use Imagenes/p3-img21.png>
-Package pdftex.def Info: Imagenes/p3-img21.png used on input line 349.
-(pdftex.def)             Requested size: 483.69687pt x 187.90424pt.
-
-<Imagenes/p3-img22.png, id=148, 2566.58875pt x 995.72pt>
-File: Imagenes/p3-img22.png Graphic file (type png)
-
-<use Imagenes/p3-img22.png>
-Package pdftex.def Info: Imagenes/p3-img22.png used on input line 356.
-(pdftex.def)             Requested size: 483.69687pt x 187.63904pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 346.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 346.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 346.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 346.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 360.
+(babel)             in language  on input line 346.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 360.
- [14 <./Imagenes/p3-img20.jpg> <./Imagenes/p3-img21.png>] <Imagenes/p3-img23.pn
-g, id=156, 2047.65pt x 881.2925pt>
-File: Imagenes/p3-img23.png Graphic file (type png)
+(babel)             in language  on input line 346.
+[13 <./Imagenes/p3-img19.png> <./Imagenes/p3-img24.png>]
+<Imagenes/p3-img20.jpg, id=149, 698.61pt x 428.35031pt>
+File: Imagenes/p3-img20.jpg Graphic file (type jpg)
 
-<use Imagenes/p3-img23.png>
-Package pdftex.def Info: Imagenes/p3-img23.png used on input line 363.
-(pdftex.def)             Requested size: 483.69687pt x 208.17955pt.
+<use Imagenes/p3-img20.jpg>
+Package pdftex.def Info: Imagenes/p3-img20.jpg used on input line 349.
+(pdftex.def)             Requested size: 483.69687pt x 296.58165pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 368--369
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 373.
+<Imagenes/p3-img21.png, id=150, 2565.585pt x 996.72375pt>
+File: Imagenes/p3-img21.png Graphic file (type png)
+
+<use Imagenes/p3-img21.png>
+Package pdftex.def Info: Imagenes/p3-img21.png used on input line 358.
+(pdftex.def)             Requested size: 483.69687pt x 187.90424pt.
+
+<Imagenes/p3-img22.png, id=151, 2566.58875pt x 995.72pt>
+File: Imagenes/p3-img22.png Graphic file (type png)
+
+<use Imagenes/p3-img22.png>
+Package pdftex.def Info: Imagenes/p3-img22.png used on input line 365.
+(pdftex.def)             Requested size: 483.69687pt x 187.63904pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 369.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 369.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 369.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 369.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 373.
+(babel)             in language  on input line 369.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 373.
-[15 <./Imagenes/p3-img22.png> <./Imagenes/p3-img23.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 373.
+(babel)             in language  on input line 369.
+ [14 <./Imagenes/p3-img20.jpg> <./Imagenes/p3-img21.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+ []
+
+<Imagenes/p3-img25.png, id=159, 1924.18875pt x 743.02594pt>
+File: Imagenes/p3-img25.png Graphic file (type png)
+
+<use Imagenes/p3-img25.png>
+Package pdftex.def Info: Imagenes/p3-img25.png used on input line 374.
+(pdftex.def)             Requested size: 483.69687pt x 186.77641pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--380
+
+ []
+
+<Imagenes/p3-img26.png, id=160, 2567.5925pt x 990.70125pt>
+File: Imagenes/p3-img26.png Graphic file (type png)
+
+<use Imagenes/p3-img26.png>
+Package pdftex.def Info: Imagenes/p3-img26.png used on input line 383.
+(pdftex.def)             Requested size: 483.69687pt x 186.6328pt.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 387.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 387.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 387.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 387.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 387.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 387.
+ [15 <./Imagenes/p3-img22.png> <./Imagenes/p3-img25.png>] <Imagenes/p3-img23.pn
+g, id=169, 967.615pt x 541.02126pt>
+File: Imagenes/p3-img23.png Graphic file (type png)
+
+<use Imagenes/p3-img23.png>
+Package pdftex.def Info: Imagenes/p3-img23.png used on input line 390.
+(pdftex.def)             Requested size: 483.69687pt x 270.45216pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 397.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 397.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 397.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 397.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 397.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 397.
+ [16 <./Imagenes/p3-img26.png> <./Imagenes/p3-img23.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
  (./main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 373.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 373.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 397.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 5843DFDA400F42B9966715DEBD5A7B87;314.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 373.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
  ) 
 Here is how much of TeX's memory you used:
- 10321 strings out of 493014
- 150109 string characters out of 6133351
+ 10340 strings out of 493014
+ 150512 string characters out of 6133351
  276956 words of memory out of 5000000
- 13642 multiletter control sequences out of 15000+600000
+ 13654 multiletter control sequences out of 15000+600000
  9012 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,11n,43p,368b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1401,10 +1451,10 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/l
 ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (15 pages, 12055751 bytes).
+Output written on main.pdf (16 pages, 12679799 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 156 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 217 PDF objects out of 1000 (max. 8388607)
+ 143 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
