@@ -2,3 +2,4 @@
 \contentsline {section}{\numberline {1}Objetivo.}{3}{section.1}
 \contentsline {section}{\numberline {2}Configuraci\IeC {\'o}n del sistema.}{3}{section.2}
 \contentsline {section}{\numberline {3}Pr\IeC {\'a}ctica 1. Regulaci\IeC {\'o}n de luz.}{3}{section.3}
+\contentsline {section}{\numberline {4}Pr\IeC {\'a}ctica 2. Control de presencia.}{7}{section.4}

@@ -251,11 +251,66 @@ A la dirección de grupo \textbf{OnOff\_Luz\_Techo} le añadiremos los objetos d
 \begin{figure}[H]
 	\begin{center}
 	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img12}
- 		\captionof{figure}{\label{fig:IPN}Añadiendo objetos de comunicación a la dirección de grupo \textbf{Touch-MyDesign Plus 6}.} 
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo objetos de comunicación a la dirección de grupo \textbf{Regulación}.} 
 	\end{center} 
 \end{figure}
 
 Terminada esta configuración, el sitema queda totalmente configurado para ser programado y lanzado en el entorno de pruebas KNX. \\
 
+
+\section{Práctica 2. Control de presencia.} 
+Para este segundo supuesto se configurará el sistema KNX para realizar un control de presencia. La finalidad del mismo es la de activar la iluminación cuando detecte presencia en la habitación y desactivarla cuando no detecte presencia alguna pasado un tiempo parametizable. \\
+
+Vamos a utilizar la configuración empleada en la práctica anterior (mismos dispositivos, direcciones de grupo, parámetros, etc.) a la que le haremos una serie de modificaciones para adapatarla al supuesto actual. Lo primero que vamos a hacer es configurar los parámetros del \textbf{DIMinBOX DX2} de modo que a una de sus dos entradas (\textbf{E1} y \textbf{E2}) le habilitemos el detector de movimiento, en este caso para la entrada 2 (\textbf{E2}). Configuraremos dicha entrada para que se produzca el envío de luminosidad periódicamente cada 4 segundos por el canal 1. En dicho canal estableceremos un tiempo de 10 segundos para la duración de la detección, asignando un retardo de reinicio de 1 segundo. Le estableceremos un umbral del 60\%, por lo que cuando el valor de luminosidad baje de ese umbral y detecte presencia se activarán las luces, por el contrario si el umbral está por encima de ese valor no activará las luces al igual que si no detecta presencia alguna en la habitación pasados los 10 segundos de la detección establecidos anteriormente. En las siguientes imagenes se pueden ver dichos valores de la parametrización. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img13}
+ 		\captionof{figure}{\label{fig:IPN}Configurando parámetros del \textbf{DIMinBOX DX2} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img14}
+ 		\captionof{figure}{\label{fig:IPN}Configurando parámetros del \textbf{DIMinBOX DX2} (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img15}
+ 		\captionof{figure}{\label{fig:IPN}Configurando parámetros del \textbf{DIMinBOX DX2} (III).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img16}
+ 		\captionof{figure}{\label{fig:IPN}Configurando parámetros del \textbf{DIMinBOX DX2} (IV).} 
+	\end{center} 
+\end{figure}
+
+La entrada configurada \textbf{E2} dispone de los siguientes objetos de comunicación. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img17}
+ 		\captionof{figure}{\label{fig:IPN}Objetos de comunicación para la entrada \textbf{E2} del \textbf{DIMinBOX DX2}.} 
+	\end{center} 
+\end{figure}
+
+Vamos ahora a definir una nueva dirección de grupo llamada \textbf{detección movimiento} donde añadiremos los correspondientes objetos de comunicación de la entrada \textbf{E2}. En dicha dirección de grupo solamente incluiremos objetos de comunicación del módulo \textbf{DIMinBOX DX2} ya que no se necesita de ninguno otro más para realizar este supuesto. Agregaremos los objetos ``On/Off'' de cada una de las salidas \textbf{C1} y \textbf{C2} para que se enciende o apaguen las lámparas led, así como el objeto ``Estado de detección'' de la entrada \textbf{E2} y el canal 1 \textbf{C1} que se configuró previamente. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img18}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo objeto de comunicación a la dirección de grupo  \textbf{detección movimiento}.} 
+	\end{center} 
+\end{figure}
+
+Con el sistema configurado y preparado solo queda programarlo para ser lanzado. Cabe destacar que en este caso al tomar como base el proyecto de la práctica anterior no es necesario realizar una programación de todo ya que para probar este supuesto sólo nos basamos en la dirección de grupo \textbf{detección movimiento}, por lo que podemos hacer una programación parcial de la misma.\\
+
+\section{Práctica 3. Control de temperatura.} 
 
 \end{document}
