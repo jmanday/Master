@@ -1,7 +1,7 @@
 \documentclass[10pt]{article}  
 
 %%%%%%%% PREÁMBULO %%%%%%%%%%%%
-\title{Memoria para prácticas de DOMÓTICA}
+\title{Plantilla para prácticas de UPIITA}
 \usepackage[spanish]{babel} %Indica que escribiermos en español
 \usepackage[utf8]{inputenc} %Indica qué codificación se está usando ISO-8859-1(latin1)  o utf8  
 \usepackage{amsmath} % Comandos extras para matemáticas (cajas para ecuaciones,
@@ -38,11 +38,14 @@
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\footnotesize UGR} %encabezado izquierda
-\fancyhead[R]{\footnotesize ETSIIT}   % dereecha
-\fancyfoot[R]{\footnotesize Memoria Prácticas}  % Pie derecha
+\fancyhead[R]{\footnotesize DOM}   % dereecha
+\fancyfoot[R]{\footnotesize Memoria}  % Pie derecha
 \fancyfoot[C]{\thepage}  % centro
-\fancyfoot[L]{\footnotesize Máster en Ing. Informática}  %izquierda
+\fancyfoot[L]{\footnotesize Master en Ingeniería Informática}  %izquierda
 \renewcommand{\footrulewidth}{0.4pt}
+
+% Directorio para las imágenes
+\graphicspath{{/Users/jesusgarciamanday/Desktop/Master/DOM/Practicas/Memoria/Imagenes/}}
 
 
 \usepackage{listings} % Para usar código fuente
@@ -68,8 +71,6 @@
 \newcommand{\sen}{\operatorname{\sen}}	% Definimos el comando \sen para el seno
 %en español
 
-\title{Memoría para las prácticas de la asignatura Domótica}
-
 %%%%%%%% TERMINA PREÁMBULO %%%%%%%%%%%%
 
 \begin{document}
@@ -83,21 +84,21 @@
 %\includegraphics[scale = 0.63]{Imagenes/logo_upiita}
 \end{flushleft}\end{minipage}
 \begin{minipage}{0.48\textwidth} \begin{flushright}
-
 %\includegraphics[scale = 0.35]{Imagenes/IPN}
 \end{flushright}\end{minipage}
 
 													 								%%%
-\vspace*{-1.5cm}								%%%
+\vspace*{0.25cm}								%%%
 																					%%%	
-\textsc{\huge Universidad de  \\ \vspace{5px} Granada}\\[1.5cm]	
+\textsc{\huge Universidad de Granada}\\[1.5cm]	
 
-\textsc{\LARGE Escuela Técnica Superior en Ingenier\'ias 				%%%
-Inform\'atica \\ \vspace{5px} y de las Telecomunicaciones}\\[1.5cm]													%%%
+\textsc{\LARGE Master en Ingeniería Informática}\\[1.5cm]													%%%
+
+\textsc{\LARGE Domótica}\\[1.5cm]													%%%
 
 \begin{minipage}{0.9\textwidth} 
 \begin{center}																					%%%
-\textsc{\LARGE Memoria Prácticas}
+\textsc{\LARGE KNX}
 \end{center}
 \end{minipage}\\[0.5cm]
 %%%
@@ -105,7 +106,7 @@ Inform\'atica \\ \vspace{5px} y de las Telecomunicaciones}\\[1.5cm]													
  			\vspace*{1cm}																		%%%
 																					%%%
 \HRule \\[0.4cm]																	%%%
-{ \huge \bfseries Domótica}\\[0.4cm]	%%%
+{ \huge \bfseries Memoria de las prácticas}\\[0.4cm]	%%%
  																					%%%
 \HRule \\[1.5cm]																	%%%
  																				%%%
@@ -113,7 +114,7 @@ Inform\'atica \\ \vspace{5px} y de las Telecomunicaciones}\\[1.5cm]													
 \begin{minipage}{0.46\textwidth}													%%%
 \begin{flushleft} \large															%%%
 \emph{Autor:}\\	
-Manuel Jesús García Manday\\
+ Manuel Jesús García Manday
 %%%
 			%\vspace*{2cm}	
             													%%%
@@ -123,11 +124,7 @@ Manuel Jesús García Manday\\
 																%%%
 \begin{minipage}{0.52\textwidth}		
 \vspace{-0.6cm}											%%%
-\begin{flushright} \large															%%%
-%\emph{Asesores:} \\																	%%%
-%Asesor 1\\
-%Asesor 2	\\
-%Asesor 3														%%%
+\begin{flushright} \large															%%%													%%%
 \end{flushright}																	%%%
 \end{minipage}	
 \vspace*{1cm}
@@ -135,10 +132,11 @@ Manuel Jesús García Manday\\
  	
 %\end{flushleft}
 %%%
- 		\flushleft{\textbf{\Large Máster en Ing. Informática}	}\\																		%%%
+ 		\flushleft{\textbf{\Large Master en Ingeniería Informática}	}\\																		%%%
 \vspace{2cm} 																				
 \begin{center}																					
-{\large \today}																	%%%
+
+%{\large \today}																	%%%
  			\end{center}												  						
 \end{center}							 											
 																					
@@ -151,74 +149,113 @@ Manuel Jesús García Manday\\
 
 \section{Objetivo.}
 
-El objetivo de este documento es presentar una memoria sobre la realización de las prácticas de la asignatura. A través del mismo se describirán los pasos empleados para el desarrollo de cada una de las prácticas propuestas así como las herramientas utilizadas para ello. Para el desarrollo de las mismas se va a emplear el software ETS5 como entrono de desarrollo integrado (IDE) y el sistema KNX como entorno de pruebas y despliegue de los diferentes proyectos, con el fin de realizar la implementación y pruebas pertinentes para probar que el comportamiento obtenido por las distintas funcionalidades de las prácticas es el correcto. 
+El objetivo de este documento es presentar una memoria sobre la realización de las prácticas de la asignatura. A través del mismo se describirán los pasos empleados para el desarrollo de cada una de las prácticas propuestas así como las herramientas utilizadas para ello. Para el desarrollo de las mismas se va a emplear el software \textbf{ETS5} como entrono de desarrollo integrado (IDE) y el sistema \textbf{KNX} como entorno de pruebas y despliegue de los diferentes proyectos, con el fin de realizar la implementación y pruebas pertinentes para probar que el comportamiento obtenido por las distintas funcionalidades de las prácticas es el correcto. 
 
 
-
-\section{Práctica 1. Regulación de luz.} 
-
-La finalidad de esta primera práctica es la de realizar una funcionalidad que sea capaz de regular la intensidad luminosa de una lámpara led a través del módulo de botonera táctil
-
-\section{Desarrollo de la solución.}
-
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-
-
+\section{Configuración del sistema.} 
+Una vez que se ha instalado el software \textbf{ETS5} para programar el equipo de prácticas KNX, es necesario importar las pertinentes librerías de cada uno de los módulos para su posterior uso como se muestra en la siguiente imagen. \\
 
 \begin{figure}[H]
 	\begin{center}
-% 		\includegraphics[width = 0.5\textwidth]{Imagenes/IPN}
- 		\captionof{figure}{\label{fig:IPN}Descripción de la imagen} 
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img1}
+ 		\captionof{figure}{\label{fig:IPN}Importando librerías.} 
 	\end{center} 
 \end{figure}
 
+Ya esta el software preparado para comenzar a programar con los módulos del equipo de prácticas KNX en función de las necesidades que tenga cada situación como se irán describiendo en los siguientes puntos. \\
 
 
-\subsection{Generación del concepto.}
+\section{Práctica 1. Regulación de luz.} 
+La finalidad de esta primera práctica es la de realizar una funcionalidad que sea capaz de regular la intensidad luminosa de una lámpara led a través del módulo de botonera táctil. Para el desarrollo de esta primera situación se van a utilizar los módulos \textbf{DIMinBOX DX2} y \textbf{Touch-MyDesign Plus 6} del equipo KNX, por lo que los agregamos a nuestros dispositivos. El dispositivo \textbf{DIMinBOX DX2} se situará en el armario, mientras que el \textbf{Touch-MyDesign Plus 6} se colocará en el salón como se muestra en la siguiente figura. \\
 
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img2}
+ 		\captionof{figure}{\label{fig:IPN}Agregando dispositivos.} 
+	\end{center} 
+\end{figure}
 
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+Con los dispositivos agregados pasamos a configurar sus parámetros. El  \textbf{DIMinBOX DX2} dispone de dos salidas \textbf{C1} y \textbf{C2} que se encuentran conectadas a dos lámparas led de 220V, para nuesto supuesto vamos a utilizar las dos para controlar la regulación de la luz. \\
 
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img3}
+ 		\captionof{figure}{\label{fig:IPN}Configurando parámetros del \textbf{DIMinBOX DX2}.} 
+	\end{center} 
+\end{figure}
 
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+Una vez que se han configurado los parámetros de dicho dispositivo, podemos ver los objetos de comunicación de los que dispone cada uno de las dos entradas del citado módulo. \\
 
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img4}
+ 		\captionof{figure}{\label{fig:IPN}Objetos de comunicación para \textbf{C1}.} 
+	\end{center} 
+\end{figure}
 
-\section{Conclusiones.}
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img5}
+ 		\captionof{figure}{\label{fig:IPN}Objetos de comunicación para \textbf{C2}.} 
+	\end{center} 
+\end{figure}
 
-\section{Cronograma de trabajo terminal II.}
+Ahora es el turno de configurar los parámetros del módulo \textbf{Touch-MyDesign Plus 6}. Para este dispositivo configuraremos uno de los pulsadores principales (\textbf{A1}) al cual le daremos una función de ``binario'' junto a una acción de ``conmutador''. En cuanto a la pareja B de este pulsador principal le estableceremos una función de ``control de regulador'' así como un paso de regulación del 25\%. \\
 
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img6}
+ 		\captionof{figure}{\label{fig:IPN}Configurando parámetros del \textbf{Touch-MyDesign Plus 6} (I).} 
+	\end{center} 
+\end{figure}
 
-%%%%%%% Bibliografía %%%%%%%%
-\bibliographystyle{bst/IEEEtran.bst} 
-\addcontentsline{toc}{section}{Referencias}  
-\bibliography{bib/IEEEabrv,bib/IEEEreferencias.bib} 
-%%%%%%% Bibliografía %%%%%%%%    
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img7}
+ 		\captionof{figure}{\label{fig:IPN}Configurando parámetros del \textbf{Touch-MyDesign Plus 6} (II).} 
+	\end{center} 
+\end{figure}
 
-\appendix  
-\clearpage % o \cleardoublepage
-\addappheadtotoc 
-\appendixpage 
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img8}
+ 		\captionof{figure}{\label{fig:IPN}Configurando parámetros del \textbf{Touch-MyDesign Plus 6} (III).} 
+	\end{center} 
+\end{figure}
 
-\section{Anexos 1.}
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img9}
+ 		\captionof{figure}{\label{fig:IPN}Configurando parámetros del \textbf{Touch-MyDesign Plus 6} (IV).} 
+	\end{center} 
+\end{figure}
 
+Pasamos ahora a definir las direcciones de grupo donde incluiremos los objetos de comunicación necesarios. Disponemos del grupo principal llamado \textbf{iluminación}, el cual contiene al grupo intermedio \textbf{Salón} del que a su vez cuelgan las direcciones de grupo \textbf{OnOff\_Luz\_Techo} y \textbf{Regulación}. \\
 
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img10}
+ 		\captionof{figure}{\label{fig:IPN}Estableciendo las direcciones de grupo.} 
+	\end{center} 
+\end{figure}
 
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla 
+A la dirección de grupo \textbf{OnOff\_Luz\_Techo} le añadiremos los objetos de comunicación ``On/Off'' del dispositivo \textbf{DIMinBOX DX2} de la salida \textbf{C1} y el objeto de comunicación ``Control binario'' del pulsador principal \textbf{A1} perteneciente al dispositivo  \textbf{Touch-MyDesign Plus 6}. \\
 
-\section{Anexos 2.}
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img11}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo objetos de comunicación a la dirección de grupo \textbf{OnOff\_Luz\_Techo}.} 
+	\end{center} 
+\end{figure}
 
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img12}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo objetos de comunicación a la dirección de grupo \textbf{Touch-MyDesign Plus 6}.} 
+	\end{center} 
+\end{figure}
 
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+Terminada esta configuración, el sitema queda totalmente configurado para ser programado y lanzado en el entorno de pruebas KNX. \\
 
-
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-bla bla bla bla bla bla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla bla bla bla bla bla blabla bla bla bla blabla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
 
 \end{document}
