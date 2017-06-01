@@ -255,7 +255,7 @@ A la dirección de grupo \textbf{OnOff\_Luz\_Techo} le añadiremos los objetos d
 	\end{center} 
 \end{figure}
 
-Terminada esta configuración, el sitema queda totalmente configurado para ser programado y lanzado en el entorno de pruebas KNX. \\
+Terminada esta configuración, el sitema queda totalmente configurado para ser programado y lanzado en el entorno de pruebas KNX para comprobar su correcto funcionamiento como se pudo corrobar en el laboratorio de prácticas. \\
 
 
 \section{Práctica 2. Control de presencia.} 
@@ -309,8 +309,230 @@ Vamos ahora a definir una nueva dirección de grupo llamada \textbf{detección m
 	\end{center} 
 \end{figure}
 
-Con el sistema configurado y preparado solo queda programarlo para ser lanzado. Cabe destacar que en este caso al tomar como base el proyecto de la práctica anterior no es necesario realizar una programación de todo ya que para probar este supuesto sólo nos basamos en la dirección de grupo \textbf{detección movimiento}, por lo que podemos hacer una programación parcial de la misma.\\
+Con el sistema configurado y preparado solo queda programarlo para ser lanzado. Cabe destacar que en este caso al tomar como base el proyecto de la práctica anterior no es necesario realizar una programación de todo ya que para probar este supuesto sólo nos basamos en la dirección de grupo \textbf{detección movimiento}, por lo que podemos hacer una programación parcial de la misma como hicimos en el laboratorio de prácticas para comprobar su correcto funcionamiento.\\
+
 
 \section{Práctica 3. Control de temperatura.} 
+Para esta práctica se configurará el sistema KNX para realizar un control de temperatura. La finalidad de este supuesto es activar o desactivar un termostato en función de la temperatura que el sensor capte y de la que esté establecida como consigna. Esta práctica se hace en conjunto con la práctica de \textbf{Uso de un panel táctil} de manera que a través de dicho panel se podrá configurar la temperatura de consigna aumentándola o disminuyéndola en función de lo requerido. \\
+
+Una vez creado el nuevo proyecto pasamos a agregar los dispositivos necesarios para la realización del mismo. Para este supuesto será necesario añadir los módulos \textbf{DIMinBOX DX2}, \textbf{MINiBOX 45} y \textbf{Z41 Pro} como se muestra en la imagen. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img19}
+ 		\captionof{figure}{\label{fig:IPN}Agregando dispositivos.} 
+	\end{center} 
+\end{figure}
+
+El primer dispositivo que vamos a configurar es el \textbf{DIMinBOX DX2}, más concretamente la entrada 1 (\textbf{E1}) correspondiente a la sonda de temperatura a la cual le estableceremos un periodo de 10 segundos de envío de temperatura, así como el envío tras un cambio de 0.1ºC de temperatura como se muestra en la siguiente figura. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img20}
+ 		\captionof{figure}{\label{fig:IPN}Configurando la entrada 1 del \textbf{DIMinBOX DX2}.} 
+	\end{center} 
+\end{figure}
+
+El siguiente dispositivo a configurar es el \textbf{MINiBOX 45} el cual dispone de cuatro salidas de las que vamos a utilizar la salida 3 y cuyo control especificaremos que será manual. En la parametrización de la salida 3 estableceremos el tipo a normalmente abierto asi como el arranque por defecto.  La configuración del control manual la dejaremos por defecto. \\
+
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img21}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{MINiBOX 45}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img22}
+ 		\captionof{figure}{\label{fig:IPN}Configurando salida 3 del \textbf{MINiBOX 45}.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img23}
+ 		\captionof{figure}{\label{fig:IPN}Configurando control manual del \textbf{MINiBOX 45}.} 
+	\end{center} 
+\end{figure}
+
+El último dispositivo a configurar es el \textbf{Z41 Pro} el cual dispone de dos termostatos. Parametrizaremos uno de ellos (\textbf{Termostato 1}) para regular la temperatura cuando esta sea diferente a la de consigna. El panel táctil estará conectado a una fuente de alimentación de 29V y se utilizará en orientación vertical. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img24}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{Z41 Pro} (I).} 
+	\end{center} 
+\end{figure}
+
+Utilizaremos la página 1 de dicho panel y la casilla 1 dentro de la misma. Su función será la de mostrar la temperatura la cual tendrá un valor mínimo de 15º y un valor máximo de 30º. Se utilizará el botón izquierdo de dicho panel para bajar temperatura y el botón derecho para subirla. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img25}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{Z41 Pro} (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img26}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{Z41 Pro} (III).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img27}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{Z41 Pro} (IV).} 
+	\end{center} 
+\end{figure}
+
+Configuraremos el termostato 1 como se ha mencionado anteriormente cuya función será únicamente la de calentar cuando la temperatura se diferente a la de consigna obtenida de la fuente de temperatura 1 a través de la sonda. La consigna inicial del termostato será de 22º, siendo un grados menos la consigna para el confort. Para calentar, tanto la histéresis superior como inferior será de 0.5º. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img28}
+ 		\captionof{figure}{\label{fig:IPN}Configurando termostato 1 del \textbf{Z41 Pro} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img29}
+ 		\captionof{figure}{\label{fig:IPN}Configurando termostato 1 del \textbf{Z41 Pro} (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img30}
+ 		\captionof{figure}{\label{fig:IPN}Configurando termostato 1 del \textbf{Z41 Pro} (III).} 
+	\end{center} 
+\end{figure}
+
+Nos crearemos tres grupos de direcciones dentro del grupo intermedio \textbf{baño}. Al grupo \textbf{temperatura\_ambiente} se le añadirán dos objetos de comunicación del dispositivo \textbf{Z41 Pro} y uno del \textbf{DIMinBox DX2}. A través de los objetos de comunicación del panel utilizaremos el [General] para mostrar la temperatura en la pantalla, y el [T1] como fuente de temperatura 1que lo que hará será medir el sensor externo. Del dispositivo \textbf{DIMinBox DX2} añadiremos la entrada 1 como objeto de comunicación para obtener el valor del sensor de temperatura, es decir, la temperatura acual. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img31}
+ 		\captionof{figure}{\label{fig:IPN}Agregando direcciones de grupo.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img32}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo objetos de comunicación a la dirección de grupo \textbf{temperatura\_ambiente}.} 
+	\end{center} 
+\end{figure}
+
+El grupo de direcciones \textbf{temperatura\_consigna} sólo incluirá objetos de comunicación del dispositivo \textbf{Z41 Pro}. El objeto [P1][B1] para el control de la temperatura (el valor absoluto en coma flotante) y el objeto consigna [T1] para la consigna del temostato. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img33}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo objetos de comunicación a la dirección de grupo \textbf{temperatura\_consigna}.} 
+	\end{center} 
+\end{figure}
+
+El último grupo de direcciones (\textbf{salida\_termostato}) tendrá un objeto de comunicación del \textbf{MINinBOX 45} para apagar o encender el relé para calentar o no calentar el baño (\textbf{S3}) y un objeto de comunicación del \textbf{Z41 Pro} como variable de control para calentar (\textbf{T1}).\\ 
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img34}
+ 		\captionof{figure}{\label{fig:IPN}Añadiendo objetos de comunicación a la dirección de grupo \textbf{salida\_termostato}.} 
+	\end{center} 
+\end{figure}
+
+Ya podemos enviarlos a programar para ver su correcto funcionamiento como se hizo en clase. \\
+
+
+\section{Práctica 4. Control de persianas.} 
+Se va configurar KNX para realizar el control de unas persianas. El supuesto consiste en mover o parar unas persianas presionando un botón del teclado para lo que será necesario utilizar los dispositivos \textbf{Touch-MyDesing Plus 6} para el control de los botones y \textbf{MINiBOX 45} para activar o desactivar el relé que movería las persianas. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img35}
+ 		\captionof{figure}{\label{fig:IPN}Agregando dispositivos.} 
+	\end{center} 
+\end{figure}
+
+Comenzaremos configurando el panel \textbf{Touch-MyDesing Plus 6} habilitando la pareja C de pulsadores principales. A dicha pareja se le establecerá la función de persianas y de tipo estándar. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img36}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{Touch-MyDesing Plus 6} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img37}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{Touch-MyDesing Plus 6} (II).} 
+	\end{center} 
+\end{figure}
+
+Comenzaremos activando las salidas para el dispositivo \textbf{MINiBOX 45} y habilitando el Canal A como ``Canal persiana''. A continuación le estableceremos a dicho canal el tiempo que empleará tanto para subir como para bajar así como el tiempo de seguridad. Las funciones serán dejadas las que tiene por defecto. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img38}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{MINiBOX 45} (I).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img39}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{MINiBOX 45} (II).} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img40}
+ 		\captionof{figure}{\label{fig:IPN}Configurando dispositivo \textbf{MINiBOX 45} (III).} 
+	\end{center} 
+\end{figure}
+
+
+Pasamos ahora a definir los grupos de direcciones para posteriormente añadirles los objetos de comunicación necesarios. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img41}
+ 		\captionof{figure}{\label{fig:IPN}Definiendo direcciones de grupo.} 
+	\end{center} 
+\end{figure}
+
+
+La dirección de grupo \textbf{Mover} tendrá el objeto de comunicación ``Subir/bajar persiana'' del teclado \textbf{Touch-MyDesing Plus 6} para el pulsado de las teclas y el objeto de comunicación \textbf{Mover} del dispositivo \textbf{MINiBOX 45} para accionar el relé que mueve las persianas. \\
+
+\begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img42}
+ 		\captionof{figure}{\label{fig:IPN}Añdiendo objetos de comunicación a la dirección de grupo \textbf{Mover}.} 
+	\end{center} 
+\end{figure}
+
+Para la dirección de grupo \textbf{Parar} añadiremos también objetos de comunicación de ambos dispositivos. Del teclado \textbf{Touch-MyDesing Plus 6} añadiremos el objeto de comunicación ``Detener persiana'' para hacer que se detengan las persianas, mientras que del \textbf{MINiBOX 45} añadiremos el objeto ``Parar'' para que el relé que las mueve se detenga. \\
+ 
+ 
+ \begin{figure}[H]
+	\begin{center}
+	 		\includegraphics[width = 1.00\textwidth]{Imagenes/img43}
+ 		\captionof{figure}{\label{fig:IPN}Añdiendo objetos de comunicación a la dirección de grupo \textbf{Parar}.} 
+	\end{center} 
+\end{figure}
+
+Con el sistema KNX configurado ya es posible programarlo para comprobar sus resultados como se pudo ver en el laboratorio de prácticas.\\
+
+
+\section{Práctica 5. Uso de un panel táctil.} 
+Como se mencionó anteriormente, esta práctica se realizó conjuntamente con la práctica 3 del \textbf{Control de temperatura}.\\
 
 \end{document}
+

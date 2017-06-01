@@ -3,3 +3,6 @@
 \contentsline {section}{\numberline {2}Configuraci\IeC {\'o}n del sistema.}{3}{section.2}
 \contentsline {section}{\numberline {3}Pr\IeC {\'a}ctica 1. Regulaci\IeC {\'o}n de luz.}{3}{section.3}
 \contentsline {section}{\numberline {4}Pr\IeC {\'a}ctica 2. Control de presencia.}{7}{section.4}
+\contentsline {section}{\numberline {5}Pr\IeC {\'a}ctica 3. Control de temperatura.}{11}{section.5}
+\contentsline {section}{\numberline {6}Pr\IeC {\'a}ctica 4. Control de persianas.}{23}{section.6}
+\contentsline {section}{\numberline {7}Pr\IeC {\'a}ctica 5. Uso de un panel t\IeC {\'a}ctil.}{30}{section.7}
