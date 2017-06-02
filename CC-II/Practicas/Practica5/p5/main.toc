@@ -1,0 +1,5 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Objetivo.}{3}{section.1}
+\contentsline {section}{\numberline {2}Introducc\IeC {\'\i }on.}{3}{section.2}
+\contentsline {section}{\numberline {3}Tareas.}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Ejecutar el algoritmo ''Random Forest'' sobre el conjunto de datos BNG\_heart y comprobar el rendimiento alcanzado de acuerdo a los siguientes casos}{4}{subsection.3.1}
