@@ -1,2 +1,0 @@
-knime://knime.workflow/data.all
-file:/Users/jesusgarciamanday/Desktop/Master/TID/Datasets-Prácticas/bankloan-spss.csv
