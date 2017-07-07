@@ -6,7 +6,6 @@ from resizeimage import resizeimage
 cwd = os.getcwd()
 rootDir = cwd + '/imagenes'
 
-
 for file_name in os.listdir(rootDir):
     folderDir = rootDir + '/' + file_name
     if (os.path.isdir(folderDir)):
