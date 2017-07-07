@@ -1,0 +1,42 @@
+{% extends "app/menu.html" %}
+{% block content %}
+<h1 class="text-center"></h1>
+  <div class="col-lg-12">
+      <h1 class="text-center" style="margin-top:5%"> Listado de Restaurantes </h1>
+      <div class="table-responsive" style="margin-top:6%">
+          <table class="table table-bordered table-hover table-striped tablesorter">
+              <thead>
+              <tr>
+                <th class="header"> Nombre <i class="icon-sort"></i></th>
+                <th class="header"> Dirección <i class="icon-sort"></i></th>
+                <th class="header"> Ciudad <i class="icon-sort"></i></th>
+                <th class="header"> Código Postal <i class="icon-sort"></i></th>
+                <th class="header">  <i class="icon-sort"></i></th>
+              </tr>
+          </thead>
+          <tbody>
+
+          {% for key in data %}
+              <tr>
+                  <td>{{ key.name }}</td>
+                  <td>{{ key.address.street }}</td>
+                  <td>{{ key.address.city }}</td>
+                  <td align="center">{{ key.address.zipcode }}</td>
+                  <td align="center">
+                    <form id="search_form" method="post" action="/restaurantes/searchRestaurant/">
+                      {% csrf_token %}
+                      <input class="form-control mr-sm-2" maxlength="8" type="text" hidden="true" name="searched_id" value="{{key.id_restaurant}}">
+                      <button class="btn btn-default" type="submit" data-toggle="tooltip" data-placement="right" title="Consultar" >
+                        <span class="fa fa-hand-o-right" aria-hidden="true"></span>
+                      </button>
+                    </form>
+                  </td>
+              </tr>
+          {% endfor %}
+
+
+          </tbody>
+          </table>
+      </div>
+    </div>
+{% endblock %}
