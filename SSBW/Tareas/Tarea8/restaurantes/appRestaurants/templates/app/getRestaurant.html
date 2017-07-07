@@ -1,0 +1,34 @@
+{% extends "app/menu.html" %}
+{% block content %}
+
+<div class="row" style="margin-top:5%; margin-left:35%">
+    <div class="card">
+      <div class="view overlay hm-white-slight">
+        <img class="img-responsive" src="data:image/png;base64,{{ data.image }} " alt="" >
+        <a href="#">
+            <div class="mask waves-effect waves-light"></div>
+        </a>
+      </div>
+      <div class="card-block">
+        <!--Title-->
+        <h4 class="card-title">Nombre</h4>
+        <!--Text-->
+        <p class="card-text">{{data.name}}</p>
+        <!--Title-->
+        <h4 class="card-title">Dirección</h4>
+        <!--Text-->
+        <p class="card-text">{{data.street}}</p>
+        <!--Title-->
+        <h4 class="card-title">Ciudad</h4>
+        <!--Text-->
+        <p class="card-text">{{data.city}}</p>
+        <!--
+        <div class="text-xs-center">
+            <a class="btn btn-primary">Visualizar</a>
+        </div>
+        -->
+      </div>
+    </div>
+</div>
+
+{% endblock %}

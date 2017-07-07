@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load bootstrap4 %}
+
+{% block content %}
+  <form method="post" style="width:20%; margin-left:40%" class="form-signin"  action=".">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+
+    <input type="submit" class="btn btn-primary" value="{% trans 'Aceptar' %}" style="margin-left:30%"/>
+  </form>
+{% endblock %}

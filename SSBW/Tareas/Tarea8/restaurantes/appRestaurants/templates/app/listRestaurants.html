@@ -1,0 +1,176 @@
+{% extends "app/menu.html" %}
+{% block content %}
+
+<h1 class="text-center"></h1>
+  <div class="col-lg-12">
+      <h1 class="text-center" style="margin-top:5%"> Listado de Restaurantes </h1>
+      <div class="table-responsive" style="margin-top:6%">
+          <table id="table_restaurantes" class="table table-bordered table-hover table-striped tablesorter">
+              <thead>
+              <tr>
+                <th class="header"> Nombre <i class="icon-sort"></i></th>
+                <th class="header"> Ciudad <i class="icon-sort"></i></th>
+                <th class="header"> <i class="icon-sort"></i></th>
+                <th class="header"> <i class="icon-sort"></i></th>
+                <th class="header"> <i class="icon-sort"></i></th>
+              </tr>
+          </thead>
+          <tbody>
+
+          {% for key in data %}
+              <tr>
+                  <td>{{ key.name }}</td>
+                  <td>{{ key.address.city }}</td>
+                  <td align="center">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#get-restaurant" data-restaurant-id="{{key.id_restaurant}}" data-token="{{ csrf_token }}" title="Consultar">
+                      <span class="fa fa-hand-o-right" aria-hidden="true"></span>
+                    </button>
+                  </td>
+                  <td align="center">
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#delete-restaurant" data-placement="right" data-restaurant-id="{{key.id_restaurant}}" title="Eliminar" >
+                      <span class="fa fa-trash-o" aria-hidden="true"></span>
+                    </button>
+                  </td>
+                  <td align="center">
+                    <form id="search_form" method="post" action="/restaurantes/searchRestaurant/">
+                      {% csrf_token %}
+                      <input id="delete_id" class="form-control mr-sm-2" maxlength="8" type="text" hidden="true" name="searched_id" value="{{key.id_restaurant}}">
+                      <button class="btn btn-primary" type="submit" data-toggle="tooltip" data-placement="right" title="Modificar" >
+                        <span class="fa fa-pencil" aria-hidden="true"></span>
+                      </button>
+                    </form>
+                  </td>
+              </tr>
+
+              <!-- Modal Consultar -->
+              <div class="modal fade" id="get-restaurant" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header" id="modal-header">
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal Eliminar -->
+              <div class="modal fade" id="delete-restaurant" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <form id="delete_form" method="post" action="/restaurantes/deleteRestaurant/">
+                      {% csrf_token %}
+                      <input id="delete_id" class="form-control mr-sm-2" maxlength="8" type="text" hidden="true" name="searched_id" value="{{key.id_restaurant}}">
+                      <div class="modal-header" id="modal-header">
+                      </div>
+                      <div class="modal-body">
+                        <p>¿Desea eliminar el resutaurante?</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-secondary">Eliminar</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                        <!--
+                        <button type="submit" id="btn-delete-restaurant" onClick="deleteRestaurant()" class="btn btn-secondary" data-dismiss="modal" data-token="{{ csrf_token }}">Eliminar</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancelar</button>
+                      -->
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+          {% endfor %}
+
+          <script>
+            var idRestaurant = 0;
+
+            // listener para cuando pulsa la opción de consultar un restaurante
+            $('#get-restaurant').on('show.bs.modal', function(e) {
+              //get data-id attribute of the clicked element
+              var restaurantID = $(e.relatedTarget).data('restaurant-id');
+              var token = $(e.relatedTarget).data('token');
+              var request = 'http://localhost:8000/api/restaurantes/' + restaurantID
+
+              $.ajax({
+                url: request,
+                cache: false,
+                dataType: 'json',
+                beforeSend: function (xhr){
+                    xhr.setRequestHeader('Authorization', 'Token 98e774a4d7cb66770d69c4c8f0b50c6ecf643b2d');
+                },
+                success: function(data) {
+                  var htmlDataHeader = '<h5>';
+                  htmlDataHeader += data.name;
+                  htmlDataHeader += '</h5>';
+                  htmlDataHeader += '<button type="button" class="close" data-dismiss="modal" aria-label="Close">';
+                  htmlDataHeader += '<span aria-hidden="true">&times;</span>';
+                  $('#get-restaurant').find('#modal-header').html(htmlDataHeader);
+
+                  var htmlDataBody = '<p>';
+                  htmlDataBody += data.address.street;
+                  htmlDataBody += '</p>';
+                  htmlDataBody += '<p>';
+                  htmlDataBody += data.address.city;
+                  htmlDataBody += '</p>';
+                  htmlDataBody += '<p>';
+                  htmlDataBody += data.address.zipcode;
+                  htmlDataBody += '</p>';
+                  htmlDataBody += '<img style="width:100%; height:30%" class="img-responsive" src="https://maps.googleapis.com/maps/api/streetview?size=600x300&location=';
+                  htmlDataBody += data.address.coord.lat;
+                  htmlDataBody += ',';
+                  htmlDataBody += data.address.coord.lon;
+                  htmlDataBody += '" alt="" >'
+                  $('#get-restaurant').find('#modal-body').html(htmlDataBody);
+                }
+              })
+            });
+
+            // listener para cuando pulsa la opción de eliminar un restaurante
+            $('#delete-restaurant').on('show.bs.modal', function(e) {
+              //get data-id attribute of the clicked element
+              var restaurantID = $(e.relatedTarget).data('restaurant-id');
+              idRestaurant = restaurantID;
+              var request = 'http://localhost:8000/api/restaurantes/' + restaurantID
+              $('#delete_id').val(restaurantID);
+
+              $.ajax({
+                url: request,
+                cache: false,
+                dataType: 'json',
+                beforeSend: function (xhr){
+                    xhr.setRequestHeader('Authorization', 'Token 98e774a4d7cb66770d69c4c8f0b50c6ecf643b2d');
+                },
+                success: function(data) {
+                  var htmlDataHeader = '<h5>';
+                  htmlDataHeader += data.name;
+                  htmlDataHeader += '</h5>';
+                  htmlDataHeader += '<button type="button" class="close" data-dismiss="modal" aria-label="Close">';
+                  htmlDataHeader += '<span aria-hidden="true">&times;</span>';
+                  $('#delete-restaurant').find('#modal-header').html(htmlDataHeader);
+                }
+              })
+            });
+
+            /*
+            function deleteRestaurant() {
+              var token = $('#btn-delete-restaurant').data('token');
+              var request = 'http://localhost:8000/api/restaurantes/' + idRestaurant
+
+              $.ajax({
+                url: request,
+                type: 'post',
+                data: {_method: 'delete', _token :token},
+                success: function(msg) {
+                  console.log(msg)
+                }
+              })
+            }*/
+          </script>
+          </tbody>
+          </table>
+      </div>
+    </div>
+
+{% endblock %}

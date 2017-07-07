@@ -1,0 +1,45 @@
+{% extends "app/menu.html" %}
+{% block content %}
+
+<div class="row" style="margin-top:5%; margin-left:35%">
+    <div class="card" style="box-shadow: inset 0 0 0em, 0 0 1em #888888;">
+      <div class="view overlay hm-white-slight">
+        <img class="img-responsive" style="margin-left:auto;margin-right:auto;display:block;margin-bottom:0%;margin-top:10%;box-shadow: inset 0 0 1em gold, 0 0 1em #888888;" src="data:image/png;base64,{{ data.image }} " alt="" >
+        <a href="#">
+            <div class="mask waves-effect waves-light"></div>
+        </a>
+      </div>
+      <br>
+      <form method="post" action="/restaurantes/modifyDatasRestaurant/">
+        {% csrf_token %}
+        <div class="card-block">
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Nombre</span>
+            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" name="nameRestaurant" value="{{data.name}}">
+          </div>
+          <br>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Dirección</span>
+            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" name="streetRestaurant" value="{{data.street}}">
+          </div>
+          <br>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Ciudad</span>
+            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" name="cityRestaurant" value="{{data.city}}">
+          </div>
+          <br>
+          <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1">Código Postal</span>
+            <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1" name="zipcodeRestaurant" value="{{data.zipcode}}">
+          </div>
+          <br><br>
+          <div class="text-xs-center">
+              <button class="btn btn-primary" type="submit" style="margin-left:35%;">Guardar</button>
+              <!-- <button class="btn btn-primary" type="button" style="margin-left:20%">Visualizar</button> -->
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+
+{% endblock %}
