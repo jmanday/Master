@@ -46,6 +46,8 @@ Le debemos de indicar que instale las librerías del paquete **Boost** que fuero
 
 	brew link boost
 	
-Previamente el sistema operativo debe tener instalado dicho compilador **libc++** para que todo funcione correctamente.	
+Previamente el sistema operativo debe tener instalado dicho compilador **libc++** para que todo funcione correctamente.
+
+	
 
 
