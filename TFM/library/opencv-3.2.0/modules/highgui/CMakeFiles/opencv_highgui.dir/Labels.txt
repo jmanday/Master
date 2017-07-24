@@ -1,0 +1,31 @@
+# Target labels
+ Main
+ opencv_highgui
+ Module
+# Source files and their labels
+/Users/jesusgarciamanday/Documents/Master/TFM/library/opencv-3.2.0/modules/highgui/include/opencv2/highgui.hpp
+ Main
+ opencv_highgui
+ Module
+/Users/jesusgarciamanday/Documents/Master/TFM/library/opencv-3.2.0/modules/highgui/include/opencv2/highgui/highgui.hpp
+ Main
+ opencv_highgui
+ Module
+/Users/jesusgarciamanday/Documents/Master/TFM/library/opencv-3.2.0/modules/highgui/include/opencv2/highgui/highgui_c.h
+ Main
+ opencv_highgui
+ Module
+/Users/jesusgarciamanday/Documents/Master/TFM/library/opencv-3.2.0/modules/highgui/src/window.cpp
+ Main
+ opencv_highgui
+ Module
+/Users/jesusgarciamanday/Documents/Master/TFM/library/opencv-3.2.0/modules/highgui/src/window_cocoa.mm
+ Main
+ opencv_highgui
+ Module
+/Users/jesusgarciamanday/Documents/Master/TFM/library/opencv-3.2.0/modules/highgui/src/precomp.hpp
+ Main
+ opencv_highgui
+ Module
+/Users/jesusgarciamanday/Documents/Master/TFM/library/opencv-3.2.0/cvconfig.h
+/Users/jesusgarciamanday/Documents/Master/TFM/library/opencv-3.2.0/opencv2/opencv_modules.hpp
