@@ -71,3 +71,4 @@ iffp: iffp.cpp
 all: ${ALLTARGETS}
 clean:
 	rm ${ALLTARGETS}
+	
