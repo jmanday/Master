@@ -7,7 +7,6 @@
 # ----------------------------------------------------------------------------
 
 
-
 include(cmake/OpenCVMinDepVersions.cmake)
 
 if(CMAKE_GENERATOR MATCHES Xcode AND XCODE_VERSION VERSION_GREATER 4.3)
