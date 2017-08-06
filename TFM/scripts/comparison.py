@@ -1,24 +1,23 @@
-# -*- coding: utf-8 -*-
-
 #########################################################################
 ### Jesus Garcia Manday
 ### segmentation.py
-### @Descripcion: script para realizar la segmentación de las imágenes de
-###             iris y obtener la textura del mismo a través de dos
-###             métodos posibles "caht" y "wahet"
+### @Descripcion: script para realizar la segmentacion de las imagenes de
+###             iris y obtener la textura del mismo a traves de dos
+###             metodos posibles "caht" y "wahet"
 #########################################################################
 
 
 import os
 import commands
 import sys
+import pandas as pd
 
 PATH_EXECUTABLE = "/Users/jesusgarciamanday/Documents/Master/TFM/USITv1.0.3/"
 PATH_DATABASES = "/Users/jesusgarciamanday/Documents/Master/TFM/databases/CASIA V4/"
 PATH_DATABASES_2 = "/Users/jesusgarciamanday/Documents/Master/TFM/databases/CASIA\ V4/"
 PATH_OUTPUTS = "/Users/jesusgarciamanday/Documents/Master/TFM/outputs/segmentation/"
+PATH_OUTPUTS2 = "/Users/jesusgarciamanday/Documents/Master/TFM/outputs/feature extraction/"
 
-MODES_SEGMENTATION = ['caht', 'wahet']
 
 def getImagesCASIAV4():
     vnames_images = []
@@ -38,22 +37,24 @@ def getImagesCASIAV4():
         print ("Error:" + str(res[0]))
         print ("Descripcion: " + res[1])
 
+    df = pd.DataFrame([[img, 0, 0, 0, 0, 0, 0, 0] for img in vnames_images], columns = ['image', 'lg', 'qsw', 'ko', 'cr', 'cb', 'dct', 'gfcf'])
+    df.to_csv(PATH_OUTPUTS2 + 'results.csv', index=False)
+
     return vnames_images
+
+
 
 if __name__ == "__main__":
 
-    mode_seg = sys.argv[1]
-    if mode_seg in MODES_SEGMENTATION:
-        images_CASIAV4 = getImagesCASIAV4()
-        direc = os.chdir(PATH_EXECUTABLE)
+    #mode_seg = sys.argv[1]
+    images_CASIAV4 = getImagesCASIAV4()
+        #direc = os.chdir(PATH_EXECUTABLE)
 
-        for img in images_CASIAV4:
-            cmd = ("./" + mode_seg + " -i " + PATH_DATABASES_2 + img + " -o " + PATH_OUTPUTS + "/" + mode_seg + "/" + img.split('.')[0] + "-texture.png" + " -s 512 64 -e")
+        #for img in images_CASIAV4:
+        #    cmd = ("./" + mode_seg + " -i " + PATH_DATABASES_2 + img + " -o " + PATH_OUTPUTS + "/" + mode_seg + "/" + img.split('.')[0] + "-texture.png" + " -s 512 64 -e")
 
-            res = commands.getstatusoutput(cmd)
+        #    res = commands.getstatusoutput(cmd)
 
-            if(res[0] != 0):
-                print ("Error:" + str(res[0]))
-                print ("Descripcion: " + res[1])
-    else:
-        print "No se encuentra ese metodo de segmentacion"
+        #    if(res[0] != 0):
+        #        print ("Error:" + str(res[0]))
+        #        print ("Descripcion: " + res[1])
