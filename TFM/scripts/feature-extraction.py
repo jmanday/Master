@@ -47,7 +47,7 @@ def algorithm_gfcf(iris_segmentation_images):
                 name = vaux[len(vaux)-1].split('-')[0]
                 cmd = ("./gfcf -i " + path_img + " -o " + PATH_OUTPUTS_FEATURE_EXTRACTION + "/" + key + "/" + name + "-face.png " + name + "-left-eye.png " + name + "-right-eye.png ")
                 res = commands.getstatusoutput(cmd)
-                print res
+                
                 if res[0] != 0:
                     print "ERROR AL EJECUTAR"
 
