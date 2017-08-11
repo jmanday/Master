@@ -28,15 +28,17 @@ Instalaremos la librería **OpenCV** desde el gestor de paquetes *hombrew* para 
 	brew tap homebrew/science
 	brew install opencv
 	
-Esto nos instalará las librerías y dependencias de opencv necesarias para **USIT** tales como *libopencv_core*, *libopencv_photo*, etc, en el directorio **/usr/local/lib**.
+Esto nos instalará las librerías y dependencias de **opencv** necesarias para **USIT** tales como *libopencv_core*, *libopencv_photo*, etc, en el directorio **/usr/local/lib**.
 
-Para indicar la localización del conjunto de librerías necesarias de **OpenCV** al compilador, vamos a instalar la herramienta **pkg-config** para eviar de esta forma el tener que incluir manualmente cada una de las librerías para compilar ya que esto lo hará automáticamente dicho paquete. Para ello lo instalamos con el gestor **brew**.
+Cada que se quieran utilizar las funciones de la librería **OpenCV** es necesario indicárselo al compilador para que incruste el código correspondiente en el fichero fuente que la utilice. Es probable que a veces se necesiten unas librerías para una determinada tarea y en ocasiones otras, teniendo en ambos casos que mostrar al compilador. Para evitar el tener que ir incluyendo manualmente las diferentes librerías cada vez que se tenga que compilar se hace uso de la herramienta **pkg-config**, la cual lo hará automáticamente. Para ello lo instalamos con el gestor **brew**.
 
 	brew install pkg-config
 	
-Una vez instalado hay que indicar en la variable de entorno la localización del fichero **opencv.pc** que será el que contenga todas las librerías que queramos utilizar de **OpenCV**, por lo que exportamos dicha variable con el siguiente comando.
+Una vez instalado hay que indicar en la variable de entorno la localización del fichero **opencv.pc** que será el que contenga todas las librerías que queramos utilizar de **OpenCV** como *libopencv_core*, *libopencv_highgui*, etc, por lo que exportamos dicha variable con el siguiente comando donde se encuentra dicho fichero:
 
 	$ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
+
+En el compilador será necesario indicar que se van a incluir estas librería mediante dicha herramienta ejecutando el comando *pkg-config opencv --cflags --libs*	.
 	
 Con el mismo gestor de paquetes instalamos **Boost**, la otra librería necesaria para **USIT**.
 
