@@ -1,112 +1,83 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
 \begin{thebibliography}{10}
 
 \bibitem{Reference5}
-"efficient iris recognition by characterizing key local variations".
-\newblock {\em IEEE Transactions On Image Processing}, vol. 13, June 2004.
-
-\bibitem{Reference17}
-"boost".
-\newblock v1.63.0.
-
-\bibitem{Reference16}
-"opencv".
-\newblock v3.2.0.
-
-\bibitem{Reference20}
-"casia-iris".
-\newblock V4.
+\emph{Efficient iris recognition by characterizing key local variations}, IEEE
+  Transactions On Image Processing (2004).
 
 \bibitem{Reference8}
-Harry~Wechsler Azriel~Rosenfeld.
-\newblock "pattern recognition: Historical perspective and future directions".
-\newblock March 2000.
+Harry~Wechsler Azriel~Rosenfeld, \emph{Pattern recognition: Historical
+  perspective and future directions},  (2000).
 
 \bibitem{Reference9}
-Yuniol~Alvarez Betancourt.
-\newblock "reconocimiento de iris basado en fusión de información para
-  condiciones no ideales".
-\newblock April 2015.
+Yuniol~Alvarez Betancourt, \emph{Reconocimiento de iris basado en fusión de
+  información para condiciones no ideales},  (2015).
 
 \bibitem{Reference2}
-W.~W. Boles and B.~Boashash.
-\newblock "a human identification technique using images of the iris and
-  wavelet transform".
-\newblock {\em IEEE Transactions On Signal Processing}, vol. 45, April 1998.
+W.~W. Boles and B.~Boashash, \emph{A human identification technique using
+  images of the iris and wavelet transform}, IEEE Transactions On Signal
+  Processing \textbf{vol. 45} (1998).
 
 \bibitem{Reference19}
-K.~Bowyer and M.~J. Burge.
-\newblock "handbook of iris recognition".
-\newblock 2016.
+K.~Bowyer and M.~J. Burge, \emph{Handbook of iris recognition},  (2016).
 
 \bibitem{Reference18}
-P.~Wild C.~Rathgeb, A.~Uhl and H.~Hofbauer.
-\newblock "design decisions for an iris recognition sdk".
-\newblock 2016.
+P.~Wild C.~Rathgeb, A.~Uhl and H.~Hofbauer, \emph{Design decisions for an iris
+  recognition sdk},  (2016).
 
 \bibitem{Reference7}
-R.~Sanchez-Reillo C.~Sanchez-Avila and D.~de~Martin-Roche.
-\newblock "iris-based biometric recognition using dyadic wavelet transform".
-\newblock {\em IEEE AESS Systems Magazine}, October 2002.
+R.~Sanchez-Reillo C.~Sanchez-Avila and D.~de~Martin-Roche, \emph{Iris-based
+  biometric recognition using dyadic wavelet transform}, IEEE AESS Systems
+  Magazine (2002).
 
 \bibitem{Reference15}
-J.~Daugman.
-\newblock "how iris recognition works".
-\newblock {\em EEE Transactions on Circuits and Systems for Video Technology},
-  2004.
+J.~Daugman, \emph{How iris recognition works}, EEE Transactions on Circuits and
+  Systems for Video Technology (2004).
 
 \bibitem{Reference1}
-J.~G. Daugman.
-\newblock "high confidence visual recognition of persons by a test of
-  statistical independence".
-\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  vol. 15, November 1993.
+J.~G. Daugman, \emph{High confidence visual recognition of persons by a test of
+  statistical independence}, IEEE Transactions on Pattern Analysis and Machine
+  Intelligence \textbf{vol. 15} (1993).
 
 \bibitem{Reference11}
-T.~Tan-L.~Ma J.Cui, Y.~Wang and Z.~Sun.
-\newblock "a fast and robust iris localization method based on texture
-  segmentation".
-\newblock {\em Proceedings of SPIE - The International Society for Optical
-  Engineering}, 2004.
+T.~Tan-L.~Ma J.Cui, Y.~Wang and Z.~Sun, \emph{A fast and robust iris
+  localization method based on texture segmentation}, Proceedings of SPIE - The
+  International Society for Optical Engineering (2004).
 
 \bibitem{Reference3}
-Y.~Wang L.~Ma, T.~Tan and D.~Zhang.
-\newblock "personal identification based on iris texture analysis".
-\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
-  vol. 25, December 2003.
+Y.~Wang L.~Ma, T.~Tan and D.~Zhang, IEEE Transactions on Pattern Analysis and
+  Machine Intelligence \textbf{vol. 25} (2003).
 
 \bibitem{Reference10}
 J.~R. M. S. C. Hsu R. J.~Kolczynski R.~P.~Wildes, G. L. G. J. C.~Asmuth and
-  S.~E. McBride.
-\newblock "a system for automated iris recognition".
-\newblock {\em IEEE Workshop Mach}, 1994.
+  S.~E. McBride, \emph{A system for automated iris recognition}, IEEE Workshop
+  Mach (1994).
 
 \bibitem{Reference12}
 S.~C. Hsu R. J. Kolczynski J. R.~Matey R.~P.~Wildes, J.~Asmuth and S.~E.
-  McBride.
-\newblock "automated, noninvasive iris recognition system and method".
-\newblock 1996.
+  McBride, \emph{Automated, noninvasive iris recognition system and method},
+  (1996).
 
 \bibitem{Reference6}
-Iridian Technologies.
-\newblock "moorestown, nj".
-\newblock 2005.
+Iridian Technologies, \emph{Moorestown, nj},  (2005).
 
 \bibitem{Reference14}
-N.~Schmid V.~Dorairaj and G.~Fahmy.
-\newblock "performance evaluation of non-ideal iris based recognition system
-  implementing global ica encoding".
-\newblock {\em Proceeding International Conference on Image Processing ICIP},
-  2005.
+N.~Schmid V.~Dorairaj and G.~Fahmy, \emph{Performance evaluation of non-ideal
+  iris based recognition system implementing global ica encoding}, Proceeding
+  International Conference on Image Processing ICIP (2005).
 
 \bibitem{Reference4}
-R.~P. Wildes.
-\newblock "iris recognition: An emerging biometric technology".
-\newblock {\em Proceedings of the IEEE}, vol. 85, September 1997.
+R.~P. Wildes, \emph{Iris recognition: An emerging biometric technology},
+  Proceedings of the IEEE \textbf{vol. 85} (1997).
 
 \bibitem{Reference13}
-J.~Zhu and J.~Yang.
-\newblock "subpixel eye gaze tracking".
-\newblock {\em IEEE International Conference on Automatic Face and Gesture
-  Recognition}, 2002.
+J.~Zhu and J.~Yang, \emph{Subpixel eye gaze tracking}, IEEE International
+  Conference on Automatic Face and Gesture Recognition (2002).
 
 \end{thebibliography}

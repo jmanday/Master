@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  24 AUG 2017 20:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  25 AUG 2017 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -213,28 +213,6 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no i in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no i in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no d in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no a in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -1277,6 +1255,77 @@ Missing character: There is no a in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 24.
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.24 ...e CASIA (http://biometrics.idealtest.org)}
+                                                  , la cual contiene un conj...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.24 ...e CASIA (http://biometrics.idealtest.org)}
+                                                  , la cual contiene un conj...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (46.30566pt too wide) in paragraph at lines 24--24
+[][]\OT1/cmr/m/n/10 Disponible
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 en
+ []
+
+
+Overfull \hbox (7.22223pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 el
+ []
+
+
+Overfull \hbox (18.38893pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 sitio
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 de
+ []
+
+
+Overfull \hbox (18.05557pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 CA-
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 SIA
+ []
+
+
+Overfull \hbox (140.44476pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 (http://biometrics.idealtest.org)| 
+ []
+
 Missing character: There is no , in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1444,6 +1493,68 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no ≠ in font nullfont!
 Missing character: There is no a in font nullfont!
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.24 ...SIT (http://www.wavelab.at/sources/USIT/)}
+                                                  , la cual se basa en \text...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.24 ...SIT (http://www.wavelab.at/sources/USIT/)}
+                                                  , la cual se basa en \text...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (46.30566pt too wide) in paragraph at lines 24--24
+[][]\OT1/cmr/m/n/10 Disponible
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 en
+ []
+
+
+Overfull \hbox (7.22223pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 el
+ []
+
+
+Overfull \hbox (18.38893pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 sitio
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 de
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 USIT
+ []
+
+
+Overfull \hbox (179.86147pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 (http://www.wavelab.at/sources/USIT/)| 
+ []
+
 Missing character: There is no , in font nullfont!
 Missing character: There is no l in font nullfont!
 Missing character: There is no a in font nullfont!
@@ -1459,7 +1570,131 @@ Missing character: There is no s in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.24 ...l sitio web de OpenCV (http://opencv.org)}
+                                                  y \textbf{Boost} \footnote...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.24 ...l sitio web de OpenCV (http://opencv.org)}
+                                                  y \textbf{Boost} \footnote...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (46.30566pt too wide) in paragraph at lines 24--24
+[][]\OT1/cmr/m/n/10 Disponible
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 en
+ []
+
+
+Overfull \hbox (7.22223pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 el
+ []
+
+
+Overfull \hbox (18.38893pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 sitio
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 de
+ []
+
+
+Overfull \hbox (38.33342pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 OpenCV
+ []
+
+
+Overfull \hbox (86.4169pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 (http://opencv.org)| 
+ []
+
 Missing character: There is no y in font nullfont!
+! Undefined control sequence.
+\@footnotetext ...tins {\reset@font \footnotesize 
+                                                  \interlinepenalty \interfo...
+l.24 ...sitio web de Boost (http://www.boost.org)}
+                                                  . Mediante esta librer√≠a ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\@footnotetext ...}\color@begingroup \@makefntext 
+                                                  {\rule \z@ \footnotesep \i...
+l.24 ...sitio web de Boost (http://www.boost.org)}
+                                                  . Mediante esta librer√≠a ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (46.30566pt too wide) in paragraph at lines 24--24
+[][]\OT1/cmr/m/n/10 Disponible
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 en
+ []
+
+
+Overfull \hbox (7.22223pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 el
+ []
+
+
+Overfull \hbox (18.38893pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 sitio
+ []
+
+
+Overfull \hbox (16.94446pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 web
+ []
+
+
+Overfull \hbox (10.00002pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 de
+ []
+
+
+Overfull \hbox (25.19452pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 Boost
+ []
+
+
+Overfull \hbox (104.25026pt too wide) in paragraph at lines 24--24
+\OT1/cmr/m/n/10 (http://www.boost.org)| 
+ []
+
 Missing character: There is no . in font nullfont!
 Missing character: There is no M in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -1734,8 +1969,18 @@ Overfull \hbox (14.44437pt too wide) in paragraph at lines 24--25
  []
 
 
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 24--25
+[]
+ []
+
+
 Overfull \hbox (57.30524pt too wide) in paragraph at lines 24--25
 \OT1/cmr/bx/n/10 USITv1.0.3
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 24--25
+[]
  []
 
 
@@ -1744,8 +1989,18 @@ Overfull \hbox (44.00671pt too wide) in paragraph at lines 24--25
  []
 
 
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 24--25
+[]
+ []
+
+
 Overfull \hbox (29.00816pt too wide) in paragraph at lines 24--25
 \OT1/cmr/bx/n/10 Boost
+ []
+
+
+Overfull \hbox (4.48613pt too wide) in paragraph at lines 24--25
+[]
  []
 
 
@@ -2896,23 +3151,6 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no ≠ in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no [ in font nullfont!
-\citation{Reference16}
-! Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.38 ...librer√≠a \textbf{USIT} \cite{Reference16}
-                                                  .
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `Reference16' on page  undefined on input line 38.
-
-Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 38--39
@@ -2921,12 +3159,7 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 38--39
 
 
 Overfull \hbox (27.59706pt too wide) in paragraph at lines 38--39
-\OT1/cmr/bx/n/10 USIT
- []
-
-
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 38--39
-[] 
+\OT1/cmr/bx/n/10 USIT 
  []
 
 ! Undefined control sequence.
@@ -3434,23 +3667,6 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no √ in font nullfont!
 Missing character: There is no ≠ in font nullfont!
 Missing character: There is no a in font nullfont!
-Missing character: There is no [ in font nullfont!
-\citation{Reference17}
-! Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.46 ...librer√≠a \textbf{USIT} \cite{Reference17}
-                                                  . \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `Reference17' on page  undefined on input line 46.
-
-Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 46--47
@@ -3464,12 +3680,7 @@ Overfull \hbox (44.00671pt too wide) in paragraph at lines 46--47
 
 
 Overfull \hbox (27.59706pt too wide) in paragraph at lines 46--47
-\OT1/cmr/bx/n/10 USIT
- []
-
-
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 46--47
-[] 
+\OT1/cmr/bx/n/10 USIT 
  []
 
 ! Undefined control sequence.
@@ -17246,32 +17457,10 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no [ in font nullfont!
-\citation{Reference20}
-! Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.105 ...todas esas variaciones \cite{Reference20}
-                                                  . \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `Reference20' on page  undefined on input line 105.
-
-Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 105--106
 []
- []
-
-
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 105--106
-[] 
  []
 
 
@@ -17711,32 +17900,10 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no c in font nullfont!
 Missing character: There is no a in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no [ in font nullfont!
-\citation{Reference20}
-! Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.107 ...gos y caracter√≠sticas \cite{Reference20}
-                                                  . \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `Reference20' on page  undefined on input line 107.
-
-Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 107--108
 []
- []
-
-
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 107--108
-[] 
  []
 
 
@@ -19006,32 +19173,10 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no u in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no s in font nullfont!
-Missing character: There is no [ in font nullfont!
-\citation{Reference20}
-! Undefined control sequence.
-<write> ...: Citation `\@citeb ' on page \thepage 
-                                                  \space undefined\on@line .
-l.113 ...onden a 249 individuos \cite{Reference20}
-                                                  . \\
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `Reference20' on page  undefined on input line 113.
-
-Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 113--114
 []
- []
-
-
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 113--114
-[] 
  []
 
 
@@ -19720,11 +19865,11 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 117--126
 
  
 Here is how much of TeX's memory you used:
- 17 strings out of 493014
- 257 string characters out of 6133351
- 58601 words of memory out of 5000000
- 3658 multiletter control sequences out of 15000+600000
+ 16 strings out of 493014
+ 246 string characters out of 6133351
+ 59601 words of memory out of 5000000
+ 3657 multiletter control sequences out of 15000+600000
  4294 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 20i,2n,26p,1343b,72s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 24i,5n,21p,1343b,104s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

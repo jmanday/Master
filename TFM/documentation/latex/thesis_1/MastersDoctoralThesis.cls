@@ -412,6 +412,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 \newcommand{\acknowledgementname}{Acknowledgements}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish} {\acknowledgementname}{Acknowledgements} % Acknowledgement text for English countries
 \providecaptionname{german,ngerman,austrian,naustrian}{\acknowledgementname}{Danksagung} % Acknowledgement text for Germanic countries
+\providecaptionname{spanish}{\acknowledgementname}{Agradecimientos} % Acknowledgement text for Spanish countries
 
 \ifbool{consistentlayout}{
 	\DeclareDocumentEnvironment{acknowledgements}{}{%
@@ -434,10 +435,12 @@ KOMA-script documentation for details.}]{fancyhdr}
 %----------------------------------------------------------------------------------------
 %	DECLARATION PAGE DESIGN
 %----------------------------------------------------------------------------------------
-
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
 \newcommand{\authorshipname}{Declaration of Authorship}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\authorshipname}{Declaration of Authorship} % Declaration of Authorship text for English countries
 \providecaptionname{german,ngerman,austrian,naustrian}{\authorshipname}{Eidesstattliche Erkl\"arung} % Declaration of Authorship text for Germanic countries
+\providecaptionname{spanish}{\authorshipname}{Declaración de autoría y originalidad} % Declaration of Authorship text for Spanish countries
 
 \ifbool{consistentlayout}{
 	\DeclareDocumentEnvironment{declaration}{}{

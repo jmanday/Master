@@ -4,109 +4,118 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Chapters/Chapter1.aux
 A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Chapters/Chapter3.aux
-A level-1 auxiliary file: Appendices/AppendixA.aux
-The style file: plain.bst
+A level-1 auxiliary file: Chapters/Chapter4.aux
+The style file: amsplain.bst
 Database file #1: example.bib.bib
 Name 1 in "L. Ma, T. Tan, Y. Wang, and D. Zhang" has a comma at the end for entry Reference3
-while executing---line 1049 of file plain.bst
+while executing---line 1149 of file amsplain.bst
 Warning--to sort, need author or key in Reference5
 Name 1 in "C. Sanchez-Avila, R. Sanchez-Reillo, and D. de Martin-Roche" has a comma at the end for entry Reference7
-while executing---line 1049 of file plain.bst
+while executing---line 1149 of file amsplain.bst
 Name 1 in "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" has a comma at the end for entry Reference10
-while executing---line 1049 of file plain.bst
+while executing---line 1149 of file amsplain.bst
 Too many commas in name 1 of "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" for entry Reference10
-while executing---line 1049 of file plain.bst
+while executing---line 1149 of file amsplain.bst
 Name 1 in "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" has a comma at the end for entry Reference11
-while executing---line 1049 of file plain.bst
+while executing---line 1149 of file amsplain.bst
 Too many commas in name 1 of "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" for entry Reference11
-while executing---line 1049 of file plain.bst
+while executing---line 1149 of file amsplain.bst
 Name 1 in "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" has a comma at the end for entry Reference12
-while executing---line 1049 of file plain.bst
+while executing---line 1149 of file amsplain.bst
 Too many commas in name 1 of "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" for entry Reference12
-while executing---line 1049 of file plain.bst
+while executing---line 1149 of file amsplain.bst
 Too many commas in name 1 of "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" for entry Reference12
-while executing---line 1049 of file plain.bst
+while executing---line 1149 of file amsplain.bst
 Name 1 in "V. Dorairaj, N. Schmid, and G. Fahmy" has a comma at the end for entry Reference14
-while executing---line 1049 of file plain.bst
-Warning--to sort, need author or key in Reference16
-Warning--to sort, need author or key in Reference17
+while executing---line 1149 of file amsplain.bst
 Name 1 in "C. Rathgeb, A. Uhl, P. Wild, and H. Hofbauer" has a comma at the end for entry Reference18
-while executing---line 1049 of file plain.bst
-Warning--to sort, need author or key in Reference20
-Warning--empty author in Reference5
-Warning--empty author in Reference17
-Warning--empty journal in Reference17
-Warning--empty author in Reference16
-Warning--empty journal in Reference16
-Warning--empty author in Reference20
-Warning--empty journal in Reference20
-Warning--empty journal in Reference8
-Warning--empty journal in Reference9
-Warning--empty journal in Reference19
+while executing---line 1149 of file amsplain.bst
+Warning--missing author in Reference5
+Warning--missing pages in Reference5
+Warning--missing journal name in Reference8
+Warning--missing pages in Reference8
+Warning--missing journal name in Reference9
+Warning--missing pages in Reference9
+Warning--missing pages in Reference2
+Warning--missing journal name in Reference19
+Warning--missing pages in Reference19
 Name 1 in "C. Rathgeb, A. Uhl, P. Wild, and H. Hofbauer" has a comma at the end for entry Reference18
-while executing---line 1090 of file plain.bst
-Warning--empty journal in Reference18
+while executing---line 1233 of file amsplain.bst
+Warning--missing journal name in Reference18
+Warning--missing pages in Reference18
 Name 1 in "C. Sanchez-Avila, R. Sanchez-Reillo, and D. de Martin-Roche" has a comma at the end for entry Reference7
-while executing---line 1090 of file plain.bst
+while executing---line 1233 of file amsplain.bst
+Warning--missing pages in Reference7
+Warning--missing pages in Reference15
+Warning--missing pages in Reference1
 Name 1 in "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" has a comma at the end for entry Reference11
-while executing---line 1090 of file plain.bst
+while executing---line 1233 of file amsplain.bst
 Too many commas in name 1 of "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" for entry Reference11
-while executing---line 1090 of file plain.bst
+while executing---line 1233 of file amsplain.bst
+Warning--missing pages in Reference11
 Name 1 in "L. Ma, T. Tan, Y. Wang, and D. Zhang" has a comma at the end for entry Reference3
-while executing---line 1090 of file plain.bst
+while executing---line 1233 of file amsplain.bst
+Warning--missing title in Reference3
+Warning--missing pages in Reference3
 Name 1 in "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" has a comma at the end for entry Reference10
-while executing---line 1090 of file plain.bst
+while executing---line 1233 of file amsplain.bst
 Too many commas in name 1 of "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" for entry Reference10
-while executing---line 1090 of file plain.bst
+while executing---line 1233 of file amsplain.bst
+Warning--missing pages in Reference10
 Name 1 in "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" has a comma at the end for entry Reference12
-while executing---line 1090 of file plain.bst
+while executing---line 1233 of file amsplain.bst
 Too many commas in name 1 of "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" for entry Reference12
-while executing---line 1090 of file plain.bst
+while executing---line 1233 of file amsplain.bst
 Too many commas in name 1 of "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" for entry Reference12
-while executing---line 1090 of file plain.bst
-Warning--empty journal in Reference12
-Warning--empty journal in Reference6
+while executing---line 1233 of file amsplain.bst
+Warning--missing journal name in Reference12
+Warning--missing pages in Reference12
+Warning--missing journal name in Reference6
+Warning--missing pages in Reference6
 Name 1 in "V. Dorairaj, N. Schmid, and G. Fahmy" has a comma at the end for entry Reference14
-while executing---line 1090 of file plain.bst
-You've used 20 entries,
-            2118 wiz_defined-function locations,
-            607 strings with 6648 characters,
-and the built_in function-call counts, 4329 in all, are:
-= -- 410
-> -- 176
+while executing---line 1233 of file amsplain.bst
+Warning--missing pages in Reference14
+Warning--missing pages in Reference4
+Warning--missing pages in Reference13
+You've used 17 entries,
+            2213 wiz_defined-function locations,
+            595 strings with 6360 characters,
+and the built_in function-call counts, 3909 in all, are:
+= -- 297
+> -- 173
 < -- 0
 + -- 72
 - -- 52
-* -- 235
-:= -- 779
-add.period$ -- 56
-call.type$ -- 20
-change.case$ -- 86
+* -- 346
+:= -- 650
+add.period$ -- 17
+call.type$ -- 17
+change.case$ -- 76
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 200
-empty$ -- 345
+cite$ -- 43
+duplicate$ -- 186
+empty$ -- 342
 format.name$ -- 52
-if$ -- 867
+if$ -- 762
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 20
-newline$ -- 99
+int.to.str$ -- 17
+missing$ -- 34
+newline$ -- 61
 num.names$ -- 32
-pop$ -- 98
+pop$ -- 114
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 60
 quote$ -- 0
-skip$ -- 154
+skip$ -- 105
 stack$ -- 0
-substring$ -- 100
-swap$ -- 11
+substring$ -- 88
+swap$ -- 41
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
-warning$ -- 17
+type$ -- 68
+warning$ -- 26
 while$ -- 32
-width$ -- 22
-write$ -- 190
+width$ -- 19
+write$ -- 126
 (There were 22 error messages)
