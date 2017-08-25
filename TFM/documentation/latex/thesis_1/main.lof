@@ -1,0 +1,27 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Primeros sistemas de reconocimiento.\relax }}{10}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Se\IeC {\~n}al con la mano}}}{10}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Se\IeC {\~n}al con luz}}}{10}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {C\IeC {\'o}digo escrito}}}{10}{figure.caption.20}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces La tecnolog\IeC {\'\i }a magn\IeC {\'e}tica en los sistemas de reconocimiento.\relax }}{10}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tarjeta con banda magn\IeC {\'e}tica}}}{10}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lector de tarjetas por banda magn\IeC {\'e}tica}}}{10}{figure.caption.24}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces La tecnolog\IeC {\'\i }a digital en los sistemas de reconocimiento.\relax }}{11}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Tarjeta chip digital}}}{11}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Lector de tarjetas por chip digital}}}{11}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Lector de tarjetas por chip digital wireless}}}{11}{figure.caption.27}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Esquema general de un sistema de reconocimiento de patrones.\relax }}{15}{figure.caption.33}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Cuota de mercado de las modalidades de sistemas biom\IeC {\'e}tricos.\relax }}{18}{figure.caption.37}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Anatom\IeC {\'\i }a del iris.\relax }}{20}{figure.caption.40}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Diagrama de flujo de un sistema de reconocimiento de iris.\relax }}{21}{figure.caption.43}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Im\IeC {\'a}genes de iris afectadas por factores de calidad.\relax }}{25}{figure.caption.47}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Im\IeC {\'a}genes de la base de datos CASIA-IrisV4.\relax }}{39}{figure.caption.58}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {S1001L06.jpg}}}{39}{figure.caption.58}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {S1113R05.jpg}}}{39}{figure.caption.58}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {S1188L04.jpg}}}{39}{figure.caption.58}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {S1200R02.jpg}}}{39}{figure.caption.58}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {S1217L04.jpg}}}{39}{figure.caption.58}
+\addvspace {10\p@ }

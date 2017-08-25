@@ -1,0 +1,27 @@
+\select@language {spanish}
+\contentsline {chapter}{Declaraci\IeC {\'o}n de autor\IeC {\'\i }a y originalidad}{\es@scroman {iii}}{section*.1}
+\contentsline {chapter}{Resumen}{\es@scroman {vii}}{section*.2}
+\contentsline {chapter}{Acknowledgements}{\es@scroman {ix}}{section*.3}
+\contentsline {chapter}{\numberline {1}Intoducci\IeC {\'o}n general y motivaci\IeC {\'o}n}{1}{chapter.14}
+\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n}{1}{section.15}
+\contentsline {section}{\numberline {1.2}Objetivo y motivaci\IeC {\'o}n}{3}{section.16}
+\contentsline {section}{\numberline {1.3}Descripci\IeC {\'o}n de la memoria}{5}{section.17}
+\contentsline {chapter}{\numberline {2}Reconocimiento de iris}{7}{chapter.18}
+\contentsline {section}{\numberline {2.1}Sistemas de reconocimiento}{8}{section.19}
+\contentsline {subsection}{\numberline {2.1.1}Reconocimiento de patrones}{12}{subsection.31}
+\contentsline {subsection}{\numberline {2.1.2}Componentes de los sistemas de reconocimiento de patrones}{14}{subsection.32}
+\contentsline {section}{\numberline {2.2}Biometr\IeC {\'\i }a}{16}{section.35}
+\contentsline {subsection}{\numberline {2.2.1}Sistemas biom\IeC {\'e}tricos}{16}{subsection.36}
+\contentsline {subsection}{\numberline {2.2.2}Anatom\IeC {\'\i }a del iris}{18}{subsection.39}
+\contentsline {section}{\numberline {2.3}Reconocimiento de iris}{20}{section.42}
+\contentsline {subsection}{\numberline {2.3.1}Etapas del reconocimiento de iris}{21}{subsection.45}
+\contentsline {section}{\numberline {2.4}Reconocimiento de iris en condiciones no ideales}{24}{section.46}
+\contentsline {subsection}{\numberline {2.4.1}Factores de calidad}{25}{subsection.51}
+\contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as y herramientas en el reconocimiento de iris}{29}{chapter.52}
+\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{29}{section.53}
+\contentsline {section}{\numberline {3.2}OpenCV}{30}{section.54}
+\contentsline {section}{\numberline {3.3}Boost}{31}{section.55}
+\contentsline {section}{\numberline {3.4}USIT}{31}{section.56}
+\contentsline {section}{\numberline {3.5}CASIA-Iris}{37}{section.57}
+\contentsline {chapter}{\numberline {A}Frequently Asked Questions}{41}{appendix.64}
+\contentsline {section}{\numberline {A.1}How do I change the colors of links?}{41}{section.65}

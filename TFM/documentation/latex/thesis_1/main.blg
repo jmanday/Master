@@ -1,0 +1,112 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: Chapters/Chapter1.aux
+A level-1 auxiliary file: Chapters/Chapter2.aux
+A level-1 auxiliary file: Chapters/Chapter3.aux
+A level-1 auxiliary file: Appendices/AppendixA.aux
+The style file: plain.bst
+Database file #1: example.bib.bib
+Name 1 in "L. Ma, T. Tan, Y. Wang, and D. Zhang" has a comma at the end for entry Reference3
+while executing---line 1049 of file plain.bst
+Warning--to sort, need author or key in Reference5
+Name 1 in "C. Sanchez-Avila, R. Sanchez-Reillo, and D. de Martin-Roche" has a comma at the end for entry Reference7
+while executing---line 1049 of file plain.bst
+Name 1 in "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" has a comma at the end for entry Reference10
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" for entry Reference10
+while executing---line 1049 of file plain.bst
+Name 1 in "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" has a comma at the end for entry Reference11
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" for entry Reference11
+while executing---line 1049 of file plain.bst
+Name 1 in "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" has a comma at the end for entry Reference12
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" for entry Reference12
+while executing---line 1049 of file plain.bst
+Too many commas in name 1 of "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" for entry Reference12
+while executing---line 1049 of file plain.bst
+Name 1 in "V. Dorairaj, N. Schmid, and G. Fahmy" has a comma at the end for entry Reference14
+while executing---line 1049 of file plain.bst
+Warning--to sort, need author or key in Reference16
+Warning--to sort, need author or key in Reference17
+Name 1 in "C. Rathgeb, A. Uhl, P. Wild, and H. Hofbauer" has a comma at the end for entry Reference18
+while executing---line 1049 of file plain.bst
+Warning--to sort, need author or key in Reference20
+Warning--empty author in Reference5
+Warning--empty author in Reference17
+Warning--empty journal in Reference17
+Warning--empty author in Reference16
+Warning--empty journal in Reference16
+Warning--empty author in Reference20
+Warning--empty journal in Reference20
+Warning--empty journal in Reference8
+Warning--empty journal in Reference9
+Warning--empty journal in Reference19
+Name 1 in "C. Rathgeb, A. Uhl, P. Wild, and H. Hofbauer" has a comma at the end for entry Reference18
+while executing---line 1090 of file plain.bst
+Warning--empty journal in Reference18
+Name 1 in "C. Sanchez-Avila, R. Sanchez-Reillo, and D. de Martin-Roche" has a comma at the end for entry Reference7
+while executing---line 1090 of file plain.bst
+Name 1 in "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" has a comma at the end for entry Reference11
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" for entry Reference11
+while executing---line 1090 of file plain.bst
+Name 1 in "L. Ma, T. Tan, Y. Wang, and D. Zhang" has a comma at the end for entry Reference3
+while executing---line 1090 of file plain.bst
+Name 1 in "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" has a comma at the end for entry Reference10
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" for entry Reference10
+while executing---line 1090 of file plain.bst
+Name 1 in "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" has a comma at the end for entry Reference12
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" for entry Reference12
+while executing---line 1090 of file plain.bst
+Too many commas in name 1 of "R. P. Wildes, J. Asmuth, S. C. Hsu, R. J. Kolczynski, J. R. Matey, and S. E. McBride" for entry Reference12
+while executing---line 1090 of file plain.bst
+Warning--empty journal in Reference12
+Warning--empty journal in Reference6
+Name 1 in "V. Dorairaj, N. Schmid, and G. Fahmy" has a comma at the end for entry Reference14
+while executing---line 1090 of file plain.bst
+You've used 20 entries,
+            2118 wiz_defined-function locations,
+            607 strings with 6648 characters,
+and the built_in function-call counts, 4329 in all, are:
+= -- 410
+> -- 176
+< -- 0
++ -- 72
+- -- 52
+* -- 235
+:= -- 779
+add.period$ -- 56
+call.type$ -- 20
+change.case$ -- 86
+chr.to.int$ -- 0
+cite$ -- 37
+duplicate$ -- 200
+empty$ -- 345
+format.name$ -- 52
+if$ -- 867
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 20
+newline$ -- 99
+num.names$ -- 32
+pop$ -- 98
+preamble$ -- 1
+purify$ -- 66
+quote$ -- 0
+skip$ -- 154
+stack$ -- 0
+substring$ -- 100
+swap$ -- 11
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 80
+warning$ -- 17
+while$ -- 32
+width$ -- 22
+write$ -- 190
+(There were 22 error messages)
