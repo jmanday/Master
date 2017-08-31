@@ -1,0 +1,6 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\IeC {\'o}n.}{3}{section.1}
+\contentsline {section}{\numberline {2}Entorno de trabajo.}{3}{section.2}
+\contentsline {section}{\numberline {3}Modelos de redes neuronales}{3}{section.3}
+\contentsline {section}{\numberline {4}Listado de soluciones.}{18}{section.4}
+\contentsline {section}{\numberline {5}Bibliograf\IeC {\'\i }a.}{18}{section.5}
