@@ -10,6 +10,7 @@ namespace practica2
 		private int rFitness;
 		private int posInPoblation;
 		private int[] cromosoma;
+        private double probability;
 
 
 		/*
@@ -31,6 +32,7 @@ namespace practica2
 			this.rFitness = -1;
 			this.numGens = nCromosoma.Count;
 			this.cromosoma = new int[this.numGens];
+            this.probability = -1.0;
 
 			int i = 0;
 			foreach (int m in nCromosoma)
@@ -50,6 +52,7 @@ namespace practica2
 			this.posInPoblation = -1;
 			this.rFitness = -1;
 			this.numGens = nCromosoma.Length;
+            this.probability = -1.0;
 			this.cromosoma = new int[this.numGens];
 			for (int i = 0; i < nCromosoma.Length; i++)
 				this.cromosoma[i] = nCromosoma[i];
@@ -65,6 +68,7 @@ namespace practica2
 			this.posInPoblation = -1;
 			this.rFitness = -1;
 			this.numGens = numGens;
+            this.probability = -1.0;
 			this.cromosoma = new int[numGens];
 		}
 
@@ -82,8 +86,9 @@ namespace practica2
 			this.posInPoblation = posPobl;
 			this.rFitness = vFitness;
 			this.cromosoma = new int[numGens];
+            this.probability = -1.0;
 
-			for (int i = 0; i < numGens; i++)
+			for (int i = 0; i < this.numGens; i++)
 			{
 				num = rnd.Next(0, numGens);
 
@@ -211,6 +216,25 @@ namespace practica2
 		public void setPosInPoblation(int pos)
 		{
 			this.posInPoblation = pos;
+		}
+
+		/*
+         * Método para devolver la probabilidad del individuo en función del fitness
+         *
+        */
+        public double getProbability()
+		{
+            return this.probability;
+		}
+
+
+		/*
+         * Método para establecer la probabilidad del individuo en función del fitness
+         *
+        */
+		public void setProbability(double prob)
+		{
+			this.probability = prob;
 		}
 	}
 }

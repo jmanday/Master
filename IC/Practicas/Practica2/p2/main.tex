@@ -1,0 +1,1046 @@
+\documentclass[10pt]{article}  
+
+%%%%%%%% PREÁMBULO %%%%%%%%%%%%
+\title{Plantilla para prácticas de UGR}
+\usepackage[spanish]{babel} %Indica que escribiermos en español
+\usepackage[utf8]{inputenc} %Indica qué codificación se está usando ISO-8859-1(latin1)  o utf8  
+\usepackage{amsmath} % Comandos extras para matemáticas (cajas para ecuaciones,
+% etc)
+\usepackage{amssymb} % Simbolos matematicos (por lo tanto)
+\usepackage{graphicx} % Incluir imágenes en LaTeX
+\usepackage{color} % Para colorear texto
+\usepackage{subfigure} % subfiguras
+\usepackage[dvipsnames]{xcolor}
+\usepackage{float} %Podemos usar el especificador [H] en las figuras para que se
+% queden donde queramos
+\usepackage{capt-of} % Permite usar etiquetas fuera de elementos flotantes
+% (etiquetas de figuras)
+\usepackage{sidecap} % Para poner el texto de las imágenes al lado
+	\sidecaptionvpos{figure}{c} % Para que el texto se alinie al centro vertical
+\usepackage{caption} % Para poder quitar numeracion de figuras
+\usepackage{commath} % funcionalidades extras para diferenciales, integrales,
+% etc (\od, \dif, etc)
+\usepackage{cancel} % para cancelar expresiones (\cancelto{0}{x})
+
+\graphicspath{{/Users/jesusgarciamanday/Documents/Master/IC/Practicas/Practica2/p2/Imagenes/}}
+
+\usepackage{anysize} 					% Para personalizar el ancho de  los márgenes
+\marginsize{2cm}{2cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
+
+\usepackage{multirow}
+\usepackage{appendix}
+\renewcommand{\appendixname}{Apéndices}
+\renewcommand{\appendixtocname}{Apéndices}
+\renewcommand{\appendixpagename}{Apéndices} 
+
+% Para que las referencias sean hipervínculos a las figuras o ecuaciones y
+% aparezcan en color
+\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
+%\usepackage{hyperref} 
+% Para agregar encabezado y pie de página
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize UGR} %encabezado izquierda
+\fancyhead[R]{\footnotesize CCIA}   % dereecha
+\fancyfoot[R]{\footnotesize Inteligencia Computacional }  % Pie derecha
+\fancyfoot[C]{\thepage}  % centro
+\fancyfoot[L]{\footnotesize Master en Ingenier\'ia Inform\'atica }  %izquierda
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+\usepackage{listings} % Para usar código fuente
+\definecolor{dkgreen}{rgb}{0,0.6,0} % Definimos colores para usar en el código
+\definecolor{gray}{rgb}{0.5,0.5,0.5} 
+% configuración para el lenguaje que queramos utilizar
+\lstset{language=Matlab,
+   keywords={break,case,catch,continue,else,elseif,end,for,function,
+      global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily,
+   keywordstyle=\color{blue},
+   commentstyle=\color{red},
+   stringstyle=\color{dkgreen},
+   numbers=left,
+   numberstyle=\tiny\color{gray},
+   stepnumber=1,
+   numbersep=10pt,
+   backgroundcolor=\color{white},
+   tabsize=4,
+   showspaces=false,
+   showstringspaces=false}
+
+\newcommand{\sen}{\operatorname{\sen}}	% Definimos el comando \sen para el seno
+%en español
+
+\title{Inteligencia Computacional}
+
+%%%%%%%% TERMINA PREÁMBULO %%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+																					%%%
+\begin{center}																		%%%
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}									%%%\left
+ 																					%%%
+\begin{minipage}{0.48\textwidth} \begin{flushleft}
+%\includegraphics[scale = 0.63]{Imagenes/logo_upiita}
+\end{flushleft}\end{minipage}
+\begin{minipage}{0.48\textwidth} \begin{flushright}
+%\includegraphics[scale = 0.35]{Imagenes/IPN}
+\end{flushright}\end{minipage}
+
+													 								%%%
+\vspace*{-1.5cm}								%%%
+																					%%%	
+\textsc{\huge Universidad de\\ \vspace{5px} Granada}\\[1.5cm]	
+
+\textsc{\LARGE Master Profesional en Ingenier\'ia Inform\'atica }\\[1.5cm]													%%%
+
+\begin{minipage}{0.9\textwidth} 
+\begin{center}																					%%%
+\textsc{\LARGE Pr\'actica 2}
+\end{center}
+\end{minipage}\\[0.5cm]
+%%%
+    																				%%%
+ 			\vspace*{1cm}																		%%%
+																					%%%
+\HRule \\[0.4cm]																	%%%
+{ \huge \bfseries QAP}\\[0.4cm]	%%%
+ 																					%%%
+\HRule \\[1.5cm]																	%%%
+ 																				%%%
+																					%%%
+\begin{minipage}{0.46\textwidth}													%%%
+\begin{flushleft} \large															%%%
+\emph{Autor:}\\	
+Manuel Jes\'us Garc\'ia Manday (nickter@correo.ugr.es)\\
+%%%
+			%\vspace*{2cm}	
+            													%%%
+										 						%%%
+\end{flushleft}																		%%%
+\end{minipage}		
+																%%%
+\begin{minipage}{0.52\textwidth}		
+\vspace{-0.6cm}											%%%
+\begin{flushright} \large															%%%
+													%%%
+\end{flushright}																	%%%
+\end{minipage}	
+\vspace*{1cm}
+%\begin{flushleft}
+ 	
+%\end{flushleft}
+%%%
+ 		\flushleft{\textbf{\Large Master en Ingenier\'ia Inform\'atica}	}\\																		%%%
+\vspace{2cm} 																				
+\begin{center}																					
+%{\large 20 de abril de 2017}																	%%%
+ 			\end{center}												  						
+\end{center}							 											
+																					
+\newpage																		
+%%%%%%%%%%%%%%%%%%%% TERMINA PORTADA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents 
+
+\newpage
+
+
+
+\section{Introducción.} 
+Para la resolución de esta práctica se han realizado múltiples experimentaciones para encontrar la solución óptima al problema propuesto. Para ello se ha implementado un algoritmo genético estándar al que luego se le ha implementado una variante baldwiniana y una variante lamarckiana con diferentes estrategias de optimización. Para la batería de pruebas realizada se ha procedido a ejecutar dicho algoritmo genético tanto de manera estándar como con sus variantes, modificando los diferentes parámetros de configuración como son el mecanismo de selección, mecanismo de reemplazo, operador de cruce, operador de mutación y optimización local, sobre el flujo de trabajo de este tipo de algoritmos.   \\
+
+En siguientes apartados se detallará todo el proceso realizado así como los diferentes resultados conseguidos con cada prueba. 
+
+
+
+\section{Entorno de trabajo.} 
+El desarrollo de esta práctica se basa en el framework \textbf{.NET} \footnote{Disponible en .NET (https://www.microsoft.com/net/)} de Microsoft, empleando \textbf{C\#} \footnote{Disponible en C\# (https://docs.microsoft.com/es-es/dotnet/csharp/programming-guide/)} como lenguaje de programación de alto nivel. El IDE \textbf{Visual Studio} \footnote{Disponible en Visual Studio (https://www.visualstudio.com/es/)} ha sido el empleado para la implementación de todo el código fuente de la práctica. \\
+
+
+
+\section{Experimentaciones} 
+En esta sección se podrán visualizar todas las pruebas que se han realizado con los diferentes tipos de connfiguraciones del algoritmo estándar implementado. \\
+
+% Algoritmo estándar
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol1}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol2}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol3}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol4}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol5}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol6}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol7}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol8}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol9}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol12}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol10}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol11}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol13}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol16}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol14}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol15}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol17}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol18}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol19}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol20}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol21}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol22}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol23}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol24}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético estándar. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar.} 
+	\end{center} 
+\end{figure}
+
+% Variante Baldwiniana
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol25}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol28}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol26}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol27}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol29}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol30}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol31}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol32}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol33}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol34}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol35}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol36}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol37}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol38}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol39}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol40}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol41}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol42}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol43}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol44}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol45}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol46}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol47}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol48}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol49}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol50}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol51}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol52}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol53}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol54}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol55}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol56}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol57}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol58}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol59}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol60}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol61}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol62}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol63}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol64}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol65}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol66}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol67}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol68}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol69}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol70}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol71}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol72}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante baldwiniana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+% Variante Lamarckiana
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol73}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol74}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol75}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol76}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol77}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol78}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol79}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol80}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección SUS. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol81}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol82}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol83}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol84}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección "windowing". Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol85}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol86}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol87}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol88}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking lineal. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol89}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol90}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol91}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol92}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ranking exponencial. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol93}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol94}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol95}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol96}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección por torneo. Mecanismo de reemplazo SSGA. Cruce en n puntos. Operador de mutación estándar. Optimización local vecino mas cercano} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol97}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol98}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SSGA. Cruce en un punto. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{p2-sol99}
+ 		\captionof{figure}{\label{fig:IPN}Algoritmo genético variante lamarckiana. Tamaño de la población 100. 100 generaciones. Mecanismo de selección ruleta. Mecanismo de reemplazo SGA. Cruce en n puntos. Operador de mutación estándar. Optimización local 2-opt} 
+	\end{center} 
+\end{figure}
+
+
+
+\section{Listado de soluciones.}  
+
+En las siguientes tablas se muestran las diferentes soluciones obtenidas tras las múltiples pruebas realizadas. La batería de experimentaciones se ha llevado a cabo sobre una población inicial de 100 individuos durante 100 generaciones. Para dotar de variabilidad a las pruebas se ha usado el algoritmo evolutivo estándar además de sus variaciones baldwiniana y lamarckiana. Del mismo modo se han empleado diferentes mecanimos de selección y de reemplazo así como diferentes operadores de cruce en combinación unos con otros. Para las variaciones baldwiniana y lamarckiana del algoritmo estándar se han realizado pruebas con las funciones de optimización local del vecino más cercano y 2-opt.  \\ 
+
+Cada tabla muestra el resultado de la función fitness por cada tipo de selección. El resultado arrojado va a depender del tipo de variante del algoritmo así como de su mecanismo de reemplazo y operador de cruce seleccionados. Se puede observar como \\ 
+
+% --------------modo selección ruleta
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{| l | c | c | c | c |}
+\hline
+& SGA - un punto & SSGA - un punto & SGA - n puntos & SSGA - n puntos \\
+\hline
+Algoritmo estándar  & 50661514 & 49454108  & 50072070  & 49191732\\ \cline{1-5}
+Variante Baldwiniana (*) & 50792366 & 49517434  & 50794922 & 50877986\\ \cline{1-5}
+Variante Baldwiniana (**) & 50901102 & 50392602  & 50802690 & 49648598\\ \cline{1-5}
+Variante Lamarckiana (*) & 50122474 & 49028596 & 50508862 & 49110542\\ \cline{1-5}
+Variante Lamarckiana (**) & 46408866 & \textbf{46006206}  & 46553166 & - \\
+\hline
+\end{tabular}
+{    (*) Optimización local: vecino más cercano} 
+{    (**) Optimización local: 2-opt} 
+\caption{Modo de selección - Ruleta.}
+\end{table}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{Figure-ruleta}
+ 		\captionof{figure}{\label{fig:IPN}Gráfica que muestra los resultados de la tabla anterior.} 
+	\end{center} 
+\end{figure}
+
+% --------------modo selección SUS
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{| l | c | c | c | c |}
+\hline
+& SGA - un punto & SSGA - un punto & SGA - n puntos & SSGA - n puntos \\
+\hline
+Algoritmo estándar  & 50273578 & 49329032  & 50216268  & 49434430\\ \cline{1-5}
+Variante Baldwiniana (*) & 50683186 & 50781330  & 50919170 & 50440568\\ \cline{1-5}
+Variante Baldwiniana (**) & 50825588 & 50217826  & 51286552 & 49278444\\ \cline{1-5}
+Variante Lamarckiana (*) & 50765156 & 50234604 & 51216522 & \textbf{49255100}\\ 
+\hline
+\end{tabular}
+{    (*) Optimización local: vecino más cercano} 
+{    (**) Optimización local: 2-opt} 
+\caption{Modo de selección - SUS.}
+\end{table}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{Figure-sus}
+ 		\captionof{figure}{\label{fig:IPN}Gráfica que muestra los resultados de la tabla anterior.} 
+	\end{center} 
+\end{figure}
+
+% --------------modo selección con windowing
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{| l | c | c | c | c |}
+\hline
+& SGA - un punto & SSGA - un punto & SGA - n puntos & SSGA - n puntos \\
+\hline
+Algoritmo estándar  & 50380114 & 49552898  & 50498542  & 49107762\\ \cline{1-5}
+Variante Baldwiniana (*) & 50225420 & 50661008  & 50403078 & 50593082\\ \cline{1-5}
+Variante Baldwiniana (**) & 50718064 & \textbf{48546414}  & 50572490 & 49024386\\ \cline{1-5}
+Variante Lamarckiana (*) & 51074406 & 48890590 & 50887400 & 49298502\\ 
+\hline
+\end{tabular}
+{    (*) Optimización local: vecino más cercano                                 } 
+{    (**) Optimización local: 2-opt} 
+\caption{Modo de selección con windowing.}
+\end{table}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{Figure-windowing}
+ 		\captionof{figure}{\label{fig:IPN}Gráfica que muestra los resultados de la tabla anterior.} 
+	\end{center} 
+\end{figure}
+
+% --------------modo selección con ranking lineal
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{| l | c | c | c | c |}
+\hline
+& SGA - un punto & SSGA - un punto & SGA - n puntos & SSGA - n puntos \\
+\hline
+Algoritmo estándar  & 50793058 & \textbf{48643766}  & 50156414  & 50156414\\ \cline{1-5}
+Variante Baldwiniana (*) & 50361474 & 50665166  & 50525924 & 50810558\\ \cline{1-5}
+Variante Baldwiniana (**) & 51136236 & 49235864  & 51079706 & 49273562\\ \cline{1-5}
+Variante Lamarckiana (*) & 50711134 & 48793998 & 50945016 & 49362510\\ 
+\hline
+\end{tabular}
+{    (*) Optimización local: vecino más cercano} 
+{    (**) Optimización local: 2-opt} 
+\caption{Modo de selección con ranking lineal.}
+\end{table}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{Figure-ranking-lineal}
+ 		\captionof{figure}{\label{fig:IPN}Gráfica que muestra los resultados de la tabla anterior.} 
+	\end{center} 
+\end{figure}
+
+% --------------modo selección con ranking exponencial
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{| l | c | c | c | c |}
+\hline
+& SGA - un punto & SSGA - un punto & SGA - n puntos & SSGA - n puntos \\
+\hline
+Algoritmo estándar  & 50247668 & \textbf{49131524}  & 50547556  & 49261630\\ \cline{1-5}
+Variante Baldwiniana (*) & 50470978 & 50824368  & 50431952 & 50588086\\ \cline{1-5}
+Variante Baldwiniana (**) & 51152236 & 49750956  & 50972250 & 49260286\\ \cline{1-5}
+Variante Lamarckiana (*) & 50796336 & 49217622 & 50750950 & 49419134\\ 
+\hline
+\end{tabular}
+{    (*) Optimización local: vecino más cercano} 
+{    (**) Optimización local: 2-opt} 
+\caption{Modo de selección con ranking exponencial.}
+\end{table}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{Figure-ranking-exponencial}
+ 		\captionof{figure}{\label{fig:IPN}Gráfica que muestra los resultados de la tabla anterior.} 
+	\end{center} 
+\end{figure}
+
+% --------------modo selección por torneo
+
+\begin{table}[htb]
+\centering
+\begin{tabular}{| l | c | c | c | c |}
+\hline
+& SGA - un punto & SSGA - un punto & SGA - n puntos & SSGA - n puntos \\
+\hline
+Algoritmo estándar  & 50805012 & 50199064  & 50611516  & 50125284\\ \cline{1-5}
+Variante Baldwiniana (*) & 50588398 & 50999460  & 50759018 & 51012340\\ \cline{1-5}
+Variante Baldwiniana (**) & 52105990 & 51131610  & 52441302 & 50507962\\ \cline{1-5}
+Variante Lamarckiana (*) & 51284308 & 49943602 & 51605300 & \textbf{49809190}\\ 
+\hline
+\end{tabular}
+{    (*) Optimización local: vecino más cercano} 
+{    (**) Optimización local: 2-opt} 
+\caption{Modo de selección por torneo.}
+\end{table}
+
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.75\textwidth]{Figure-torneo}
+ 		\captionof{figure}{\label{fig:IPN}Gráfica que muestra los resultados de la tabla anterior.} 
+	\end{center} 
+\end{figure}
+
+Como se ha podido apreciar en las tablas y sus correspondientes gráficas, el valor del fitness depende mucho de los parámetros con los que el algoritmo genético es configurado. Basándonos en los modos de selección de los individuos podemos comprobar como para el modo de selección ruleta la mejor solución se obtiene con la variante lamarckiana aplicando una función de optimización local 2-opt, un mecanismo de reemplazo SGA y un operador de cruce en un punto. Para el modo de selección SUS la mejor solución es obtenida nuevamente con la variante lamarckiana, en este caso aplicando una función de optimización local el vecino mas cercano, y con un mecanismo de reemplazo SSGA y un operador de cruce en n puntos. Para el modo de selección con windowing la variante baldwiniana es la que aporta la mejor solución basada en una función de optimización local 2-opt, siendo el mecanismo de reemplazo SSGA y el operador de cruce en un punto. Para los modos de selección por ranking, tanto lineal como exponencial, la mejor solución es obtenida a través del algoritmo estándar con un mecanismo de reemplazo SGA y un operador de cruce en un punto en ambos casos. El modo de selección por torneo aporta su mejor solución con la variante lamarckiana del algoritmo genético aplicando una función de optimización local basada en el vecino mas cercano, siendo el mecanimo de reemplazo SSGA y el operador de cruce en n puntos. \\
+
+Con todas estas soluciones obtenidas, la mejor se ha logrado conseguir con el modo de selección del individuo por ruleta y una variante lamarckiana del algoritmo genético estándar aplicando una función de optimización local 2-opt. El mecanismo de reemplazo SSGA y el operador de cruce en un punto son las otras características con las que se ha alcanzado el mejor resultado posible de \textbf{46006206} en todas las experimentaciones realizadas. \\
+
+\section{Bibliografía.}  
+
+\url{https://es.slideshare.net/mentelibre/10-diseo-con-algoritmos-genticos}\\
+
+\url{http://elvex.ugr.es/decsai/computational-intelligence/lab/qap.pdf}\\
+
+\url{http://eddyalfaro.galeon.com/geneticos.html}\\
+
+\end{document}
+
+
