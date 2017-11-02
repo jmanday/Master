@@ -1,0 +1,3 @@
+/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build/CMakeFiles/rebuild_cache.dir
+/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build/CMakeFiles/edit_cache.dir
+/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build/CMakeFiles/segmentationIris.dir

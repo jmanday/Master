@@ -1,0 +1,5 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+PROJECT(segmentationIris)
+FIND_PACKAGE( OpenCV REQUIRED )
+ADD_EXECUTABLE( segmentationIris src/segmentationIris )
+TARGET_LINK_LIBRARIES( segmentationIris ${OpenCV_LIBS} )
