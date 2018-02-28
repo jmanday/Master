@@ -22,7 +22,7 @@ using namespace std;
 /** @function main */
 int main( int argc, char** argv )
 {
-  system("../../../Lip-vireo/lip-vireo -dir ../../../outputs/images_Segmented_Clahe/ -d hesslap -p SIFT -dsdir ../../../outputs/feature_extraction/Lip-vireo/hesslap/ -c ../../../Lip-vireo/lip-vireo.conf");
+  system("../../../Lip-vireo/lip-vireo -dir ../../../outputs/images_Segmented_Clahe/ -d hesslap -p SIFT -dsdir ../../../outputs/feature_extraction/Lip-vireo/hesslap/ -c ../../../lip-vireo/lip-vireo.conf");
 
   return 0;
 }

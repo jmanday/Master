@@ -1,5 +1,5 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
-PROJECT(segmentationIris)
+PROJECT(dsurf)
 FIND_PACKAGE( OpenCV REQUIRED )
-ADD_EXECUTABLE( segmentationIris src/segmentationIris )
-TARGET_LINK_LIBRARIES( segmentationIris ${OpenCV_LIBS} )
+ADD_EXECUTABLE( dsurf src/dsurf.cpp )
+TARGET_LINK_LIBRARIES( dsurf ${OpenCV_LIBS} )

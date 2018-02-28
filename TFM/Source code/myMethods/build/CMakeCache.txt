@@ -128,7 +128,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=10.12
 CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=segmentationIris
+CMAKE_PROJECT_NAME:STATIC=dsurf
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -193,6 +193,42 @@ Sobel_BINARY_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source cod
 
 //Value Computed by CMake
 Sobel_SOURCE_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods
+
+//Value Computed by CMake
+clahe_BINARY_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build
+
+//Value Computed by CMake
+clahe_SOURCE_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods
+
+//Value Computed by CMake
+dsurf_BINARY_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build
+
+//Value Computed by CMake
+dsurf_SOURCE_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods
+
+//Value Computed by CMake
+harlap_BINARY_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build
+
+//Value Computed by CMake
+harlap_SOURCE_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods
+
+//Value Computed by CMake
+hessian-laplace_BINARY_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build
+
+//Value Computed by CMake
+hessian-laplace_SOURCE_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods
+
+//Value Computed by CMake
+hesslap_BINARY_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build
+
+//Value Computed by CMake
+hesslap_SOURCE_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods
+
+//Value Computed by CMake
+lowe_BINARY_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build
+
+//Value Computed by CMake
+lowe_SOURCE_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods
 
 //Value Computed by CMake
 segmentationIrisNew_BINARY_DIR:STATIC=/Users/jesusgarciamanday/Documents/Master/TFM/Source code/myMethods/build

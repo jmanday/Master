@@ -23,7 +23,7 @@ using namespace std;
 int main( int argc, char** argv )
 {
 	
-  system("../../../Lip-vireo/lip-vireo -dir ../../../outputs/images_Segmented_Clahe/ -d dsurf -p SIFT -dsdir ../../../outputs/feature_extraction/Lip-vireo/dsurf/ -c ../../../Lip-vireo/lip-vireo.conf");
+  system("../../../Lip-vireo/lip-vireo -dir ../../../outputs/images_Segmented_Clahe/ -d dsurf -p SIFT -dsdir ../../../outputs/feature_extraction/Lip-vireo/dsurf/ -c ../../../lip-vireo/lip-vireo.conf");
 
   return 0;
 }

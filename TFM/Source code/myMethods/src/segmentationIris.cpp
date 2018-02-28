@@ -100,8 +100,8 @@ int main( int argc, char** argv )
           vector<int> compression_params;
           compression_params.push_back(CV_IMWRITE_PNG_COMPRESSION);
           compression_params.push_back(9);
-
-          string nameImageSegmented = "../../../databases/images_Segmented/seg-" + onlyName + ".jpg";
+          
+          string nameImageSegmented = "../../../outputs/images_Segmented/seg-" + onlyName + ".jpg";
           imwrite(nameImageSegmented, segIris, compression_params); // Saving the new matrix in an image jpg
         }
 

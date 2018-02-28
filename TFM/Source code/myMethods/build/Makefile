@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named segmentationIris
+# Target rules for targets named dsurf
 
 # Build rule for target.
-segmentationIris: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 segmentationIris
-.PHONY : segmentationIris
+dsurf: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dsurf
+.PHONY : dsurf
 
 # fast build rule for target.
-segmentationIris/fast:
-	$(MAKE) -f CMakeFiles/segmentationIris.dir/build.make CMakeFiles/segmentationIris.dir/build
-.PHONY : segmentationIris/fast
+dsurf/fast:
+	$(MAKE) -f CMakeFiles/dsurf.dir/build.make CMakeFiles/dsurf.dir/build
+.PHONY : dsurf/fast
 
-src/segmentationIris.o: src/segmentationIris.cpp.o
+src/dsurf.o: src/dsurf.cpp.o
 
-.PHONY : src/segmentationIris.o
+.PHONY : src/dsurf.o
 
 # target to build an object file
-src/segmentationIris.cpp.o:
-	$(MAKE) -f CMakeFiles/segmentationIris.dir/build.make CMakeFiles/segmentationIris.dir/src/segmentationIris.cpp.o
-.PHONY : src/segmentationIris.cpp.o
+src/dsurf.cpp.o:
+	$(MAKE) -f CMakeFiles/dsurf.dir/build.make CMakeFiles/dsurf.dir/src/dsurf.cpp.o
+.PHONY : src/dsurf.cpp.o
 
-src/segmentationIris.i: src/segmentationIris.cpp.i
+src/dsurf.i: src/dsurf.cpp.i
 
-.PHONY : src/segmentationIris.i
+.PHONY : src/dsurf.i
 
 # target to preprocess a source file
-src/segmentationIris.cpp.i:
-	$(MAKE) -f CMakeFiles/segmentationIris.dir/build.make CMakeFiles/segmentationIris.dir/src/segmentationIris.cpp.i
-.PHONY : src/segmentationIris.cpp.i
+src/dsurf.cpp.i:
+	$(MAKE) -f CMakeFiles/dsurf.dir/build.make CMakeFiles/dsurf.dir/src/dsurf.cpp.i
+.PHONY : src/dsurf.cpp.i
 
-src/segmentationIris.s: src/segmentationIris.cpp.s
+src/dsurf.s: src/dsurf.cpp.s
 
-.PHONY : src/segmentationIris.s
+.PHONY : src/dsurf.s
 
 # target to generate assembly for a file
-src/segmentationIris.cpp.s:
-	$(MAKE) -f CMakeFiles/segmentationIris.dir/build.make CMakeFiles/segmentationIris.dir/src/segmentationIris.cpp.s
-.PHONY : src/segmentationIris.cpp.s
+src/dsurf.cpp.s:
+	$(MAKE) -f CMakeFiles/dsurf.dir/build.make CMakeFiles/dsurf.dir/src/dsurf.cpp.s
+.PHONY : src/dsurf.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... segmentationIris"
-	@echo "... src/segmentationIris.o"
-	@echo "... src/segmentationIris.i"
-	@echo "... src/segmentationIris.s"
+	@echo "... dsurf"
+	@echo "... src/dsurf.o"
+	@echo "... src/dsurf.i"
+	@echo "... src/dsurf.s"
 .PHONY : help
 
 
