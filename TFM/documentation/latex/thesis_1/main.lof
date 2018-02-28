@@ -25,9 +25,64 @@
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {S1200R02.jpg}}}{39}{figure.caption.54}
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {S1217L04.jpg}}}{39}{figure.caption.54}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Im\IeC {\'a}genes de la base de datos CASIA-IrisV4.\relax }}{41}{figure.caption.63}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {S1001L06.jpg}}}{41}{figure.caption.63}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {S1113R05.jpg}}}{41}{figure.caption.63}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {S1188L04.jpg}}}{41}{figure.caption.63}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {S1200R02.jpg}}}{41}{figure.caption.63}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {S1217L04.jpg}}}{41}{figure.caption.63}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Notaciones mostradas sobre un ejemplo de la base de datos CASIA-IrisV4-Internal del m\IeC {\'e}todo empleado para la aproximaci\IeC {\'o}n del centro del iris.\relax }}{44}{figure.caption.63}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado de la aplicaci\IeC {\'o}n del filtrado. (a) Imagen original. (b) Imagen con el filtrado de mediana aplicado.\relax }}{44}{figure.caption.65}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{44}{figure.caption.65}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{44}{figure.caption.65}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Vector gradiente.\relax }}{45}{figure.68}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Magintud del vector gradiente.\relax }}{45}{figure.69}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Direcci\IeC {\'o}n del vector gradiente.\relax }}{45}{figure.70}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Sentidos en los que se analizan los arcos sucesivos. (a) Izquieda. (b) Derecha. (c) Arriba. (d) Abajo\relax }}{46}{figure.caption.72}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{46}{figure.caption.72}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{46}{figure.caption.72}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{46}{figure.caption.72}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{46}{figure.caption.72}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Puntos de inter\IeC {\'e}s en dos arcos sucesivos\relax }}{46}{figure.caption.77}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Detecci\IeC {\'o}n de los bordes del iris con el m\IeC {\'e}todo empleado.\relax }}{48}{figure.caption.84}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {S1001R04.jpg}}}{48}{figure.caption.84}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {S1115L09.jpg}}}{48}{figure.caption.84}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {S1136L07.jpg}}}{48}{figure.caption.84}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {S1143R07.jpg}}}{48}{figure.caption.84}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {S1208L07.jpg}}}{48}{figure.caption.84}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {S1209R04.jpg}}}{48}{figure.caption.84}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Detecci\IeC {\'o}n de los bordes del iris con el m\IeC {\'e}todo Caht .\relax }}{48}{figure.caption.91}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {S1001R04.jpg}}}{48}{figure.caption.91}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {S1115L09.jpg}}}{48}{figure.caption.91}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {S1136L07.jpg}}}{48}{figure.caption.91}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {S1143R07.jpg}}}{48}{figure.caption.91}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {S1208L07.jpg}}}{48}{figure.caption.91}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {S1209R04.jpg}}}{48}{figure.caption.91}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Detecci\IeC {\'o}n de los bordes del iris con el m\IeC {\'e}todo Wahet.\relax }}{49}{figure.caption.98}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {S1001R04.jpg}}}{49}{figure.caption.98}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {S1115L09.jpg}}}{49}{figure.caption.98}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {S1136L07.jpg}}}{49}{figure.caption.98}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {S1143R07.jpg}}}{49}{figure.caption.98}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {S1208L07.jpg}}}{49}{figure.caption.98}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {S1209R04.jpg}}}{49}{figure.caption.98}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Segmentaci\IeC {\'o}n del iris con el m\IeC {\'e}todo empleado.\relax }}{49}{figure.caption.105}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {S1001R04.jpg}}}{49}{figure.caption.105}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {S1115L09.jpg}}}{49}{figure.caption.105}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {S1136L07.jpg}}}{49}{figure.caption.105}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {S1143R07.jpg}}}{49}{figure.caption.105}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {S1208L07.jpg}}}{49}{figure.caption.105}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {S1209R04.jpg}}}{49}{figure.caption.105}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Representaci\IeC {\'o}n gr\IeC {\'a}fica del solapamiento entre la segmentaci\IeC {\'o}n de referencia y la segmentaci\IeC {\'o}n a trav\IeC {\'e}s de los m\IeC {\'e}todos expuestos..\relax }}{50}{figure.caption.112}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Resultado de la aplicaci\IeC {\'o}n del m\IeC {\'e}todo de mejora de constraste CLAHE sobre una imagen de la base de datos CASIA-IrisV4-Internal. (a) Imagen original. (b) Resultado de aplicar el m\IeC {\'e}todo CLAHE.\relax }}{57}{figure.caption.121}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {S1001L01.jpg}}}{57}{figure.caption.121}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {S1001L01.jpg}}}{57}{figure.caption.121}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Representaci\IeC {\'o}n del espacio de escala sobre una imagen de la base de datos CASIA-IrisV4-Internal. (a) Imagen original. (b) $\sigma $ = 3. (c) $\sigma $ = 5. (d) $\sigma $ = 10.\relax }}{58}{figure.caption.125}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{58}{figure.caption.125}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{58}{figure.caption.125}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{58}{figure.caption.125}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{58}{figure.caption.125}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Rendimiento de ocho descriptores diferentes con el detector DoG sobre 8 pares de im\IeC {\'a}genes que cubren transformaciones como escalado, rotaci\IeC {\'o}n, cambios en el punto de vista, emborronado, cambios en el ratio de comprensi\IeC {\'o}n JPEG y cambios de iluminaci\IeC {\'o}n.\relax }}{60}{figure.caption.130}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Ec. 1.1\relax }}{60}{figure.133}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Ec. 1.2\relax }}{61}{figure.134}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Ec. 1.3\relax }}{61}{figure.135}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Ec. 1.4\relax }}{62}{figure.137}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Ec. 1.5\relax }}{62}{figure.138}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Ec. 1.6\relax }}{62}{figure.139}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Ec. 1.7\relax }}{63}{figure.143}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces SIFT\relax }}{64}{figure.caption.145}
+\addvspace {10\p@ }

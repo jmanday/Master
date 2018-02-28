@@ -9,7 +9,7 @@
 
 \bibitem{Reference5}
 \emph{Efficient iris recognition by characterizing key local variations}, IEEE
-  Transactions On Image Processing (2004).
+  Transactions On Image Processing \textbf{vol. 35} (2004).
 
 \bibitem{Reference8}
 Harry~Wechsler Azriel~Rosenfeld, \emph{Pattern recognition: Historical
@@ -45,14 +45,40 @@ J.~G. Daugman, \emph{High confidence visual recognition of persons by a test of
   statistical independence}, IEEE Transactions on Pattern Analysis and Machine
   Intelligence \textbf{vol. 15} (1993).
 
+\bibitem{Reference21}
+T.~Tuytelaars H.~Bay, A.~Ess and L.~V. Gool, \emph{Speeded-up robust features
+  (surf)}, International Journal on Computer Vision and Image Understanding
+  (2008).
+
+\bibitem{Reference27}
+\bysame, \emph{Surf: Speeded up robust features}, Computer Vision and Image
+  Understanding \textbf{vol. 110} (2008).
+
 \bibitem{Reference11}
-T.~Tan-L.~Ma J.Cui, Y.~Wang and Z.~Sun, \emph{A fast and robust iris
+T.~Tan L.~Ma J.Cui, Y.~Wang and Z.~Sun, \emph{A fast and robust iris
   localization method based on texture segmentation}, Proceedings of SPIE - The
   International Society for Optical Engineering (2004).
 
 \bibitem{Reference3}
-Y.~Wang L.~Ma, T.~Tan and D.~Zhang, IEEE Transactions on Pattern Analysis and
-  Machine Intelligence \textbf{vol. 25} (2003).
+Y.~Wang L.~Ma, T.~Tan and D.~Zhang, \emph{Personal identification based on iris
+  texture analysis}, IEEE Transactions on Pattern Analysis and Machine
+  Intelligence \textbf{vol. 25} (2003).
+
+\bibitem{Reference26}
+T.~Lindeberg, \emph{Feature detection with automatic scale selection},
+  International Journal of Computer Vision (1998).
+
+\bibitem{Reference28}
+D.~Lowe, \emph{Distinctive image features from scale-invariant keypoints},
+  nternational Journal on Computer Vision \textbf{vol. 60} (2004).
+
+\bibitem{Reference24}
+K.~Mikolajczyk and C.~Schmid, \emph{Scale and affine invariant interest point
+  detectors}, International Journal of Computer Vision (2004).
+
+\bibitem{Reference22}
+\bysame, \emph{A performance evaluation of local descriptors}, IEEE
+  Transactions on Pattern Analysis and Machine Intelligence (2005).
 
 \bibitem{Reference10}
 J.~R. M. S. C. Hsu R. J.~Kolczynski R.~P.~Wildes, G. L. G. J. C.~Asmuth and
@@ -67,9 +93,17 @@ S.~C. Hsu R. J. Kolczynski J. R.~Matey R.~P.~Wildes, J.~Asmuth and S.~E.
 \bibitem{Reference6}
 Iridian Technologies, \emph{Moorestown, nj},  (2005).
 
+\bibitem{Reference20}
+T.~Tuytelaars and K.~Mikolajczyk, \emph{Local invariant feature detectors: A
+  survey}, Foundations and Trends in Computer Graphics and Vision (2007).
+
+\bibitem{Reference23}
+\bysame, \emph{Local invariant feature detectors: A survey}, Foundations and
+  Trends in Computer Graphics and Vision (2007).
+
 \bibitem{Reference14}
 N.~Schmid V.~Dorairaj and G.~Fahmy, \emph{Performance evaluation of non-ideal
-  iris based recognition system implementing global ica encoding}, Proceeding
+  iris based recognition system implementing globalica encoding}, Proceeding
   International Conference on Image Processing ICIP (2005).
 
 \bibitem{Reference4}
@@ -79,5 +113,9 @@ R.~P. Wildes, \emph{Iris recognition: An emerging biometric technology},
 \bibitem{Reference13}
 J.~Zhu and J.~Yang, \emph{Subpixel eye gaze tracking}, IEEE International
   Conference on Automatic Face and Gesture Recognition (2002).
+
+\bibitem{Reference25}
+K.~Zuiderveld, \emph{Contrast limited adaptive histograph equalization},
+  Graphic Gems IV. San Diego: Academic Press Professional (1994).
 
 \end{thebibliography}

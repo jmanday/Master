@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  24 AUG 2017 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  28 FEB 2018 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6984,7 +6984,7 @@ Missing character: There is no p in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.59 \subfigure
-               [Tarjeta chip digital]{\includegraphics[width=44mm]{tfm-img6}}
+               [Tarjeta chip digital]{\includegraphics[width=40mm]{tfm-img6}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7013,7 +7013,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.59 ...ure[Tarjeta chip digital]{\includegraphics
-                                                  [width=44mm]{tfm-img6}}
+                                                  [width=40mm]{tfm-img6}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7028,7 +7028,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 4 in font nullfont!
-Missing character: There is no 4 in font nullfont!
+Missing character: There is no 0 in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no ] in font nullfont!
@@ -7083,7 +7083,7 @@ Missing character: There is no l in font nullfont!
 Missing character: There is no ] in font nullfont!
 ! Undefined control sequence.
 l.60 ...arjetas por chip digital]{\includegraphics
-                                                  [width=40.1mm]{tfm-img7}}
+                                                  [width=36.3mm]{tfm-img7}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7097,10 +7097,10 @@ Missing character: There is no d in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no = in font nullfont!
-Missing character: There is no 4 in font nullfont!
-Missing character: There is no 0 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 6 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no m in font nullfont!
 Missing character: There is no ] in font nullfont!

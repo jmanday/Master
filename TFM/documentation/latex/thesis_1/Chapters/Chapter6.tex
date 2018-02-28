@@ -1,0 +1,66 @@
+% Chapter 6
+
+\chapter{Conclusiones y trabajos futuros} % Main chapter title
+
+\label{Capítulo 6} % For referencing the chapter elsewhere, use \ref{Chapter6} 
+
+%----------------------------------------------------------------------------------------
+
+% Define some commands to keep the formatting separated from the content 
+%\newcommand{\keyword}[1]{\textbf{#1}}
+%\newcommand{\tabhead}[1]{\textbf{#1}}
+%\newcommand{\code}[1]{\texttt{#1}}
+%\newcommand{\file}[1]{\texttt{\bfseries#1}}
+%\newcommand{\option}[1]{\texttt{\itshape#1}}
+
+%----------------------------------------------------------------------------------------
+
+
+El reconocimiento de personas es una técnica de identificación que el hombre lleva desarrollando desde hace muchos años con el objetivo de encontrar una solución fiable y eficiente ante las situaciones de verificación e identificación que se producen en el control de acceso a lugares limitados o en el intercambio de información relevante. Actualmente, todos los sistemas implementan este tipo de técnica como medida de seguridad para comprobar la autenticación de un usuario ante una acción en el mismo. \\
+
+Son varios lo métodos y mecanismos que a lo largo de la historia se han empleado para identificar de manera unívoca a una persona, comprobando así de forma correcta que dicha persona dice ser quien es. Desde el uso de señales de luz, señales de manos, señales de voz, sellos de institución, etc, como parte de los sistemas de reconocimiento mas antiguos, hasta pasar por el uso de tarjetas con bandas electromagnéticas, códigos de acceso, contraseñas y demás en los sistemas de reconocimiento actuales aprovechando de este modo la evolución de la tecnología.\\
+
+La aparición de la biometría hace que se comiencen a explorar las múltiples características que aporta la anatomía del ser humano que pueden ser medidas para posteriormente tratarlas como información. Son muchos los rasgos y atributos que presenta una persona de manera única y diferente con respecto a las demás como son la huella dactilar y el iris del ojo entre otros, así como también lo es el comportamiento. Con la biometría se intenta aprovechar las ventajas que presentan las propiedades fisiológicas de una persona para emplearlas en situaciones reales como los sistemas de reconocimiento.\\
+
+Esta nueva tecnología hace que se produzca un vuelco en los sistemas de reconocimiento tradicionales apareciendo entonces los sistemas basados en el reconocimiento biométrico. Estos sistemas se basan en la aplicación de técnicas de visión por computador y de técnicas de inteligencia artificial. Dentro de este amplio campo existen diferentes modalidades de biometría que dependen de la zona fisiológica estudiada como puede ser el reconocimiento de huellas dactilares, reconocimiento de rostros, reconocimiento de retina, reconocimiento de iris, reconocimiento de voz, reconocimiento de firma y reconocimiento de la forma de andar.  \\
+
+En este ámbito, el reconocimiento de personas a través del iris se convierte en la modalidad biométrica que mayor popularidad ha alcanzado sobre las demás, debido en gran parte a las numerosas propiedades particulares que esta región del ojo humano presenta: es invariable en el tiempo, es externamente visible y posee características altamente discriminantes que son imposibles de modificar por medios no quirúrgicos; inclusive algunos métodos quirúrgicos en el ojo como operaciones de cataratas mantienen constante la textura del iris. El fuerte auge que el reconocimiento a través del iris ha experimentado en los último tiempos ha echo que una gran cantidad de empresas líderes en el sector de aplicaciones de seguridad hayan introducido esta tecnología biométrica en el mercado.\\
+
+Aunque parezca reciente la idea de utilizar el iris como propiedad para identificar a una persona, cabe destacar que esta data de finales del siglo XIX, siendo el 1982 el inspector Alphonse Bertillon del departamento de policía de París en Francia desarrolló un estudio sobre la utilización de 3 clases principales de iris para el reconocimiento de convictos. El oftalmólogo Burch presentó con posterioridad en 1936 nuevas evidencias de las ventajas de utilizar el iris para reconocimiento de personas. Los oftalmólogos Flom y Safir documentaron y patentaron el concepto general del reconocimiento de iris varias décadas después. Sobre estas bases, el profesor John Daugman desarrollo el primer algoritmo para reconocimiento de iris en 1989 patentándolo luego en 1994. Es por esta esta razón por la que John Daugman es considerado un pionero en este campo de investigación y sus trabajos representan las bases teóricas de muchas aportaciones que se han presentado sobre reconocimiento de iris. \\
+
+En la actualidad, el reconocimiento del iris es uno de los avances más interesante y fiable dentro del reconocimiento de personas, constituyendo un amplio campo de estudio que irá progresando con el paso del tiempo. \\
+
+
+%----------------------------------------------------------------------------------------
+
+\section{Trabajos futuros}
+
+El fuerte impacto producido por los sistemas de reconocimiento biométricos ha supuesto que hasta la actualidad se hayan desarrollado diversas propuestas y soluciones capaces de realizar un correcto reconocimiento de personas a través del iris.\\
+
+Es por ese motivo por lo que surge una nueva vía en torno al reconocimiento biométrico de este tipo de sistemas. Hasta ahora los sistemas existentes que son capaces de reconocer a una personas a través de las propiedades extraídas de su iris lo hacen en condiciones ideales donde no aparece ningún factor externo que pueda afectar a la calidad de este. Estos sistemas proporcionan una tasa de acierto muy alta con un elevado porcentaje de precisión, lo que los convierte en sistemas altamente fiables. De esta situación hace que aparezca la idea de proponer una nueva línea de investigación dentro de este campo donde se estudie y analice la posibilidad de desarrollar un método capaz de reconocer a una persona a través de su iris en condiciones no ideales donde puedan existir agentes externos como la luz, la oclusión de párpados, etc, capaces de alterar las propiedades de la textura de este provocando con ello errores en la autenticación.  \\
+
+Situado en este ámbito, el presente Trabajo Fin de Master propone un nuevo método de extracción de características con el objetivo de integrarlo en un sistema de reconocimiento de iris en condiciones no ideales que se capaz de conseguir reducir la tasa de falsos aciertos que estos sistemas presentan. El método que se plantea cubre una sola etapa de un sistema de reconocimiento de esta modalidad, por lo que será necesario hacer uso de una serie de herramientas que nos facilite la implementación del resto. \\
+
+Se utilizará la base de datos \textbf{CASIA-IrisV4-Interval} la cual contiene un conjunto de imágenes de iris en condiciones no ideales afectadas por factores externos como la luz, la oclusión de pestañas, etc. Se hará también uso de la librería \textbf{USIT} en la versión \textbf{1.0.3} para emplear sus métodos y algoritmos en la desarrollo del resto de los componentes del sistema de reconocimiento junto con el método de extracción de características sobre el que se basa este Trabajo Fin de Master. \\
+
+Por último, se realizarán una serie de experimentaciones empleando en el sistema de reconocimiento el método propuesto desarrollado y los métodos que la librería \textbf{USIT} en la versión \textbf{1.0.3} expone para comparar los resultados obtenidos en todos los supuestos. \\
+
+A modo de resumen, la finalidad de este Trabajo Fin de Master se puede descomponer en varios objetivos específicos:
+\begin{itemize}
+	\item Desarrollar un estudio de las tecnologías y herramientas existentes para el campo del reconocimiento del iris en condiciones no ideales.
+	\item Proponer un nuevo método para la extracción de características discriminantes del iris.
+	\item Integrar el método propuesto en una aplicación de reconocimiento de iris en condiciones no ideales con las tecnologías y herramientas existentes para comprobar los resultados.
+	\item Validar el método propuesto de extracción de características respecto a los existentes en el estudio realizado.
+\end{itemize}
+
+
+\section{Descripción de la memoria}
+Para estructurar correctamente esta memoria, se ha organizado la misma en 5 capítulos donde el contenido es distribuido con la intención de presentar cada punto de manera clara y concisa. El presente capítulo introduce el argumento de este Trabajo Fin de Master. \\
+
+En el \textbf{Capítulo 2}, \emph{``Reconocimiento del iris"}, se describirá los sistemas de reconocimiento en global, desde los básicos a los basados en reconocer patrones anatómicos . Se presentarán las bases de la biometría del iris para el reconocimiento de personas. También se describen los aspectos relacionados en un sistema de reconocimiento de personas basado en el iris. \\
+
+En el \textbf{Capítulo 3}, \emph{``Tecnologías y herramientas en el reconocimiento del iris"}, se presentan las herramientas existentes para esta modalidad de sistema de reconocimiento. Se describirá la base de datos \textbf{CASIA-IrisV4-Interval} de donde se tomarán las imágenes de iris en condiciones no ideales. También se describirá la librería \textbf{USITv1.0.3} desde la que se utilizará los métodos y algoritmos propuestos para realizar las diferentes etapas de un sistema de reconocimiento de esta índole. \\
+
+En el \textbf{Capítulo 4}, \emph{``Extracción de características del iris"}, se presentará y evaluará el método propuesto para extraer las propiedades de una textura de iris. Se describirá también su integración en una aplicación de reconocimiento basado en el iris para conocer su comportamiento a través de una serie de experimentaciones. \\
+
+En el \textbf{Capítulo 5}, \emph{`` Conclusiones y trabajos futuros"}, se describirán las conclusiones del presente Trabajo Fin de Master, así como varias líneas interesantes para un estudio futuro. \\

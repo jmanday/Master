@@ -5,6 +5,8 @@ A level-1 auxiliary file: Chapters/Chapter1.aux
 A level-1 auxiliary file: Chapters/Chapter2.aux
 A level-1 auxiliary file: Chapters/Chapter3.aux
 A level-1 auxiliary file: Chapters/Chapter4.aux
+A level-1 auxiliary file: Chapters/Chapter5.aux
+A level-1 auxiliary file: Chapters/Chapter6.aux
 The style file: amsplain.bst
 Database file #1: example.bib.bib
 Name 1 in "L. Ma, T. Tan, Y. Wang, and D. Zhang" has a comma at the end for entry Reference3
@@ -30,6 +32,10 @@ Name 1 in "V. Dorairaj, N. Schmid, and G. Fahmy" has a comma at the end for entr
 while executing---line 1149 of file amsplain.bst
 Name 1 in "C. Rathgeb, A. Uhl, P. Wild, and H. Hofbauer" has a comma at the end for entry Reference18
 while executing---line 1149 of file amsplain.bst
+Name 1 in "H. Bay, A. Ess, T. Tuytelaars, and L. V. Gool" has a comma at the end for entry Reference21
+while executing---line 1149 of file amsplain.bst
+Name 1 in "H. Bay, A. Ess, T. Tuytelaars, and L. V. Gool" has a comma at the end for entry Reference27
+while executing---line 1149 of file amsplain.bst
 Warning--missing author in Reference5
 Warning--missing pages in Reference5
 Warning--missing journal name in Reference8
@@ -48,6 +54,10 @@ while executing---line 1233 of file amsplain.bst
 Warning--missing pages in Reference7
 Warning--missing pages in Reference15
 Warning--missing pages in Reference1
+Name 1 in "H. Bay, A. Ess, T. Tuytelaars, and L. V. Gool" has a comma at the end for entry Reference21
+while executing---line 1233 of file amsplain.bst
+Warning--missing pages in Reference21
+Warning--missing pages in Reference27
 Name 1 in "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" has a comma at the end for entry Reference11
 while executing---line 1233 of file amsplain.bst
 Too many commas in name 1 of "J.Cui, Y. Wang, T. Tan, L. Ma, and Z. Sun" for entry Reference11
@@ -55,8 +65,11 @@ while executing---line 1233 of file amsplain.bst
 Warning--missing pages in Reference11
 Name 1 in "L. Ma, T. Tan, Y. Wang, and D. Zhang" has a comma at the end for entry Reference3
 while executing---line 1233 of file amsplain.bst
-Warning--missing title in Reference3
 Warning--missing pages in Reference3
+Warning--missing pages in Reference26
+Warning--missing pages in Reference28
+Warning--missing pages in Reference24
+Warning--missing pages in Reference22
 Name 1 in "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" has a comma at the end for entry Reference10
 while executing---line 1233 of file amsplain.bst
 Too many commas in name 1 of "R. P. Wildes, G. L. G. J. C. Asmuth, J. R. M. S. C. Hsu, R. J. Kolczynski, and S. E. McBride" for entry Reference10
@@ -72,50 +85,53 @@ Warning--missing journal name in Reference12
 Warning--missing pages in Reference12
 Warning--missing journal name in Reference6
 Warning--missing pages in Reference6
+Warning--missing pages in Reference20
+Warning--missing pages in Reference23
 Name 1 in "V. Dorairaj, N. Schmid, and G. Fahmy" has a comma at the end for entry Reference14
 while executing---line 1233 of file amsplain.bst
 Warning--missing pages in Reference14
 Warning--missing pages in Reference4
 Warning--missing pages in Reference13
-You've used 17 entries,
+Warning--missing pages in Reference25
+You've used 26 entries,
             2213 wiz_defined-function locations,
-            595 strings with 6360 characters,
-and the built_in function-call counts, 3909 in all, are:
-= -- 297
-> -- 173
+            641 strings with 7469 characters,
+and the built_in function-call counts, 5881 in all, are:
+= -- 454
+> -- 251
 < -- 0
-+ -- 72
-- -- 52
-* -- 346
-:= -- 650
-add.period$ -- 17
-call.type$ -- 17
-change.case$ -- 76
++ -- 106
+- -- 76
+* -- 517
+:= -- 969
+add.period$ -- 26
+call.type$ -- 26
+change.case$ -- 119
 chr.to.int$ -- 0
-cite$ -- 43
-duplicate$ -- 186
-empty$ -- 342
-format.name$ -- 52
-if$ -- 762
+cite$ -- 60
+duplicate$ -- 286
+empty$ -- 523
+format.name$ -- 76
+if$ -- 1157
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 34
-newline$ -- 61
-num.names$ -- 32
-pop$ -- 114
+int.to.str$ -- 26
+missing$ -- 52
+newline$ -- 88
+num.names$ -- 47
+pop$ -- 172
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 93
 quote$ -- 0
-skip$ -- 105
+skip$ -- 160
 stack$ -- 0
-substring$ -- 88
-swap$ -- 41
+substring$ -- 134
+swap$ -- 59
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 68
-warning$ -- 26
-while$ -- 32
-width$ -- 19
-write$ -- 126
-(There were 22 error messages)
+type$ -- 104
+warning$ -- 34
+while$ -- 47
+width$ -- 28
+write$ -- 190
+(There were 25 error messages)
