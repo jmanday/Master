@@ -1,0 +1,545 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="6" inline="false" x="23" y="32">
+    <field name="NAME">peso</field>
+    <value name="VALUE">
+      <block type="math_number" id="34">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="35" inline="false" x="284" y="34">
+    <field name="NAME">estatura</field>
+    <value name="VALUE">
+      <block type="math_number" id="36">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="global_declaration" id="37" inline="false" x="571" y="35">
+    <field name="NAME">imc</field>
+    <value name="VALUE">
+      <block type="math_number" id="38">
+        <field name="NUM">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="70" x="21" y="98">
+    <mutation component_type="Button" instance_name="botonCalcular" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">botonCalcular</field>
+    <statement name="DO">
+      <block type="controls_if" id="wb.`)cMwPoKI$Sy7:.*(">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_operation" id="EljU^MI@%if*2l:EyKdm">
+            <field name="OP">OR</field>
+            <value name="A">
+              <block type="text_isEmpty" id="|,tP0_(%7dT,(uVdc{[8">
+                <value name="VALUE">
+                  <block type="component_set_get" id=",|:j=;^le-[V?b=piY-?">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="campoPeso"></mutation>
+                    <field name="COMPONENT_SELECTOR">campoPeso</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block type="text_isEmpty" id="[H|CL8;!/z|]^|kr!43I">
+                <value name="VALUE">
+                  <block type="component_set_get" id="L$tikw^Tq(re2W:jL~:;">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="campoAltura"></mutation>
+                    <field name="COMPONENT_SELECTOR">campoAltura</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_method" id="jl({KN1I!6wrp:zZMQS.">
+            <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notificador1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notificador1</field>
+            <value name="ARG0">
+              <block type="text" id="*[ne;_2AaYHvC.8;XCyE">
+                <field name="TEXT">Debe rellenar los campos</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="lexical_variable_set" id="76" inline="false">
+            <field name="VAR">global peso</field>
+            <value name="VALUE">
+              <block type="component_set_get" id="104">
+                <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="campoPeso"></mutation>
+                <field name="COMPONENT_SELECTOR">campoPeso</field>
+                <field name="PROP">Text</field>
+              </block>
+            </value>
+            <next>
+              <block type="lexical_variable_set" id="105" inline="false">
+                <field name="VAR">global estatura</field>
+                <value name="VALUE">
+                  <block type="component_set_get" id="106">
+                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="campoAltura"></mutation>
+                    <field name="COMPONENT_SELECTOR">campoAltura</field>
+                    <field name="PROP">Text</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="lexical_variable_set" id="112" inline="false">
+                    <field name="VAR">global imc</field>
+                    <value name="VALUE">
+                      <block type="math_format_as_decimal" id="556">
+                        <value name="NUM">
+                          <block type="math_division" id="140">
+                            <value name="A">
+                              <block type="lexical_variable_get" id="146">
+                                <field name="VAR">global peso</field>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_power" id="236">
+                                <value name="A">
+                                  <block type="math_division" id="180">
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="152">
+                                        <field name="VAR">global estatura</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="208">
+                                        <field name="NUM">100</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="237">
+                                    <field name="NUM">2</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="PLACES">
+                          <block type="math_number" id="590">
+                            <field name="NUM">2</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_set_get" id="255" inline="false">
+                        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="resultadoIMC"></mutation>
+                        <field name="COMPONENT_SELECTOR">resultadoIMC</field>
+                        <field name="PROP">Text</field>
+                        <value name="VALUE">
+                          <block type="lexical_variable_get" id="261">
+                            <field name="VAR">global imc</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="controls_if" id="280" inline="false">
+                            <mutation elseif="7"></mutation>
+                            <value name="IF0">
+                              <block type="math_compare" id="322">
+                                <field name="OP">LT</field>
+                                <value name="A">
+                                  <block type="lexical_variable_get" id="328">
+                                    <field name="VAR">global imc</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="356">
+                                    <field name="NUM">16</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="component_set_get" id="389" inline="false">
+                                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="resultadoClasificacion"></mutation>
+                                <field name="COMPONENT_SELECTOR">resultadoClasificacion</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="text" id="371">
+                                    <field name="TEXT">Delgadez severa</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF1">
+                              <block type="logic_operation" id="427">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="math_compare" id="428">
+                                    <field name="OP">GTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="429">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="430">
+                                        <field name="NUM">16</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_compare" id="431">
+                                    <field name="OP">LTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="432">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="433">
+                                        <field name="NUM">16.99</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO1">
+                              <block type="component_set_get" id="434" inline="false">
+                                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="resultadoClasificacion"></mutation>
+                                <field name="COMPONENT_SELECTOR">resultadoClasificacion</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="text" id="435">
+                                    <field name="TEXT">Delgadez moderada</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF2">
+                              <block type="logic_operation" id="436">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="math_compare" id="437">
+                                    <field name="OP">GTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="438">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="439">
+                                        <field name="NUM">17</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_compare" id="440">
+                                    <field name="OP">LTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="441">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="442">
+                                        <field name="NUM">18.49</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO2">
+                              <block type="component_set_get" id="443" inline="false">
+                                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="resultadoClasificacion"></mutation>
+                                <field name="COMPONENT_SELECTOR">resultadoClasificacion</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="text" id="444">
+                                    <field name="TEXT">Delgadez aceptable</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF3">
+                              <block type="logic_operation" id="445">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="math_compare" id="446">
+                                    <field name="OP">GTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="447">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="448">
+                                        <field name="NUM">18.5</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_compare" id="449">
+                                    <field name="OP">LTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="450">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="451">
+                                        <field name="NUM">24.99</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO3">
+                              <block type="component_set_get" id="452" inline="false">
+                                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="resultadoClasificacion"></mutation>
+                                <field name="COMPONENT_SELECTOR">resultadoClasificacion</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="text" id="453">
+                                    <field name="TEXT">Normal</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF4">
+                              <block type="logic_operation" id="454">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="math_compare" id="455">
+                                    <field name="OP">GTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="456">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="457">
+                                        <field name="NUM">25</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_compare" id="458">
+                                    <field name="OP">LTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="459">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="460">
+                                        <field name="NUM">29.99</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO4">
+                              <block type="component_set_get" id="461" inline="false">
+                                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="resultadoClasificacion"></mutation>
+                                <field name="COMPONENT_SELECTOR">resultadoClasificacion</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="text" id="462">
+                                    <field name="TEXT">Preobeso</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF5">
+                              <block type="logic_operation" id="463">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="math_compare" id="464">
+                                    <field name="OP">GTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="465">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="466">
+                                        <field name="NUM">30</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_compare" id="467">
+                                    <field name="OP">LTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="468">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="469">
+                                        <field name="NUM">34.99</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO5">
+                              <block type="component_set_get" id="470" inline="false">
+                                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="resultadoClasificacion"></mutation>
+                                <field name="COMPONENT_SELECTOR">resultadoClasificacion</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="text" id="471">
+                                    <field name="TEXT">Obeso tipo I</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF6">
+                              <block type="logic_operation" id="483">
+                                <field name="OP">AND</field>
+                                <value name="A">
+                                  <block type="math_compare" id="484">
+                                    <field name="OP">GTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="485">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="486">
+                                        <field name="NUM">35</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_compare" id="487">
+                                    <field name="OP">LTE</field>
+                                    <value name="A">
+                                      <block type="lexical_variable_get" id="488">
+                                        <field name="VAR">global imc</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_number" id="489">
+                                        <field name="NUM">39.99</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO6">
+                              <block type="component_set_get" id="490" inline="false">
+                                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="resultadoClasificacion"></mutation>
+                                <field name="COMPONENT_SELECTOR">resultadoClasificacion</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="text" id="491">
+                                    <field name="TEXT">Obeso tipo II</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <value name="IF7">
+                              <block type="math_compare" id="493">
+                                <field name="OP">GTE</field>
+                                <value name="A">
+                                  <block type="lexical_variable_get" id="494">
+                                    <field name="VAR">global imc</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="495">
+                                    <field name="NUM">40</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO7">
+                              <block type="component_set_get" id="499" inline="false">
+                                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="resultadoClasificacion"></mutation>
+                                <field name="COMPONENT_SELECTOR">resultadoClasificacion</field>
+                                <field name="PROP">Text</field>
+                                <value name="VALUE">
+                                  <block type="text" id="500">
+                                    <field name="TEXT">Obeso tipo III</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="component_set_get" id="wQX@YSeM7g,hwpTG!cBo" inline="false">
+                                <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="tituloIMC"></mutation>
+                                <field name="COMPONENT_SELECTOR">tituloIMC</field>
+                                <field name="PROP">Visible</field>
+                                <value name="VALUE">
+                                  <block type="logic_boolean" id="pH=@mi3JpujW|vPy[KAQ">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_set_get" id="D*q#J0l+k~/MY!Q^}~{8" inline="false">
+                                    <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="tituloClasificacion"></mutation>
+                                    <field name="COMPONENT_SELECTOR">tituloClasificacion</field>
+                                    <field name="PROP">Visible</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="AAvUf6Uza,3pJTxM`b.2">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_set_get" id="h2RV{K]u9a~$_}ivJHrA" inline="false">
+                                        <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="resultadoIMC"></mutation>
+                                        <field name="COMPONENT_SELECTOR">resultadoIMC</field>
+                                        <field name="PROP">Visible</field>
+                                        <value name="VALUE">
+                                          <block type="logic_boolean" id="F$WR^H4+EO3C(4R)MKQl">
+                                            <field name="BOOL">TRUE</field>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="component_set_get" id="%f[VLP+gq1p8z!2uK1_r" inline="false">
+                                            <mutation component_type="Label" set_or_get="set" property_name="Visible" is_generic="false" instance_name="resultadoClasificacion"></mutation>
+                                            <field name="COMPONENT_SELECTOR">resultadoClasificacion</field>
+                                            <field name="PROP">Visible</field>
+                                            <value name="VALUE">
+                                              <block type="logic_boolean" id="suto`zD.pL-@GRz[IgK}">
+                                                <field name="BOOL">TRUE</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="167" language-version="21"></yacodeblocks>
+</xml>
