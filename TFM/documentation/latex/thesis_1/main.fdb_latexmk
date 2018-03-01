@@ -1,5 +1,5 @@
 # Fdb version 3
-["bibtex main"] 1519843538 "main.aux" "main.bbl" "main" 1519845260
+["bibtex main"] 1519843538 "main.aux" "main.bbl" "main" 1519931295
   "/usr/local/texlive/2016/texmf-dist/bibtex/bst/amscls/amsplain.bst" 1252602681 27098 ec7e6b64cc74d914fa2998f3a6a79293 ""
   "Chapters/Chapter1.aux" 1519845255 1423 1bf1086544feaa96bb6f6a13ca3365c9 ""
   "Chapters/Chapter2.aux" 1519845256 6279 868cbe3652a17f72acd79484c1804221 ""
@@ -11,9 +11,9 @@
   "main.aux" 1519845259 2054 ebd232d782958e496dc2d02134672ca4 ""
   "main.bcf" 0 -1 0 ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1519845251 "main.tex" "main.pdf" "main" 1519845260
+  "main.bbl"
+["pdflatex"] 1519845251 "main.tex" "main.pdf" "main" 1519931295
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/accanthis/acnt_sjpjw4.enc" 1383613463 2942 d7138be8f8ff8bf4045bf2ac5c201c58 ""
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/accanthis/acnt_z4e4wk.enc" 1383613463 3340 2a7f94db507f32daf3dee9c541164e6f ""
   "/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc" 1276641224 6938 5135be6a8802f13a7faf296d1959a1ab ""
@@ -268,18 +268,18 @@
   "main.bbl" 1519843538 4687 a9d3cf2d2ae0bdbd1a64feeb86c497ff "bibtex main"
   "main.lof" 1519845259 9977 ac08f9328e7c9abd24a99f5492699f95 ""
   "main.out" 1519845259 7312 312f6062a0cad3369f3193e054cdc673 ""
-  "main.tex" 1519845251 13901 7d48eb6058b0cf650f0c33f736ab163b ""
+  "main.tex" 1519931295 13901 7d48eb6058b0cf650f0c33f736ab163b ""
   "main.toc" 1519845259 3644 a636c696c32affbf4b0ba5b428d64d1d ""
   (generated)
-  "Chapters/Chapter6.aux"
-  "Chapters/Chapter3.aux"
-  "Chapters/Chapter4.aux"
-  "main.toc"
-  "Chapters/Chapter2.aux"
-  "main.out"
-  "main.aux"
-  "main.pdf"
-  "main.log"
-  "Chapters/Chapter5.aux"
   "Chapters/Chapter1.aux"
+  "main.pdf"
+  "Chapters/Chapter6.aux"
+  "Chapters/Chapter4.aux"
+  "main.aux"
+  "main.toc"
   "main.lof"
+  "Chapters/Chapter2.aux"
+  "Chapters/Chapter5.aux"
+  "main.log"
+  "main.out"
+  "Chapters/Chapter3.aux"
