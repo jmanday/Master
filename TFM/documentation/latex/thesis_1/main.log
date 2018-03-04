@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  28 FEB 2018 20:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  4 MAR 2018 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2813,26 +2813,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-
+LaTeX Info: Redefining \. on input line 66.
+LaTeX Info: Redefining \% on input line 66.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 66.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 66.
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 68.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 68.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 68.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 68.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 68.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 68.
-[5])
+)
 Underfull \hbox (badness 10000) in paragraph at lines 69--271
 
  []
@@ -3517,8 +3517,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 172.
 
 Underfull \hbox (badness 10000) in paragraph at lines 172--173
 
@@ -3585,26 +3583,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-LaTeX Info: Redefining \. on input line 184.
-LaTeX Info: Redefining \% on input line 184.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 184.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 184.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 184.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 184.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 184.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 184.
-[24]
+
 Underfull \hbox (badness 10000) in paragraph at lines 185--186
 
  []
 
-
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 186.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 186.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 186.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 186.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 186.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 186.
+[24]
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
 genes/tfm-img13.jpg, id=506, 1027.84pt x 770.88pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
@@ -3803,6 +3801,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
+LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/n' will be
+(Font)              scaled to size 8.0pt on input line 24.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
 (Font)              scaled to size 8.64006pt on input line 24.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
@@ -5955,7 +5955,7 @@ ts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb>
-Output written on main.pdf (85 pages, 5739561 bytes).
+Output written on main.pdf (85 pages, 5731843 bytes).
 PDF statistics:
  1004 PDF objects out of 1200 (max. 8388607)
  820 compressed objects within 9 object streams
