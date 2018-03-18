@@ -17,13 +17,13 @@
 
 \section{Introducción}
 
-Conocido ya el funcionamiento de los sistemas de reconocimiento de personas a través del iris mediante su base teórica y etapas así como los factores de calidad que nos podemos encontrar en este tipo de ambiente, en este capítulo vamos a estudiar las herramientas y tecnologías existentes en las que nos apoyaremos para desarrollar un nuevo método de extracción de características que sea integrado en un sistema de reconocimiento de esta modalidad con el objetivo de comparar sus resultados con los arrojados por el mismo sistema usando diferentes métodos de extracción de características. \\
+Conocido ya el comportamiento general de los sistemas de reconocimiento de personas y de manera mas específica los basados a través del iris que se ejecutan en condiciones no ideales, en este capítulo vamos a estudiar las herramientas y tecnologías existentes en las que nos apoyaremos para desarrollar un nuevo método de extracción de características que sea integrado en un sistema de reconocimiento de este tipo con el objetivo de evaluar su rendimiento con los obtenidos usando diferentes métodos de extracción de características. \\
 
-Como bien hemos podido ver en el anterior capítulo, un sistema de reconocimento biométrico se compone de 4 elementos principales: la adquisición de imágenes, el pre-procesamiento, la extracción de características y la comparación de características. Aunque el propósito de este Trabajo Fin de Master es el de diseñar e implementar un nuevo método de extracción de características, también será necesario desarrollar el resto de componentes que forman un sistema de reconocimiento biométrico, haciendo uso para ello de las herramientas que se describen en este apartado.\\ 
+Como bien hemos podido ver en el capítulo anterior, un sistema de reconocimento biométrico se compone de cuatro elementos principales: la adquisición de imágenes, el pre-procesamiento, la extracción de características y la comparación de las mismas. Aunque el propósito de este Trabajo Fin de Master es el de diseñar e implementar un nuevo método de extracción de características, también será necesario desarrollar el resto de componentes que forman un sistema de reconocimiento biométrico para evaluar los resultados, haciendo uso para ello de las herramientas que se describen en este apartado.\\ 
 
-Para el desarrollo de la etapa de adquisición de imágenes haremos uso de la base de datos \textbf{CASIA V4} \footnote{Disponible en el sitio web de CASIA (http://biometrics.idealtest.org)}, la cual contiene un conjunto de imágenes tomadas a individuos de los ojos izquierdo y derecho afectadas por diferentes factores de calidad. El resto de las etapas se fundamentarán en la librería \textbf{USITv1.0.3} \footnote{Disponible en el sitio web de USIT (http://www.wavelab.at/sources/USIT/)}, la cual se basa en \textbf{OpenCV} \footnote{Disponible en el sitio web de OpenCV (http://opencv.org)}y \textbf{Boost} \footnote{Disponible en el sitio web de Boost (http://www.boost.org)}. Mediante esta librería se desarrollarán las etapas de pre-procesamiento y comparación de características. De la misma, se hará uso de los diferentes métodos de extracción de características que expone y que serán los que se comparen con el método propuesto en este Trabajo Fin de Master. \\
+Para el desarrollo de la etapa de adquisición de imágenes haremos uso de la base de datos \textbf{CASIA V4} \footnote{Disponible en el sitio web de CASIA (http://biometrics.idealtest.org)}, la cual contiene un conjunto de imágenes tomadas a individuos de los ojos izquierdo y derecho afectadas por diferentes factores de calidad, mientras el resto de las etapas se fundamentarán en diferentes librerías. Mediante la librería \textbf{USITv1.0.3} \footnote{Disponible en el sitio web de USIT (http://www.wavelab.at/sources/USIT/)}, la cual se basa en \textbf{OpenCV} \footnote{Disponible en el sitio web de OpenCV (http://opencv.org)} y \textbf{Boost} \footnote{Disponible en el sitio web de Boost (http://www.boost.org)} se desarrollarán las etapas de pre-procesamiento y comparación de características. Del mismo modo, la etapa de extracción de caracterísitcas se basará en el framework de desarrollo \textbf{LIP-VIREO} \footnote{Disponible en el sitio web de LIP-VIREO (https://code.google.com/archive/p/lip-vireo/)}. De la misma, se hará uso de los diferentes métodos de extracción de características que expone y que serán los que se comparen con el método propuesto en este Trabajo Fin de Master. \\
 
-El desarrollo del método de extracción de características sobre el que se basa esta memoria se apoyará en las librerías \textbf{OpenCV-3.2.0} y \textbf{Boost-1.63.0} en sus respectivas versiones. \\
+El desarrollo del método de extracción de características sobre el que se basa esta memoria se apoyará en la librería \textbf{LIP-VIREO}. \\
 
 
 
@@ -123,5 +123,100 @@ El desarrollo de la etapa de adquisición de imágenes es la primera etapa en un
 \subfigure[S1217L04.jpg]{\includegraphics[width=44mm]{tfm-img20}}
 \caption{Imágenes de la base de datos CASIA-IrisV4.} \label{fig:señales}
 \end{figure}
+
+%----------------------------------------------------------------------------------------
+
+\section{LIP-VIREO}
+
+Es una herramienta multiplataforma para la extracción de características sobre la textura de una imagen basada en puntos de interés locales. Esta desarrollada en C++ y actualmente cuenta con la implementación de ocho detectores de puntos de interés como son \textbf{DoG}, \textbf{LoG}, \textbf{Harris-Laplace}, \textbf{Hessian-Laplace}, \textbf{Harris}, \textbf{Hessian}, \textbf{Fast Hessian} (detector SURF) y \textbf{Dense}. Además cuenta también con un conjunto de descriptores de puntos de interés como \textbf{SIFT}, \textbf{Flip}, \textbf{FIND}, \textbf{PCA-SIFT}, \textbf{SPIN}, \textbf{RIFT}, \textbf{ERIFT}, \textbf{SURF}, \textbf{AoD} y \textbf{LJET}.
+
+Los detectores \textbf{Harris} y \textbf{Harris-Laplace} se basan en diferentes funciones para medir la prominencia de la región alrededor de un pixel. Estos detectores están basados principalmente en la matriz de segundo momento para un punto X como se muetra en la siguiente figura.
+
+\begin{figure}[htbp]
+\centering
+\[
+\mu \left ( X,\sigma _{1},  \sigma _{D}\right ) = \sigma ^{2}_{D}g(\sigma _{I}) * \begin{bmatrix}
+L^{2}_{x}(X,\sigma _{D}) \:\:\:\: L_{x}L_{y}(X,\sigma _{D}) \\
+L_{x}L_{y}(X,\sigma _{D}) \:\:\:\: L^{2}_{y}(X,\sigma _{D})
+\end{bmatrix}
+\] 
+\caption{Matriz de segundo momento para el detector Harris.} 
+\end{figure}
+
+donde $\sigma _{I}$ es la escala de integración, $\sigma _{D}$ es la escala de diferenciación y $L_{g}$ es la derivada calculada en la dirección g (x o y). Esta matriz principalmente describe la distribución del gradiente en un vecindario local de un punto X. \\
+
+A diferencia del detector \textbf{Harris}, la matriz de los detectores \textbf{Hessian} y \textbf{Hessian-Laplace} para un punto dado X viene expresada de la siguiente manera. \\
+
+\begin{figure}[htbp]
+\centering
+\[
+H( X,  \sigma) = 
+\begin{bmatrix}
+L_{xx}(X,\sigma) \:\:\:\: L_{xy}(X,\sigma) \\
+L_{xy}(X,\sigma) \:\:\:\: L_{yy}(X,\sigma)
+\end{bmatrix}
+\]
+\caption{Matriz de segundo momento para el detector Hessian (I).} 
+\end{figure}
+
+donde $\sigma$  es el parámetro de suavizado Gaussiano. La ecuación siguiente define la prominencia del punto X solamente basado en el determinante de la matriz Hessian. \\
+
+\begin{figure}[htbp]
+\centering
+\[
+H( X, \sigma _{D} ) = 
+\begin{bmatrix}
+L_{xx}(X,\sigma_{D}) \:\:\:\: L_{xy}(X,\sigma_{D}) \\
+L_{xy}(X,\sigma_{D}) \:\:\:\: L_{yy}(X,\sigma_{D})
+\end{bmatrix}
+\] 
+\caption{Matriz de segundo momento para el detector Hessian (II).} 
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\[
+Hessian(X, \sigma) = det(H(X,\sigma)) x \sigma^4
+\]
+\caption{Detector Hessian.} 
+\end{figure}
+
+El detector \textbf{Laplaciano de Gauss (LoG)} se basa en la siguiente ecuación para medir la prominencia de un punto X. 
+
+\begin{figure}[htbp]
+\centering
+\[
+LoG(X, \sigma_{I}) = \sigma_{I}(L_{xx}(x,\sigma_{I}) + L_{yy}(x,\sigma_{I}))
+\]
+\caption{Detector LoG.} 
+\end{figure}
+
+Los puntos que alcanzan los máximos locales simultáneamente en sus espacio y escala son los que se seleccionan. Comparando a los detectores vistos anteriormente, podemos observar como en este caso la función de prominencia en el espacio X-Y se ha reemplazado con el laplaciano de Gauss, mientras que la función de prominencia en el espacio de escala se mantiene. Es por eso por lo que estos dos detectores pueden compartir puntos de interés similares. \\
+
+La ecuación de la figura anterior (Figura 3.6) realiza una estimación de las segundas derivadas en las direcciones \textit{x} e \textit{y}, lo que implica que el coste de computación sea relativamente alto. Es por eso por lo que se define una manera más eficiente a través de la \textbf{Diferencia de Gauss DoG} ya que esta solamente requiere la convolución de imágenes de manera constante. \\ \\ \\ \\ \\ \\
+
+\begin{figure}[htbp]
+\centering
+\[
+D(x, y, \sigma) = L(x,y,k\sigma) - L(x,y,\sigma)
+\]
+\caption{Detector DoG.} 
+\end{figure} 
+
+donde $\sigma$ es el parámetro de suavizado Gaussiano y \textit{k} es un multiplicador entero. \\ 
+
+\textbf{Fast Hessian} es el detector de características SURF. Su idea básica es calcular la ecuación de la Figura 3.5 de una manera eficiente con la ayuda de imágenes integrales. Para permitir un cálculo rápido, la ecuación de dicha figura ha sido aproximada de la siguiente manera. 
+
+\begin{figure}[htbp]
+\centering
+\[
+Det(H_{approx}) = D_{xx}D_{yy} - (0.9D_{xy})^2
+\]
+\caption{Detector Fast Hessian.} 
+\end{figure}
+
+donde $D_{xx}$, $D_{yy}$ y $D_{xy}$ son todos calculados eficientemente usando cajas de filtros. \\
+
+\textbf{Dense Sampling} es el último de los detectores de puntos de interés que vamos a ver. Este detector ha mostrado un rendimiento considerablemente mejor que los detectores mejor diseñados en tareas de detección de objetos. El ratio por defecto de este detector es de un punto por cada 10 pixeles. 
 
 %----------------------------------------------------------------------------------------

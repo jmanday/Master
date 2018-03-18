@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  4 MAR 2018 11:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.1.24)  18 MAR 2018 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1629,72 +1629,72 @@ Package csquotes Info: Enabling multilingual quotes.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \@title with sig. ' ' on line 84.
+. Redefining command \@title with sig. ' ' on line 85.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ttitle with sig. ' ' on line 84.
+. Defining command \ttitle with sig. ' ' on line 85.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \supname with sig. ' ' on line 85.
+. Defining command \supname with sig. ' ' on line 86.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \examname with sig. ' ' on line 86.
+. Defining command \examname with sig. ' ' on line 87.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \degreename with sig. ' ' on line 87.
+. Defining command \degreename with sig. ' ' on line 88.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \authorname with sig. ' ' on line 88.
+. Defining command \authorname with sig. ' ' on line 89.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \@author with sig. ' ' on line 88.
+. Redefining command \@author with sig. ' ' on line 89.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \addressname with sig. ' ' on line 89.
+. Defining command \addressname with sig. ' ' on line 90.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \subjectname with sig. ' ' on line 91.
+. Defining command \subjectname with sig. ' ' on line 92.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \keywordnames with sig. ' ' on line 92.
+. Defining command \keywordnames with sig. ' ' on line 93.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \univname with sig. ' ' on line 93.
+. Defining command \univname with sig. ' ' on line 94.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \deptname with sig. ' ' on line 94.
+. Defining command \deptname with sig. ' ' on line 95.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \groupname with sig. ' ' on line 95.
+. Defining command \groupname with sig. ' ' on line 96.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \facname with sig. ' ' on line 96.
+. Defining command \facname with sig. ' ' on line 97.
 .................................................
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -1794,7 +1794,7 @@ LaTeX Info: Redefining \pageref on input line 6372.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 106.
+(scrhack)             need that hack, on input line 107.
 
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -1811,17 +1811,17 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip70
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 106.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 106.
-Package hyperref Info: Option `colorlinks' set `true' on input line 106.
-Package hyperref Info: Option `unicode' set `true' on input line 106.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 107.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 107.
+Package hyperref Info: Option `colorlinks' set `true' on input line 107.
+Package hyperref Info: Option `unicode' set `true' on input line 107.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2016/05/05 v6.83n Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 106.
+Package hyperref Info: Option `breaklinks' set `true' on input line 107.
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (./main.aux
@@ -1898,48 +1898,48 @@ LaTeX Warning: Label `fig:se\IeC {\~n}ales' multiply defined.
 ) (./Chapters/Chapter6.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 106.
-LaTeX Font Info:    Try loading font information for MDA+cmr on input line 106.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for MDA/cmr/m/n on input line 107.
+LaTeX Font Info:    Try loading font information for MDA+cmr on input line 107.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mathdesign/mdacmr.fd
 File: mdacmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 106.
-LaTeX Font Info:    Try loading font information for MDB+cmr on input line 106.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for MDB/cmr/m/n on input line 107.
+LaTeX Font Info:    Try loading font information for MDB+cmr on input line 107.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mathdesign/mdbcmr.fd
 File: mdbcmr.fd 
 )
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 106.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 107.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 107.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
-LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 LaTeX Font Info:    Try loading font information for T1+AccanthisADFStdNoThree-
-LF on input line 106.
+LF on input line 107.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/accanthis/T1AccanthisADFStdNoThre
 e-LF.fd
@@ -1947,9 +1947,9 @@ File: T1AccanthisADFStdNoThree-LF.fd 2013/11/04 (autoinst) Font definitions for
  T1/AccanthisADFStdNoThree-LF.
 )
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 106.
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
+(Font)              scaled to size 10.95pt on input line 107.
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -2030,7 +2030,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 106.
+(scrlayer)             \begin{document} on input line 107.
 
 Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                Using scrlayer-scrpage the head height
@@ -2042,71 +2042,71 @@ Package scrlayer-scrpage Warning: Very small head height detected!
 (scrlayer-scrpage)                geometry option `head=21.89601pt'
 (scrlayer-scrpage)                to avoid this warning.
 
-LaTeX Info: Redefining \sptext on input line 106.
-LaTeX Info: Redefining \lsc on input line 106.
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
-LaTeX Info: Redefining \dotlessi on input line 106.
-Package scrbase Info: activating spanish \acknowledgementname on input line 106
+LaTeX Info: Redefining \sptext on input line 107.
+LaTeX Info: Redefining \lsc on input line 107.
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+LaTeX Info: Redefining \dotlessi on input line 107.
+Package scrbase Info: activating spanish \acknowledgementname on input line 107
 .
-LaTeX Info: Redefining \sptext on input line 106.
-LaTeX Info: Redefining \lsc on input line 106.
-LaTeX Info: Redefining \. on input line 106.
-LaTeX Info: Redefining \% on input line 106.
-LaTeX Info: Redefining \dotlessi on input line 106.
-Package scrbase Info: activating spanish \authorshipname on input line 106.
+LaTeX Info: Redefining \sptext on input line 107.
+LaTeX Info: Redefining \lsc on input line 107.
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+LaTeX Info: Redefining \dotlessi on input line 107.
+Package scrbase Info: activating spanish \authorshipname on input line 107.
 \c@mv@tabular=\count189
 \c@mv@boldtabular=\count190
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\ttitle' on input line 106.
+(hyperref)                removing `\ttitle' on input line 107.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\authorname' on input line 106.
+(hyperref)                removing `\authorname' on input line 107.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 106.
+(babel)             in language  on input line 107.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\keywordnames' on input line 106.
+(hyperref)                removing `\keywordnames' on input line 107.
 
 \AtBeginShipoutBox=\box56
-Package hyperref Info: Link coloring ON on input line 106.
+Package hyperref Info: Link coloring ON on input line 107.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -2115,9 +2115,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count191
 )
-LaTeX Info: Redefining \ref on input line 106.
-LaTeX Info: Redefining \pageref on input line 106.
-LaTeX Info: Redefining \nameref on input line 106.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
 
 (./main.out) (./main.out)
 \@outlinefile=\write3
@@ -2125,160 +2125,160 @@ LaTeX Info: Redefining \nameref on input line 106.
 
 \c__siunitx_mathsf_int=\count192
 LaTeX Font Info:    Try loading font information for OT1+mdbch on input line 10
-6.
+7.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mathdesign/mdbch/ot1mdbch.fd
 File: ot1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OT1/mdbch.
 )
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 106.
+(Font)              scaled to size 10.51207pt on input line 107.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 106.
+(Font)              scaled to size 7.68005pt on input line 107.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 106.
+(Font)              scaled to size 5.76004pt on input line 107.
 LaTeX Font Info:    Try loading font information for OML+mdbch on input line 10
-6.
+7.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mathdesign/mdbch/omlmdbch.fd
 File: omlmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OML/mdbch.
 )
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 10.51207pt on input line 106.
+(Font)              scaled to size 10.51207pt on input line 107.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 7.68005pt on input line 106.
+(Font)              scaled to size 7.68005pt on input line 107.
 LaTeX Font Info:    Font shape `OML/mdbch/m/it' will be
-(Font)              scaled to size 5.76004pt on input line 106.
+(Font)              scaled to size 5.76004pt on input line 107.
 LaTeX Font Info:    Try loading font information for OMS+mdbch on input line 10
-6.
+7.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mathdesign/mdbch/omsmdbch.fd
 File: omsmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMS/mdbch.
 )
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 106.
+(Font)              scaled to size 10.51207pt on input line 107.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 106.
+(Font)              scaled to size 7.68005pt on input line 107.
 LaTeX Font Info:    Font shape `OMS/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 106.
+(Font)              scaled to size 5.76004pt on input line 107.
 LaTeX Font Info:    Try loading font information for OMX+mdbch on input line 10
-6.
+7.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mathdesign/mdbch/omxmdbch.fd
 File: omxmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for OMX/mdbch.
 )
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 106.
+(Font)              scaled to size 10.51207pt on input line 107.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 106.
+(Font)              scaled to size 7.68005pt on input line 107.
 LaTeX Font Info:    Font shape `OMX/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 106.
+(Font)              scaled to size 5.76004pt on input line 107.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 106.
+(Font)              scaled to size 10.51207pt on input line 107.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 106.
+(Font)              scaled to size 7.68005pt on input line 107.
 LaTeX Font Info:    Font shape `OML/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 106.
+(Font)              scaled to size 5.76004pt on input line 107.
 LaTeX Font Info:    Try loading font information for MDA+mdbch on input line 10
-6.
+7.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mathdesign/mdbch/mdamdbch.fd
 File: mdamdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDA/mdbch.
 )
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 106.
+(Font)              scaled to size 10.51207pt on input line 107.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 106.
+(Font)              scaled to size 7.68005pt on input line 107.
 LaTeX Font Info:    Font shape `MDA/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 106.
+(Font)              scaled to size 5.76004pt on input line 107.
 LaTeX Font Info:    Try loading font information for MDB+mdbch on input line 10
-6.
+7.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/mathdesign/mdbch/mdbmdbch.fd
 File: mdbmdbch.fd 2013/08/29 Fontinst v1.933 font definitions for MDB/mdbch.
 )
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 106.
+(Font)              scaled to size 10.51207pt on input line 107.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 106.
+(Font)              scaled to size 7.68005pt on input line 107.
 LaTeX Font Info:    Font shape `MDB/mdbch/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 106.
+(Font)              scaled to size 5.76004pt on input line 107.
 LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 11.37706pt on input line 106.
+(Font)              scaled to size 11.37706pt on input line 107.
 LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 8.31201pt on input line 106.
+(Font)              scaled to size 8.31201pt on input line 107.
 LaTeX Font Info:    Font shape `T1/cmss/m/n' will be
-(Font)              scaled to size 6.23401pt on input line 106.
+(Font)              scaled to size 6.23401pt on input line 107.
 \c__siunitx_mathtt_int=\count193
 LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
-(Font)              scaled to size 11.73846pt on input line 106.
+(Font)              scaled to size 11.73846pt on input line 107.
 LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
-(Font)              scaled to size 8.57605pt on input line 106.
+(Font)              scaled to size 8.57605pt on input line 107.
 LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
-(Font)              scaled to size 6.43204pt on input line 106.
+(Font)              scaled to size 6.43204pt on input line 107.
 
 1: section
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/logo-ugr.png, id=168, 1101.11375pt x 1096.095pt>
+genes/logo-ugr.png, id=172, 1101.11375pt x 1096.095pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/logo-ugr.png Graphic file (type png)
 
 <use /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
 /Imagenes/logo-ugr.png>
 Package pdftex.def Info: /Users/jesusgarciamanday/Documents/Master/TFM/document
-ation/latex/thesis_1/Imagenes/logo-ugr.png used on input line 120.
+ation/latex/thesis_1/Imagenes/logo-ugr.png used on input line 121.
 (pdftex.def)             Requested size: 110.11783pt x 109.61592pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/logo-decsai.png, id=169, 233.87375pt x 283.0575pt>
+genes/logo-decsai.png, id=173, 233.87375pt x 283.0575pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/logo-decsai.png Graphic file (type png)
 
 <use /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
 /Imagenes/logo-decsai.png>
 Package pdftex.def Info: /Users/jesusgarciamanday/Documents/Master/TFM/document
-ation/latex/thesis_1/Imagenes/logo-decsai.png used on input line 123.
+ation/latex/thesis_1/Imagenes/logo-decsai.png used on input line 124.
 (pdftex.def)             Requested size: 81.85703pt x 99.0716pt.
 
 
 LaTeX Font Warning: Font shape `T1/AccanthisADFStdNoThree-LF/m/fscn' undefined
 (Font)              using `T1/AccanthisADFStdNoThree-LF/m/n' instead on input l
-ine 127.
+ine 128.
 
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/fscn' will be
-(Font)              scaled to size 17.28pt on input line 127.
+(Font)              scaled to size 17.28pt on input line 128.
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/fscn' will be
-(Font)              scaled to size 10.95pt on input line 128.
+(Font)              scaled to size 10.95pt on input line 129.
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/fscn' will be
-(Font)              scaled to size 14.4pt on input line 128.
+(Font)              scaled to size 14.4pt on input line 129.
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 132.
+(Font)              scaled to size 20.74pt on input line 133.
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 132.
+(Font)              scaled to size 20.74pt on input line 133.
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 136.
-LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/it' will be
 (Font)              scaled to size 12.0pt on input line 137.
+LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/it' will be
+(Font)              scaled to size 12.0pt on input line 138.
 
-Package hyperref Warning: Suppressing link with empty target on input line 138.
+Package hyperref Warning: Suppressing link with empty target on input line 139.
 
 
 
-Package hyperref Warning: Suppressing link with empty target on input line 140.
+Package hyperref Warning: Suppressing link with empty target on input line 141.
 
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 156.
+(babel)             in language  on input line 157.
 [1
 
 
@@ -2288,17 +2288,17 @@ jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Imagenes/lo
 go-ugr.png> </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/
 thesis_1/Imagenes/logo-decsai.png>]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 164.
  [2
 
 ]
@@ -2306,41 +2306,41 @@ Package babel Info: Redefining spanish shorthand "?
  Declaraci\IeC {\'o}n de autor\IeC {\'\i }a y originalidad
 --------------------
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 165.
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/b/n' will be
-(Font)              scaled to size 10.95pt on input line 165.
+(Font)              scaled to size 10.95pt on input line 166.
 
-Underfull \hbox (badness 10000) in paragraph at lines 165--167
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 165--167
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 170--171
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
@@ -2348,14 +2348,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 170--171
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/sl' in size <10.
 95> not available
 (Font)              Font shape `T1/AccanthisADFStdNoThree-LF/m/it' tried instea
-d on input line 174.
+d on input line 175.
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/it' will be
-(Font)              scaled to size 10.95pt on input line 174.
+(Font)              scaled to size 10.95pt on input line 175.
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/fscn' will be
-(Font)              scaled to size 8.0pt on input line 174.
+(Font)              scaled to size 8.0pt on input line 175.
 
 Package spanish Warning: Replacing `T1/AccanthisADFStdNoThree-LF/m/fscn' by 
-(spanish)                faked small caps on input line 174.
+(spanish)                faked small caps on input line 175.
 
 
 Package scrlayer-scrpage Warning: \headheight to low.
@@ -2366,37 +2366,37 @@ Package scrlayer-scrpage Warning: \headheight to low.
 (scrlayer-scrpage)                e.g., setting geometry's option
 (scrlayer-scrpage)                `head=21.896pt'.
 (scrlayer-scrpage)                I'll also decrease \topmargin on input line 1
-74.
+75.
 
 
 Overfull \vbox (1.67078pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 
 [3]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 174.
+(babel)             in language  on input line 175.
  [4
 
 ]
@@ -2404,51 +2404,51 @@ Package babel Info: Redefining spanish shorthand "?
  Resumen
 --------------------
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/it' will be
-(Font)              scaled to size 20.74pt on input line 190.
+(Font)              scaled to size 20.74pt on input line 191.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 192.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 192.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 192.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 192.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 192.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 191.
+(babel)             in language  on input line 192.
 1: section
 
 Package spanish Warning: Replacing `T1/AccanthisADFStdNoThree-LF/m/fscn' by 
-(spanish)                faked small caps on input line 199.
+(spanish)                faked small caps on input line 200.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 [5
 
 ]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 200.
  [6
 
 ]
@@ -2456,54 +2456,54 @@ Package babel Info: Redefining spanish shorthand "?
  Agradecimientos
 --------------------
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 200.
+(babel)             in language  on input line 201.
 1: section
 
 Package spanish Warning: Replacing `T1/AccanthisADFStdNoThree-LF/m/fscn' by 
-(spanish)                faked small caps on input line 208.
+(spanish)                faked small caps on input line 209.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 [7]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 208.
+(babel)             in language  on input line 209.
  [8
 
 ]
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 208.
+(Font)              scaled to size 24.88pt on input line 209.
 LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/b/n' will be
-(Font)              scaled to size 24.88pt on input line 208.
+(Font)              scaled to size 24.88pt on input line 209.
  (./main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2553,20 +2553,20 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 Package spanish Warning: Replacing `T1/AccanthisADFStdNoThree-LF/m/fscn' by 
-(spanish)                faked small caps on input line 210.
+(spanish)                faked small caps on input line 211.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 211.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 211.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 211.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 211.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 211.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 210.
+(babel)             in language  on input line 211.
 [10] (./main.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -2574,20 +2574,20 @@ LaTeX Info: Redefining \% on input line 1.
 1: section
 
 Package spanish Warning: Replacing `T1/AccanthisADFStdNoThree-LF/m/fscn' by 
-(spanish)                faked small caps on input line 71.
+(spanish)                faked small caps on input line 47.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 47.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 47.
 [11
 
 ])
@@ -2597,20 +2597,20 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 Package spanish Warning: Replacing `T1/AccanthisADFStdNoThree-LF/m/fscn' by 
-(spanish)                faked small caps on input line 264.
+(spanish)                faked small caps on input line 265.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 264.
+(babel)             in language  on input line 265.
 [12]
 1: section
 \openout2 = `Chapters/Chapter1.aux'.
@@ -2833,24 +2833,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 69--271
+Underfull \hbox (badness 10000) in paragraph at lines 69--272
 
  []
 
-LaTeX Info: Redefining \. on input line 271.
-LaTeX Info: Redefining \% on input line 271.
+LaTeX Info: Redefining \. on input line 272.
+LaTeX Info: Redefining \% on input line 272.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 272.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 272.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 272.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 272.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 272.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 272.
 [6]
 \openout2 = `Chapters/Chapter2.aux'.
 
@@ -2949,7 +2949,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img1.jpg, id=400, 602.25pt x 602.25pt>
+genes/tfm-img1.jpg, id=419, 602.25pt x 602.25pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img1.jpg Graphic file (type jpg)
 
@@ -2962,7 +2962,7 @@ LaTeX Font Info:    Font shape `T1/AccanthisADFStdNoThree-LF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 39.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img2.jpg, id=401, 602.25pt x 602.25pt>
+genes/tfm-img2.jpg, id=420, 602.25pt x 602.25pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img2.jpg Graphic file (type jpg)
 
@@ -2973,7 +2973,7 @@ ation/latex/thesis_1/Imagenes/tfm-img2.jpg used on input line 40.
 (pdftex.def)             Requested size: 113.81102pt x 113.80379pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img3.jpg, id=402, 903.375pt x 603.25375pt>
+genes/tfm-img3.jpg, id=421, 903.375pt x 603.25375pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img3.jpg Graphic file (type jpg)
 
@@ -2993,7 +2993,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img4.jpg, id=403, 917.4275pt x 608.2725pt>
+genes/tfm-img4.jpg, id=422, 917.4275pt x 608.2725pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img4.jpg Graphic file (type jpg)
 
@@ -3004,7 +3004,7 @@ ation/latex/thesis_1/Imagenes/tfm-img4.jpg used on input line 49.
 (pdftex.def)             Requested size: 142.26378pt x 94.31839pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img5.jpg, id=404, 436.63126pt x 290.08376pt>
+genes/tfm-img5.jpg, id=423, 436.63126pt x 290.08376pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img5.jpg Graphic file (type jpg)
 
@@ -3055,7 +3055,7 @@ arciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-img4
 .jpg> </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis
 _1/Imagenes/tfm-img5.jpg>]
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img6.jpg, id=418, 700.6175pt x 401.5pt>
+genes/tfm-img6.jpg, id=437, 700.6175pt x 401.5pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img6.jpg Graphic file (type jpg)
 
@@ -3066,7 +3066,7 @@ ation/latex/thesis_1/Imagenes/tfm-img6.jpg used on input line 59.
 (pdftex.def)             Requested size: 113.81102pt x 65.22153pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img7.png, id=419, 198.7425pt x 124.21407pt>
+genes/tfm-img7.png, id=438, 198.7425pt x 124.21407pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img7.png Graphic file (type png)
 
@@ -3077,7 +3077,7 @@ ation/latex/thesis_1/Imagenes/tfm-img7.png used on input line 60.
 (pdftex.def)             Requested size: 103.28351pt x 64.55376pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img8.jpg, id=421, 1204.5pt x 632.3625pt>
+genes/tfm-img8.jpg, id=440, 1204.5pt x 632.3625pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img8.jpg Graphic file (type jpg)
 
@@ -3213,7 +3213,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 86.
 [14]
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img9.png, id=447, 799.98875pt x 77.28876pt>
+genes/tfm-img9.png, id=466, 799.98875pt x 77.28876pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img9.png Graphic file (type png)
 
@@ -3317,7 +3317,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img10.png, id=459, 447.92343pt x 362.85562pt>
+genes/tfm-img10.png, id=479, 447.92343pt x 362.85562pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img10.png Graphic file (type png)
 
@@ -3394,7 +3394,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img11.jpg, id=471, 2559.5625pt x 3312.375pt>
+genes/tfm-img11.jpg, id=490, 2559.5625pt x 3312.375pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img11.jpg Graphic file (type jpg)
 
@@ -3466,7 +3466,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img12.png, id=482, 744.7825pt x 648.4225pt>
+genes/tfm-img12.png, id=501, 744.7825pt x 648.4225pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img12.png Graphic file (type png)
 
@@ -3604,7 +3604,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 186.
 [24]
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img13.jpg, id=506, 1027.84pt x 770.88pt>
+genes/tfm-img13.jpg, id=525, 1027.84pt x 770.88pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img13.jpg Graphic file (type jpg)
 
@@ -3615,7 +3615,7 @@ ation/latex/thesis_1/Imagenes/tfm-img13.jpg used on input line 189.
 (pdftex.def)             Requested size: 125.19212pt x 93.8896pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img14.png, id=507, 1027.84pt x 770.88pt>
+genes/tfm-img14.png, id=526, 1027.84pt x 770.88pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img14.png Graphic file (type png)
 
@@ -3626,7 +3626,7 @@ ation/latex/thesis_1/Imagenes/tfm-img14.png used on input line 190.
 (pdftex.def)             Requested size: 125.19212pt x 93.8896pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img15.png, id=508, 642.4pt x 502.87875pt>
+genes/tfm-img15.png, id=527, 642.4pt x 502.87875pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img15.png Graphic file (type png)
 
@@ -3748,20 +3748,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--219
  []
 
 )
-LaTeX Info: Redefining \. on input line 272.
-LaTeX Info: Redefining \% on input line 272.
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 273.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 273.
  [28]
 \openout2 = `Chapters/Chapter3.aux'.
 
@@ -3890,20 +3890,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-LaTeX Info: Redefining \. on input line 42.
-LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 42.
+(babel)             in language  on input line 39.
 [30]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 42.
@@ -4216,7 +4216,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img16.jpg, id=621, 321.2pt x 281.05pt>
+genes/tfm-img16.jpg, id=642, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img16.jpg Graphic file (type jpg)
 
@@ -4227,7 +4227,7 @@ ation/latex/thesis_1/Imagenes/tfm-img16.jpg used on input line 119.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img17.jpg, id=622, 321.2pt x 281.05pt>
+genes/tfm-img17.jpg, id=643, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img17.jpg Graphic file (type jpg)
 
@@ -4238,7 +4238,7 @@ ation/latex/thesis_1/Imagenes/tfm-img17.jpg used on input line 120.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img18.jpg, id=623, 321.2pt x 281.05pt>
+genes/tfm-img18.jpg, id=644, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img18.jpg Graphic file (type jpg)
 
@@ -4249,7 +4249,7 @@ ation/latex/thesis_1/Imagenes/tfm-img18.jpg used on input line 121.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img19.jpg, id=624, 321.2pt x 281.05pt>
+genes/tfm-img19.jpg, id=645, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img19.jpg Graphic file (type jpg)
 
@@ -4260,7 +4260,7 @@ ation/latex/thesis_1/Imagenes/tfm-img19.jpg used on input line 122.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img20.jpg, id=625, 321.2pt x 281.05pt>
+genes/tfm-img20.jpg, id=646, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img20.jpg Graphic file (type jpg)
 
@@ -4269,21 +4269,20 @@ File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 Package pdftex.def Info: /Users/jesusgarciamanday/Documents/Master/TFM/document
 ation/latex/thesis_1/Imagenes/tfm-img20.jpg used on input line 123.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
-)
-LaTeX Info: Redefining \. on input line 273.
-LaTeX Info: Redefining \% on input line 273.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 129.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 129.
  [39 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img16.jpg> </Users/jesusgarciamanday/Documents/Master/TFM/docume
 ntation/latex/thesis_1/Imagenes/tfm-img17.jpg> </Users/jesusgarciamanday/Docume
@@ -4291,27 +4290,125 @@ nts/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-img18.jpg> </Users/jes
 usgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-i
 mg19.jpg> </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/th
 esis_1/Imagenes/tfm-img20.jpg>]
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 129.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 129.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 129.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 129.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 129.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 129.
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+LaTeX Info: Redefining \. on input line 192.
+LaTeX Info: Redefining \% on input line 192.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 192.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 192.
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+LaTeX Info: Redefining \. on input line 208.
+LaTeX Info: Redefining \% on input line 208.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 208.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 208.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 208.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 208.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 208.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 208.
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+)
+LaTeX Info: Redefining \. on input line 274.
+LaTeX Info: Redefining \% on input line 274.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 274.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 274.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 274.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 274.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 274.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 274.
+ [42]
 \openout2 = `Chapters/Chapter4.aux'.
 
-
-(./Chapters/Chapter4.tex
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 3.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 3.
- [40
-
-
-
-]
+ (./Chapters/Chapter4.tex
 Cap\'{\i }tulo 4.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 3.
@@ -4365,7 +4462,11 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 25.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 25.
-[41]
+[43
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
@@ -4406,7 +4507,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 37.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 37.
-[42]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
@@ -4418,7 +4519,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img53.png, id=648, 296.10625pt x 246.9225pt>
+genes/tfm-img53.png, id=683, 296.10625pt x 246.9225pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img53.png Graphic file (type png)
 
@@ -4446,9 +4547,9 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 49.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 49.
-[43]
+[45]
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img54.png, id=656, 246.9225pt x 214.8025pt>
+genes/tfm-img54.png, id=688, 246.9225pt x 214.8025pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img54.png Graphic file (type png)
 
@@ -4459,7 +4560,7 @@ ation/latex/thesis_1/Imagenes/tfm-img54.png used on input line 52.
 (pdftex.def)             Requested size: 125.19212pt x 108.90541pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img55.png, id=657, 244.915pt x 214.8025pt>
+genes/tfm-img55.png, id=689, 244.915pt x 214.8025pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img55.png Graphic file (type png)
 
@@ -4487,7 +4588,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 59.
-[44 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
+[46 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
 /Imagenes/tfm-img53.png> </Users/jesusgarciamanday/Documents/Master/TFM/documen
 tation/latex/thesis_1/Imagenes/tfm-img54.png> </Users/jesusgarciamanday/Documen
 ts/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-img55.png>]
@@ -4523,7 +4624,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img56.png, id=670, 298.11375pt x 268.00125pt>
+genes/tfm-img56.png, id=700, 298.11375pt x 268.00125pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img56.png Graphic file (type png)
 
@@ -4534,7 +4635,7 @@ ation/latex/thesis_1/Imagenes/tfm-img56.png used on input line 94.
 (pdftex.def)             Requested size: 142.26378pt x 127.89487pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img57.png, id=671, 293.095pt x 272.01625pt>
+genes/tfm-img57.png, id=701, 293.095pt x 272.01625pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img57.png Graphic file (type png)
 
@@ -4545,7 +4646,7 @@ ation/latex/thesis_1/Imagenes/tfm-img57.png used on input line 95.
 (pdftex.def)             Requested size: 142.26378pt x 132.03148pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img58.png, id=672, 290.08376pt x 264.99pt>
+genes/tfm-img58.png, id=702, 290.08376pt x 264.99pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img58.png Graphic file (type png)
 
@@ -4556,7 +4657,7 @@ ation/latex/thesis_1/Imagenes/tfm-img58.png used on input line 96.
 (pdftex.def)             Requested size: 142.26378pt x 129.9554pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img59.png, id=673, 292.09125pt x 263.98625pt>
+genes/tfm-img59.png, id=703, 292.09125pt x 263.98625pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img59.png Graphic file (type png)
 
@@ -4567,7 +4668,7 @@ ation/latex/thesis_1/Imagenes/tfm-img59.png used on input line 97.
 (pdftex.def)             Requested size: 142.26378pt x 128.57697pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img60.png, id=674, 290.08376pt x 274.02374pt>
+genes/tfm-img60.png, id=704, 290.08376pt x 274.02374pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img60.png Graphic file (type png)
 
@@ -4620,7 +4721,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 249.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 249.
-[45]
+[47]
 LaTeX Info: Redefining \. on input line 249.
 LaTeX Info: Redefining \% on input line 249.
 Package babel Info: Redefining spanish shorthand <<
@@ -4635,7 +4736,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 249.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 249.
- [46 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
+ [48 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img56.png> </Users/jesusgarciamanday/Documents/Master/TFM/docume
 ntation/latex/thesis_1/Imagenes/tfm-img57.png> </Users/jesusgarciamanday/Docume
 nts/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-img58.png> </Users/jes
@@ -4643,7 +4744,7 @@ usgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-i
 mg59.png> </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/th
 esis_1/Imagenes/tfm-img60.png>]
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img36.png, id=699, 321.2pt x 281.05pt>
+genes/tfm-img36.png, id=729, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img36.png Graphic file (type png)
 
@@ -4654,7 +4755,7 @@ ation/latex/thesis_1/Imagenes/tfm-img36.png used on input line 252.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img37.png, id=700, 321.2pt x 281.05pt>
+genes/tfm-img37.png, id=730, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img37.png Graphic file (type png)
 
@@ -4665,7 +4766,7 @@ ation/latex/thesis_1/Imagenes/tfm-img37.png used on input line 253.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img38.png, id=701, 321.2pt x 281.05pt>
+genes/tfm-img38.png, id=731, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img38.png Graphic file (type png)
 
@@ -4676,7 +4777,7 @@ ation/latex/thesis_1/Imagenes/tfm-img38.png used on input line 254.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img39.png, id=702, 321.2pt x 281.05pt>
+genes/tfm-img39.png, id=732, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img39.png Graphic file (type png)
 
@@ -4687,7 +4788,7 @@ ation/latex/thesis_1/Imagenes/tfm-img39.png used on input line 255.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img46.png, id=703, 321.2pt x 281.05pt>
+genes/tfm-img46.png, id=733, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img46.png Graphic file (type png)
 
@@ -4698,7 +4799,7 @@ ation/latex/thesis_1/Imagenes/tfm-img46.png used on input line 256.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img47.png, id=704, 321.2pt x 281.05pt>
+genes/tfm-img47.png, id=734, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img47.png Graphic file (type png)
 
@@ -4709,7 +4810,7 @@ ation/latex/thesis_1/Imagenes/tfm-img47.png used on input line 257.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img32.jpg, id=705, 321.2pt x 281.05pt>
+genes/tfm-img32.jpg, id=735, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img32.jpg Graphic file (type jpg)
 
@@ -4720,7 +4821,7 @@ ation/latex/thesis_1/Imagenes/tfm-img32.jpg used on input line 263.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img33.jpg, id=706, 321.2pt x 281.05pt>
+genes/tfm-img33.jpg, id=736, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img33.jpg Graphic file (type jpg)
 
@@ -4731,7 +4832,7 @@ ation/latex/thesis_1/Imagenes/tfm-img33.jpg used on input line 264.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img34.jpg, id=707, 321.2pt x 281.05pt>
+genes/tfm-img34.jpg, id=737, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img34.jpg Graphic file (type jpg)
 
@@ -4742,7 +4843,7 @@ ation/latex/thesis_1/Imagenes/tfm-img34.jpg used on input line 265.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img35.jpg, id=708, 321.2pt x 281.05pt>
+genes/tfm-img35.jpg, id=738, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img35.jpg Graphic file (type jpg)
 
@@ -4753,7 +4854,7 @@ ation/latex/thesis_1/Imagenes/tfm-img35.jpg used on input line 266.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img44.jpg, id=709, 321.2pt x 281.05pt>
+genes/tfm-img44.jpg, id=739, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img44.jpg Graphic file (type jpg)
 
@@ -4764,7 +4865,7 @@ ation/latex/thesis_1/Imagenes/tfm-img44.jpg used on input line 267.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img45.jpg, id=710, 321.2pt x 281.05pt>
+genes/tfm-img45.jpg, id=740, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img45.jpg Graphic file (type jpg)
 
@@ -4775,7 +4876,7 @@ ation/latex/thesis_1/Imagenes/tfm-img45.jpg used on input line 268.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img40.png, id=711, 321.2pt x 281.05pt>
+genes/tfm-img40.png, id=741, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img40.png Graphic file (type png)
 
@@ -4786,7 +4887,7 @@ ation/latex/thesis_1/Imagenes/tfm-img40.png used on input line 274.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img41.png, id=712, 321.2pt x 281.05pt>
+genes/tfm-img41.png, id=742, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img41.png Graphic file (type png)
 
@@ -4797,7 +4898,7 @@ ation/latex/thesis_1/Imagenes/tfm-img41.png used on input line 275.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img42.png, id=713, 321.2pt x 281.05pt>
+genes/tfm-img42.png, id=743, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img42.png Graphic file (type png)
 
@@ -4808,7 +4909,7 @@ ation/latex/thesis_1/Imagenes/tfm-img42.png used on input line 276.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img43.png, id=714, 321.2pt x 281.05pt>
+genes/tfm-img43.png, id=744, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img43.png Graphic file (type png)
 
@@ -4819,7 +4920,7 @@ ation/latex/thesis_1/Imagenes/tfm-img43.png used on input line 277.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img48.png, id=715, 321.2pt x 281.05pt>
+genes/tfm-img48.png, id=745, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img48.png Graphic file (type png)
 
@@ -4830,7 +4931,7 @@ ation/latex/thesis_1/Imagenes/tfm-img48.png used on input line 278.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img49.png, id=716, 321.2pt x 281.05pt>
+genes/tfm-img49.png, id=746, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img49.png Graphic file (type png)
 
@@ -4841,7 +4942,7 @@ ation/latex/thesis_1/Imagenes/tfm-img49.png used on input line 279.
 (pdftex.def)             Requested size: 125.19212pt x 109.54044pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img61.jpg, id=717, 216.81pt x 216.81pt>
+genes/tfm-img61.jpg, id=747, 216.81pt x 216.81pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img61.jpg Graphic file (type jpg)
 
@@ -4852,7 +4953,7 @@ ation/latex/thesis_1/Imagenes/tfm-img61.jpg used on input line 286.
 (pdftex.def)             Requested size: 125.19212pt x 125.19409pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img62.jpg, id=718, 220.825pt x 220.825pt>
+genes/tfm-img62.jpg, id=748, 220.825pt x 220.825pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img62.jpg Graphic file (type jpg)
 
@@ -4863,7 +4964,7 @@ ation/latex/thesis_1/Imagenes/tfm-img62.jpg used on input line 287.
 (pdftex.def)             Requested size: 125.19212pt x 125.19427pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img63.jpg, id=719, 220.825pt x 220.825pt>
+genes/tfm-img63.jpg, id=749, 220.825pt x 220.825pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img63.jpg Graphic file (type jpg)
 
@@ -4874,7 +4975,7 @@ ation/latex/thesis_1/Imagenes/tfm-img63.jpg used on input line 288.
 (pdftex.def)             Requested size: 125.19212pt x 125.19427pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img64.jpg, id=720, 208.78pt x 208.78pt>
+genes/tfm-img64.jpg, id=750, 208.78pt x 208.78pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img64.jpg Graphic file (type jpg)
 
@@ -4885,7 +4986,7 @@ ation/latex/thesis_1/Imagenes/tfm-img64.jpg used on input line 289.
 (pdftex.def)             Requested size: 125.19212pt x 125.19568pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img65.jpg, id=721, 206.7725pt x 206.7725pt>
+genes/tfm-img65.jpg, id=751, 206.7725pt x 206.7725pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img65.jpg Graphic file (type jpg)
 
@@ -4896,7 +4997,7 @@ ation/latex/thesis_1/Imagenes/tfm-img65.jpg used on input line 290.
 (pdftex.def)             Requested size: 125.19212pt x 125.19397pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img66.jpg, id=722, 212.795pt x 212.795pt>
+genes/tfm-img66.jpg, id=752, 212.795pt x 212.795pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img66.jpg Graphic file (type jpg)
 
@@ -4934,7 +5035,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 296.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 296.
-[47]
+[49]
 LaTeX Info: Redefining \. on input line 296.
 LaTeX Info: Redefining \% on input line 296.
 Package babel Info: Redefining spanish shorthand <<
@@ -4949,7 +5050,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 296.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 296.
- [48 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
+ [50 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img36.png (PNG copy)> </Users/jesusgarciamanday/Documents/Master
 /TFM/documentation/latex/thesis_1/Imagenes/tfm-img37.png (PNG copy)> </Users/je
 susgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-
@@ -4980,7 +5081,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 296.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 296.
- [49 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
+ [51 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img40.png (PNG copy)> </Users/jesusgarciamanday/Documents/Master
 /TFM/documentation/latex/thesis_1/Imagenes/tfm-img41.png (PNG copy)> </Users/je
 susgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-
@@ -4998,7 +5099,7 @@ tion/latex/thesis_1/Imagenes/tfm-img64.jpg> </Users/jesusgarciamanday/Documents
 arciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-img6
 6.jpg>]
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img50.jpg, id=761, 234.8775pt x 146.5475pt>
+genes/tfm-img50.jpg, id=790, 234.8775pt x 146.5475pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img50.jpg Graphic file (type jpg)
 
@@ -5047,23 +5148,23 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 327.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 327.
-[50 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
+[52 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
 /Imagenes/tfm-img50.jpg>])
-LaTeX Info: Redefining \. on input line 274.
-LaTeX Info: Redefining \% on input line 274.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 275.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 274.
- [51]
+(babel)             in language  on input line 275.
+ [53]
 \openout2 = `Chapters/Chapter5.aux'.
 
  (./Chapters/Chapter5.tex
@@ -5079,7 +5180,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 3.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 3.
- [52
+ [54
 
 
 
@@ -5137,7 +5238,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 23.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 23.
-[53]
+[55]
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
@@ -5161,7 +5262,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 25.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 25.
-[54]
+[56]
 Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
@@ -5202,7 +5303,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 36.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 36.
-[55]
+[57]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 38.
 Package babel Info: Redefining spanish shorthand >>
@@ -5232,7 +5333,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img21.jpg, id=797, 232.87pt x 232.87pt>
+genes/tfm-img21.jpg, id=826, 232.87pt x 232.87pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img21.jpg Graphic file (type jpg)
 
@@ -5243,7 +5344,7 @@ ation/latex/thesis_1/Imagenes/tfm-img21.jpg used on input line 44.
 (pdftex.def)             Requested size: 125.19212pt x 125.19005pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img22.jpg, id=798, 232.87pt x 232.87pt>
+genes/tfm-img22.jpg, id=827, 232.87pt x 232.87pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img22.jpg Graphic file (type jpg)
 
@@ -5283,7 +5384,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 53.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 53.
-[56]
+[58]
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
@@ -5302,7 +5403,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 55.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 55.
-[57 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
+[59 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
 /Imagenes/tfm-img21.jpg> </Users/jesusgarciamanday/Documents/Master/TFM/documen
 tation/latex/thesis_1/Imagenes/tfm-img22.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
@@ -5321,7 +5422,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img24.jpg, id=810, 321.2pt x 281.05pt>
+genes/tfm-img24.jpg, id=839, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img24.jpg Graphic file (type jpg)
 
@@ -5332,7 +5433,7 @@ ation/latex/thesis_1/Imagenes/tfm-img24.jpg used on input line 64.
 (pdftex.def)             Requested size: 142.26378pt x 124.48148pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img25.png, id=811, 321.2pt x 281.05pt>
+genes/tfm-img25.png, id=840, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img25.png Graphic file (type png)
 
@@ -5343,7 +5444,7 @@ ation/latex/thesis_1/Imagenes/tfm-img25.png used on input line 65.
 (pdftex.def)             Requested size: 142.26378pt x 124.48148pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img26.png, id=812, 321.2pt x 281.05pt>
+genes/tfm-img26.png, id=841, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img26.png Graphic file (type png)
 
@@ -5354,7 +5455,7 @@ ation/latex/thesis_1/Imagenes/tfm-img26.png used on input line 66.
 (pdftex.def)             Requested size: 142.26378pt x 124.48148pt.
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img27.png, id=813, 321.2pt x 281.05pt>
+genes/tfm-img27.png, id=842, 321.2pt x 281.05pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img27.png Graphic file (type png)
 
@@ -5418,7 +5519,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 72.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 72.
-[58 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
+[60 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
 /Imagenes/tfm-img24.jpg> </Users/jesusgarciamanday/Documents/Master/TFM/documen
 tation/latex/thesis_1/Imagenes/tfm-img25.png (PNG copy)> </Users/jesusgarciaman
 day/Documents/Master/TFM/documentation/latex/thesis_1/Imagenes/tfm-img26.png (P
@@ -5430,7 +5531,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
 
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img51.png, id=825, 425.59pt x 314.17375pt>
+genes/tfm-img51.png, id=854, 425.59pt x 314.17375pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img51.png Graphic file (type png)
 
@@ -5465,7 +5566,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 86.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 86.
- [59]
+ [61]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 92.
@@ -5485,7 +5586,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 96.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 96.
-[60 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
+[62 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1
 /Imagenes/tfm-img51.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
@@ -5538,7 +5639,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 119.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 119.
-[61]
+[63]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 125.
@@ -5585,7 +5686,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 158.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 158.
-[62]
+[64]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 162.
@@ -5627,9 +5728,9 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 169.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 169.
-[63]
+[65]
 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_1/Ima
-genes/tfm-img52.png, id=862, 189.70876pt x 159.59625pt>
+genes/tfm-img52.png, id=891, 189.70876pt x 159.59625pt>
 File: /Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img52.png Graphic file (type png)
 
@@ -5639,21 +5740,21 @@ Package pdftex.def Info: /Users/jesusgarciamanday/Documents/Master/TFM/document
 ation/latex/thesis_1/Imagenes/tfm-img52.png used on input line 172.
 (pdftex.def)             Requested size: 170.71652pt x 143.62067pt.
 )
-LaTeX Info: Redefining \. on input line 275.
-LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 276.
+LaTeX Info: Redefining \% on input line 276.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 275.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 275.
- [64 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
+(babel)             in language  on input line 276.
+ [66 </Users/jesusgarciamanday/Documents/Master/TFM/documentation/latex/thesis_
 1/Imagenes/tfm-img52.png>]
 \openout2 = `Chapters/Chapter6.aux'.
 
@@ -5699,7 +5800,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 24.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 24.
-[65
+[67
 
 
 
@@ -5732,7 +5833,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 30.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 30.
-[66]
+[68]
 Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
@@ -5778,7 +5879,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 43.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 43.
-[67]
+[69]
 Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
@@ -5819,7 +5920,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 59.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 59.
-[68]
+[70]
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
  []
@@ -5835,25 +5936,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 64--65
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 66--276
+Underfull \hbox (badness 10000) in paragraph at lines 66--277
 
  []
 
-LaTeX Info: Redefining \. on input line 276.
-LaTeX Info: Redefining \% on input line 276.
+LaTeX Info: Redefining \. on input line 277.
+LaTeX Info: Redefining \% on input line 277.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 277.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 277.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 277.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 277.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 276.
+(babel)             in language  on input line 277.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 276.
-[69] (./main.bbl
+(babel)             in language  on input line 277.
+[71] (./main.bbl
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 8.
 Package babel Info: Redefining spanish shorthand >>
@@ -5866,7 +5967,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 8.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 8.
- [70
+ [72
 
 
 ]
@@ -5883,7 +5984,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 57.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 57.
-[71]
+[73]
 LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
 Package babel Info: Redefining spanish shorthand <<
@@ -5898,34 +5999,34 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 112.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 112.
- [72])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
-LaTeX Info: Redefining \. on input line 301.
-LaTeX Info: Redefining \% on input line 301.
+ [74])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
+LaTeX Info: Redefining \. on input line 302.
+LaTeX Info: Redefining \% on input line 302.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 301.
- [73]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+(babel)             in language  on input line 302.
+ [75]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (./main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
  (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux) (./Chapters/Chapter3.aux) 
 (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Chapters/Chapter6.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 312F6062A0CAD3369F3193E054CDC673;7312.
+(rerunfilecheck)             Checksum: 96732163CB7DAB7FE042409C53CEA92B;7412.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -5935,10 +6036,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30218 strings out of 493014
- 624500 string characters out of 6133351
- 609280 words of memory out of 5000000
- 33017 multiletter control sequences out of 15000+600000
+ 30230 strings out of 493014
+ 624676 string characters out of 6133351
+ 609264 words of memory out of 5000000
+ 33018 multiletter control sequences out of 15000+600000
  90820 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,22n,81p,10377b,1138s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -5955,10 +6056,10 @@ ts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2016/texmf-dist/fonts
 /fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb></usr/local/texlive/2016/texm
 f-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb>
-Output written on main.pdf (85 pages, 5731843 bytes).
+Output written on main.pdf (87 pages, 5738477 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
- 820 compressed objects within 9 object streams
- 262 named destinations out of 1000 (max. 500000)
- 644 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1035 PDF objects out of 1200 (max. 8388607)
+ 849 compressed objects within 9 object streams
+ 273 named destinations out of 1000 (max. 500000)
+ 652 words of extra memory for PDF output out of 10000 (max. 10000000)
 
