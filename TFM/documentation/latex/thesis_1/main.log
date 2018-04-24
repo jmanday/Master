@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.21)  23 APR 2018 22:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.4.21)  24 APR 2018 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4891,6 +4891,61 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
+
+ []
+
 LaTeX Info: Redefining \. on input line 249.
 LaTeX Info: Redefining \% on input line 249.
 Package babel Info: Redefining spanish shorthand <<
@@ -6240,7 +6295,7 @@ ts/type1/bitstrea/charter/bchri8a.pfb></usr/local/texlive/2017/texmf-dist/fonts
 /fonts/type1/public/mathdesign/mdbch/md-chr7v.pfb></usr/local/texlive/2017/texm
 f-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb></usr/local/texlive/201
 7/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chri7m.pfb>
-Output written on main.pdf (91 pages, 5850375 bytes).
+Output written on main.pdf (91 pages, 5850312 bytes).
 PDF statistics:
  1072 PDF objects out of 1200 (max. 8388607)
  872 compressed objects within 9 object streams
