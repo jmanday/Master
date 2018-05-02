@@ -9,10 +9,43 @@
 
 
 import os
-import commands
+import subprocess
+from subprocess import Popen, PIPE
 import sys
 import shutil
 
+# método para copiar ficheros a un directorio destino
+def copyFilesToPath(originPath, destinyPath, formatFile):
+    originDirec = os.chdir(originPath)
+    files = os.listdir(originDirec)
+    
+    
+    #proc = subprocess.Popen('ls', stdout=subprocess.PIPE)
+    #output = proc.stdout.read() 
+    #output = output.decode("utf-8")
+    #files = output.split()
+    
+    for f in files:
+        if f.split(".")[len(f.split(".")) - 1] == formatFile:
+            shutil.copy(f, destinyPath + f)
+    
+
+    
+    #proc2 = subprocess.Popen(['cat', aux[1]], stdout=subprocess.PIPE)
+    #output2 = proc2.stdout.read()
+    #print(output2)
+    #aux2 = output2.split()
+    #print(aux2[1])
+    
+    # the function call Popen start a process in Python. You can start any program with any parameter
+    #process = Popen(['cat', aux[1]], stdout=PIPE, stderr=PIPE) 
+    
+    # Reads input and output from the process. 'stdout' is the process out and 'stderr' will be write
+    #   only if an error occurs. If you want to wait for the program to finish you can call Popen.wait()
+    #stdout, stderr = process.communicate()
+    #print(stdout)
+    
+    
 
 # método modifica el nombre a ficheros
 def changeNameFiles(path):
@@ -55,3 +88,7 @@ def transpose(matrix):
 
     matrix = maux
     return matrix
+
+
+if __name__ == "__main__":
+    copyFilesToPath(sys.argv[1], sys.argv[2], sys.argv[3])
