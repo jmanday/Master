@@ -6,6 +6,12 @@
 ### @Descripcion: script para realizar la segmentación de las imágenes de
 ###             iris a través de los datos conocidos de su centro y radio 
 ###             de las circunferencias que lo delimitan
+###
+### @Output: devuelve la segmentación del iris de cada imagen que se encuentra
+###             en el path indicado
+###
+### @Execute: la ejecución del script sería sin parámetros
+###             python segmentation-iris.py
 #########################################################################
 
 
@@ -19,7 +25,7 @@ from PIL import Image
 
 PATH_DATABASES_IMAGES = "/Users/jesusgarciamanday/Documents/Master/TFM/databases/images/"
 PATH_DATABASES_DATAS = "/Users/jesusgarciamanday/Documents/Master/TFM/databases/datas/"
-PATH_DATABASES_IMAGES_SEGMENTED = "/Users/jesusgarciamanday/Documents/Master/TFM/databases/images-segmented/"
+PATH_DATABASES_SEGMENTED_IMAGES = "/Users/jesusgarciamanday/Documents/Master/TFM/databases/segmented-images/"
 
 class DatasIris:
     
@@ -38,7 +44,7 @@ class DatasIris:
 def crop(image_path, coords, saved_location):
     image_obj = Image.open(PATH_DATABASES_IMAGES + image_path)
     cropped_image = image_obj.crop(coords)
-    cropped_image.save(PATH_DATABASES_IMAGES_SEGMENTED + saved_location)
+    cropped_image.save(PATH_DATABASES_SEGMENTED_IMAGES + saved_location)
 
     
 def segmentationIris(filesImages, filesDatas):
@@ -58,7 +64,7 @@ def segmentationIris(filesImages, filesDatas):
         
     for (fi,di) in zip(filesImages, datasIris):
         #cropped = img1[di.startX:di.startY, di.endX:di.endY]
-        #cv2.imwrite(PATH_DATABASES_IMAGES_SEGMENTED + fi, cropped)   
+        #cv2.imwrite(PATH_DATABASES_SEGMENTED_IMAGES + fi, cropped)   
         crop(fi, (di.startX, di.startY, di.endX, di.endY), fi)
         
 

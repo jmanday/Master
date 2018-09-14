@@ -10,61 +10,121 @@
 ###             cercano para encontar los mejores resultados    
 #########################################################################
 
+import os
+import sys
 import numpy as np
 import cv2
 import matplotlib  
 matplotlib.use('TkAgg')   
 import matplotlib.pyplot as plt 
+import csv
 
-img1 = cv2.imread('thumbnail.png',0) # queryImage
-img2 = cv2.imread('thumbnail.png',0) # trainImage
-imgOut = cv2.imread('S1001L05.jpg',0) 
+PATH_DATABASES_TRAIN_IMAGES = "/Users/jesusgarciamanday/Documents/Master/TFM/databases/train-images3/" #fuente de datos de imágenes segmentadas para comparar
+PATH_DATABASES_QUERY_IMAGES = "/Users/jesusgarciamanday/Documents/Master/TFM/databases/query-images3/" #fuente de datos de imágenes a clasificar
 
-# Initiate SIFT detector
-sift = cv2.xfeatures2d.SIFT_create()
+class DataMatching:
 
-# find the keypoints and descriptors with SIFT
-kp1, des1 = sift.detectAndCompute(img1,None)
-kp2, des2 = sift.detectAndCompute(img2,None)
-
-# FLANN parameters
-FLANN_INDEX_KDTREE = 1
-index_params = dict(algorithm = FLANN_INDEX_KDTREE, trees = 5)
-search_params = dict(checks=50)   # or pass empty dictionary
-
-flann = cv2.FlannBasedMatcher(index_params,search_params)
-
-matches = flann.knnMatch(des1,des2,k=2)
-
-max_dist = 0
-min_dist = 100
-
-for m, n in matches:
-    dist = m.distance
-    if dist < min_dist:
-        min_dist = dist
-    if dist > max_dist:
-        max_dist = dist       
-
-# Need to draw only good matches, so create a mask
-matchesMask = [[0,0] for i in range(len(matches))]
-
-good = []
-for i,(m,n) in enumerate(matches):
-    if m.distance < max(2*min_dist, 0.02):
-        good.append([m])
+    def __init__(self, imageSegmented, imageClassifier, value):
+        self.imageSegmented = imageSegmented
+        self.imageClassifier = imageClassifier
+        self.value = value
         
-print(len(good))        
-# ratio test as per Lowe's paper
-#for i,(m,n) in enumerate(matches):
-#    if m.distance < 0.7*n.distance:
-#        matchesMask[i]=[1,0]
         
-draw_params = dict(matchColor = (0,255,0),
-                   singlePointColor = (255,0,0),
-                   matchesMask = matchesMask,
-                   flags = 0)
+def getNameFile(file):
+    fileName = ""
+    
+    if (len(file.split("R")) > 1):
+            fileName = file.split("R")[0]
+    else:  
+        if (len(file.split("L")) > 1):
+            fileName = file.split("L")[0] 
+    
+    return fileName
 
-print(len(matchesMask))
-img3 = cv2.drawMatchesKnn(img1,kp1,img2,kp2,matches,None,**draw_params)
-plt.imshow(img3,),plt.show()
+
+def matchingFlannBased(filesTrainImages, filesQueryImages):
+    valuesDataMatching = []
+    results = []
+    
+    filesTrainImages.sort()
+    filesQueryImages.sort()
+    
+    # Initiate SIFT detector
+    sift = cv2.xfeatures2d.SIFT_create()
+    
+    for fImgQuery in filesQueryImages:
+        nMatch = 0
+        index = 0
+        firstImage = ""
+        imgQuery = cv2.imread(PATH_DATABASES_QUERY_IMAGES + fImgQuery,0)
+        
+        nameImgQuery = getNameFile(fImgQuery)
+        
+        for fImgTrain in filesTrainImages:
+            imgSeg = cv2.imread(PATH_DATABASES_TRAIN_IMAGES + fImgTrain,0)
+            
+            nameImgTrain  = getNameFile(fImgTrain)
+            
+            # find the keypoints and descriptors with SIFT
+            kp1, des1 = sift.detectAndCompute(imgQuery,None)
+            kp2, des2 = sift.detectAndCompute(imgSeg,None)
+            
+    
+            # FLANN parameters
+            FLANN_INDEX_KDTREE = 0
+            index_params = dict(algorithm = FLANN_INDEX_KDTREE, trees = 5)
+            search_params = dict(checks=100)   # or pass empty dictionary
+
+            flann = cv2.FlannBasedMatcher(index_params,search_params)
+            matches = flann.knnMatch(des1,des2,k=2)
+
+            #print(len(matches[0]))
+            #max_dist = 0
+            #min_dist = 100
+
+            #for m, n in matches:
+            #    dist = m.distance
+            #    if dist < min_dist:
+            #        min_dist = dist
+            #    if dist > max_dist:
+            #        max_dist = dist 
+                    
+            good = []
+            i = 0
+            for m,n in matches:
+                if m.distance < 0.75*n.distance:
+                    good.append([m])
+
+                    #for i,(m,n) in enumerate(matches):
+            #    if m.distance < max(2*min_dist, 0.02):
+            #        good.append([m])
+            
+            if ((nameImgTrain == firstImage) or (firstImage == "")):
+                nMatch = nMatch + len(good)
+            else:
+                valuesDataMatching.append({"imageQuery": nameImgQuery, "imageTrain": firstImage, "value": nMatch})        
+                nMatch = len(good)
+                
+            firstImage = nameImgTrain
+        
+        firstImage = ""
+        nMatch = 0
+        
+        valM = max(valuesDataMatching, key=lambda item:item['value'])
+        print(valM)
+        results.append(valM)
+        valuesDataMatching = []
+        
+    with open('results2-FlannBased-SIFT.csv', 'w') as csvfile:
+        filewriter = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+        filewriter.writerow(['Image Query', 'Image Train', "Value matching"])
+        
+        for rs in results:
+            filewriter.writerow([rs['imageQuery'], rs['imageTrain'], rs['value']])
+        
+
+if __name__ == "__main__":
+    filesTrainImages = os.listdir(PATH_DATABASES_TRAIN_IMAGES)
+    filesQueryImages = os.listdir(PATH_DATABASES_QUERY_IMAGES)
+    matchingFlannBased(filesTrainImages, filesQueryImages)
+    #extra()

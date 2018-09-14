@@ -4,6 +4,12 @@
 ### Jesus Garcia Manday
 ### medianBlur.py
 ### @Descripcion: script to remove noise and apply blur the images
+###
+### @Params: the image to process
+###
+### @Output: the image with the operations applied
+###
+### @Execute: python segmentation-iris.py name-Image
 #########################################################################
 
 import numpy as np
