@@ -1,43 +1,46 @@
 \select@language {spanish}
-\contentsline {chapter}{Declaraci\IeC {\'o}n de autor\IeC {\'\i }a y originalidad}{\es@scroman {iii}}{section*.1}
-\contentsline {chapter}{Abstract}{\es@scroman {v}}{section*.2}
-\contentsline {chapter}{Agradecimientos}{\es@scroman {vii}}{section*.3}
-\contentsline {chapter}{\numberline {1}Intoducci\IeC {\'o}n general y motivaci\IeC {\'o}n}{1}{chapter.6}
-\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n}{1}{section.7}
-\contentsline {section}{\numberline {1.2}Objetivo y motivaci\IeC {\'o}n}{3}{section.8}
-\contentsline {section}{\numberline {1.3}Descripci\IeC {\'o}n de la memoria}{5}{section.9}
-\contentsline {chapter}{\numberline {2}Reconocimiento de iris}{7}{chapter.10}
-\contentsline {section}{\numberline {2.1}Sistemas de reconocimiento}{8}{section.11}
-\contentsline {subsection}{\numberline {2.1.1}Reconocimiento de patrones}{12}{subsection.23}
-\contentsline {subsection}{\numberline {2.1.2}Componentes de los sistemas de reconocimiento de patrones}{14}{subsection.24}
-\contentsline {section}{\numberline {2.2}Biometr\IeC {\'\i }a}{16}{section.27}
-\contentsline {subsection}{\numberline {2.2.1}Sistemas biom\IeC {\'e}tricos}{16}{subsection.28}
-\contentsline {subsection}{\numberline {2.2.2}Anatom\IeC {\'\i }a del iris}{18}{subsection.31}
-\contentsline {section}{\numberline {2.3}Reconocimiento de iris}{20}{section.34}
-\contentsline {subsection}{\numberline {2.3.1}Etapas del reconocimiento de iris}{21}{subsection.37}
-\contentsline {section}{\numberline {2.4}Reconocimiento de iris en condiciones no ideales}{24}{section.38}
-\contentsline {subsection}{\numberline {2.4.1}Factores de calidad}{25}{subsection.43}
-\contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as y herramientas en el reconocimiento de iris}{29}{chapter.44}
-\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{29}{section.45}
-\contentsline {section}{\numberline {3.2}OpenCV}{30}{section.51}
-\contentsline {section}{\numberline {3.3}Boost}{31}{section.52}
-\contentsline {section}{\numberline {3.4}USIT}{31}{section.53}
-\contentsline {section}{\numberline {3.5}CASIA-Iris}{38}{section.54}
-\contentsline {section}{\numberline {3.6}LIP-VIREO}{40}{section.61}
-\contentsline {chapter}{\numberline {4}Segmentaci\IeC {\'o}n del iris}{47}{chapter.75}
-\contentsline {section}{\numberline {4.1}Introducci\IeC {\'o}n}{47}{section.76}
-\contentsline {section}{\numberline {4.2}Descripci\IeC {\'o}n del m\IeC {\'e}todo empleado}{49}{section.77}
-\contentsline {section}{\numberline {4.3}Experimentaciones}{53}{section.98}
-\contentsline {section}{\numberline {4.4}Conclusiones}{57}{section.131}
-\contentsline {chapter}{\numberline {5}Extracci\IeC {\'o}n de caracter\IeC {\'\i }sticas del iris en condiciones no ideales}{59}{chapter.132}
-\contentsline {section}{\numberline {5.1}Introducci\IeC {\'o}n}{59}{section.133}
-\contentsline {section}{\numberline {5.2}Descripci\IeC {\'o}n del m\IeC {\'e}todo propuesto}{62}{section.134}
-\contentsline {subsection}{\numberline {5.2.1}Tratamiento de la textura del iris}{62}{subsection.135}
-\contentsline {subsection}{\numberline {5.2.2}Extracci\IeC {\'o}n de las caracter\IeC {\'\i }sticas basada en puntos de inter\IeC {\'e}s}{63}{subsection.139}
-\contentsline {subsubsection}{Harris-Laplace}{66}{section*.147}
-\contentsline {subsubsection}{Hessian-Laplace}{68}{section*.151}
-\contentsline {subsubsection}{Fast-Hessian}{69}{section*.157}
-\contentsline {subsubsection}{SIFT}{69}{section*.159}
-\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{71}{chapter.162}
-\contentsline {section}{\numberline {6.1}Trabajos futuros}{73}{section.163}
-\contentsline {section}{\numberline {6.2}Descripci\IeC {\'o}n de la memoria}{75}{section.164}
+\contentsline {chapter}{Abstract}{\es@scroman {iii}}{section*.1}
+\contentsline {chapter}{Agradecimientos}{\es@scroman {v}}{section*.2}
+\contentsline {chapter}{\numberline {1}Intoducci\IeC {\'o}n general y motivaci\IeC {\'o}n}{1}{chapter.5}
+\contentsline {section}{\numberline {1.1}Introducci\IeC {\'o}n}{1}{section.6}
+\contentsline {section}{\numberline {1.2}Objetivo y motivaci\IeC {\'o}n}{3}{section.7}
+\contentsline {section}{\numberline {1.3}Descripci\IeC {\'o}n de la memoria}{5}{section.8}
+\contentsline {chapter}{\numberline {2}Reconocimiento de iris}{7}{chapter.9}
+\contentsline {section}{\numberline {2.1}Sistemas de reconocimiento}{8}{section.10}
+\contentsline {subsection}{\numberline {2.1.1}Reconocimiento de patrones}{12}{subsection.22}
+\contentsline {subsection}{\numberline {2.1.2}Componentes de los sistemas de reconocimiento de patrones}{14}{subsection.23}
+\contentsline {section}{\numberline {2.2}Biometr\IeC {\'\i }a}{16}{section.26}
+\contentsline {subsection}{\numberline {2.2.1}Sistemas biom\IeC {\'e}tricos}{16}{subsection.27}
+\contentsline {subsection}{\numberline {2.2.2}Anatom\IeC {\'\i }a del iris}{18}{subsection.30}
+\contentsline {section}{\numberline {2.3}Reconocimiento de iris}{20}{section.33}
+\contentsline {subsection}{\numberline {2.3.1}Etapas del reconocimiento de iris}{21}{subsection.36}
+\contentsline {section}{\numberline {2.4}Reconocimiento de iris en condiciones no ideales}{24}{section.37}
+\contentsline {subsection}{\numberline {2.4.1}Factores de calidad}{25}{subsection.42}
+\contentsline {chapter}{\numberline {3}Tecnolog\IeC {\'\i }as y herramientas en el reconocimiento de iris}{29}{chapter.43}
+\contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{29}{section.44}
+\contentsline {section}{\numberline {3.2}OpenCV}{30}{section.50}
+\contentsline {section}{\numberline {3.3}Boost}{31}{section.51}
+\contentsline {section}{\numberline {3.4}USIT}{31}{section.52}
+\contentsline {section}{\numberline {3.5}CASIA-Iris}{38}{section.53}
+\contentsline {section}{\numberline {3.6}LIP-VIREO}{40}{section.60}
+\contentsline {chapter}{\numberline {4}Segmentaci\IeC {\'o}n del iris}{47}{chapter.74}
+\contentsline {section}{\numberline {4.1}Introducci\IeC {\'o}n}{47}{section.75}
+\contentsline {section}{\numberline {4.2}Descripci\IeC {\'o}n del m\IeC {\'e}todo empleado}{49}{section.76}
+\contentsline {section}{\numberline {4.3}Experimentaciones}{54}{section.93}
+\contentsline {section}{\numberline {4.4}Conclusiones}{58}{section.126}
+\contentsline {chapter}{\numberline {5}Reconocimiento del iris}{59}{chapter.127}
+\contentsline {section}{\numberline {5.1}Introducci\IeC {\'o}n}{59}{section.128}
+\contentsline {section}{\numberline {5.2}Descripci\IeC {\'o}n del m\IeC {\'e}todo propuesto}{62}{section.129}
+\contentsline {subsection}{\numberline {5.2.1}Tratamiento de la textura del iris}{62}{subsection.130}
+\contentsline {subsection}{\numberline {5.2.2}Extracci\IeC {\'o}n de las caracter\IeC {\'\i }sticas basada en puntos de inter\IeC {\'e}s}{63}{subsection.134}
+\contentsline {subsubsection}{Harris-Laplace}{65}{section*.144}
+\contentsline {subsubsection}{Hessian-Laplace}{68}{section*.148}
+\contentsline {subsubsection}{Fast-Hessian}{69}{section*.154}
+\contentsline {subsubsection}{SIFT}{70}{section*.156}
+\contentsline {subsubsection}{Comparaci\IeC {\'o}n de las caracter\IeC {\'\i }sticas}{71}{section*.161}
+\contentsline {subsection}{\numberline {5.2.3}M\IeC {\'e}todo de fusi\IeC {\'o}n de detectores de puntos de inter\IeC {\'e}s propuesto}{75}{subsection.168}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de las medidas de desempe\IeC {\~n}o sobre las fuentes de informaci\IeC {\'o}n }{77}{section*.169}
+\contentsline {subsubsection}{Esquema de fusi\IeC {\'o}n }{81}{section*.175}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de las medidas de desempe\IeC {\~n}o en la fusi\IeC {\'o}n }{82}{section*.179}
+\contentsline {chapter}{\numberline {6}Conclusiones y trabajos futuros}{89}{chapter.195}
+\contentsline {section}{\numberline {6.1}Trabajos futuros}{90}{section.196}

@@ -19,11 +19,11 @@
 
 El proceso de localizar y aislar el iris en una imagen es conocido como localización o segmentación del iris. Esta etapa juega un papel muy importante en los sistemas de reconocimiento de iris ya que la extracción de características se realiza sobre esta región obtenida, lo que provoca que una mala segmentación haga perder información discriminante sobre el iris haciendo que los SRI (sistemas de reconocimiento de iris) empeoren en sus resultados. \\
 
-La etapa de segmentación del iris se basa en una secuencia de tareas: encontrar un iris en la imagen, determinar sus contornos interno y externo entre la pupila y la esclerótica respectivamente, detección de los bordes de los párpados superior e inferior si estos ocluyen el iris y por último detectar y excluir cualquier elemento superpuesto de pestañas o reflexiones de la córnea o de gafas. Aunque son muchos métodos para la segmentación del iris los que se han propuesto, todavía no pueden considerarse concluyentes para usarse en distintas condiciones como: condiciones de iluminación, reflexiones especulares, oclusiones por párpados, oclusiones por pestañas, entre otros. En esta tesitura existe el problema de mejorar la precisión de las segmentaciones bajo condiciones no ideales. \\
+La etapa de segmentación del iris se basa en una secuencia de tareas: encontrar un iris en la imagen, determinar sus contornos interno y externo entre la pupila y la esclerótica respectivamente, detección de los bordes de los párpados superior e inferior si estos ocluyen el iris y por último detectar y excluir cualquier elemento superpuesto de pestañas o reflexiones de la córnea o de gafas. Aunque son muchos métodos para la segmentación del iris los que se han propuesto, todavía no pueden considerarse concluyentes para usarse en distintas condiciones como: condiciones de iluminación, reflexiones especulares, oclusiones por párpados, oclusiones por pestañas, entre otros. En esta tesitura existe el problema de mejorar la precisión de las segmentaciones bajo condiciones no ideales como las mencionadas. \\
 
 Los métodos de segmentación del iris se pueden agrupar en dos categorías: métodos basados en la detección de bordes circulares y métodos basados en la detección de bordes no circulares. En esta primera categoría se asume que el iris tiene una forma circular o elíptica en función de la perspectiva, y que se aproximan los bordes del iris utilizando dos circunferencias que en la mayoría de los casos se consideran concéntricas. En la segunda categoría los métodos se basan en la detección de bordes no circulares, asumiendo que el iris tiene una forma menos circular debido a las afecciones producidas por los factores de calidad como: oclusión por los párpados, oclusión por las pestañas, emborronado, iluminación no uniforme, reflexiones especulares, etc, provocando que la segmentación del iris sea más dificil de realizar. \\
 
-Son varios los métodos existentes para la segmentación del iris basada en la detección de bordes circulares, siendo el método propuesto por Daugman el cual se basa en el operador integro-diferencial el más utilizado. En este sentido son varios los métodos existentes que se basan en el operador integro-diferencial para realizar la segmentación del iris. Otra bvs variantes de métodos que se han empleado para la segmentación del iris se basan en diferentes enfoques como: la detección de bordes de Canny junto con las transformada de Hough, la detección de puntos del borde del iris utilizando un modelo de atracción-repulsión basado en la ley de Hooke, la aplicación iterativa de una propuesta basada en la transformada de Hough adaptada con ponderaciones, entre otros. \\
+Son varios los métodos existentes para la segmentación del iris basada en la detección de bordes circulares, siendo el método propuesto por Daugman el cual se basa en el operador integro-diferencial el más utilizado. En este sentido son varios los métodos existentes que se basan en el operador integro-diferencial para realizar la segmentación del iris. Otras variantes de métodos que se han empleado para la segmentación del iris se basan en diferentes enfoques como: la detección de bordes de Canny junto con las transformada de Hough, la detección de puntos del borde del iris utilizando un modelo de atracción-repulsión basado en la ley de Hooke, la aplicación iterativa de una propuesta basada en la transformada de Hough adaptada con ponderaciones, entre otros. \\
 
 Del mismo modo existen diversas propuestas para el método de segmentación del iris basados en la detección de bordes no circulares, donde la detección de los bordes tiene que ser lo más precisa posible ya que en este ámbito partimos en que el iris no mantiene una forma circular en condiciones no ideales debido a las afectaciones producidas por los diferentes factores de calidad como las oclusiones por pestañas o párpados que producen un efecto de distorsión sobre el mismo. Para este tipo de métodos Daugman propone una solución basada en la segmentación de los bordes internos y externos en términos de contornos activos basados en expansiones de series discretas de Fourier sobre datos de contornos. Otra implementación para este tipo de métodos es la que se propone mediante un esquema de segmentación del iris basado en la relación de contornos activos y la computación de curvas de longitud mínima llamadas "geodesics". \\
 
@@ -37,7 +37,7 @@ Desde una vista frontal del iris se pueden apreciar dos bordes bien definidos. E
 
 Partiendo de estas premisas y analizando los diferentes métodos de segmentación del iris mencionados en el apartado anterior, este Trabajo Fin de Master se basa en el método expuesto en \cite{Reference9}. Este método realiza primeramente una aproximación inicial del centro del iris para posteriormente segmentar los bordes interno y externo del mismo. \\
 
-Para realizar la aproximación del centro del iris, el método parte de la suposición de que su centro es muy cercano al centro de la imagen, por lo que trata de buscar el objeto mas grande y oscuro que aparece en la imagen el cual representa la pupila (que también define el borde interno del iris). En general, el método realiza un procedimiento iterativo de análisis de perfiles desde el centro de la imagen P($X_{I}$, $Y_{I}$). Dichas operaciones de perfiles son realizadas en las direcciones horizontal ($H_{p}$) y vertical ($V_{p}$). La región donde se encuentran los puntos candidatos a centro del iris que van a ser procesados se define por la región cuadrada de tamaño 2mX2m con centro en P($X_{I}$, $Y_{I}$). Las valores de los pixeles obtenidos de las operaciones de perfiles aplicadas viene representados como segmentos de líneas rectas. Por tanto, el centro del iris representado por el punto P($X_{0}$, $Y_{0}$) es aquel en el cual $H_{p}$ y $V_{p}$ tienen los mismos valores de píxeles consecutivos que son menores que un umbral \textit{h}. En la invetigación realizada para este método se determinó que para la base de datos de iris utilizada (CASIA-IrisV4-Internal) los valores mas adecuados para los parámetros utilizados son \textit{m} = 70 y \textit{h} = 50. \\
+Para realizar la aproximación del centro del iris, el método parte de la suposición de que su centro es muy cercano al centro de la imagen, por lo que trata de buscar el objeto mas grande y oscuro que aparece en la imagen el cual representa la pupila (que también define el borde interno del iris). En general, el método realiza un procedimiento iterativo de análisis de perfiles desde el centro de la imagen P($X_{I}$, $Y_{I}$). Dichas operaciones de perfiles son realizadas en las direcciones horizontal ($H_{p}$) y vertical ($V_{p}$). La región donde se encuentran los puntos candidatos a centro del iris que van a ser procesados se define por la región cuadrada de tamaño 2mX2m con centro en P($X_{I}$, $Y_{I}$). Las valores de los pixeles obtenidos de las operaciones de perfiles aplicadas viene representados como segmentos de líneas rectas. Por tanto, el centro del iris representado por el punto P($X_{0}$, $Y_{0}$) es aquel en el cual $H_{p}$ y $V_{p}$ tienen los mismos valores de píxeles consecutivos que son menores que un umbral \textit{h}. Los ejes en blanco de la Figura 4.1 denotan los perfiles que corresponden a la aproximación inicial del centro del iris. En la investigación realizada para este método se determinó que para la base de datos de iris utilizada (CASIA-IrisV4-Internal) los valores mas adecuados para los parámetros utilizados son \textit{m} = 70 y \textit{h} = 50. \\
 
 \begin{figure}[htbp]
 \centering
@@ -87,7 +87,44 @@ M(x,y) \approx \left | Gx \right | + \left | Gy \right |
 \end{center}
 \end{table}
 
-De esta manera, se aplican arcos consecutivos en los sentidos  de s $\epsilon$ S, S $ = \left \{ \left. izquieda, derecha, arriba, abajo \right \} \right.$ dando como resultado el conjunto de puntos de interés $C_{s}(r, X_{0}, Y_{0})$ pertenecientes a dichos arcos. \\
+De esta manera, se aplican arcos consecutivos en los sentidos  de s $\epsilon$ S, S $ = \left \{ \left. izquieda, derecha, arriba, abajo \right \} \right.$ dando como resultado el conjunto de m puntos de interés $C_{s}(r, X_{0}, Y_{0})$ pertenecientes a dichos arcos. \\ \\ \\ \\ \\ \\ 
+
+\[
+ C_{izquierda}(r, X_{0}, Y_{0}) = \left \{( X_{0} - r,Y_{0}) \right \} U
+\]
+\[
+  \left \{( x_{i},y_{i})/y_{i} = y_{i-1} \pm i; x_{i} = X_{0} - \sqrt{r^{2} - (y{i} - Y{0})^{2}}  \right \} 
+\]
+
+\[
+\]
+
+\[
+ C_{derecha}(r, X_{0}, Y_{0}) = \left \{( X_{0} + r,Y_{0}) \right \} U
+\]
+\[
+  \left \{( x_{i},y_{i})/y_{i} = y_{i-1} \pm i; x_{i} = X_{0} + \sqrt{r^{2} - (y{i} - Y{0})^{2}}  \right \} 
+\]
+
+\[
+\]
+
+\[
+ C_{arriba}(r, X_{0}, Y_{0}) = \left \{( X_{0},Y_{0}-r) \right \} U
+\]
+\[
+  \left \{( x_{i},y_{i})/x_{i} = x_{i-1} \pm i; y_{i} = Y_{0} - \sqrt{r^{2} - (x{i} - X{0})^{2}}  \right \} 
+\]
+
+\[
+\]
+
+\[
+ C_{abajo}(r, X_{0}, Y_{0}) = \left \{( X_{0},Y_{0}+r) \right \} U
+\]
+\[
+  \left \{( x_{i},y_{i})/x_{i} = x_{i-1} \pm i; y_{i} = Y_{0} + \sqrt{r^{2} - (x{i} - X{0})^{2}}  \right \} 
+\] \\ 
 
 \begin{figure}[htbp]
 \centering
@@ -104,7 +141,7 @@ De esta manera, se aplican arcos consecutivos en los sentidos  de s $\epsilon$ S
 \caption{Puntos de interés en dos arcos sucesivos} \label{fig:señales}
 \end{figure}
 
-En la Figura 4.6 se describe de forma gráfica los incrementos de radios para el análisis de los arcos sucesivos en el sentido \textit{S}. Del mismo modo, en la Figura 4.7 se visualiza un ejemplo de puntos de interés en dos arcos sucesivos en el sentido hacia la derecha. \\
+En la Figura 4.6 se describe de forma gráfica los incrementos de radios para el análisis de los arcos sucesivos en el sentido \textit{S}. Del mismo modo, en la Figura 4.7 se visualiza un ejemplo de puntos de interés en dos arcos sucesivos en el sentido hacia la derecha. \\  
 
 %Tendiendo en cuenta las características del iris mencionadas anteriormente y tomando como referencia los modelos de métodos de segmentación del iris mencionados anteriormente, en este trabajo se propone un nuevo método de segmentación basado en la detección de bordes circulares compuesto por la combinación del método de Sobel para la detección de bordes y la transformada de Hough para la detección de figuras geométricas, en este caso las circunferencias que representan los bordes internos y externos del iris.\\
 
@@ -137,10 +174,10 @@ En la Figura 4.6 se describe de forma gráfica los incrementos de radios para el
 %\]
 %\captionof{figure}{Dirección del vector gradiente.} 
 
-\begin{table}[htbp]
-\begin{center}
-\end{center}
-\end{table}
+%\begin{table}[htbp]
+%\begin{center}
+%\end{center}
+%\end{table}
 
 %El método de Sobel queda encuadrado dentro de los operadores de primera derivada. Este método calcula el gradiente de una imagen en base a las variaciones de las intensidades de los pixeles para la detección de bordes. Este operador aplica dos filtros de convolución gaussianos, uno horizontal para la derivada en X y otro vertical para la derivada en Y con el objetivo de suavizar el ruido para que no se sobredetecten los bordes y poder calcular de manera fiable el gradiente, el cual nos dirá si un punto (pixel) de la imagen pertenece a un borde. Las máscaras de convolución de Sobel tienen un tamaño de 3x3 tanto en horizontal como en vertical, y se aplicarán al vecindario de pixeles formado alrededor del punto sobre el que se este aplicando. Este operador presenta la ventaja de ser mas sensible al ruido frente a otros operadores de primera devirvada como Roberts o Prewitt entre otros.\\ \\ \\
 
@@ -189,10 +226,10 @@ En la Figura 4.6 se describe de forma gráfica los incrementos de radios para el
 %\]
 %\captionof{figure}{Expresión matemática para definir una circunferencia.} 
 
-\begin{table}[htbp]
-\begin{center}
-\end{center}
-\end{table}
+%\begin{table}[htbp]
+%\begin{center}
+%\end{center}
+%\end{table}
 
 %donde \textit{r} es el radio de la circunferencia, y \textit{$c_{x}$}, \textit{$c_{y}$} son las coordenadas en el eje X y en el eje Y respectivamente del centro de la circunferencia.\\
 
@@ -232,15 +269,16 @@ En la Figura 4.6 se describe de forma gráfica los incrementos de radios para el
 %\end{minipage}
 %\end{center}
 
-\begin{table}[htbp]
-\begin{center}
-\end{center}
-\end{table}
+%\begin{table}[htbp]
+%\begin{center}
+%\end{center}
+%\end{table}
 
-\begin{table}[htbp]
-\begin{center}
-\end{center}
-\end{table}
+%\begin{table}[htbp]
+%\begin{center}
+%\end{center}
+%\end{table}
+
 %----------------------------------------------------------------------------------------
 
 \section{Experimentaciones}
